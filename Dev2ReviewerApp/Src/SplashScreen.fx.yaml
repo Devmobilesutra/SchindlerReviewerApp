@@ -1,0 +1,30 @@
+SplashScreen As screen:
+
+    ImgLS As image:
+        Height: =Parent.Height
+        Image: ='042 splash-2x'
+        ImagePosition: =ImagePosition.Fill
+        Width: =Parent.Width
+        ZIndex: =1
+
+    TimerLS As timer:
+        AutoStart: =true
+        Duration: =5000
+        OnTimerEnd: |-
+            =//Navigate(DashboardScreen)
+            Navigate(DashboardScreen)
+        Start: =true
+        Visible: =false
+        X: =80
+        Y: =80
+        ZIndex: =2
+
+    Label12 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =47
+        Text: ="UAT 1.0"
+        Width: =120
+        X: =(Parent.Width-Self.Width)/2
+        Y: =Parent.Height/1.5
+        ZIndex: =3
+

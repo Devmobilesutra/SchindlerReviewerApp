@@ -1,0 +1,113 @@
+[
+  {
+    "DisplayName": "product (Views)",
+    "Name": "_quantum_product_views",
+    "RelatedEntityName": "product",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "2b86f3aa-3ae7-417e-8141-7b7261cc8f3e": "product Associated View",
+      "b508ce99-4580-4511-bf68-fb0f00213c7d": "product Advanced Find View",
+      "bb529990-7467-4123-a13e-8e4acf38e4e7": "Active product",
+      "e1d6439d-9c92-40a2-95a0-24a25684ac0a": "Inactive product",
+      "e804b9a0-4de9-4789-addb-b312d2f9ec8c": "product Lookup View"
+    }
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "quantum_products",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "quantum_product",
+    "MaxGetRowsCount": 500,
+    "Name": "product",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "quantum_bank_product_Id_quantum_product": "bank",
+      "quantum_clientInstallation_product_Id_qua": "clientInstallation",
+      "quantum_product": "product (quantum_product)",
+      "quantum_product_AsyncOperations": "System Jobs",
+      "quantum_product_BulkDeleteFailures": "Bulk Delete Failures",
+      "quantum_product_description": "product_Description",
+      "quantum_product_DuplicateBaseRecord": "Duplicate Records (quantum_product_DuplicateBaseRecord)",
+      "quantum_product_DuplicateMatchingRecord": "Duplicate Records (quantum_product_DuplicateMatchingRecord)",
+      "quantum_product_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "quantum_product_model": "product_Model",
+      "quantum_product_name": "product_Name",
+      "quantum_product_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "quantum_product_ProcessSession": "Process Sessions",
+      "quantum_product_SyncErrors": "Sync Errors",
+      "quantum_product_type": "product_Type",
+      "quantum_productid": "product (quantum_productid)",
+      "shlaf_bankUnits_productId_quantum_product": "bankUnits",
+      "shlaf_quantum_BankTripReport_product_id_quantum": "BankTripReport",
+      "shlaf_quantum_checkpointAssessment_shlaf_produc": "checkpointAssessment",
+      "shlaf_quantum_checkpointItem_ActionItems_produc": "checkpointItem_ActionItem",
+      "shlaf_quantum_checkpointItem_Images_product_id_": "checkpointItem_Images",
+      "shlaf_quantum_checkpointItemAssessment_product_": "checkpointItemAssessment",
+      "shlaf_quantum_sectionAssessment_product_id_quan": "sectionAssessment",
+      "shlaf_quantum_unitAssessment_product_id_quantum": "unitAssessment",
+      "shlaf_schindlerBank_productId_quantum_pro": "schindlerBanks",
+      "shlaf_Templates_product_id_quantum_produc": "Templates",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "product",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Status (product)",
+    "Name": "quantum_product_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "product"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "product",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (product)",
+    "Name": "quantum_product_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "product"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "product",
+    "Type": "OptionSetInfo"
+  }
+]

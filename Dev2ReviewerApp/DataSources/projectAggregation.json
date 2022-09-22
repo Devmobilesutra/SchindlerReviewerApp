@@ -1,0 +1,106 @@
+[
+  {
+    "DisplayName": "projectAggregation (Views)",
+    "Name": "_quantum_projectaggregation_views",
+    "RelatedEntityName": "projectAggregation",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "3feaaa28-b29f-4d51-b4c0-8fa96df64eaf": "projectAggregation Lookup View",
+      "6713ab9d-6503-4ac5-9622-e7077c4ad966": "projectAggregation Associated View",
+      "b0c0b080-d786-4e28-92d6-e1422a475bf2": "Active projectAggregation",
+      "ee18b903-b7bb-4679-a55d-95e4869662c4": "projectAggregation Advanced Find View",
+      "ff6a8e83-f7c2-4d9c-af0e-fef142f230c5": "Inactive projectAggregation"
+    }
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "quantum_projectaggregations",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "quantum_projectaggregation",
+    "MaxGetRowsCount": 500,
+    "Name": "projectAggregation",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "quantum_aggregationid": "AggregationId",
+      "quantum_assessorId": "assessorId",
+      "quantum_completed_projects": "completed_Projects",
+      "quantum_inprogress_projects": "inProgress_Projects",
+      "quantum_projectaggregation_AsyncOperations": "System Jobs",
+      "quantum_projectaggregation_BulkDeleteFailures": "Bulk Delete Failures",
+      "quantum_projectaggregation_DuplicateBaseRecord": "Duplicate Records (quantum_projectaggregation_DuplicateBaseRecord)",
+      "quantum_projectaggregation_DuplicateMatchingRecord": "Duplicate Records (quantum_projectaggregation_DuplicateMatchingRecord)",
+      "quantum_projectaggregation_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "quantum_projectaggregation_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "quantum_projectaggregation_ProcessSession": "Process Sessions",
+      "quantum_projectaggregation_SyncErrors": "Sync Errors",
+      "quantum_projectaggregationid": "projectAggregation",
+      "quantum_total_projects": "total_Projects",
+      "quantum_upcoming_projects": "upcoming_Projects",
+      "shlaf_assessor_id": "assessor_id",
+      "shlaf_assessor_name": "assessor_name",
+      "shlaf_reviewer_id": "Reviewer_id",
+      "shlaf_reviewer_name": "reviewer_name",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "projectAggregation",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Status (projectAggregation)",
+    "Name": "quantum_projectaggregation_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "projectAggregation"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "projectAggregation",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (projectAggregation)",
+    "Name": "quantum_projectaggregation_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "projectAggregation"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "projectAggregation",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,115 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "quantum_banktripreports",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "quantum_banktripreport",
+    "MaxGetRowsCount": 500,
+    "Name": "BankTripReport",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "quantum_background": "Background",
+      "quantum_banktripreport": "BankTripReport (quantum_banktripreport)",
+      "quantum_banktripreport_AsyncOperations": "System Jobs",
+      "quantum_banktripreport_BulkDeleteFailures": "Bulk Delete Failures",
+      "quantum_banktripreport_DuplicateBaseRecord": "Duplicate Records (quantum_banktripreport_DuplicateBaseRecord)",
+      "quantum_banktripreport_DuplicateMatchingRecord": "Duplicate Records (quantum_banktripreport_DuplicateMatchingRecord)",
+      "quantum_banktripreport_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "quantum_banktripreport_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "quantum_banktripreport_ProcessSession": "Process Sessions",
+      "quantum_banktripreport_SyncErrors": "Sync Errors",
+      "quantum_banktripreportid": "BankTripReport (quantum_banktripreportid)",
+      "quantum_general_recommendation": "General_Recommendation",
+      "quantum_projectId": "projectId",
+      "quantum_reviewercomments": "ReviewerComments",
+      "quantum_summary": "Summary",
+      "shlaf_assessor_email": "assessor_email",
+      "shlaf_assessor_id": "assessor_id",
+      "shlaf_assessor_name": "assessor_name",
+      "shlaf_assignmentId": "assignmentId",
+      "shlaf_bank_id": "bank_id",
+      "shlaf_bankId": "bankId",
+      "shlaf_bankUnitId": "bankUnitId",
+      "shlaf_clientid": "clientid",
+      "shlaf_product_id": "product_id",
+      "shlaf_reportlink": "ReportLink",
+      "shlaf_reviewer_email": "reviewer_email",
+      "shlaf_reviewer_id": "reviewer_id",
+      "shlaf_reviewer_name": "reviewer_name",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "BankTripReport",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "BankTripReport (Views)",
+    "Name": "_quantum_banktripreport_views",
+    "RelatedEntityName": "BankTripReport",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "10dd9c87-b5ed-4114-9528-6b2abc3e4403": "BankTripReport Lookup View",
+      "14a09f3f-64e6-4337-94cf-e4f5eea5b886": "BankTripReport Associated View",
+      "97c1d6f7-262e-4e3b-88cb-0bbae63efc58": "BankTripReport Advanced Find View",
+      "a78353b4-dc8b-4d10-8e96-548dff5f65ca": "Inactive BankTripReport",
+      "d9838392-5ace-44fc-8e1b-bc8627e60d79": "Active BankTripReport"
+    }
+  },
+  {
+    "DisplayName": "Status (BankTripReport)",
+    "Name": "quantum_banktripreport_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "BankTripReport"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "BankTripReport",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (BankTripReport)",
+    "Name": "quantum_banktripreport_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "BankTripReport"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "BankTripReport",
+    "Type": "OptionSetInfo"
+  }
+]

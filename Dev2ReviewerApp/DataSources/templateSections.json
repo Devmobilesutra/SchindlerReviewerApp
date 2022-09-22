@@ -1,0 +1,126 @@
+[
+  {
+    "DisplayName": "templateSections (Views)",
+    "Name": "_shlaf_templatesections_views",
+    "RelatedEntityName": "templateSections",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "2dfd7398-3df2-4c73-ba14-7cb1043e657c": "Inactive templateSections",
+      "4ce3c348-b42f-4f4f-a6c6-6b0646a7fb23": "templateSections Lookup View",
+      "5e9e0283-114a-4e37-8463-1b7a7cbe3781": "templateSections Advanced Find View",
+      "62bbc858-af0c-4fec-9809-5738211bc9be": "templateSections Associated View",
+      "dea47b4b-a2cf-40da-a2b2-cf2cc5010e96": "Active templateSections"
+    }
+  },
+  {
+    "DisplayName": "sectionIsApplicable (templateSections)",
+    "Name": "shlaf_templatesections_shlaf_sectionisapplicable",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "shlaf_sectionisapplicable",
+        "OptionSetReferenceEntityName": "templateSections"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "shlaf_sectionisapplicable",
+    "RelatedEntityName": "templateSections",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (templateSections)",
+    "Name": "shlaf_templatesections_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "templateSections"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "templateSections",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (templateSections)",
+    "Name": "shlaf_templatesections_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "templateSections"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "templateSections",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "shlaf_templatesectionses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "shlaf_templatesections",
+    "MaxGetRowsCount": 500,
+    "Name": "templateSections",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr28a_shlaf_actionitems_sectionId_shlaf_templat": "actionItems",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "shlaf_quantum_sectionAssessment_sectionId_shlaf": "sectionAssessment",
+      "shlaf_sectionid": "sectionId",
+      "shlaf_sectionisapplicable": "sectionIsApplicable",
+      "shlaf_sectionname": "sectionname",
+      "shlaf_sectionsequence": "sectionSequence",
+      "shlaf_seriesname": "seriesName",
+      "shlaf_templateCheckpointItems_sectionName": "templatecheckpointsitem_ToBeRemoveds",
+      "shlaf_templateCheckpoints_sectionName_shl": "templateCheckpoints",
+      "shlaf_templateCheckpointsItem_sectionId_s": "templateCheckpointsItems",
+      "shlaf_templatesections_AsyncOperations": "System Jobs",
+      "shlaf_templatesections_BulkDeleteFailures": "Bulk Delete Failures",
+      "shlaf_templatesections_DuplicateBaseRecord": "Duplicate Records (shlaf_templatesections_DuplicateBaseRecord)",
+      "shlaf_templatesections_DuplicateMatchingRecord": "Duplicate Records (shlaf_templatesections_DuplicateMatchingRecord)",
+      "shlaf_templatesections_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "shlaf_templatesections_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "shlaf_templatesections_ProcessSession": "Process Sessions",
+      "shlaf_templatesections_SyncErrors": "Sync Errors",
+      "shlaf_templatesectionsid": "templateSections",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "templateSections",
+    "Type": "NativeCDSDataSourceInfo"
+  }
+]

@@ -1,0 +1,23 @@
+Component1_11 As CanvasComponent:
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =30
+    OnReset: =Connection.Metered
+    Width: =134
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    Image1_22 As image:
+        Height: =30
+        Image: =online
+        Visible: =Connection.Connected=true
+        Width: =134
+        ZIndex: =1
+
+    Image2_28 As image:
+        Height: =30
+        Image: =offine
+        Visible: =Connection.Connected=false
+        Width: =134
+        ZIndex: =2
+

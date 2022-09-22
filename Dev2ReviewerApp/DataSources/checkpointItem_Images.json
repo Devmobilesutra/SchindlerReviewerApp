@@ -1,0 +1,108 @@
+[
+  {
+    "DisplayName": "checkpointItem_Images (Views)",
+    "Name": "_quantum_checkpointitem_images_views",
+    "RelatedEntityName": "checkpointItem_Images",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "3e8f6ec8-0f1b-4b4a-82d6-0fc4d0997682": "Active checkpointItem_Images",
+      "b5aaaf8a-2b82-44bc-8965-11bf0cb7fe55": "Inactive checkpointItem_Images",
+      "b6231a74-2312-45a8-8e39-73e8c05c70ba": "checkpointItem_Images Advanced Find View",
+      "dd4f88af-b28e-4251-abf0-1ff9748fafe3": "checkpointItem_Images Lookup View",
+      "e13fc03c-59c6-4a99-b0d6-3b302a6d6b88": "checkpointItem_Images Associated View"
+    }
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "quantum_checkpointitem_imageses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "quantum_checkpointitem_images",
+    "MaxGetRowsCount": 500,
+    "Name": "checkpointItem_Images",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "quantum_checkpointItem_Id": "checkpointItem_Id",
+      "quantum_checkpointitem_images_AsyncOperations": "System Jobs",
+      "quantum_checkpointitem_images_BulkDeleteFailures": "Bulk Delete Failures",
+      "quantum_checkpointitem_images_DuplicateBaseRecord": "Duplicate Records (quantum_checkpointitem_images_DuplicateBaseRecord)",
+      "quantum_checkpointitem_images_DuplicateMatchingRecord": "Duplicate Records (quantum_checkpointitem_images_DuplicateMatchingRecord)",
+      "quantum_checkpointitem_images_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "quantum_checkpointitem_images_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "quantum_checkpointitem_images_ProcessSession": "Process Sessions",
+      "quantum_checkpointitem_images_SyncErrors": "Sync Errors",
+      "quantum_checkpointitem_imagesid": "checkpointItem_Images",
+      "quantum_checkpointitemimagesid": "checkpointItemImagesId",
+      "quantum_image": "Image",
+      "quantum_imageid": "quantum_ImageId",
+      "shlaf_assignmentId": "assignmentId",
+      "shlaf_bank_id": "bank_id",
+      "shlaf_bankUnitId": "bankUnitId",
+      "shlaf_checkpoint_id": "checkpoint_id",
+      "shlaf_image_annotation": "image_annotation",
+      "shlaf_product_id": "product_id",
+      "shlaf_projectAssingment_Id": "projectAssingment_Id",
+      "shlaf_section_id": "section_id",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "checkpointItem_Images",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Status (checkpointItem_Images)",
+    "Name": "quantum_checkpointitem_images_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "checkpointItem_Images"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "checkpointItem_Images",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (checkpointItem_Images)",
+    "Name": "quantum_checkpointitem_images_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "checkpointItem_Images"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "checkpointItem_Images",
+    "Type": "OptionSetInfo"
+  }
+]

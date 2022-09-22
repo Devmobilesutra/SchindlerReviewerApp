@@ -1,0 +1,154 @@
+App As appinfo:
+    BackEnabled: =false
+    OnStart: |+
+        =ClearCollect(asasas,assignmentUnits);
+        
+        // Global CSS
+        Set(
+            //for header
+             Header,
+            {
+                HeaderFont: "Roboto",
+                HeaderColor: RGBA(
+                    255,
+                    255,
+                    255,
+                    1),
+                HeaderFill: RGBA(
+                    220,
+                    0,
+                    0,
+                    1
+                ),
+                HeaderFontSize: 26,
+                FontWeight: "bold",
+                HeaderUserFontSize: 16
+            }
+        );
+        
+        Set(
+            //for Dashbord Screen
+             Dashboard,
+            {
+                DFont: "Roboto",
+                DColor: RGBA(
+                    0,
+                    0,
+                    0,
+                    1),
+                DCountColor: RGBA(
+                    220,
+                    0,
+                    0,
+                    1
+                ),
+                DFontSize: "22",
+                DCountSize : "28"
+                
+            }
+        );
+        Set(
+             referenceCSS,
+            {
+                RInActiveColor: RGBA(     //black
+                    0,
+                    0,
+                    0,
+                    1),
+                RActiveColor: RGBA(        //red
+                    220,
+                    0,
+                    0,
+                    1
+                ),
+                RColorWhite: RGBA(        //white
+                    255,
+                    255,
+                    255,
+                    1
+                ),
+                RColorBlack: RGBA(        //black
+                    0,
+                    0,
+                    0,
+                    1
+                ),
+                RFont: "Roboto",
+                RFontSize: "22",
+                RViewFontSize:"16",
+                RLabelFontSize:"14",
+                RInputFontSize:"12",
+                RFontWeight: "Bold"
+            }
+        );
+        
+        Set(globalcss,
+               {
+                   fontRobotoR:"Roboto Regular",
+                   fontRobotoM:"Roboto Medium"
+        
+               });
+        
+        //for unable lodder
+        Set(
+            lodder,
+            true
+        );
+        
+        //Calling AAD connector to get all assessor data
+        ClearCollect(
+            AssessorAD,
+            AzureAD.GetGroupMembers("9ae78503-6ff0-4f1a-b15f-9e0b76c01b44").value
+        );
+        
+        //Calling AAD connector to get all Reviewer data
+        ClearCollect(
+            ReviewerAD,
+            AzureAD.GetGroupMembers("27ac846b-1cc3-48ad-ad4b-cf07b9667a64").value
+        );
+        
+        
+        //create variable to store logged user data
+        Set(
+            userdata,{
+                userImage:User().Image,
+                userEmail:User().Email,
+                userdisplayName:LookUp(ReviewerAD,mail=User().Email,displayName)
+            }
+            
+        );
+        
+        //here use lookup for to get logged user id and store it into variable
+        Set(loginReviewer,LookUp(ReviewerAD,mail=  User().Email,id));
+        
+        //for disable
+        Set(
+            lodder,
+            false
+        );
+        
+        
+        //ClearCollect(
+        //   GCprojectAggregation,
+        //   Filter(
+        //        projectAggregation,
+        //        assessor_id=LookUp(AssessorAD,mail= User().Email,id)
+        //    )
+        //);
+        
+        //ClearCollect(
+         //   ClientCollection,
+         //   Client
+        //);
+        //ClearCollect(schindlerAssessorCollection,schindler_assessors);
+        //ClearCollect(
+          //  banksCollection,
+           // bank
+        //);
+        
+        //ClearCollect(
+         //   projectAssignmentcollection,
+         //   projectAssignment_1
+        //);
+        
+

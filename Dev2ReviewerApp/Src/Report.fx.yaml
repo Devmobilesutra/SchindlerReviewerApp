@@ -1,0 +1,888 @@
+Report As screen:
+
+    Container32 As groupContainer.verticalAutoLayoutContainer:
+        Height: |
+            =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Container3_20 As groupContainer.manualLayoutContainer:
+            Fill: =Header.HeaderFill
+            FillPortions: =0
+            Height: =80
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =Parent.Width
+            ZIndex: =1
+
+            Image1_26 As image:
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height
+                Image: =Schindler_logo_PNG1
+                PaddingBottom: =5
+                PaddingLeft: =2
+                PaddingRight: =1
+                PaddingTop: =5
+                Width: =Container3_20.Width/10
+                ZIndex: =1
+
+            Image2_32 As image:
+                Fill: =RGBA(253, 222, 207, 1)
+                Height: =50
+                Image: =userdata.userImage
+                RadiusBottomLeft: =91
+                RadiusBottomRight: =91
+                RadiusTopLeft: =91
+                RadiusTopRight: =91
+                Width: =50
+                X: =Label3_21.X+Label3_21.Width
+                Y: =16
+                ZIndex: =2
+
+            Icon1_21 As icon.Bell:
+                Color: =RGBA(255, 255, 0, 1)
+                Height: =Parent.Height/2
+                Icon: =Icon.Bell
+                Width: =Parent.Width/28
+                X: =Label1_27.X+Label1_27.Width+10
+                Y: =Parent.Height/4
+                ZIndex: =5
+
+            Label1_27 As label:
+                Align: =Align.Center
+                Color: =Header.HeaderColor
+                Font: =Header.HeaderFont
+                FontWeight: =Header.FontWeight
+                Height: =Parent.Height
+                Size: =Header.HeaderUserFontSize
+                Text: |-
+                    =//"SCHD0023"
+                    //LookUp(ReviewerAD,mail=userdata.userEmail,displayName)
+                    userdata.userdisplayName
+                Width: =Container3_20.Width/8
+                X: =Image2_32.X+ Image2_32.Height
+                ZIndex: =6
+
+            Label3_21 As label:
+                Align: =Align.Center
+                Color: =Header.HeaderColor
+                Font: =Header.HeaderFont
+                FontWeight: =Header.FontWeight
+                Height: =Parent.Height
+                Size: =Header.HeaderFontSize
+                Text: ="Report"
+                Width: =Container3_20.Width/1.6
+                X: =Image1_26.Width+Image1_26.X
+                ZIndex: =8
+
+        Container33 As groupContainer.verticalAutoLayoutContainer:
+            FillPortions: =0
+            Height: |-
+                =Parent.Height
+                //Gallery2_1.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            LayoutOverflowY: =LayoutOverflow.Scroll
+            PaddingLeft: =20
+            PaddingRight: =20
+            Width: =Parent.Width
+            ZIndex: =2
+
+            "'ctnBack&onlinestatusPS_3' As groupContainer.verticalAutoLayoutContainer":
+                AlignInContainer: =AlignInContainer.SetByContainer
+                FillPortions: =0
+                Height: =80
+                LayoutMinHeight: =80
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingBottom: =5
+                Width: =Parent.Width
+                Y: =Container3_12.Y+Container3_12.Height
+                ZIndex: =1
+
+                ctnBack_5 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =0
+                    Height: =80
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutGap: =10
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    LayoutWrap: =true
+                    PaddingLeft: =40
+                    Visible: =true//RoughWork3.Size>2
+                    Width: =Parent.Width/2
+                    Y: =Container3_12.Y+Container3_12.Height
+                    ZIndex: =1
+
+                    Button1_18 As button:
+                        BorderColor: =referenceCSS.RActiveColor
+                        Color: =referenceCSS.RColorBlack
+                        Fill: =RGBA(255, 255, 255, 1)
+                        Height: =Parent.Height/1.5
+                        HoverColor: =Self.Color
+                        HoverFill: =Self.Fill //ColorFade(RGBA(56, 96, 178, 1), -20%)
+                        OnSelect: =Navigate(BankScreen)
+                        PaddingLeft: =0
+                        PressedBorderColor: =Self.BorderColor
+                        PressedColor: =Self.Color
+                        PressedFill: =Self.Fill
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Text: = "back"
+                        Width: ='ctnBack&onlinestatusPS_3'.Width/6
+                        ZIndex: =2
+
+            Container34 As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.Start
+                FillPortions: =0
+                Height: =60
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
+                ZIndex: =2
+
+                Container36 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Start
+                    FillPortions: =0
+                    Height: =Parent.Height
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width/2
+                    ZIndex: =1
+
+                    Label2 As label:
+                        FontWeight: =FontWeight.Bold
+                        Height: =Parent.Height
+                        Size: =18
+                        Text: |-
+                            ="Trip Report :"
+                        Width: =Parent.Width
+                        ZIndex: =1
+
+                Container36_1 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.Start
+                    FillPortions: =0
+                    Height: =Parent.Height
+                    LayoutAlignItems: =LayoutAlignItems.End
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width/2
+                    ZIndex: =2
+
+                    Button9 As button:
+                        AlignInContainer: =AlignInContainer.Center
+                        Color: =RGBA(255,255,255,1)
+                        Fill: =referenceCSS.RActiveColor
+                        Height: =50
+                        HoverFill: |-
+                            =//ColorFade(RGBA(56, 96, 178, 1), -20%)
+                            Self.Fill
+                        Text: ="Approve"
+                        Width: =Parent.Width/3
+                        X: =
+                        ZIndex: =1
+
+            Container34_1 As groupContainer.horizontalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =60
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =3
+
+                Label4 As label:
+                    FillPortions: =1
+                    FontWeight: =FontWeight.Semibold
+                    Height: =Parent.Height
+                    Size: =21
+                    Text: =lblProjectName.Text
+                    ZIndex: =1
+
+            Container34_2 As groupContainer.horizontalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =40
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
+                ZIndex: =4
+
+                Label15 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height
+                    Size: =14
+                    Text: |-
+                        ="Assessor Name :"
+                    Width: |-
+                        =//Parent.Width/6
+                        220
+                    ZIndex: =1
+
+                Label16 As label:
+                    FillPortions: =1
+                    Height: =Parent.Height
+                    Text: =LookUp(assignments,bankId.goNumber=lblBankName.Text,assessorName)
+                    ZIndex: =2
+
+            Container34_3 As groupContainer.horizontalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =40
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
+                ZIndex: =5
+
+                Label18 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height
+                    Size: =14
+                    Text: |-
+                        ="Reviewer Name :"
+                    Width: |-
+                        =//Parent.Width/6
+                        220
+                    ZIndex: =1
+
+                Label19 As label:
+                    FillPortions: =1
+                    Height: =Parent.Height
+                    Text: =LookUp(assignments,bankId.goNumber=lblBankName.Text,reviewerName)
+                    ZIndex: =2
+
+            Container34_4 As groupContainer.horizontalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =40
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
+                ZIndex: =6
+
+                Label20 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height
+                    Size: =14
+                    Text: |-
+                        ="G.O. Number :"
+                    Width: |-
+                        =//Parent.Width/6
+                        220
+                    ZIndex: =1
+
+                Label23 As label:
+                    FillPortions: =1
+                    Height: =Parent.Height
+                    Text: =lblBankName.Text
+                    ZIndex: =2
+
+            Container34_5 As groupContainer.horizontalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =40
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
+                ZIndex: =7
+
+                Label28 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height
+                    Size: =14
+                    Text: |-
+                        ="Assessment Date :"
+                    Width: |-
+                        =//Parent.Width/5
+                        220
+                    ZIndex: =1
+
+                Label29 As label:
+                    Height: =Parent.Height
+                    Text: =lblADate.Text
+                    Width: =Parent.Width/6
+                    ZIndex: =2
+
+                Label30 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height
+                    Text: |-
+                        ="Product Type :"
+                    Width: |-
+                        =//Parent.Width/7
+                        180
+                    ZIndex: =3
+
+                Label33 As label:
+                    Text: |
+                        =LookUp(schindlerBanks,goNumber=lblBankName.Text,productId.product_Type)
+                    Width: =Parent.Width/6
+                    ZIndex: =4
+
+                Label34 As label:
+                    FontWeight: =FontWeight.Bold
+                    Text: |-
+                        ="Product Name :"
+                    Width: =180
+                    ZIndex: =5
+
+                Label35 As label:
+                    Text: =LookUp(schindlerBanks,goNumber=lblBankName.Text,productId.product_Name)
+                    Width: =Parent.Width/6
+                    ZIndex: =6
+
+            Container34_6 As groupContainer.horizontalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =40
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
+                ZIndex: =8
+
+                Label31 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height
+                    Size: =14
+                    Text: |-
+                        ="Assessment Type :"
+                    Width: =Parent.Width/5
+                    ZIndex: =1
+
+                Label32 As label:
+                    FillPortions: =1
+                    Height: =Parent.Height
+                    Text: =LookUp(assignments,bankId.goNumber=lblBankName.Text,assessmentType)
+                    ZIndex: =2
+
+            Container34_7 As groupContainer.horizontalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =80
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =9
+
+                Label36 As label:
+                    Color: =referenceCSS.RActiveColor
+                    Height: =Parent.Height
+                    Size: =18
+                    Text: =LookUp(schindlerBanks,goNumber=lblBankName.Text,productId.product_Name)& "   Series"
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+            Container34_8 As groupContainer.horizontalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =60
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =10
+
+                Label37 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height
+                    Size: =16
+                    Text: ="Summary"
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+            Container35 As groupContainer.verticalAutoLayoutContainer:
+                FillPortions: =0
+                Height: |-
+                    =//200
+                    Label38.Height
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =200
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
+                ZIndex: =11
+
+                Label38 As label:
+                    AlignInContainer: =AlignInContainer.Start
+                    AutoHeight: =true
+                    FillPortions: =1
+                    Text: |-
+                        =//LookUp(BankTripReport,bankId.goNumber=lblBankName.Text,Summary)
+                        LookUp(BankTripReport,assignmentId.Id=glryBankGo_1.Selected.assignmentId.Id,Summary)
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+            Container34_10 As groupContainer.horizontalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =60
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =12
+
+                Label37_1 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height
+                    Size: =16
+                    Text: ="Background"
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+            Container35_1 As groupContainer.verticalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =Label38_1.Height
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
+                ZIndex: =13
+
+                Label38_1 As label:
+                    AutoHeight: =true
+                    Text: |-
+                        =//LookUp(BankTripReport,bankId.goNumber=lblBankName.Text,Background)
+                        LookUp(BankTripReport,assignmentId.Id=glryBankGo_1.Selected.assignmentId.Id,Background)
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+            Container34_11 As groupContainer.horizontalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =60
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingBottom: =10
+                ZIndex: =14
+
+                Label37_2 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height
+                    Size: =16
+                    Text: ="Conclusion and Recomendation"
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+            Container34_12 As groupContainer.horizontalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =40
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
+                ZIndex: =15
+
+                Label20_1 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height
+                    Size: =14
+                    Text: |-
+                        ="G.O. Number :"
+                    Width: =Parent.Width/6
+                    ZIndex: =1
+
+                Label23_1 As label:
+                    Color: =referenceCSS.RActiveColor
+                    FillPortions: =1
+                    Height: =Parent.Height
+                    Text: =lblBankName.Text
+                    ZIndex: =2
+
+            Container34_13 As groupContainer.horizontalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =40
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
+                ZIndex: =16
+
+                Label20_2 As label:
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height
+                    Size: =14
+                    Text: |-
+                        ="Product Name :"
+                    Width: =Parent.Width/6
+                    ZIndex: =1
+
+                Label23_2 As label:
+                    FillPortions: =1
+                    Height: =Parent.Height
+                    Text: =LookUp(schindlerBanks,goNumber=lblBankName.Text,productId.product_Name)
+                    ZIndex: =2
+
+            Container37 As groupContainer.verticalAutoLayoutContainer:
+                FillPortions: =0
+                Height: |-
+                    =//Parent.Height
+                    Gallery2_1.Height
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =700
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
+                Y: =Container34_13.Height+Container34_13.Y
+                ZIndex: =17
+
+                "Gallery2_1 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    BorderThickness: =10
+                    FillPortions: =0
+                    Height: |-
+                        =CountRows(Gallery2_1.AllItems)*Gallery2_1.TemplateHeight+500
+                        
+                        //
+                        //Parent.Height
+                    Items: |
+                        =GroupBy(AddColumns(checkpointItem_ActionItem,
+                        "unit",bankUnitId.unitNumber,
+                        "section",section_id.sectionName),
+                        "unit","section","data")
+                        
+                        
+                        
+                        
+                        //First(
+                            //Filter(checkpointItemAssessment,assignmentId.Id=glryBankGo_1.Selected.assignmentId.Id)//)
+                        //&&    bankUnitId.Id =glryBankGo_1.Selected.bankUnitId.Id)
+                        
+                        //Filter(checkpointItem_ActionItem,assignmentId.Id=glryBankGo_1.Selected.assignmentId.Id) 
+                        /*&& bankUnitId.Id =glryBankGo_1.Selected.bankUnitId.Id && checkpointItem_Id.'checkpointItemAssessment (quantum_checkpointitemassessment)' =LookUp(checkpointItemAssessment,checkpointItemName =LblAssStatuscountBS_14.Text,'checkpointItemAssessment (quantum_checkpointitemassessment)') )*/
+                    Layout: =Layout.Vertical
+                    LayoutMinHeight: =2000
+                    LayoutMinWidth: =320
+                    ShowScrollbar: =false
+                    TemplateSize: =600
+                    Width: =Parent.Width
+                    Y: =//Container37.Y
+                    ZIndex: =5
+
+                    Title4_1 As label:
+                        Height: =Self.Size * 1.8
+                        OnSelect: =Select(Parent)
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: |
+                            ="Section : " //  & " " & ThisItem.sectionname
+                            //Filter(templateSections,seriesName="7000",sectionname)
+                            //ThisItem.sectionname
+                        VerticalAlign: =VerticalAlign.Top
+                        Width: |-
+                            =//Parent.TemplateWidth - 104
+                            120
+                        Y: =16
+                        ZIndex: =1
+
+                    NextArrow4_1 As icon.ChevronRight:
+                        AccessibleLabel: =Self.Tooltip
+                        Height: =60
+                        Icon: =Icon.ChevronRight
+                        OnSelect: |-
+                            =Select(Parent)
+                            //Set(sectionname,ThisItem.sectionname)
+                        PaddingBottom: =10
+                        PaddingLeft: =10
+                        PaddingRight: =10
+                        PaddingTop: =10
+                        TabIndex: =0
+                        Tooltip: ="View item details"
+                        Visible: =false
+                        Width: =60
+                        X: =Parent.TemplateWidth - Self.Width - 5
+                        Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+                        ZIndex: =4
+
+                    Separator4_1 As rectangle:
+                        BorderColor: =RGBA(153, 153, 153, 1)
+                        BorderThickness: =1
+                        Height: =1
+                        OnSelect: =Select(Parent)
+                        Visible: =false
+                        Width: =Parent.TemplateWidth
+                        Y: =Parent.TemplateHeight - 1
+                        ZIndex: =5
+
+                    Label39 As label:
+                        FontWeight: =FontWeight.Semibold
+                        Height: =36
+                        OnSelect: =Select(Parent)
+                        Size: =20
+                        Text: |-
+                            =//ThisItem.bankUnitId.unitNumber &
+                             ThisItem.unit & " " & ThisItem.section
+                        Width: =Parent.Width
+                        X: =Title4_1.X+Title4_1.Width
+                        Y: =16
+                        ZIndex: =7
+
+                    Gallery15_2 As gallery.variableTemplateHeightGallery:
+                        BorderColor: =RGBA(255, 0, 0, 1)
+                        BorderThickness: =10
+                        Fill: =RGBA(230, 230, 230, 1)
+                        Height: =CountRows(Gallery15_2.AllItems)*Gallery15_2.TemplateHeight
+                        Items: |
+                            =ThisItem.data
+                            //Filter(templateCheckpoints,seriesName=Label35.Text && sectionId.sectionname=Label39.Text)   
+                            //Filter(checkpointItem_ActionItem,seriesName="7000")
+                            //&& section_id.sectionId.sectionname=Label39.Text)
+                            //,section_id.sectionId.seriesName=Label35.Text && section_id.sectionName=Label39.Text)
+                            
+                            
+                            //Filter(checkpointItem_ActionItem,assignmentId.Id=glryBankGo_1.Selected.assignmentId.Id && priority="high")
+                            // && bankUnitId.Id =glryBankGo_1.Selected.bankUnitId.Id && section_id.'sectionAssessment (quantum_sectionassessment)'=LookUp(sectionAssessment,sectionName=Label39.Text,'sectionAssessment (quantum_sectionassessment)'))
+                        Layout: =Layout.Vertical
+                        TemplateSize: =600
+                        Width: =Parent.Width
+                        Y: |
+                            =Label39.Y+ Label39.Height
+                        ZIndex: =8
+
+                        lblCheckpointAR_2 As label:
+                            FontWeight: =FontWeight.Normal
+                            OnSelect: =Select(Parent)
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: ="Checkpoint  " 
+                            VerticalAlign: =VerticalAlign.Top
+                            Width: =Parent.Width/5
+                            Y: =//Gallery15_2.Y
+                            ZIndex: =1
+
+                        lblItemAR_2 As label:
+                            FontWeight: =FontWeight.Normal
+                            OnSelect: =Select(Parent)
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: ="Item  " 
+                            VerticalAlign: =VerticalAlign.Top
+                            Width: =Parent.Width/5
+                            Y: =lblCheckpointAR_2.Height
+                            ZIndex: =2
+
+                        lblActionReqAR_2 As label:
+                            FontWeight: =FontWeight.Normal
+                            OnSelect: =Select(Parent)
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: ="Action Required  " 
+                            VerticalAlign: =VerticalAlign.Top
+                            Width: =Parent.Width/5
+                            Y: =lblItemAR_2.Height+lblItemAR_2.Y
+                            ZIndex: =3
+
+                        lblDurationAR_2 As label:
+                            FontWeight: =FontWeight.Normal
+                            OnSelect: =Select(Parent)
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: ="Duration  "
+                            VerticalAlign: =VerticalAlign.Top
+                            Width: =Parent.Width/5
+                            Y: =lblActionReqAR_2.Y+lblActionReqAR_2.Height
+                            ZIndex: =4
+
+                        DatePicker3_4 As datepicker:
+                            DefaultDate: |-
+                                =//Today()
+                                ThisItem.DueDate
+                            OnSelect: =Select(Parent)
+                            Width: =200
+                            X: =lblDurationAR_2.Width
+                            Y: =lblDurationAR_2.Y
+                            ZIndex: =5
+
+                        lblPriorityAR_2 As label:
+                            FontWeight: =FontWeight.Normal
+                            OnSelect: =Select(Parent)
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: ="Priority  "
+                            VerticalAlign: =VerticalAlign.Top
+                            Width: =Parent.Width/5
+                            Y: =lblDurationAR_2.Height+lblDurationAR_2.Y
+                            ZIndex: =6
+
+                        lblOwnerIdAR_2 As label:
+                            FontWeight: =FontWeight.Normal
+                            OnSelect: =Select(Parent)
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: ="OwnerId  "
+                            VerticalAlign: =VerticalAlign.Top
+                            Width: =Parent.Width/5
+                            Y: =lblPriorityAR_2.Height+lblPriorityAR_2.Y
+                            ZIndex: =7
+
+                        LblMaterialEstimateAR_2 As label:
+                            FontWeight: =FontWeight.Normal
+                            OnSelect: =Select(Parent)
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: ="Material Estimate  "
+                            VerticalAlign: =VerticalAlign.Top
+                            Width: =Parent.Width/5
+                            Y: =lblOwnerIdAR_2.Height+lblOwnerIdAR_2.Y
+                            ZIndex: =8
+
+                        lblPriorityValueAR_2 As label:
+                            FontWeight: =FontWeight.Normal
+                            OnSelect: =Select(Parent)
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =ThisItem.priority
+                            VerticalAlign: =VerticalAlign.Top
+                            Width: =Parent.Width
+                            X: =lblPriorityAR_2.Width
+                            Y: =lblPriorityAR_2.Y
+                            ZIndex: =9
+
+                        lblOwnerIdValueAR_2 As label:
+                            FontWeight: =FontWeight.Normal
+                            OnSelect: =Select(Parent)
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =ThisItem.OwnerId
+                            VerticalAlign: =VerticalAlign.Top
+                            Width: =Parent.Width
+                            X: =lblOwnerIdAR_2.Width
+                            Y: =lblOwnerIdAR_2.Y
+                            ZIndex: =10
+
+                        lblTimeestimateAR_2 As label:
+                            FontWeight: =FontWeight.Normal
+                            OnSelect: =Select(Parent)
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: ="Time Estimate  "
+                            VerticalAlign: =VerticalAlign.Top
+                            Width: =Parent.Width/5
+                            Y: =LblMaterialEstimateAR_2.Height+LblMaterialEstimateAR_2.Y
+                            ZIndex: =12
+
+                        lblCheckpointValueAR_2 As label:
+                            FontWeight: =FontWeight.Normal
+                            OnSelect: =Select(Parent)
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =ThisItem.checkpoint_id.checkpointName
+                            VerticalAlign: =VerticalAlign.Top
+                            Width: =Parent.Width
+                            X: =lblCheckpointAR_2.Width
+                            Y: =//Gallery15_2.Y
+                            ZIndex: =14
+
+                        lblItemValueAR_2 As label:
+                            FontWeight: =FontWeight.Normal
+                            OnSelect: =Select(Parent)
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: |
+                                =ThisItem.checkpointItem_Id.checkpointItemName
+                            VerticalAlign: =VerticalAlign.Top
+                            Width: =Parent.Width
+                            X: =lblItemAR_2.Width
+                            Y: =lblItemAR_2.Y
+                            ZIndex: =15
+
+                        lblActionReqValueAR_2 As label:
+                            FontWeight: =FontWeight.Normal
+                            OnSelect: =Select(Parent)
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingRight: =0
+                            PaddingTop: =0
+                            Text: =ThisItem.ActionItem_Name
+                            VerticalAlign: =VerticalAlign.Top
+                            Width: =Parent.Width
+                            X: =lblActionReqAR_2.Width
+                            Y: =lblActionReqAR_2.Y
+                            ZIndex: =16
+
+                        txtMaterialValueAR_2 As text:
+                            Default: =ThisItem.MaterialEstimate
+                            Height: =0
+                            OnSelect: =Select(Parent)
+                            Visible: =false
+                            Width: =500
+                            X: =LblMaterialEstimateAR_2.Width
+                            Y: =LblMaterialEstimateAR_2.Y
+                            ZIndex: =17
+
+                        txtTimeEstimateValueAR_2 As text:
+                            Default: =ThisItem.TimeEstimate
+                            Height: =0
+                            OnSelect: =Select(Parent)
+                            Visible: =false
+                            Width: =200
+                            X: =lblTimeestimateAR_2.Width
+                            Y: =lblTimeestimateAR_2.Y
+                            ZIndex: =18
+
+                        Separator4_2 As rectangle:
+                            BorderColor: =RGBA(153, 153, 153, 1)
+                            BorderThickness: =1
+                            Height: =1
+                            OnSelect: =Select(Parent)
+                            Width: =Parent.TemplateWidth-20
+                            Y: |-
+                                =//Parent.TemplateHeight - 1
+                                //txttimeestimatevalue.Height+txttimeestimatevalue.Y
+                                lblTimeestimateAR_2.Height+lblTimeestimateAR_2.Y
+                            ZIndex: =19
+
+                        txtmaterialvalue As label:
+                            OnSelect: =Select(Parent)
+                            Size: =20
+                            Text: =ThisItem.MaterialEstimate
+                            Width: =Parent.Width
+                            X: =LblMaterialEstimateAR_2.Width
+                            Y: =LblMaterialEstimateAR_2.Y
+                            ZIndex: =20
+
+                        txttimeestimatevalue As label:
+                            OnSelect: =Select(Parent)
+                            Size: =20
+                            Text: =ThisItem.TimeEstimate
+                            Width: =Parent.Width
+                            X: =lblTimeestimateAR_2.Width
+                            Y: =lblTimeestimateAR_2.Y
+                            ZIndex: =21
+

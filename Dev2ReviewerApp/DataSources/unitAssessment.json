@@ -1,0 +1,104 @@
+[
+  {
+    "DisplayName": "unitAssessment (Views)",
+    "Name": "_quantum_unitassessment_views",
+    "RelatedEntityName": "unitAssessment",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1cdeb4e5-8381-4ffc-a3ac-d9473b172330": "unitAssessment Associated View",
+      "31c5dea7-ccde-4098-958e-f044d266899e": "Inactive unitAssessment",
+      "c4b3790f-4c56-4eb2-a53d-c01e1ade8196": "Active unitAssessment",
+      "d26a8c7b-804c-443b-9807-ef99339961e2": "unitAssessment Lookup View",
+      "efb41d79-fc12-4111-bd63-35c330d5b00c": "unitAssessment Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (unitAssessment)",
+    "Name": "quantum_unitassessment_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "unitAssessment"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "unitAssessment",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (unitAssessment)",
+    "Name": "quantum_unitassessment_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "unitAssessment"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "unitAssessment",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "quantum_unitassessments",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "quantum_unitassessment",
+    "MaxGetRowsCount": 500,
+    "Name": "unitAssessment",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "quantum_assessment_status": "Assessment_status",
+      "quantum_clientBank_Id": "clientBank_Id",
+      "quantum_projectAssingment_Id": "projectAssingment_Id",
+      "quantum_reviewer_comments": "Reviewer_Comments",
+      "quantum_unitassessment": "unitAssessment (quantum_unitassessment)",
+      "quantum_unitassessment_AsyncOperations": "System Jobs",
+      "quantum_unitassessment_BulkDeleteFailures": "Bulk Delete Failures",
+      "quantum_unitassessment_DuplicateBaseRecord": "Duplicate Records (quantum_unitassessment_DuplicateBaseRecord)",
+      "quantum_unitassessment_DuplicateMatchingRecord": "Duplicate Records (quantum_unitassessment_DuplicateMatchingRecord)",
+      "quantum_unitassessment_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "quantum_unitassessment_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "quantum_unitassessment_ProcessSession": "Process Sessions",
+      "quantum_unitassessment_SyncErrors": "Sync Errors",
+      "quantum_unitassessmentid": "unitAssessment (quantum_unitassessmentid)",
+      "shlaf_assignmentId": "assignmentId",
+      "shlaf_bankUnitId": "bankUnitId",
+      "shlaf_product_id": "product_id",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "unitAssessment",
+    "Type": "NativeCDSDataSourceInfo"
+  }
+]

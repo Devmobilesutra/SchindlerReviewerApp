@@ -1,0 +1,109 @@
+[
+  {
+    "DisplayName": "bankUnits (Views)",
+    "Name": "_shlaf_bankunits_views",
+    "RelatedEntityName": "bankUnits",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "077dba6d-1375-4b90-9eff-72cbb30612f1": "bankUnits Lookup View",
+      "62c0bca3-1ddf-4e35-9ef5-1f8d45526a85": "bankUnits Associated View",
+      "8ec400e0-7e52-45b9-9ef2-4963cc18eb55": "Active bankUnits",
+      "a635e485-f876-4c9f-b7f7-367043e8480b": "Inactive bankUnits",
+      "ed38be21-3237-4f3a-9d41-1772ecc33087": "bankUnits Advanced Find View"
+    }
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "shlaf_bankunitses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "shlaf_bankunits",
+    "MaxGetRowsCount": 500,
+    "Name": "bankUnits",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "shlaf_assignmentUnits_bankUnitId_shlaf_ba": "assignmentUnits",
+      "shlaf_bankId": "bankId",
+      "shlaf_bankunits_AsyncOperations": "System Jobs",
+      "shlaf_bankunits_BulkDeleteFailures": "Bulk Delete Failures",
+      "shlaf_bankunits_DuplicateBaseRecord": "Duplicate Records (shlaf_bankunits_DuplicateBaseRecord)",
+      "shlaf_bankunits_DuplicateMatchingRecord": "Duplicate Records (shlaf_bankunits_DuplicateMatchingRecord)",
+      "shlaf_bankunits_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "shlaf_bankunits_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "shlaf_bankunits_ProcessSession": "Process Sessions",
+      "shlaf_bankunits_SyncErrors": "Sync Errors",
+      "shlaf_bankunitsid": "bankUnits",
+      "shlaf_id": "Id",
+      "shlaf_location": "location",
+      "shlaf_productId": "productId",
+      "shlaf_quantum_BankTripReport_bankUnitId_shlaf_b": "BankTripReport",
+      "shlaf_quantum_checkpointAssessment_bankUnitId_s": "checkpointAssessment",
+      "shlaf_quantum_checkpointItem_ActionItems_bankUn": "checkpointItem_ActionItem",
+      "shlaf_quantum_checkpointItem_Images_bankUnitId_": "checkpointItem_Images",
+      "shlaf_quantum_checkpointItemAssessment_bankUnit": "checkpointItemAssessment",
+      "shlaf_quantum_sectionAssessment_bankUnitId_shla": "sectionAssessment",
+      "shlaf_quantum_unitAssessment_bankUnitId_shlaf_b": "unitAssessment",
+      "shlaf_unitnumber": "unitNumber",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "bankUnits",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Status (bankUnits)",
+    "Name": "shlaf_bankunits_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "bankUnits"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "bankUnits",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (bankUnits)",
+    "Name": "shlaf_bankunits_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "bankUnits"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "bankUnits",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,120 @@
+[
+  {
+    "DisplayName": "assignments (Views)",
+    "Name": "_shlaf_assignments_views",
+    "RelatedEntityName": "assignments",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1ad29265-2221-45a4-9e62-9c5c9f312e19": "assignments Advanced Find View",
+      "77215751-3bf4-4eea-ae82-6a7a0f617f03": "assignments Associated View",
+      "775796d9-964a-4553-8696-3f4c79d264b9": "Active assignments",
+      "cfd2f276-f760-4b43-a277-ce06cceeec2e": "assignments Lookup View",
+      "fb81dfa5-5cea-497e-8cfe-64e6a5c2fefe": "Inactive assignments"
+    }
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "shlaf_assignmentses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "shlaf_assignments",
+    "MaxGetRowsCount": 500,
+    "Name": "assignments",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "shlaf_assessmenttype": "assessmentType",
+      "shlaf_assessoremail": "assessorEmail",
+      "shlaf_assessorid": "assessorId",
+      "shlaf_assessorname": "assessorName",
+      "shlaf_assigneddate": "assignedDate",
+      "shlaf_assignments_AsyncOperations": "System Jobs",
+      "shlaf_assignments_BulkDeleteFailures": "Bulk Delete Failures",
+      "shlaf_assignments_DuplicateBaseRecord": "Duplicate Records (shlaf_assignments_DuplicateBaseRecord)",
+      "shlaf_assignments_DuplicateMatchingRecord": "Duplicate Records (shlaf_assignments_DuplicateMatchingRecord)",
+      "shlaf_assignments_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "shlaf_assignments_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "shlaf_assignments_ProcessSession": "Process Sessions",
+      "shlaf_assignments_SyncErrors": "Sync Errors",
+      "shlaf_assignmentsid": "assignments",
+      "shlaf_assignmentUnits_assignmentId_shlaf_": "assignmentUnits",
+      "shlaf_bankId": "bankId",
+      "shlaf_clientId": "clientId",
+      "shlaf_completiondate": "completionDate",
+      "shlaf_duedate": "dueDate",
+      "shlaf_id": "Id",
+      "shlaf_iscompleted": "isCompleted",
+      "shlaf_quantum_bankAssessment_assignmentId_shlaf": "bankAssessment",
+      "shlaf_quantum_BankTripReport_assignmentId_shlaf": "BankTripReport",
+      "shlaf_quantum_checkpointAssessment_assignmentId": "checkpointAssessment",
+      "shlaf_quantum_checkpointItem_ActionItems_assign": "checkpointItem_ActionItem",
+      "shlaf_quantum_checkpointItem_Images_assignmentI": "checkpointItem_Images",
+      "shlaf_quantum_checkpointItemAssessment_assignme": "checkpointItemAssessment",
+      "shlaf_quantum_sectionAssessment_assignmentId_sh": "sectionAssessment",
+      "shlaf_quantum_unitAssessment_assignmentId_shlaf": "unitAssessment",
+      "shlaf_revieweremail": "reviewerEmail",
+      "shlaf_reviewerid": "reviewerId",
+      "shlaf_reviewername": "reviewerName",
+      "shlaf_startdate": "startDate",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "assignments",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Status (assignments)",
+    "Name": "shlaf_assignments_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "assignments"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "assignments",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (assignments)",
+    "Name": "shlaf_assignments_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "assignments"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "assignments",
+    "Type": "OptionSetInfo"
+  }
+]

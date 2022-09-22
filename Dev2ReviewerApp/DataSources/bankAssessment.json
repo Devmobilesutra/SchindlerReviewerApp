@@ -1,0 +1,102 @@
+[
+  {
+    "DisplayName": "bankAssessment (Views)",
+    "Name": "_quantum_bankassessment_views",
+    "RelatedEntityName": "bankAssessment",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "181259da-1c5b-4d74-bd58-c170376d1d17": "bankAssessment Lookup View",
+      "51d90a98-2162-4733-aa84-6d1d2264fda9": "Inactive bankAssessment",
+      "5f38be8d-c75d-4703-86b7-b98368975cca": "bankAssessment Advanced Find View",
+      "8e9057e7-6ec6-430d-8127-ca91226fa390": "Active bankAssessment",
+      "d46a9aa6-c5ee-4604-aaf4-faaca9ab807d": "bankAssessment Associated View"
+    }
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "quantum_bankassessments",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "quantum_bankassessment",
+    "MaxGetRowsCount": 500,
+    "Name": "bankAssessment",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "quantum_assessment_status": "Assessment_Status",
+      "quantum_bankassessment": "bankAssessment (quantum_bankassessment)",
+      "quantum_bankassessment_AsyncOperations": "System Jobs",
+      "quantum_bankassessment_BulkDeleteFailures": "Bulk Delete Failures",
+      "quantum_bankassessment_DuplicateBaseRecord": "Duplicate Records (quantum_bankassessment_DuplicateBaseRecord)",
+      "quantum_bankassessment_DuplicateMatchingRecord": "Duplicate Records (quantum_bankassessment_DuplicateMatchingRecord)",
+      "quantum_bankassessment_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "quantum_bankassessment_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "quantum_bankassessment_ProcessSession": "Process Sessions",
+      "quantum_bankassessment_SyncErrors": "Sync Errors",
+      "quantum_bankassessmentid": "bankAssessment (quantum_bankassessmentid)",
+      "quantum_clientBank_Id": "clientBank_Id",
+      "quantum_projectAssingment_Id": "projectAssingment_Id",
+      "shlaf_assignmentId": "assignmentId",
+      "shlaf_bankId": "bankId",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "bankAssessment",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Status (bankAssessment)",
+    "Name": "quantum_bankassessment_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "bankAssessment"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "bankAssessment",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (bankAssessment)",
+    "Name": "quantum_bankassessment_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "bankAssessment"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "bankAssessment",
+    "Type": "OptionSetInfo"
+  }
+]

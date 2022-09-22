@@ -1,0 +1,112 @@
+[
+  {
+    "DisplayName": "checkpointItemAssessment (Views)",
+    "Name": "_quantum_checkpointitemassessment_views",
+    "RelatedEntityName": "checkpointItemAssessment",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "1105b897-5070-4d0a-b7b8-aa28aa37f122": "checkpointItemAssessment Lookup View",
+      "13eb6faf-1e82-4c6d-881b-841a8440b672": "checkpointItemAssessment Advanced Find View",
+      "24969369-9ddd-4568-91fc-dba340e487f2": "checkpointItemAssessment Associated View",
+      "4a856917-5ba2-48d9-bc4e-1b2dcb6ce2c7": "Active checkpointItemAssessment",
+      "ea013c49-2ac2-401b-992c-ead85fa8711f": "Inactive checkpointItemAssessment"
+    }
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "quantum_checkpointitemassessments",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "quantum_checkpointitemassessment",
+    "MaxGetRowsCount": 500,
+    "Name": "checkpointItemAssessment",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr28a_checkpointitemsequence": "checkpointitemSequence",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "quantum_assessmentstatus": "assessmentStatus",
+      "quantum_checkpointAssessment_Id": "checkpointAssessment_Id",
+      "quantum_checkpointItem_ActionItems_checkp": "checkpointItem_ActionItem",
+      "quantum_checkpointitem_annotation": "checkpointItem_annotation",
+      "quantum_checkpointItem_Images_checkpointI": "checkpointItem_Images",
+      "quantum_checkpointitemassessment": "checkpointItemAssessment (quantum_checkpointitemassessment)",
+      "quantum_checkpointitemassessment_AsyncOperations": "System Jobs",
+      "quantum_checkpointitemassessment_BulkDeleteFailures": "Bulk Delete Failures",
+      "quantum_checkpointitemassessment_DuplicateBaseRecord": "Duplicate Records (quantum_checkpointitemassessment_DuplicateBaseRecord)",
+      "quantum_checkpointitemassessment_DuplicateMatchingRecord": "Duplicate Records (quantum_checkpointitemassessment_DuplicateMatchingRecord)",
+      "quantum_checkpointitemassessment_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "quantum_checkpointitemassessment_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "quantum_checkpointitemassessment_ProcessSession": "Process Sessions",
+      "quantum_checkpointitemassessment_SyncErrors": "Sync Errors",
+      "quantum_checkpointitemassessmentid": "checkpointItemAssessment (quantum_checkpointitemassessmentid)",
+      "quantum_checkpointitemname": "checkpointItemName",
+      "shlaf_assignmentId": "assignmentId",
+      "shlaf_bank_id": "bank_id",
+      "shlaf_bankUnitId": "bankUnitId",
+      "shlaf_checkpointitemcomment": "checkpointItemComment",
+      "shlaf_checkpointItemId": "checkpointItemId",
+      "shlaf_product_id": "product_id",
+      "shlaf_projectAssingment_Id": "projectAssingment_Id",
+      "shlaf_section_Id": "section_Id",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "checkpointItemAssessment",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Status (checkpointItemAssessment)",
+    "Name": "quantum_checkpointitemassessment_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "checkpointItemAssessment"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "checkpointItemAssessment",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (checkpointItemAssessment)",
+    "Name": "quantum_checkpointitemassessment_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "checkpointItemAssessment"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "checkpointItemAssessment",
+    "Type": "OptionSetInfo"
+  }
+]

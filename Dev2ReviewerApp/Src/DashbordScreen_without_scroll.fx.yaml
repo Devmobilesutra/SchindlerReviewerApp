@@ -1,0 +1,41 @@
+DashbordScreen_without_scroll As screen:
+    LoadingSpinner: =LoadingSpinner.Data
+    OnVisible: |
+        =//ClearCollect(test,Filter(projectAggregations,assessorId.email = User().Email));
+        
+        //ClearCollect(test,Filter(projectAggregations,assessorId.email = User().Email))
+        
+        //UpdateContext({locShowSpinner: true});
+        
+        // show the spinner
+        
+        //UpdateContext({locShowSpinner: true});
+        //Set(locShowSpinner,true);
+        
+        // load data before going to next screen
+        //ClearCollect(projectAggregationCollection,Filter(projectAggregations,assessorId.email=User().Email));
+        //Set(varCurrentRecord,LookUp(projectAggregationCollection,assessorId.email=User().Email,completedProjects));
+        //Navigate('Gallery Screen');
+        
+        // hide the spinner
+        //Set(locShowSpinner,false);
+        //UpdateContext({locShowSpinner: false});
+
+    Container2 As groupContainer.manualLayoutContainer:
+        Height: =Parent.Height
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Container3 As groupContainer.manualLayoutContainer:
+            Fill: =RGBA(255, 0, 0, 1)
+            Height: =90
+            Width: =Parent.Width
+            ZIndex: =1
+
+            Image1 As image:
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height
+                Image: =Schindler_logo_PNG1
+                Width: =Container3.Width/10
+                ZIndex: =1
+

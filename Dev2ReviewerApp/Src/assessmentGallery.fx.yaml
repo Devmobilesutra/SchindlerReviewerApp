@@ -1,0 +1,527 @@
+assessmentGallery As screen:
+
+    "GalleryV1 As gallery.'BrowseLayout_Vertical_TwoTextVariant_ver4.0'":
+        BorderThickness: =9
+        Fill: =RGBA(230, 230, 230, 1)
+        Height: |-
+            =//Parent.Height+
+            CountRows(Gallery5_4.AllItems)*Gallery5_4.TemplateHeight+600
+        Items: =CustomGallerySample
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: |
+            =//CountRows(Gallery14_2.AllItems)*Gallery14_2.TemplateHeight+CountRows(Gallery5_4.AllItems)*Gallery5_4.TemplateHeight+500
+            
+            //9000//Min(104, Self.Height - 60)
+            Gallery5_4.Height + Gallery14_2.Height +700
+        Width: =Parent.Width -50
+        X: =40
+        ZIndex: =1
+
+        Separator2 As rectangle:
+            BorderColor: =RGBA(54, 176, 75, 1)
+            BorderThickness: =5
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Gallery14_2.Y+Gallery14_2.Height
+            ZIndex: =1
+
+        ctnbank_4 As groupContainer.horizontalAutoLayoutContainer:
+            Height: =40//Parent.Height/2.5
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            Y: =ctnbank_5.Y+ctnbank_5.Height
+            ZIndex: =2
+
+            lblAssStatusBS_4 As label:
+                Font: =globalcss.fontRobotoR
+                FontWeight: =FontWeight.Bold
+                Height: =Parent.Height
+                LayoutMinWidth: =170
+                PaddingLeft: =0
+                Size: =referenceCSS.RLabelFontSize
+                Text: |-
+                    ="Checkpoint :" //&   CountRows(Filter(GC_unitAssessment,assignmentId.bankId.goNumber=lblGonumber1BS.Text && Assessment_status="inProgress"))& "/" &(CountRows(glryBankGo_1.AllItems))
+                Width: =220
+                ZIndex: =3
+
+            LblAssStatuscountBS_3 As label:
+                Color: =referenceCSS.RColorBlack
+                Font: =globalcss.fontRobotoR
+                Size: =referenceCSS.RLabelFontSize
+                Text: ="AAAA"
+                Width: =Parent.Width-250
+                ZIndex: =4
+
+        ctnbank_5 As groupContainer.horizontalAutoLayoutContainer:
+            Height: =40//Parent.Height/2.5
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            Y: =Parent.Y
+            ZIndex: =3
+
+            lblAssStatusBS_5 As label:
+                Font: =globalcss.fontRobotoR
+                FontWeight: =FontWeight.Bold
+                Height: =Parent.Height
+                LayoutMinWidth: =170
+                PaddingLeft: =0
+                Size: =referenceCSS.RLabelFontSize
+                Text: |-
+                    ="Section : " //&   CountRows(Filter(GC_unitAssessment,assignmentId.bankId.goNumber=lblGonumber1BS.Text && Assessment_status="inProgress"))& "/" &(CountRows(glryBankGo_1.AllItems))
+                Width: =220
+                ZIndex: =3
+
+            LblAssStatuscountBS_4 As label:
+                Color: =referenceCSS.RColorBlack
+                Font: =globalcss.fontRobotoR
+                Size: =referenceCSS.RLabelFontSize
+                Text: ="BBBB"
+                Width: =Parent.Width-250
+                ZIndex: =4
+
+        ctnbank_6 As groupContainer.horizontalAutoLayoutContainer:
+            Height: =40//Parent.Height/2.5
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            Y: =ctnbank_4.Height+ctnbank_4.Y
+            ZIndex: =4
+
+            lblAssStatusBS_6 As label:
+                Font: =globalcss.fontRobotoR
+                FontWeight: =FontWeight.Bold
+                Height: =Parent.Height
+                PaddingLeft: =0
+                Size: =referenceCSS.RLabelFontSize
+                Text: |-
+                    ="Item :" //&   CountRows(Filter(GC_unitAssessment,assignmentId.bankId.goNumber=lblGonumber1BS.Text && Assessment_status="inProgress"))& "/" &(CountRows(glryBankGo_1.AllItems))
+                Width: =220
+                ZIndex: =3
+
+        ctnbank_7 As groupContainer.horizontalAutoLayoutContainer:
+            Height: =40//Parent.Height/2.5
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            Y: =ctnbank_6.Y+ctnbank_6.Height
+            ZIndex: =5
+
+            lblAssStatusBS_7 As label:
+                Font: =globalcss.fontRobotoR
+                FontWeight: =FontWeight.Bold
+                Height: =Parent.Height
+                LayoutMinWidth: =170
+                PaddingLeft: =0
+                Size: =referenceCSS.RLabelFontSize
+                Text: |-
+                    ="checkpoint item findings :"
+                Width: =280
+                ZIndex: =3
+
+            LblAssStatuscountBS_6 As label:
+                Color: =referenceCSS.RColorBlack
+                Font: =globalcss.fontRobotoR
+                Size: =referenceCSS.RLabelFontSize
+                Text: ="AAAA"
+                Width: =Parent.Width-250
+                ZIndex: =4
+
+            ctnbank_8 As groupContainer.horizontalAutoLayoutContainer:
+                Height: =40//Parent.Height/2.5
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
+                Y: =40
+                ZIndex: =5
+
+                lblAssStatusBS_8 As label:
+                    Font: =globalcss.fontRobotoR
+                    FontWeight: =FontWeight.Bold
+                    Height: =Parent.Height
+                    LayoutMinWidth: =170
+                    PaddingLeft: =0
+                    Size: =referenceCSS.RLabelFontSize
+                    Text: |-
+                        ="Checkpoint :" //&   CountRows(Filter(GC_unitAssessment,assignmentId.bankId.goNumber=lblGonumber1BS.Text && Assessment_status="inProgress"))& "/" &(CountRows(glryBankGo_1.AllItems))
+                    Width: =220
+                    ZIndex: =3
+
+                LblAssStatuscountBS_7 As label:
+                    Color: =referenceCSS.RColorBlack
+                    Font: =globalcss.fontRobotoR
+                    Size: =referenceCSS.RLabelFontSize
+                    Text: ="AAAA"
+                    Width: =Parent.Width-250
+                    ZIndex: =4
+
+        ctnAssessmentType_3 As groupContainer.verticalAutoLayoutContainer:
+            Height: |-
+                =//Parent.Height/4
+                100
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            X: =40
+            Y: =ctnbank_7.Height+ctnbank_7.Y
+            ZIndex: =6
+
+            ctnAssessmentBy_5 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.Start
+                FillPortions: =0
+                Height: =Parent.Height
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width/3
+                X: =lblAssessmentByPFS_4.Width+lblAssessmentByPFS_4.X
+                ZIndex: =5
+
+                lblAssessmentByPFS_4 As label:
+                    FontWeight: =FontWeight.Bold
+                    PaddingBottom: =8
+                    PaddingLeft: =8
+                    PaddingRight: =8
+                    PaddingTop: =8
+                    Size: =referenceCSS.RLabelFontSize
+                    Text: |-
+                        ="Assessment Type : "
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+                lblAssessorNamePFS_4 As label:
+                    FontWeight: =FontWeight.Semibold
+                    PaddingBottom: =0
+                    PaddingLeft: =8
+                    PaddingRight: =8
+                    PaddingTop: =0
+                    Size: =referenceCSS.RLabelFontSize
+                    Text: |-
+                        ="initial assessment"
+                        //lblProductName_1.Text
+                    Width: =Parent.Width
+                    ZIndex: =2
+
+            ctnAssessmentBy_6 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.Start
+                FillPortions: =0
+                Height: =Parent.Height
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width/3
+                X: =//lblAssessmentByPFS_4.Width+lblAssessmentByPFS_4.X
+                ZIndex: =6
+
+                lblAssessmntTypePFS_4 As label:
+                    FontWeight: =FontWeight.Bold
+                    PaddingBottom: =8
+                    PaddingLeft: =8
+                    PaddingRight: =8
+                    PaddingTop: =8
+                    Size: =referenceCSS.RLabelFontSize
+                    Text: |-
+                        ="Assessment by:"
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+                lblAssesmentTypeLPFS_4 As label:
+                    FontWeight: =FontWeight.Semibold
+                    PaddingBottom: =0
+                    PaddingLeft: =8
+                    PaddingRight: =8
+                    PaddingTop: =0
+                    Size: =referenceCSS.RLabelFontSize
+                    Text: |-
+                        =//ThisItem.quantum_projectAssingment_Id.assessment_type_1
+                        //ThisItem.projectAssingment_Id.assessment_type_1
+                        "Assessor Name "
+                    Width: =Parent.Width
+                    ZIndex: =2
+
+            ctnAssessmentBy_7 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.Start
+                FillPortions: =0
+                Height: =Parent.Height
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width/3
+                X: =lblAssessmentByPFS_5.Width+lblAssessmentByPFS_5.X
+                ZIndex: =7
+
+                lblAssessmentByPFS_5 As label:
+                    FontWeight: =FontWeight.Bold
+                    PaddingBottom: =8
+                    PaddingLeft: =8
+                    PaddingRight: =8
+                    PaddingTop: =8
+                    Size: =referenceCSS.RLabelFontSize
+                    Text: ="Date"
+                    Width: =Parent.Width
+                    ZIndex: =1
+
+                lblAssessorNamePFS_5 As label:
+                    FontWeight: =FontWeight.Semibold
+                    PaddingBottom: =0
+                    PaddingLeft: =8
+                    PaddingRight: =8
+                    PaddingTop: =0
+                    Size: =referenceCSS.RLabelFontSize
+                    Text: |-
+                        ="25/3/2022"
+                        //lblProductName_1.Text
+                    Width: =Parent.Width
+                    ZIndex: =2
+
+        ctnbank_9 As groupContainer.horizontalAutoLayoutContainer:
+            Height: =150
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMode: =LayoutMode.Auto
+            Width: =Parent.Width
+            Y: =ctnAssessmentType_3.Y+ctnAssessmentType_3.Height
+            ZIndex: =7
+
+            lblAssStatusBS_9 As label:
+                Font: =globalcss.fontRobotoR
+                FontWeight: =FontWeight.Bold
+                PaddingLeft: =0
+                Size: =referenceCSS.RLabelFontSize
+                Text: |-
+                    ="Annotation :" //&   CountRows(Filter(GC_unitAssessment,assignmentId.bankId.goNumber=lblGonumber1BS.Text && Assessment_status="inProgress"))& "/" &(CountRows(glryBankGo_1.AllItems))
+                Width: =220
+                ZIndex: =3
+
+            Label22_2 As label:
+                AutoHeight: =true
+                Font: =referenceCSS.RFont
+                Height: =60
+                OnSelect: =false//Select(Parent)
+                Size: =referenceCSS.RLabelFontSize
+                Text: |-
+                    =//ThisItem.checkpointItem_Id.checkpointItem_annotation
+                    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa aaaaaaaaaaaaaaaaaaaaaaaaaaa"
+                Width: =Parent.Width/1.08
+                X: =40
+                Y: =Label21_2.Height+Label21_2.Y
+                ZIndex: =4
+
+        "Gallery5_4 As gallery.'BrowseLayout_Flexible_SocialFeed_ver4.0'":
+            BorderColor: =RGBA(255, 0, 0, 1)
+            BorderThickness: =2
+            Height: =CountRows(Gallery5_4.AllItems)*(Gallery5_4.TemplateHeight + Gallery5_4.TemplateHeight)-700
+            Items: |-
+                =//Filter(GC_checkpointItem_ActionItem,checkpointItem_Id.checkpointItemId.checkpointItemId=varCheckpointitemID)
+                //&& checkpointItem_Id.assessmentStatus="open")
+                
+                [1,2]
+                ////Filter(GC_checkpointItem_ActionItem,checkpointItem_Id.checkpointItemId.checkpointItemId=varCheckpointitemID && bankUnitId.Id=varBankUnitId &&assignmentId.startDate<>glryProject.Selected.startDate)
+            Layout: =Layout.Vertical
+            TemplatePadding: =4
+            TemplateSize: =270
+            Width: =Parent.Width
+            Y: =ctnbank_9.Height+ctnbank_9.Y
+            ZIndex: =8
+
+            Title3_2 As label:
+                FontWeight: =FontWeight.Bold
+                Height: =Self.Size * 1.8
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =referenceCSS.RLabelFontSize
+                Text: |
+                    ="Action"
+                VerticalAlign: =VerticalAlign.Top
+                Width: =Parent.TemplateWidth - 112
+                X: =10
+                Y: =(Self.Height / 2)
+                ZIndex: =2
+
+            Label14_9 As label:
+                AutoHeight: =true
+                Height: =30
+                OnSelect: =Select(Parent)
+                Text: |-
+                    =///ThisItem.ActionItem_Name
+                    "Have a new layout sub drawn to match as built machine room"
+                Width: =1358
+                Y: =Title3_2.Height+Title3_2.Y
+                ZIndex: =3
+
+            Container4_14 As groupContainer.verticalAutoLayoutContainer:
+                Height: =100
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width/1.08
+                Y: |
+                    =Label14_9.Height+Label14_9.Y
+                ZIndex: =4
+
+                Container5_4 As groupContainer.horizontalAutoLayoutContainer:
+                    Height: =40
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width
+                    X: =20
+                    ZIndex: =1
+
+                    Label16_4 As label:
+                        Font: =referenceCSS.RFont
+                        FontWeight: =FontWeight.Semibold
+                        Size: =referenceCSS.RLabelFontSize
+                        Text: ="Priority"
+                        Width: =120
+                        ZIndex: =1
+
+                    Label17_4 As label:
+                        Font: =referenceCSS.RFont
+                        FontWeight: =FontWeight.Semibold
+                        Size: =referenceCSS.RLabelFontSize
+                        Text: ="Owner"
+                        Width: =120
+                        ZIndex: =2
+
+                    Label18_4 As label:
+                        Font: =referenceCSS.RFont
+                        FontWeight: =FontWeight.Semibold
+                        Size: =referenceCSS.RLabelFontSize-2
+                        Text: ="Time estimate"
+                        Width: =200
+                        ZIndex: =3
+
+                    Label19_4 As label:
+                        Font: =referenceCSS.RFont
+                        FontWeight: =FontWeight.Semibold
+                        Size: =referenceCSS.RLabelFontSize
+                        Text: ="Material Estimate "
+                        Width: =250
+                        ZIndex: =4
+
+                Container5_5 As groupContainer.horizontalAutoLayoutContainer:
+                    Height: =50
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width
+                    X: =20
+                    ZIndex: =2
+
+                    Label16_5 As label:
+                        Font: =referenceCSS.RFont
+                        Size: =referenceCSS.RLabelFontSize
+                        Text: |-
+                            ="high"
+                            //ThisItem.priority
+                        Width: =120
+                        ZIndex: =1
+
+                    Label17_5 As label:
+                        Font: =referenceCSS.RFont
+                        Size: =referenceCSS.RLabelFontSize
+                        Text: |-
+                            ="LPD north"
+                            ///ThisItem.OwnerId
+                        Width: =120
+                        ZIndex: =2
+
+                    Label18_5 As label:
+                        Font: =referenceCSS.RFont
+                        Size: |
+                            =referenceCSS.RLabelFontSize
+                        Text: |-
+                            ="3 days"
+                            ////ThisItem.TimeEstimate
+                        Width: =200
+                        ZIndex: =3
+
+                    Label19_5 As label:
+                        Font: =referenceCSS.RFont
+                        Size: =referenceCSS.RLabelFontSize
+                        Text: |-
+                            ="Material 1"
+                            ////ThisItem.MaterialEstimate
+                        Width: =250
+                        ZIndex: =4
+
+            Icon3_8 As icon.HorizontalLine:
+                Color: =RGBA(204, 204, 204, 1)
+                Fill: =RGBA(204, 204, 204, 1)
+                Height: =3
+                Icon: =Icon.HorizontalLine
+                OnSelect: =Select(Parent)
+                Width: =Label22_2.Width
+                X: =10
+                Y: =Container4_14.Y+Container4_14.Height
+                ZIndex: =5
+
+            Button2_4 As button:
+                Fill: =RGBA(54, 176, 75, 1)
+                Font: =referenceCSS.RFont
+                Height: =30
+                HoverColor: =Self.Color
+                HoverFill: |-
+                    =//ColorFade(RGBA(56, 96, 178, 1), -20%)
+                    Self.Fill
+                OnSelect: |-
+                    =If(mytext = "close Action", UpdateContext({mytext: "Action Closed"}), UpdateContext({mytext: "close Action"})) ;
+                PressedFill: =Self.Fill
+                Text: |-
+                    =//If(Btn,true,"closed Action","close Action")
+                    ///mytext
+                    "close Action"
+                X: =Parent.Width-Self.Width-200
+                Y: =Title3_2.Y
+                ZIndex: =6
+
+        "Gallery14_2 As gallery.'BrowseLayout_Vertical_TwoTextOneImageTwoColumnVariant_ver4.0'":
+            BorderColor: =RGBA(255, 255, 0, 1)
+            BorderThickness: =9
+            Height: =CountRows(Gallery14_2.AllItems)*(Gallery14_2.TemplateHeight)/2
+            Items: |-
+                =//checkpointItem_Images
+                //Filter(GC_checkpointItem_ActionItem,checkpointItem_Id.checkpointItemId.checkpointItemId=ItemID && checkpointItem_Id.assessmentStatus="open")
+                [1,2,3]
+                ////Filter(GC_checkpointItem_Images,checkpointItem_Id.checkpointItemId.checkpointItemId=varCheckpointitemID && bankUnitId.Id=varBankUnitId &&assignmentId.startDate<>glryProject.Selected.startDate)
+            Layout: =Layout.Vertical
+            ShowScrollbar: =false
+            TemplatePadding: =0
+            TemplateSize: =350
+            Width: =Parent.Width/1.08
+            WrapCount: =2
+            X: =60
+            Y: =Gallery5_4.Height+Gallery5_4.Y
+            ZIndex: =9
+
+            Image16_1 As image:
+                Height: =Min(Self.Width, Parent.TemplateHeight - 115)
+                Image: =camera
+                ImagePosition: =ImagePosition.Fill
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth/2
+                X: =16
+                Y: =16
+                ZIndex: =1
+
+            Title17_3 As label:
+                Height: =Self.Size * 1.8
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =referenceCSS.RLabelFontSize
+                Text: |-
+                    ="Sample Image"
+                    ////ThisItem.image_annotation
+                VerticalAlign: =VerticalAlign.Top
+                Width: =Parent.TemplateWidth - 64
+                X: =32
+                Y: =Image16_1.Y + Image16_1.Height + 16
+                ZIndex: =2
+

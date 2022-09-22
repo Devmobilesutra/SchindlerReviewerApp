@@ -1,0 +1,106 @@
+[
+  {
+    "DisplayName": "schindlerBanks (Views)",
+    "Name": "_shlaf_schindlerbank_views",
+    "RelatedEntityName": "schindlerBanks",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "14f81ee8-b8cb-4a68-ae87-c2b760278d99": "schindlerBank Associated View",
+      "6a9c5b08-1496-439d-85ab-f30e2118a380": "Active schindlerBanks",
+      "7cfb074d-29b8-4c14-a474-0a9766411811": "schindlerBank Lookup View",
+      "c780ca8e-c9b5-48d1-9953-6c48618dec57": "Inactive schindlerBanks",
+      "e3400f9a-c7e2-40a3-babe-5499e74fa8b7": "schindlerBank Advanced Find View"
+    }
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "shlaf_schindlerbanks",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "shlaf_schindlerbank",
+    "MaxGetRowsCount": 500,
+    "Name": "schindlerBanks",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "shlaf_assignments_bankId_shlaf_schindlerB": "assignments",
+      "shlaf_bankUnits_bankId_shlaf_schindlerBan": "bankUnits",
+      "shlaf_clientId": "clientId",
+      "shlaf_gonumber": "goNumber",
+      "shlaf_id": "Id",
+      "shlaf_location": "location",
+      "shlaf_productId": "productId",
+      "shlaf_quantum_bankAssessment_bankId_shlaf_schin": "bankAssessment",
+      "shlaf_quantum_BankTripReport_bankId_shlaf_schin": "BankTripReport",
+      "shlaf_quantum_checkpointItem_ActionItems_bankId": "checkpointItem_ActionItem",
+      "shlaf_schindlerbank_AsyncOperations": "System Jobs",
+      "shlaf_schindlerbank_BulkDeleteFailures": "Bulk Delete Failures",
+      "shlaf_schindlerbank_DuplicateBaseRecord": "Duplicate Records (shlaf_schindlerbank_DuplicateBaseRecord)",
+      "shlaf_schindlerbank_DuplicateMatchingRecord": "Duplicate Records (shlaf_schindlerbank_DuplicateMatchingRecord)",
+      "shlaf_schindlerbank_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "shlaf_schindlerbank_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "shlaf_schindlerbank_ProcessSession": "Process Sessions",
+      "shlaf_schindlerbank_SyncErrors": "Sync Errors",
+      "shlaf_schindlerbankid": "schindlerBank",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "schindlerBanks",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Status (schindlerBanks)",
+    "Name": "shlaf_schindlerbank_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "schindlerBanks"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "schindlerBanks",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (schindlerBanks)",
+    "Name": "shlaf_schindlerbank_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "schindlerBanks"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "schindlerBanks",
+    "Type": "OptionSetInfo"
+  }
+]

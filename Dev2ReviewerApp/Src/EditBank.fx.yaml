@@ -1,0 +1,893 @@
+EditBank As screen:
+    OnVisible: |+
+        = Set(unitTimerEdit,false);
+           
+        //ClearCollect(existingUnits,Filter(bankUnits,bankId.Id=nbank));
+        //ClearCollect(lcUnitedit,Filter(bankUnits,bankId.Id=nbank));
+        Clear(lcUnitedit);
+        ForAll(Filter(bankUnits,bankId.Id=nbank) As i,
+        Collect(lcUnitedit,{unit: i.unitNumber,id:i.Id,status:false})
+        );
+        
+        /*
+        If(IsEdit =true,
+        Set(
+            P,
+            false
+        );
+        Set(
+            A,
+            true
+        );,
+        Set(
+            P,
+            true
+        );
+        Set(
+            A,
+            false
+        );
+        );*/
+        
+        Set(popupsuccess,false);
+        
+
+    Container9_11 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        LayoutOverflowY: =LayoutOverflow.Scroll
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Container3_17 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.Start
+            Fill: =Header.HeaderFill
+            FillPortions: =0
+            Height: =80
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =Parent.Width
+            ZIndex: =1
+
+            Image1_18 As image:
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height
+                Image: =Schindler_logo_PNG1
+                PaddingBottom: =5
+                PaddingLeft: =2
+                PaddingRight: =1
+                PaddingTop: =5
+                Width: =Container3_17.Width/10
+                ZIndex: =1
+
+            Image2_22 As image:
+                Fill: =RGBA(253, 222, 207, 1)
+                Height: =50
+                Image: =userdata.userImage
+                RadiusBottomLeft: =91
+                RadiusBottomRight: =91
+                RadiusTopLeft: =91
+                RadiusTopRight: =91
+                Width: =50
+                X: =Label3_18.X+Label3_18.Width
+                Y: =16
+                ZIndex: =2
+
+            Icon1_18 As icon.Bell:
+                Color: =RGBA(255, 255, 0, 1)
+                Height: =Parent.Height/2
+                Icon: =Icon.Bell
+                Visible: =false
+                Width: =Parent.Width/28
+                X: =Label1_22.X+Label1_22.Width+10
+                Y: =Parent.Height/4
+                ZIndex: =5
+
+            Label1_22 As label:
+                Align: =Align.Center
+                Color: =Header.HeaderColor
+                Font: =Header.HeaderFont
+                FontWeight: =Header.FontWeight
+                Height: =Parent.Height
+                Size: =Header.HeaderUserFontSize
+                Text: |-
+                    =//"SCHD0023"
+                    //LookUp(ReviewerAD,mail=User().Email,displayName)
+                    userdata.userdisplayName
+                Width: =Container3_17.Width/8
+                X: =Image2_22.X+ Image2_22.Height
+                ZIndex: =6
+
+            Label3_18 As label:
+                Align: =Align.Center
+                Color: =Header.HeaderColor
+                Font: =Header.HeaderFont
+                FontWeight: =Header.FontWeight
+                Height: =Parent.Height
+                Size: =Header.HeaderFontSize
+                Text: ="Banks"
+                Width: =Container3_17.Width/1.6
+                X: =Image1_18.Width+Image1_18.X
+                ZIndex: =8
+
+        Container4_13 As groupContainer.verticalAutoLayoutContainer:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: |-
+                =//(Parent.Height-(Parent.Height/8))
+                Parent.Height
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            LayoutOverflowY: =LayoutOverflow.Scroll
+            PaddingLeft: =20
+            Width: =Parent.Width
+            Y: =Container3_17.Height
+            ZIndex: =4
+
+            Container20_13 As groupContainer.verticalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =90
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingLeft: =10
+                ZIndex: =1
+
+                Button1_12 As button:
+                    BorderColor: =referenceCSS.RActiveColor
+                    Color: =referenceCSS.RColorBlack
+                    Fill: =referenceCSS.RColorWhite
+                    Height: =Parent.Height/1.5
+                    HoverColor: =Self.Color
+                    HoverFill: =Self.Fill //ColorFade(RGBA(56, 96, 178, 1), -20%)
+                    OnSelect: |-
+                        =Set(IsEdit,true);
+                        Navigate(AddBanks)
+                    PaddingLeft: =0
+                    PressedBorderColor: =Self.BorderColor
+                    PressedColor: =Self.Color
+                    PressedFill: =Self.Fill
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Text: = "back"
+                    Width: =Parent.Width/6
+                    ZIndex: =1
+
+            Container6_6 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
+                FillPortions: =0
+                Height: =90
+                LayoutAlignItems: =LayoutAlignItems.End
+                LayoutGap: =20
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
+                ZIndex: =2
+
+                Label17_2 As label:
+                    Color: =referenceCSS.RColorBlack
+                    Font: =referenceCSS.RFont
+                    FontWeight: =referenceCSS.RFontWeight
+                    Height: =Parent.Height
+                    PaddingLeft: =10
+                    Size: =referenceCSS.RFontSize
+                    Text: ="Edit Bank"
+                    Width: =Parent.Width/3
+                    ZIndex: =2
+
+            Container18_7 As groupContainer.manualLayoutContainer:
+                FillPortions: =0
+                Height: |-
+                    =/*If(App.Height<=950,Parent.Height-Container20_9.Height-Container6_3.Height-Container7_4.Height-Container20_5.Height -FooterContainer1_3.Height+500 ,Parent.Height-Container20_9.Height-Container6_3.Height-Container7_4.Height-Container20_5.Height -FooterContainer1_3.Height+500)*/
+                    600+Gallery19_2.Height
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                ZIndex: =4
+
+                Container31_8 As groupContainer.verticalAutoLayoutContainer:
+                    Height: =Parent.Height
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =20
+                    PaddingRight: =20
+                    PaddingTop: =20
+                    Width: =Parent.Width
+                    ZIndex: =2
+
+                    BClient_Label_4 As label:
+                        Font: =referenceCSS.RFont
+                        FontWeight: =referenceCSS.RFontWeight
+                        Height: =50
+                        PaddingTop: =20
+                        Size: =referenceCSS.RLabelFontSize
+                        Text: ="Client *"
+                        Width: =Parent.Width/3
+                        ZIndex: =1
+
+                    ComboBox1_4 As combobox:
+                        ChevronBackground: =RGBA(0, 0, 0, 0)
+                        ChevronDisabledBackground: =RGBA(0, 0, 0, 0)
+                        ChevronFill: =RGBA(0, 0, 0, 1)
+                        ChevronHoverBackground: =RGBA(0,0,0,0)//ColorFade(RGBA(56, 96, 178, 1), -20%)
+                        ChevronHoverFill: =RGBA(0, 0, 0, 1)
+                        DefaultSelectedItems: |-
+                            =//Filter(Client,client_name = "Raj") for default valuee
+                            //First(Filter(Client,client = Gallery3.Selected.clientId.client ))  using gallery.selected item
+                            //First(Filter(Client,client = nclientid.client ))
+                            
+                            //First(Filter(schindlerClients,Id=nclient.Id))
+                            LookUp(schindlerClients,Id =nclient.Id)
+                        DisabledBorderColor: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(0, 0, 0, 1)
+                        DisplayFields: =["shlaf_name"]
+                        DisplayMode: =DisplayMode.Disabled
+                        FocusedBorderThickness: =1
+                        Font: =referenceCSS.RFont
+                        Height: =(Parent.Height+Parent.Width)/45
+                        HoverFill: =RGBA(0,0,0,0)
+                        InputTextPlaceholder: ="Select Client"
+                        IsSearchable: =false
+                        Items: =Sort(schindlerClients,name,Ascending)
+                        OnChange: =false //Set(IsEdit,true);
+                        PaddingBottom: =0
+                        PaddingTop: =0
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Reset: =true
+                        SearchFields: =["shlaf_name"]
+                        SearchItems: =[]
+                        SelectionFill: =RGBA(0, 0, 0, 1)
+                        SelectMultiple: =false
+                        Width: =Parent.Width/3
+                        ZIndex: =2
+
+                    BProduct_Label_14 As label:
+                        Font: =referenceCSS.RFont
+                        FontWeight: =referenceCSS.RFontWeight
+                        Height: =50
+                        PaddingTop: =20
+                        Size: =referenceCSS.RLabelFontSize
+                        Text: ="G.O./Commission Number *"
+                        Width: =Parent.Width/2
+                        ZIndex: =3
+
+                    BProduct_Input_9 As text:
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Default: |
+                            =LookUp(schindlerBanks,Id = nbank,goNumber)
+                        Font: =referenceCSS.RFont
+                        Height: =50 //(Parent.Height+Parent.Width)/36.735
+                        HintText: ="Enter Product name"
+                        HoverBorderColor: =referenceCSS.RColorBlack
+                        HoverColor: =referenceCSS.RColorBlack
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        OnChange: |-
+                            =//clientId.client_name =BCilent_Combobox_3.Selected.name
+                            Set(lcgono,LookUp(schindlerBanks,Id=nbank,goNumber));
+                            
+                            If(
+                                lcgono=BProduct_Input_9.Text,
+                                Set(ShowErrorMsgBank, false),
+                            
+                                IsBlank(LookUp(schindlerBanks,goNumber= BProduct_Input_9.Text)),
+                                Set(ShowErrorMsgBank, false),
+                                Set(ShowErrorMsgBank, true)
+                            )
+                        PaddingBottom: =0
+                        PaddingLeft: =5
+                        PaddingTop: =0
+                        RadiusBottomLeft: =1
+                        RadiusBottomRight: =1
+                        RadiusTopLeft: =1
+                        RadiusTopRight: =1
+                        Size: =referenceCSS.RInputFontSize
+                        Width: =Parent.Width/3
+                        X: =39
+                        Y: =67
+                        ZIndex: =4
+
+                    BProduct_Label_15 As label:
+                        Color: =referenceCSS.RActiveColor
+                        Font: =referenceCSS.RFont
+                        FontWeight: =referenceCSS.RFontWeight
+                        Height: =30
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingTop: =0
+                        Size: =referenceCSS.RLabelFontSize
+                        Text: ="Go number already exist."
+                        Visible: =ShowErrorMsgBank = true
+                        Width: =Parent.Width/1.2
+                        ZIndex: =5
+
+                    BProduct_Label_16 As label:
+                        Font: =referenceCSS.RFont
+                        FontWeight: =referenceCSS.RFontWeight
+                        Height: =50
+                        PaddingLeft: =0
+                        PaddingTop: =20
+                        Size: =referenceCSS.RLabelFontSize
+                        Text: ="Location"
+                        Width: =Parent.Width/3
+                        ZIndex: =6
+
+                    BProduct_Input_10 As text:
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Default: =nlocation
+                        Font: =referenceCSS.RFont
+                        Height: =50 //(Parent.Height+Parent.Width)/36.735
+                        HintText: ="Unit location"
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        PaddingBottom: =0
+                        PaddingLeft: =5
+                        PaddingTop: =0
+                        RadiusBottomLeft: =1
+                        RadiusBottomRight: =1
+                        RadiusTopLeft: =1
+                        RadiusTopRight: =1
+                        Size: =referenceCSS.RInputFontSize
+                        Width: =Parent.Width/3
+                        X: =39
+                        Y: =67
+                        ZIndex: =7
+
+                    BProducttype_Label_5 As label:
+                        Font: =referenceCSS.RFont
+                        FontWeight: =referenceCSS.RFontWeight
+                        Height: =50
+                        PaddingLeft: =0
+                        PaddingTop: =20
+                        Size: =referenceCSS.RLabelFontSize
+                        Text: ="Product Type *"
+                        Width: =Parent.Width/3
+                        ZIndex: =8
+
+                    BProducttype_Combobox_5 As combobox:
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        ChevronBackground: =RGBA(255, 255, 255, 1)
+                        ChevronFill: =RGBA(0, 0, 0, 1)
+                        ChevronHoverBackground: =RGBA(0, 0, 0, 0)
+                        ChevronHoverFill: =RGBA(0, 0, 0, 1)
+                        DefaultSelectedItems: =LookUp(product,'product (quantum_product)'=nproduct.'product (quantum_product)')
+                        DisplayFields: =["quantum_product_name"]
+                        FocusedBorderThickness: =1
+                        Font: =referenceCSS.RFont
+                        Height: =50 //(Parent.Height+Parent.Width)/36.735
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        InputTextPlaceholder: ="Product Type"
+                        IsSearchable: =false
+                        Items: =Sort(product,product_Name,Ascending)
+                        PaddingBottom: =0
+                        PaddingTop: =0
+                        PressedColor: =RGBA(0, 0, 0, 1)
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        SearchFields: =["quantum_product_name"]
+                        SearchItems: =[]
+                        SelectionFill: =RGBA(0, 0, 0, 1)
+                        SelectMultiple: =false
+                        Size: =referenceCSS.RInputFontSize
+                        Width: =Parent.Width/3
+                        X: =236
+                        Y: =67
+                        ZIndex: =9
+
+                    Container23_1 As groupContainer.horizontalAutoLayoutContainer:
+                        FillPortions: =0
+                        Height: =50
+                        LayoutAlignItems: =LayoutAlignItems.End
+                        LayoutGap: =10
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingBottom: =5
+                        Width: =Parent.Width-40
+                        ZIndex: =10
+
+                        BProducttype_Label_6 As label:
+                            Font: =referenceCSS.RFont
+                            FontWeight: =referenceCSS.RFontWeight
+                            Height: =50
+                            PaddingTop: =20
+                            Size: =referenceCSS.RLabelFontSize
+                            Text: ="Units *"
+                            Width: =80
+                            ZIndex: =1
+
+                        Button9_5 As button:
+                            Fill: =referenceCSS.RActiveColor
+                            Height: =30
+                            HoverFill: =referenceCSS.RActiveColor
+                            OnSelect: |-
+                                =//Set(total1,total+1);
+                                //Collect(rows1,{id:GUID(),lineno1:total1})
+                                //ollect(existingUnits,{status:false});
+                                Collect(lcUnitedit,{id:GUID(),unit:"",status:false})
+                            PressedColor: =Self.Color
+                            PressedFill: =Self.Fill
+                            RadiusBottomLeft: =0
+                            RadiusBottomRight: =0
+                            RadiusTopLeft: =0
+                            RadiusTopRight: =0
+                            Size: =20
+                            Text: ="+"
+                            Width: =30
+                            X: =174
+                            Y: =78
+                            ZIndex: =2
+
+                        BProduct_Label_17 As label:
+                            Color: =referenceCSS.RColorBlack
+                            Font: =referenceCSS.RFont
+                            FontWeight: =referenceCSS.RFontWeight
+                            Height: =30
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingTop: =0
+                            Size: =referenceCSS.RLabelFontSize
+                            Text: ="You can add multiple units."
+                            Width: =Parent.Width-100
+                            ZIndex: =3
+
+                    Gallery19_2 As gallery.variableTemplateHeightGallery:
+                        FillPortions: =0
+                        Height: =CountRows(Gallery19_2.AllItems)*(Gallery19_2.TemplateHeight+ Gallery19_2.TemplatePadding)/1.7
+                        Items: |-
+                            =//Filter(bankUnits,bankId.Id=nbank)
+                            //existingUnits
+                            Sort(lcUnitedit,unit)
+                        Layout: =Layout.Vertical
+                        LayoutMinHeight: =287
+                        LayoutMinWidth: =320
+                        ShowScrollbar: =false
+                        TemplateSize: =100
+                        X: =60
+                        Y: =//Label2_2.Y +Label2_2.Height
+                        ZIndex: =11
+
+                        Icon2_2 As icon.Cancel:
+                            DisplayMode: |-
+                                =DisplayMode.Edit
+                                //If unit assessment is start then unit can't delete
+                                /*If(
+                                    CountRows(
+                                        Filter(
+                                         
+                                           assignments,
+                                           bankId.Id = ThisItem.Id
+                                        )
+                                    ) < 1,
+                                    DisplayMode.Edit,
+                                    Disabled
+                                )*/
+                            Height: =20
+                            Icon: =Icon.Cancel
+                            OnSelect: |-
+                                =
+                                
+                                //Remove(existingUnits,ThisItem);
+                                RemoveIf(lcUnitedit,id = ThisItem.id)
+                            Width: =20
+                            X: =BProduct_Input_11.X +BProduct_Input_11.Width+20
+                            Y: =(BProduct_Input_11.Height - Self.Height)/2 +5
+                            ZIndex: =2
+
+                        BProduct_Input_11 As text:
+                            BorderColor: =RGBA(0, 0, 0, 1)
+                            Default: =ThisItem.unit
+                            Font: =referenceCSS.RFont
+                            HintText: ="Enter unit"
+                            HoverBorderColor: =referenceCSS.RColorBlack
+                            HoverColor: =referenceCSS.RColorBlack
+                            HoverFill: =RGBA(0, 0, 0, 0)
+                            OnChange: |
+                                =//false;
+                                
+                                //ForAll(lcUnitedit As ii,
+                                
+                                If(!IsBlank(LookUp(lcUnitedit,id = ThisItem.id)),
+                                UpdateIf(lcUnitedit,id = ThisItem.id ,{unit:BProduct_Input_11.Text}),
+                                
+                                Collect(lcUnitedit,{id:GUID(),unit:BProduct_Input_11.Text})
+                                );
+                                
+                                
+                                If(
+                                    CountRows(
+                                        Filter(
+                                            lcUnitedit,
+                                            unit= BProduct_Input_11.Text
+                                        )
+                                    ) > 1,
+                                  
+                                  
+                                UpdateIf(
+                                        lcUnitedit,
+                                        id = ThisItem.id,
+                                        {unit:BProduct_Input_11.Text,status: true}
+                                    );
+                                    Set(varUnitIdEdit,ThisItem.id);
+                                    Set(unitTimerEdit,true);
+                                    
+                                );
+                            PaddingBottom: =0
+                            PaddingLeft: =5
+                            PaddingTop: =0
+                            RadiusBottomLeft: =1
+                            RadiusBottomRight: =1
+                            RadiusTopLeft: =1
+                            RadiusTopRight: =1
+                            Size: =referenceCSS.RInputFontSize
+                            Width: =120
+                            X: =40
+                            Y: =5
+                            ZIndex: =3
+
+                        BProduct_Label_21 As label:
+                            Color: =referenceCSS.RActiveColor
+                            Font: =referenceCSS.RFont
+                            FontWeight: =referenceCSS.RFontWeight
+                            PaddingBottom: =0
+                            PaddingLeft: =0
+                            PaddingTop: =0
+                            Size: =referenceCSS.RLabelFontSize
+                            Text: ="Unit number already exist."
+                            Visible: |
+                                =ThisItem.status = true
+                            Width: =Parent.Width/1.2
+                            X: =Icon2_1.X +Icon2_1.Width
+                            Y: =5
+                            ZIndex: =4
+
+                    Container4_8 As groupContainer.horizontalAutoLayoutContainer:
+                        FillPortions: =0
+                        Height: =90
+                        LayoutAlignItems: =LayoutAlignItems.End
+                        LayoutGap: =40
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingBottom: =5
+                        PaddingLeft: =10
+                        PaddingTop: =10
+                        X: =40
+                        Y: =DatePicker1_4.Y +DatePicker1_4.Height+10
+                        ZIndex: =12
+
+                        btnSave_2 As button:
+                            Color: =referenceCSS.RColorWhite
+                            DisabledBorderColor: |-
+                                =//referenceCSS.RActiveColor
+                                RGBA(207, 207, 207, 1)
+                            DisabledColor: =referenceCSS.RColorWhite
+                            DisabledFill: =RGBA(207, 207, 207, 1)
+                            DisplayMode: =DisplayMode.Edit //If(IsEdit= true,DisplayMode.Edit,DisplayMode.Disabled)
+                            Fill: =referenceCSS.RActiveColor
+                            Height: =50
+                            HoverFill: =referenceCSS.RActiveColor
+                            OnSelect: |+
+                                =Refresh(schindlerBanks);
+                                Refresh(bankUnits);
+                                
+                                
+                                  ForAll(Gallery19_2.AllItems.BProduct_Input_11,
+                                        Collect(LCunitedit,{unitno:ThisRecord.BProduct_Input_11}));
+                                
+                                If(
+                                    Connection.Connected = false,
+                                    Notify("Network is not Available"),
+                                
+                                   If(
+                                       /* IsBlank(BCilent_Combobox_4.Selected.name),
+                                        Notify(
+                                            "Please Enter Client Name .",
+                                            NotificationType.Error
+                                        ),
+                                        */
+                                        IsBlank(BProduct_Input_9.Text),
+                                        Notify(
+                                            "Please Enter GO Number.",
+                                            NotificationType.Error
+                                        ),
+                                          
+                                        ShowErrorMsgBank = true,
+                                        Notify(
+                                            "Go number already exist.",
+                                            NotificationType.Error
+                                        ), 
+                                
+                                        IsBlank(BProducttype_Combobox_5.Selected.product_Model),
+                                        
+                                        Notify(
+                                            "Please Select Product type .",
+                                            NotificationType.Error
+                                        ),
+                                     
+                                
+                                        CountRows(Filter(LCunitedit,IsBlank(unitno.Text)))>0,
+                                         Notify("Please enter units details .",NotificationType.Error);
+                                         Clear(LCunitedit),
+                                
+                                       RemoveIf(bankUnits,bankId.Id=nbank);
+                                        
+                                        Patch(
+                                            schindlerBanks,
+                                            LookUp(schindlerBanks,Id=nbank),
+                                            {
+                                              //Id:GUID(),
+                                             // clientId:LookUp(schindlerClients,name=BCilent_Combobox_4.Selected.name),
+                                              goNumber:BProduct_Input_9.Text,
+                                              location:BProduct_Input_10.Text,
+                                              productId:LookUp(product,product_Model=BProducttype_Combobox_5.Selected.product_Model)
+                                             
+                                
+                                        });
+                                
+                                
+                                        ForAll(Gallery19_2.AllItems.BProduct_Input_11 As i,
+                                        Patch(
+                                            bankUnits,
+                                            Defaults(bankUnits),
+                                            {
+                                                Id:GUID(),
+                                                bankId:LookUp(schindlerBanks,goNumber =BProduct_Input_9.Text),
+                                                location:BProduct_Input_10.Text,
+                                                productId:LookUp(product,product_Model=BProducttype_Combobox_5.Selected.product_Model),
+                                                unitNumber:i.BProduct_Input_11.Text
+                                            }));
+                                
+                                        If(
+                                        (IsEmpty(Errors( schindlerBanks)) && IsEmpty( Errors( bankUnits))),
+                                        Set(popupsuccess,true);
+                                        Reset(ComboBox1_4);
+                                        Reset(BProduct_Input_9);
+                                        Reset(BProduct_Input_10);
+                                        Reset(BProducttype_Combobox_5);
+                                        ClearCollect(existingUnits,{}); ,
+                                
+                                        Notify("Error Patch")
+                                   
+                                    )
+                                
+                                   )
+                                   )
+                                
+                            PaddingLeft: =15
+                            PressedColor: =Self.Color
+                            PressedFill: =referenceCSS.RActiveColor
+                            Size: =20
+                            Text: ="Save"
+                            Width: =170
+                            ZIndex: =1
+
+                        btnCancel_2 As button:
+                            BorderColor: =referenceCSS.RActiveColor
+                            Color: =referenceCSS.RActiveColor
+                            DisabledBorderColor: |-
+                                =//referenceCSS.RActiveColor
+                                RGBA(207, 207, 207, 1)
+                            DisabledColor: =referenceCSS.RColorWhite
+                            DisabledFill: |-
+                                =//referenceCSS.RColorWhite
+                                RGBA(207, 207, 207, 1)
+                            DisplayMode: =DisplayMode.Edit //If(IsEdit= true,DisplayMode.Edit,DisplayMode.Disabled)
+                            Fill: =referenceCSS.RColorWhite
+                            Height: =50
+                            HoverBorderColor: =Self.Color
+                            HoverColor: =Self.Color
+                            HoverFill: =Self.Fill
+                            OnSelect: |-
+                                =    
+                                    //Reset the all recent changes go back to existing assignment page
+                                        Reset(ComboBox1_4);
+                                        Reset(BProduct_Input_9);
+                                        Reset(BProduct_Input_10);
+                                        Reset(BProducttype_Combobox_5);
+                                        ClearCollect(existingUnits,{});
+                                       
+                                      Set(IsEdit,true);
+                                      Navigate(AddBanks,ScreenTransition.None);
+                                        
+                            PressedBorderColor: =Self.Color
+                            PressedColor: =Self.Color
+                            PressedFill: =Self.Fill
+                            Size: =20
+                            Text: ="Cancel"
+                            Width: =150
+                            ZIndex: =2
+
+    Group5_7 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =14
+
+        Rectangle1_10 As rectangle:
+            Fill: =RGBA(0, 0, 0, 0.29)
+            Height: =Parent.Height
+            Visible: =popupsuccess =true
+            Width: =Parent.Width
+            ZIndex: =8
+
+        Rectangle2_10 As rectangle:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =230
+            Visible: =popupsuccess =true
+            Width: =350
+            X: =(Parent.Width-Self.Width)/2
+            Y: =Parent.Height/3
+            ZIndex: =9
+
+        Image2_23 As image:
+            Height: =52
+            Image: =success
+            Visible: =popupsuccess =true
+            Width: =52
+            X: =(Parent.Width-Self.Width)/2
+            Y: =Rectangle2_10.Y+20
+            ZIndex: =10
+
+        Label1_23 As label:
+            Align: =Align.Center
+            Color: =RGBA(14, 161, 26, 1)
+            Font: =referenceCSS.RFont
+            FontWeight: =FontWeight.Bold
+            Size: =18
+            Text: ="Success"
+            Visible: =popupsuccess =true
+            Width: =324
+            X: =(Parent.Width-Self.Width)/2
+            Y: =Image2_23.Y+Self.Height+10
+            ZIndex: =11
+
+        Label2_12 As label:
+            Align: =Align.Center
+            Font: =referenceCSS.RFont
+            FontWeight: =FontWeight.Bold
+            Size: =15
+            Text: ="Updated successfully."
+            Visible: =popupsuccess =true
+            Width: =324
+            X: =(Parent.Width-Self.Width)/2
+            Y: =Label1_23.Y+ Self.Height+5
+            ZIndex: =12
+
+        btnSuccess_5 As button:
+            Fill: =RGBA(54, 176, 75, 1)
+            Font: =referenceCSS.RFont
+            HoverFill: =RGBA(75, 125, 6, 1)
+            OnSelect: |-
+                =Set(popupsuccess,false);
+                Set(IsEdit,true);
+                Navigate(AddBanks);
+            PressedBorderColor: =RGBA(1, 43, 1, 0)
+            PressedFill: =Self.Fill
+            Text: ="Ok"
+            Visible: =popupsuccess =true
+            Width: =120
+            X: =(Parent.Width-Self.Width)/2
+            Y: =Label2_6.Y+ Self.Height+10
+            ZIndex: =13
+
+    Timer3_1 As timer:
+        AutoPause: =false
+        AutoStart: =//unitTimer = true
+        Duration: =2000
+        OnTimerEnd: |
+            =UpdateIf(
+                    lcUnitedit,
+                    id = varUnitIdEdit,
+                    {status: false,unit:""}
+                );
+               
+                Set(unitTimerEdit,false);
+               
+              
+        OnTimerStart: =unitTimerEdit = true
+        Start: =unitTimerEdit = true
+        Visible: =false
+        X: =40
+        Y: =40
+        ZIndex: =24
+
+    GroupRemoveBankPopup_1 As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =24
+
+        Rectangle3_6 As rectangle:
+            Fill: =RGBA(0, 0, 0, 0.29)
+            Height: =Parent.Height
+            Visible: =IsRemoveBank =true
+            Width: =Parent.Width
+            ZIndex: =19
+
+        Rectangle4_6 As rectangle:
+            Fill: =referenceCSS.RColorWhite
+            Height: =160
+            Visible: =IsRemoveBank =true
+            Width: =400
+            X: =(Parent.Width-Self.Width)/2
+            Y: =(Parent.Height-Self.Height)/2
+            ZIndex: =20
+
+        Label21_6 As label:
+            Align: =Align.Center
+            Font: =referenceCSS.RFont
+            Height: =80
+            PaddingLeft: =10
+            PaddingRight: =10
+            Size: =14
+            Text: ="Do you want to remove Bank " & removeBankUnit.goNumber & " ?"
+            Visible: =IsRemoveBank =true
+            Width: =Rectangle4_6.Width
+            X: =Rectangle4_6.X
+            Y: =Rectangle4_6.Y+20
+            ZIndex: =21
+
+        Button4_6 As button:
+            BorderColor: =referenceCSS.RActiveColor
+            Color: =referenceCSS.RColorBlack
+            Fill: =referenceCSS.RColorWhite
+            Font: =referenceCSS.RFont
+            Height: =50
+            HoverColor: =Self.Color
+            HoverFill: =Self.Fill
+            OnSelect: |-
+                =Set(IsEdit,false);
+                UpdateContext({IsRemoveBank:false});
+            PressedBorderColor: =Self.BorderColor
+            PressedColor: =Self.Color
+            PressedFill: =Self.Fill
+            Text: ="Cancel"
+            Visible: =IsRemoveBank =true
+            Width: =100
+            X: =Rectangle4_6.X+(Rectangle4_6.Width-Self.Width)/4
+            Y: =Label21_6.Y+Label21_6.Height
+            ZIndex: =22
+
+        Button6_6 As button:
+            BorderColor: =Self.Fill
+            Color: =referenceCSS.RColorWhite
+            Fill: =referenceCSS.RActiveColor
+            Font: =referenceCSS.RFont
+            Height: =50
+            HoverColor: =Self.Color
+            HoverFill: =Self.Fill
+            OnSelect: |-
+                =Set(IsEdit,false);
+                UpdateContext({IsRemoveBank:false});
+                
+                RemoveIf(bankUnits,bankId.goNumber=removeBankUnit.goNumber);
+                RemoveIf(schindlerBanks,goNumber=removeBankUnit.goNumber);
+                
+                
+                /*
+                ForAll(Filter(bank, Go_Number=removeProductBank.cname ) As _item,
+                
+                 Patch(
+                        clientInstallation,
+                         LookUp(clientInstallation,installationId= _item.clientInstallationId.installationId),
+                        {
+                           bankStatus:"false" 
+                        }
+                    ) );
+                
+                    RemoveIf(bank,Go_Number=removeProductBank.cname);*/
+            PressedColor: =Self.Color
+            PressedFill: =Self.Fill
+            Text: ="Ok"
+            Visible: =IsRemoveBank =true
+            Width: =100
+            X: =Button4_6.X+Self.Width+50
+            Y: =Label21_6.Y+Label21_6.Height
+            ZIndex: =23
+

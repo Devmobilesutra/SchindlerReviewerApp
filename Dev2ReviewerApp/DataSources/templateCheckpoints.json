@@ -1,0 +1,125 @@
+[
+  {
+    "DisplayName": "templateCheckpoints (Views)",
+    "Name": "_shlaf_templatecheckpoints_views",
+    "RelatedEntityName": "templateCheckpoints",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "204a2bde-e406-4388-8822-1e087f21f287": "templateCheckpoints Lookup View",
+      "34026052-ea60-443f-a3c7-076651de957c": "Active templateCheckpoints",
+      "5919474f-4b73-4e27-a91e-c3ede31e56ef": "Inactive templateCheckpoints",
+      "ba109491-8707-425c-bbb9-fc3499d62689": "templateCheckpoints Advanced Find View",
+      "bbe2e1e9-0332-41dc-8c69-f1872f21dbd9": "templateCheckpoints Associated View"
+    }
+  },
+  {
+    "DisplayName": "checkIsApplicable (templateCheckpoints)",
+    "Name": "shlaf_templatecheckpoints_shlaf_checkisapplicable",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "shlaf_checkisapplicable",
+        "OptionSetReferenceEntityName": "templateCheckpoints"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "shlaf_checkisapplicable",
+    "RelatedEntityName": "templateCheckpoints",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (templateCheckpoints)",
+    "Name": "shlaf_templatecheckpoints_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "templateCheckpoints"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "templateCheckpoints",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (templateCheckpoints)",
+    "Name": "shlaf_templatecheckpoints_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "templateCheckpoints"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "templateCheckpoints",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "shlaf_templatecheckpointses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "shlaf_templatecheckpoints",
+    "MaxGetRowsCount": 500,
+    "Name": "templateCheckpoints",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "shlaf_checkisapplicable": "checkIsApplicable",
+      "shlaf_checkpointid": "checkpointId",
+      "shlaf_checkpointname": "checkpointName",
+      "shlaf_checkpointsequence": "checkpointSequence",
+      "shlaf_quantum_checkpointAssessment_checkpointId": "checkpointAssessment",
+      "shlaf_sectionName": "sectionId",
+      "shlaf_seriesname": "seriesName",
+      "shlaf_templateCheckpointItems_checkpointN": "templatecheckpointsitem_ToBeRemoveds",
+      "shlaf_templatecheckpoints_AsyncOperations": "System Jobs",
+      "shlaf_templatecheckpoints_BulkDeleteFailures": "Bulk Delete Failures",
+      "shlaf_templatecheckpoints_DuplicateBaseRecord": "Duplicate Records (shlaf_templatecheckpoints_DuplicateBaseRecord)",
+      "shlaf_templatecheckpoints_DuplicateMatchingRecord": "Duplicate Records (shlaf_templatecheckpoints_DuplicateMatchingRecord)",
+      "shlaf_templatecheckpoints_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "shlaf_templatecheckpoints_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "shlaf_templatecheckpoints_ProcessSession": "Process Sessions",
+      "shlaf_templatecheckpoints_SyncErrors": "Sync Errors",
+      "shlaf_templatecheckpointsid": "templateCheckpoints",
+      "shlaf_templateCheckpointsItem_checkpointI": "templateCheckpointsItems",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "templateCheckpoints",
+    "Type": "NativeCDSDataSourceInfo"
+  }
+]

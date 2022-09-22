@@ -1,0 +1,817 @@
+EditprojectAssignment As screen:
+    OnVisible: |+
+        =Set(updatePopup,false);
+        Set(IsEdit,false);
+        
+
+    Container9_8 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Container3_13 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Fill: =Header.HeaderFill
+            FillPortions: =0
+            Height: =80
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =Parent.Width
+            ZIndex: =1
+
+            Image1_13 As image:
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height
+                Image: =Schindler_logo_PNG1
+                PaddingBottom: =5
+                PaddingLeft: =2
+                PaddingRight: =1
+                PaddingTop: =5
+                Width: =Container3_13.Width/10
+                ZIndex: =1
+
+            Image2_13 As image:
+                Fill: =RGBA(253, 222, 207, 1)
+                Height: =50
+                Image: =userdata.userImage
+                RadiusBottomLeft: =91
+                RadiusBottomRight: =91
+                RadiusTopLeft: =91
+                RadiusTopRight: =91
+                Width: =50
+                X: =Label3_13.X+Label3_13.Width
+                Y: =16
+                ZIndex: =2
+
+            Icon1_13 As icon.Bell:
+                Color: =RGBA(255, 255, 0, 1)
+                Height: =Parent.Height/2
+                Icon: =Icon.Bell
+                Visible: =false
+                Width: =Parent.Width/28
+                X: =Label1_13.X+Label1_13.Width+10
+                Y: =Parent.Height/4
+                ZIndex: =5
+
+            Label1_13 As label:
+                Align: =Align.Center
+                Color: =Header.HeaderColor
+                Font: =Header.HeaderFont
+                FontWeight: =Header.FontWeight
+                Height: =Parent.Height
+                Size: =Header.HeaderUserFontSize
+                Text: |-
+                    =//"SCHD0023"
+                    //LookUp(ReviewerAD,mail=User().Email,displayName)
+                    userdata.userdisplayName
+                Width: =Container3_13.Width/8
+                X: =Image2_13.X+ Image2_13.Height
+                ZIndex: =6
+
+            Label3_13 As label:
+                Align: =Align.Center
+                Color: =Header.HeaderColor
+                Font: =Header.HeaderFont
+                FontWeight: =Header.FontWeight
+                Height: =Parent.Height
+                Size: =Header.HeaderFontSize
+                Text: ="Assignment"
+                Width: =Container3_13.Width/1.6
+                X: =Image1_13.Width+Image1_13.X
+                ZIndex: =8
+
+        Container4_11 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
+            Fill: =RGBA(255, 255, 255, 1)
+            FillPortions: =0
+            Height: =(Parent.Height-(Parent.Height/8))
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            LayoutOverflowY: =LayoutOverflow.Scroll
+            PaddingLeft: =20
+            Width: =Parent.Width
+            Y: =Container3_13.Height
+            ZIndex: =4
+
+            Container20_8 As groupContainer.verticalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =90
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingLeft: =10
+                ZIndex: =1
+
+                Button1_7 As button:
+                    BorderColor: =referenceCSS.RActiveColor
+                    Color: =referenceCSS.RColorBlack
+                    Fill: =referenceCSS.RColorWhite
+                    Height: =Parent.Height/1.5
+                    HoverColor: =Self.Color
+                    HoverFill: =Self.Fill //ColorFade(RGBA(56, 96, 178, 1), -20%)
+                    OnSelect: |-
+                        =Set(IsEdit,true);
+                        Navigate(projectAssignment)
+                    PaddingLeft: =0
+                    PressedBorderColor: =Self.BorderColor
+                    PressedColor: =Self.Color
+                    PressedFill: =Self.Fill
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Text: = "back"
+                    Width: =Parent.Width/6
+                    ZIndex: =1
+
+            Container6_1 As groupContainer.verticalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =70
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutGap: =20
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width
+                ZIndex: =2
+
+                Label17 As label:
+                    Color: =referenceCSS.RColorBlack
+                    Font: =referenceCSS.RFont
+                    FontWeight: =referenceCSS.RFontWeight
+                    Height: =Parent.Height
+                    Size: =referenceCSS.RFontSize
+                    Text: ="Edit Assignment"
+                    Width: =Parent.Width/3
+                    ZIndex: =1
+
+            Container18_3 As groupContainer.manualLayoutContainer:
+                FillPortions: =0
+                Height: =If(App.Height<=950,Parent.Height-Container20_8.Height-Container6_1.Height+700 + Gallery16_2.Height,Parent.Height-Container20_8.Height-Container6_1.Height+ Gallery16_2.Height )
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                ZIndex: =4
+
+                Container24_3 As groupContainer.verticalAutoLayoutContainer:
+                    Height: =Parent.Height
+                    LayoutDirection: =LayoutDirection.Vertical
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =20
+                    Width: =Parent.Width
+                    ZIndex: =2
+
+                    Label14_17 As label:
+                        Font: =referenceCSS.RFont
+                        FontWeight: =FontWeight.Bold
+                        Height: =50
+                        PaddingLeft: =0
+                        PaddingTop: =20
+                        Size: =referenceCSS.RLabelFontSize
+                        Text: ="Client"
+                        Width: =Parent.Width/3
+                        Y: =Container24_3.Y+100
+                        ZIndex: =1
+
+                    ComboBox1_2 As combobox:
+                        ChevronBackground: =RGBA(0, 0, 0, 0)
+                        ChevronDisabledBackground: =RGBA(0, 0, 0, 0)
+                        ChevronFill: =RGBA(0, 0, 0, 1)
+                        ChevronHoverBackground: =RGBA(0,0,0,0)//ColorFade(RGBA(56, 96, 178, 1), -20%)
+                        ChevronHoverFill: =RGBA(0, 0, 0, 1)
+                        DefaultSelectedItems: |
+                            =//Filter(Client,client_name = "Raj") for default valuee
+                            //First(Filter(Client,client = Gallery3.Selected.clientId.client ))  using gallery.selected item
+                            
+                            First(Filter(schindlerClients,Id = nclientid.Id))
+                        DisabledBorderColor: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(0, 0, 0, 1)
+                        DisplayFields: =["shlaf_name"]
+                        DisplayMode: =DisplayMode.Disabled
+                        FocusedBorderThickness: =1
+                        Font: =referenceCSS.RFont
+                        Height: =50
+                        HoverFill: =RGBA(0,0,0,0)
+                        InputTextPlaceholder: ="Select Client"
+                        IsSearchable: =false
+                        Items: =schindlerClients
+                        OnChange: =false //Set(IsEdit,true);
+                        PaddingBottom: =0
+                        PaddingTop: =0
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Reset: =true
+                        SearchFields: =["shlaf_name"]
+                        SearchItems: =[]
+                        SelectionFill: =RGBA(0, 0, 0, 1)
+                        SelectMultiple: =false
+                        Width: =Parent.Width/3
+                        ZIndex: =2
+
+                    Label14_18 As label:
+                        Font: =referenceCSS.RFont
+                        FontWeight: =FontWeight.Bold
+                        Height: =50
+                        PaddingLeft: =0
+                        PaddingTop: =20
+                        Size: =referenceCSS.RLabelFontSize
+                        Text: ="G.O./Commission Number *"
+                        Width: =Parent.Width/2
+                        Y: =10
+                        ZIndex: =3
+
+                    ComboBox1_5 As combobox:
+                        ChevronBackground: =RGBA(0, 0, 0, 0)
+                        ChevronDisabledBackground: =RGBA(0, 0, 0, 0)
+                        ChevronFill: =RGBA(0, 0, 0, 1)
+                        ChevronHoverBackground: =RGBA(0,0,0,0)//ColorFade(RGBA(56, 96, 178, 1), -20%)
+                        ChevronHoverFill: =RGBA(0, 0, 0, 1)
+                        DefaultSelectedItems: =First(Filter(schindlerBanks,Id = nbankid.Id ))
+                        DisabledBorderColor: =RGBA(0, 0, 0, 1)
+                        DisabledColor: =RGBA(0, 0, 0, 1)
+                        DisplayFields: =["shlaf_gonumber"]
+                        DisplayMode: =DisplayMode.Disabled
+                        FocusedBorderThickness: =1
+                        Font: =referenceCSS.RFont
+                        Height: =50
+                        HoverFill: =RGBA(0,0,0,0)
+                        InputTextPlaceholder: ="Select Client"
+                        IsSearchable: =false
+                        Items: =Filter(schindlerBanks,clientId.name=ComboBox1_2.Selected.name).goNumber
+                        OnChange: =false //Set(IsEdit,true);
+                        PaddingBottom: =0
+                        PaddingTop: =0
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Reset: =true
+                        SearchFields: =["shlaf_gonumber"]
+                        SearchItems: =[]
+                        SelectionFill: =RGBA(0, 0, 0, 1)
+                        SelectMultiple: =false
+                        Width: =Parent.Width/3
+                        ZIndex: =4
+
+                    Label14_28 As label:
+                        Font: =referenceCSS.RFont
+                        FontWeight: =FontWeight.Bold
+                        Height: =50
+                        PaddingLeft: =0
+                        PaddingTop: =20
+                        Size: =referenceCSS.RLabelFontSize
+                        Text: ="Units" 
+                        Width: =Parent.Width/3
+                        ZIndex: =5
+
+                    "Gallery16_2 As gallery.'BrowseLayout_Flexible_SocialFeed_ver4.0'":
+                        FillPortions: =0
+                        Height: =CountRows(Gallery16_2.AllItems)*(Gallery16_2.TemplateHeight)+20
+                        Items: |-
+                            =
+                            Sort(Filter(bankUnits,bankId.goNumber=ComboBox1_5.Selected.goNumber),unitNumber)
+                            //Filter(assignmentUnits,assignmentId.Id=nprojectassignment)
+                            
+                            //Filter(bankUnits,bankId.goNumber=ComboBox2.Selected.goNumber && unitAssignmentStatus="false").unitNumber
+                            
+                            
+                            
+                            //Filter( 
+                               // assignmentUnits;Not(unitNumber in Filter(bankUnits;ComboBox2.Selected.goNumber exactin bankId.goNumber).unitNumber)) ?
+                            
+                            
+                            //Filter(QuestionTable;Not(Title in Filter(AnswerTable; var_company.Text exactin rlzf).Title)) ?
+                            
+                            //Filter(assignmentUnits,Not(bankUnitId in Filter(bankUnits ,ComboBox2.Selected.goNumber exactin bankId.goNumber).Id))
+                            
+                            
+                            
+                            /*
+                            
+                             ForAll(
+                                  
+                                    Filter(bankUnits,bankId.goNumber=ComboBox2.Selected.goNumber).unitNumber As _items,
+                                    Filter(assignmentUnits,
+                                        bankUnitId.unitNumber <> _items.unitNumber
+                                    )
+                                )
+                            */ 
+                        Layout: =Layout.Vertical
+                        LayoutMinHeight: =287
+                        LayoutMinWidth: =320
+                        ShowScrollbar: =false
+                        TemplatePadding: =4
+                        TemplateSize: =60
+                        ZIndex: =6
+
+                        Checkbox1_2 As checkbox:
+                            BorderColor: =//RGBA(0, 18, 107, 1)
+                            CheckboxBorderColor: =RGBA(0, 0, 0, 1)
+                            Default: |-
+                                =//false
+                                If(
+                                    IsBlank(
+                                        LookUp(
+                                            assignmentUnits,
+                                            assignmentId.Id = nprojectassignment &&
+                                            bankUnitId.Id = ThisItem.Id,
+                                            bankUnits.Id
+                                        )
+                                    ),
+                                    false,
+                                    true
+                                )
+                            DisabledBorderColor: =//RGBA(0, 0, 0, 0)
+                            DisplayMode: |
+                                = DisplayMode.Disabled
+                                
+                                /*If(
+                                    IsBlank(
+                                        LookUp(
+                                            assignmentUnits,
+                                            bankUnitId.Id = ThisItem.Id,
+                                            bankUnits.Id
+                                        )
+                                    ),
+                                    DisplayMode.Edit,
+                                    DisplayMode.Disabled
+                                )*/
+                            FocusedBorderThickness: =//2
+                            Height: =47
+                            HoverColor: =RGBA(0, 0, 0, 1)
+                            OnCheck: |-
+                                =
+                                Collect(selectedUnit,ThisItem);
+                                
+                                //Filter(assignmentUnits,bankUnitId.unitNumber = ThisItem.unitNumber)
+                                //Collect(selectedUnit,LookUp(bankUnits,unitNumber=ThisItem.unitNumber));
+                                
+                                //ClearCollect(checkboxunit1,ThisItem.unitNumber)
+                            OnSelect: =Select(Parent)
+                            OnUncheck: |
+                                = 
+                                 Remove(selectedUnit,ThisItem)
+                                 // RemoveIf(assignmentUnits,bankUnitId.Id=ThisItem.Id)
+                                //RemoveIf(selectedUnit,unitNumber=ThisItem.unitNumber)
+                                //RemoveIf(checkboxunit1,Value=ThisItem.unitNumber)
+                            PressedBorderColor: =//ColorFade(Self.BorderColor, -30%)
+                            Text: =ThisItem.unitNumber
+                            Width: =632
+                            Y: =10
+                            ZIndex: =3
+
+                    BProduct_Label_10 As label:
+                        Color: =referenceCSS.RActiveColor
+                        Font: =referenceCSS.RFont
+                        FontWeight: =referenceCSS.RFontWeight
+                        Height: =50
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingTop: =0
+                        Size: =referenceCSS.RLabelFontSize
+                        Text: ="Bank already assigned."
+                        Visible: =//ShowErrorMsgBAssignEdit = true
+                        Width: =Parent.Width/3
+                        ZIndex: =7
+
+                    Label14_19 As label:
+                        Font: =referenceCSS.RFont
+                        FontWeight: =FontWeight.Bold
+                        Height: =50
+                        PaddingLeft: =0
+                        PaddingTop: =20
+                        Size: =referenceCSS.RLabelFontSize
+                        Text: ="Assessment Type"
+                        Width: =Parent.Width/3
+                        ZIndex: =8
+
+                    ComboBox3_2 As combobox:
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        ChevronBackground: =RGBA(0, 0, 0, 0)
+                        ChevronFill: =RGBA(0, 0, 0, 1)
+                        ChevronHoverBackground: =RGBA(0,0,0,0)//ColorFade(RGBA(56, 96, 178, 1), -20%)
+                        ChevronHoverFill: =RGBA(0, 0, 0, 1)
+                        DefaultSelectedItems: =Filter(LC_assessmentType,type = nassessmenttype )
+                        DisplayFields: =["type"]
+                        FocusedBorderThickness: =1
+                        Font: =referenceCSS.RFont
+                        Height: =50
+                        HoverFill: =RGBA(0,0,0,0)
+                        InputTextPlaceholder: ="Select Assessment Type"
+                        IsSearchable: =false
+                        Items: =LC_assessmentType
+                        OnChange: =false //Set(IsEdit,true);
+                        PaddingBottom: =10
+                        PaddingTop: =0
+                        PressedFill: =RGBA(0, 0, 0, 0)
+                        Reset: =true
+                        SearchFields: =["type"]
+                        SearchItems: =[]
+                        SelectionFill: =RGBA(0, 0, 0, 1)
+                        SelectMultiple: =false
+                        Width: =Parent.Width/3
+                        ZIndex: =9
+
+                    Label14_20 As label:
+                        Font: =referenceCSS.RFont
+                        FontWeight: =FontWeight.Bold
+                        Height: =50
+                        PaddingLeft: =0
+                        PaddingTop: =20
+                        Size: =referenceCSS.RLabelFontSize
+                        Text: ="Assessor"
+                        Width: =Parent.Width/3
+                        ZIndex: =10
+
+                    ComboBox4_2 As combobox:
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        ChevronBackground: =RGBA(0, 0, 0, 0)
+                        ChevronFill: =RGBA(0, 0, 0, 1)
+                        ChevronHoverBackground: =RGBA(0,0,0,0)//ColorFade(RGBA(56, 96, 178, 1), -20%)
+                        ChevronHoverFill: =RGBA(0, 0, 0, 1)
+                        DefaultSelectedItems: |
+                            =First(Filter(AssessorAD,id = nassessorid ))
+                        DisplayFields: =["displayName"]
+                        FocusedBorderThickness: =1
+                        Font: =referenceCSS.RFont
+                        Height: =50
+                        HoverFill: =RGBA(0,0,0,0)
+                        InputTextPlaceholder: ="Select Assessor"
+                        Items: =AssessorAD.displayName
+                        OnChange: =false //Set(IsEdit,true);
+                        PaddingBottom: =10
+                        PaddingTop: =0
+                        Reset: =true
+                        SearchFields: =["displayName"]
+                        SearchItems: =Search(AssessorAD.displayName,ComboBox4_2.SearchText,"displayName")
+                        SelectionFill: =RGBA(0, 0, 0, 1)
+                        SelectMultiple: =false
+                        Width: =Parent.Width/3
+                        ZIndex: =11
+
+                    Label14_21 As label:
+                        Font: =referenceCSS.RFont
+                        FontWeight: =FontWeight.Bold
+                        Height: =50
+                        PaddingLeft: =0
+                        PaddingTop: =20
+                        Size: =referenceCSS.RLabelFontSize
+                        Text: ="Reviewer"
+                        Width: =Parent.Width/3
+                        ZIndex: =12
+
+                    ComboBox5_2 As combobox:
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        ChevronBackground: =RGBA(0, 0, 0, 0)
+                        ChevronFill: =RGBA(0, 0, 0, 1)
+                        ChevronHoverBackground: =RGBA(0,0,0,0)//ColorFade(RGBA(56, 96, 178, 1), -20%)
+                        ChevronHoverFill: =RGBA(0, 0, 0, 1)
+                        DefaultSelectedItems: |
+                            =First(Filter(ReviewerAD,id = nreviewerid ))
+                        DisplayFields: =["displayName"]
+                        FocusedBorderThickness: =1
+                        Font: =referenceCSS.RFont
+                        Height: =50
+                        HoverFill: =RGBA(0,0,0,0)
+                        InputTextPlaceholder: ="Select Reviewer"
+                        Items: =ReviewerAD.displayName
+                        OnChange: =false //Set(IsEdit,true);
+                        PaddingBottom: =10
+                        PaddingTop: =0
+                        Reset: =true
+                        SearchFields: =["displayName"]
+                        SearchItems: =Search(ReviewerAD.displayName,ComboBox5_2.SearchText,"displayName")
+                        SelectionFill: =RGBA(0, 0, 0, 1)
+                        SelectMultiple: =false
+                        Width: =Parent.Width/3
+                        ZIndex: =13
+
+                    Label14_22 As label:
+                        Font: =referenceCSS.RFont
+                        FontWeight: =FontWeight.Bold
+                        Height: =50
+                        PaddingLeft: =0
+                        PaddingTop: =20
+                        Size: =referenceCSS.RLabelFontSize
+                        Text: ="Start Date"
+                        Width: =Parent.Width/3
+                        ZIndex: =14
+
+                    DatePicker2_2 As datepicker:
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        DefaultDate: =nstartdate
+                        Font: =referenceCSS.RFont
+                        Height: =50
+                        OnChange: =false //Set(IsEdit,true);
+                        PaddingBottom: =10
+                        Width: =Parent.Width/3
+                        ZIndex: =15
+
+                    Label14_23 As label:
+                        Font: =referenceCSS.RFont
+                        FontWeight: =FontWeight.Bold
+                        Height: =50
+                        PaddingLeft: =0
+                        PaddingTop: =20
+                        Size: =referenceCSS.RLabelFontSize
+                        Text: ="Due Date"
+                        Width: =Parent.Width/3
+                        ZIndex: =16
+
+                    DatePicker1_4 As datepicker:
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        DefaultDate: =nduedate
+                        Font: =referenceCSS.RFont
+                        Height: =50
+                        OnChange: =false //Set(IsEdit,true);
+                        PaddingBottom: =20
+                        Width: =Parent.Width/3
+                        ZIndex: =17
+
+                    Label14_24 As label:
+                        Font: =referenceCSS.RFont
+                        FontWeight: =FontWeight.Bold
+                        Height: =50
+                        PaddingLeft: =0
+                        PaddingTop: =20
+                        Size: =referenceCSS.RLabelFontSize
+                        Text: ="Assign Date"
+                        Width: =Parent.Width/3
+                        ZIndex: =18
+
+                    DatePicker1_5 As datepicker:
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        DefaultDate: =nassigndate
+                        Font: =referenceCSS.RFont
+                        Height: =50
+                        OnChange: =false //Set(IsEdit,true);
+                        PaddingBottom: =10
+                        Width: =Parent.Width/3
+                        ZIndex: =19
+
+                    Container4 As groupContainer.horizontalAutoLayoutContainer:
+                        FillPortions: =0
+                        Height: =90
+                        LayoutAlignItems: =LayoutAlignItems.End
+                        LayoutGap: =40
+                        LayoutMinHeight: =100
+                        LayoutMinWidth: =250
+                        LayoutMode: =LayoutMode.Auto
+                        PaddingBottom: =5
+                        PaddingLeft: =10
+                        PaddingTop: =10
+                        X: =40
+                        Y: =DatePicker1_4.Y +DatePicker1_4.Height+10
+                        ZIndex: =20
+
+                        btnSave As button:
+                            Color: =referenceCSS.RColorWhite
+                            DisabledBorderColor: |-
+                                =//referenceCSS.RActiveColor
+                                RGBA(207, 207, 207, 1)
+                            DisabledColor: =referenceCSS.RColorWhite
+                            DisabledFill: =RGBA(207, 207, 207, 1)
+                            DisplayMode: =DisplayMode.Edit //If(IsEdit= true,DisplayMode.Edit,DisplayMode.Disabled)
+                            Fill: =referenceCSS.RActiveColor
+                            Height: =50
+                            HoverFill: =referenceCSS.RActiveColor
+                            OnSelect: |+
+                                =If(
+                                    Connection.Connected = false,
+                                    Notify("Network is not Available",NotificationType.Error),
+                                
+                                    If(
+                                        IsBlank(ComboBox1_5.Selected.goNumber),
+                                        Notify(
+                                            "Please Select Bank.",
+                                            NotificationType.Error
+                                        ),
+                                
+                                    /*    ShowErrorMsgBAssignEdit = true,
+                                        Notify(
+                                            "Bank already assigned.",
+                                            NotificationType.Error
+                                        ), */
+                                
+                                        IsBlank(ComboBox3_2.Selected.type),
+                                        Notify(
+                                            "Please Select Assessment Type.",
+                                            NotificationType.Error
+                                        ),
+                                         IsBlank(ComboBox4_2.Selected.displayName),
+                                        Notify(
+                                            "Please Select Assessor.",
+                                            NotificationType.Error
+                                        ),
+                                        IsBlank(ComboBox5_2.Selected.displayName),
+                                        Notify(
+                                            "Please Select Reviewer.",
+                                            NotificationType.Error
+                                        ),
+                                          
+                                        IsBlank(DatePicker1_4.SelectedDate),
+                                        Notify("Please Select Due Date",NotificationType.Error),
+                                         
+                                        DateDiff(
+                                            DatePicker2_2,
+                                            DatePicker1_4
+                                        ) <= 0,
+                                        Notify("The Due date can not be before Assessment start date"),
+                                
+                                        Set(
+                                            patchresult,
+                                            Patch(
+                                                assignments,
+                                                LookUp(
+                                                    assignments,
+                                                    Id = nprojectassignment
+                                                ),
+                                                {
+                                                    // 'projectAssignment (quantum_projectassignment)': "upass11",
+                                                   // clientId: LookUp(
+                                                   //     Client,
+                                                    //    client_name = ComboBox1_2.Selected.client_name
+                                                   // ),
+                                                    bankId: LookUp(
+                                                        schindlerBanks,
+                                                        goNumber = ComboBox1_5.Selected.goNumber
+                                                         // ThisRecord.Go_Number
+                                                    ),
+                                                    assessmentType: ComboBox3_2.Selected.type,
+                                                    assessorId: LookUp(
+                                                        AssessorAD,
+                                                        displayName = ComboBox4_2.Selected.displayName,
+                                                        id
+                                                    ),
+                                                    reviewerId: LookUp(
+                                                        ReviewerAD,
+                                                        displayName = ComboBox5_2.Selected.displayName,
+                                                        id
+                                                    ),
+                                                    startDate: DatePicker2_2.SelectedDate,
+                                                    dueDate: DatePicker1_4.SelectedDate,
+                                                    assignedDate: DatePicker1_5.SelectedDate,
+                                                    isCompleted: "Upcomming",
+                                                    assessorEmail: LookUp(
+                                                        AssessorAD,
+                                                        displayName = ComboBox4_2.Selected.displayName,
+                                                        mail
+                                                    ),
+                                                    reviewerEmail: LookUp(
+                                                        ReviewerAD,
+                                                        displayName = ComboBox5_2.Selected.displayName,
+                                                        mail
+                                                    ),
+                                                    assessorName: LookUp(
+                                                        AssessorAD,
+                                                        displayName = ComboBox4_2.Selected.displayName,
+                                                        displayName
+                                                    ),
+                                                    reviewerName: ComboBox5_2.Selected.displayName
+                                                     
+                                                }
+                                            )
+                                        );
+                                
+                                          
+                                     If(!IsBlank(patchresult),
+                                     //Notify("Success");
+                                       Set(updatePopup,true);
+                                        Reset(ComboBox1_2);
+                                        Reset(ComboBox1_5);
+                                        Reset(ComboBox3_2);
+                                        Reset(ComboBox4_2);
+                                        Reset(ComboBox5_2);
+                                        Reset(DatePicker2_2);
+                                        Reset(DatePicker1_4);
+                                        Reset(DatePicker1_5);
+                                       
+                                   ,Notify("Error patch function "));
+                                
+                                  
+                                    );  
+                                      
+                                );
+                                
+                            PaddingLeft: =15
+                            PressedColor: =Self.Color
+                            PressedFill: =referenceCSS.RActiveColor
+                            Size: =20
+                            Text: ="Save"
+                            Width: =170
+                            ZIndex: =1
+
+                        btnCancel As button:
+                            BorderColor: =referenceCSS.RActiveColor
+                            Color: =referenceCSS.RActiveColor
+                            DisabledBorderColor: |-
+                                =//referenceCSS.RActiveColor
+                                RGBA(207, 207, 207, 1)
+                            DisabledColor: =referenceCSS.RColorWhite
+                            DisabledFill: |-
+                                =//referenceCSS.RColorWhite
+                                RGBA(207, 207, 207, 1)
+                            DisplayMode: =DisplayMode.Edit //If(IsEdit= true,DisplayMode.Edit,DisplayMode.Disabled)
+                            Fill: =referenceCSS.RColorWhite
+                            Height: =50
+                            HoverBorderColor: =Self.Color
+                            HoverColor: =Self.Color
+                            HoverFill: =Self.Fill
+                            OnSelect: |-
+                                =    
+                                    //Reset the all recent changes go back to existing assignment page
+                                        Reset(ComboBox1_2);
+                                        Reset(ComboBox1_5);
+                                        Reset(ComboBox3_2);
+                                        Reset(ComboBox4_2);
+                                        Reset(ComboBox5_2);
+                                        Reset(DatePicker2_2);
+                                        Reset(DatePicker1_4);
+                                        Reset(DatePicker1_5);
+                                      Set(IsEdit,true);
+                                      Navigate(projectAssignment,ScreenTransition.None);
+                                        
+                            PressedBorderColor: =Self.Color
+                            PressedColor: =Self.Color
+                            PressedFill: =Self.Fill
+                            Size: =20
+                            Text: ="Cancel"
+                            Width: =150
+                            ZIndex: =2
+
+    Group5_5 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =8
+
+        Rectangle1_8 As rectangle:
+            Fill: =RGBA(0, 0, 0, 0.29)
+            Height: =Parent.Height
+            Visible: =updatePopup =true
+            Width: =Parent.Width
+            ZIndex: =2
+
+        Rectangle2_8 As rectangle:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =230
+            Visible: =updatePopup =true
+            Width: =350
+            X: =(Parent.Width-Self.Width)/2
+            Y: =Parent.Height/3
+            ZIndex: =3
+
+        Image2_20 As image:
+            Height: =52
+            Image: =success
+            Visible: =updatePopup =true
+            Width: =52
+            X: =(Parent.Width-Self.Width)/2
+            Y: =Rectangle2_8.Y+20
+            ZIndex: =4
+
+        Label1_20 As label:
+            Align: =Align.Center
+            Color: =RGBA(14, 161, 26, 1)
+            FontWeight: =FontWeight.Bold
+            PaddingBottom: =0
+            Size: =18
+            Text: ="Success"
+            Visible: =updatePopup =true
+            Width: =324
+            X: =(Parent.Width-Self.Width)/2
+            Y: =Image2_20.Y+Self.Height+10
+            ZIndex: =5
+
+        Label2_10 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =50
+            PaddingBottom: =10
+            PaddingTop: =0
+            Size: =15
+            Text: ="Assignment Updated successfully."
+            Visible: =updatePopup =true
+            Width: =324
+            X: =(Parent.Width-Self.Width)/2
+            Y: =Label1_20.Y+ Self.Height
+            ZIndex: =6
+
+        btnSuccess_3 As button:
+            Fill: =RGBA(54, 176, 75, 1)
+            HoverFill: =RGBA(75, 125, 6, 1)
+            OnSelect: |-
+                =Set(updatePopup, false );
+                Set(IsEdit,true);
+                Navigate(projectAssignment,ScreenTransition.None);
+            PressedBorderColor: =RGBA(1, 43, 1, 0)
+            PressedFill: =Self.Fill
+            Text: ="Ok"
+            Visible: =updatePopup =true
+            Width: =120
+            X: =(Parent.Width-Self.Width)/2
+            Y: =Label2_6.Y+ Self.Height+15
+            ZIndex: =7
+

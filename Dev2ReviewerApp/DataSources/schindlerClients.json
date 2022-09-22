@@ -1,0 +1,108 @@
+[
+  {
+    "DisplayName": "schindlerClients (Views)",
+    "Name": "_shlaf_schindlerclient_views",
+    "RelatedEntityName": "schindlerClients",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "2c9af7d2-34f3-4516-87a6-8ecafcf699b9": "Active schindlerClients",
+      "46e7221e-2890-47db-b701-ba0f2ea5a14e": "schindlerClient Lookup View",
+      "74b90626-00a8-4d1b-87a1-23970cf922c1": "schindlerClient Associated View",
+      "87e7d293-691d-49b5-b031-fa7deb9bbd39": "Inactive schindlerClients",
+      "ab08a466-f818-4eaa-bd48-325a94932c86": "schindlerClient Advanced Find View"
+    }
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "shlaf_schindlerclients",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "shlaf_schindlerclient",
+    "MaxGetRowsCount": 500,
+    "Name": "schindlerClients",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "shlaf_address1": "address1",
+      "shlaf_address2": "address2",
+      "shlaf_assignments_clientId_shlaf_schindle": "assignments",
+      "shlaf_city": "city",
+      "shlaf_contactname": "contactName",
+      "shlaf_contactnumber": "contactNumber",
+      "shlaf_id": "Id",
+      "shlaf_name": "name",
+      "shlaf_quantum_BankTripReport_clientid_shlaf_sch": "BankTripReport",
+      "shlaf_schindlerBank_clientId_shlaf_schind": "schindlerBanks",
+      "shlaf_schindlerclient_AsyncOperations": "System Jobs",
+      "shlaf_schindlerclient_BulkDeleteFailures": "Bulk Delete Failures",
+      "shlaf_schindlerclient_DuplicateBaseRecord": "Duplicate Records (shlaf_schindlerclient_DuplicateBaseRecord)",
+      "shlaf_schindlerclient_DuplicateMatchingRecord": "Duplicate Records (shlaf_schindlerclient_DuplicateMatchingRecord)",
+      "shlaf_schindlerclient_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "shlaf_schindlerclient_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "shlaf_schindlerclient_ProcessSession": "Process Sessions",
+      "shlaf_schindlerclient_SyncErrors": "Sync Errors",
+      "shlaf_schindlerclientid": "schindlerClient",
+      "shlaf_state": "state",
+      "shlaf_zip": "zip",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "schindlerClients",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Status (schindlerClients)",
+    "Name": "shlaf_schindlerclient_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "schindlerClients"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "schindlerClients",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (schindlerClients)",
+    "Name": "shlaf_schindlerclient_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "schindlerClients"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "schindlerClients",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,245 @@
+{
+  "QualifiedValues": [
+    {
+      "Kind": "default.cds_shlaf_actionitems_forms",
+      "Namespace": "actionItems (Forms)",
+      "Values": {
+        "Information": "0edb2953-6f50-4b09-96f7-fedd47bd2ef7"
+      }
+    },
+    {
+      "Kind": "default.cds_shlaf_assignments_forms",
+      "Namespace": "assignments (Forms)",
+      "Values": {
+        "Information": "16541651-292f-4996-b015-fcbd8e8735dc"
+      }
+    },
+    {
+      "Kind": "default.cds_shlaf_assignmentunits_forms",
+      "Namespace": "assignmentUnits (Forms)",
+      "Values": {
+        "Information": "64900fa1-9ae2-4a3d-9a4e-8e85f5a2bd3c"
+      }
+    },
+    {
+      "Kind": "default.cds_quantum_bankassessment_forms",
+      "Namespace": "bankAssessment (Forms)",
+      "Values": {
+        "Information": "43cfaae3-38c7-448f-bf12-79dfbcb58a5e"
+      }
+    },
+    {
+      "Kind": "default.cds_quantum_bank_forms",
+      "Namespace": "bankToBeRemoveds (Forms)",
+      "Values": {
+        "Information": "0c94d496-3e40-487f-ae08-8b509afda9d2"
+      }
+    },
+    {
+      "Kind": "default.cds_quantum_banktripreport_forms",
+      "Namespace": "BankTripReport (Forms)",
+      "Values": {
+        "Information": "d8f8d9c5-bed9-4002-a1c3-e4cd5b26bd13"
+      }
+    },
+    {
+      "Kind": "default.cds_shlaf_bankunits_forms",
+      "Namespace": "bankUnits (Forms)",
+      "Values": {
+        "Information": "4e0191bc-d9c2-4026-897d-8dfe67490b55"
+      }
+    },
+    {
+      "Kind": "default.cds_quantum_checkpointassessment_forms",
+      "Namespace": "checkpointAssessment (Forms)",
+      "Values": {
+        "Information": "a49e7f6a-151c-4ad6-8c2a-9cad1d324c90"
+      }
+    },
+    {
+      "Kind": "default.cds_quantum_checkpointitemassessment_forms",
+      "Namespace": "checkpointItemAssessment (Forms)",
+      "Values": {
+        "Information": "1c01f25d-fd41-49a4-acc0-b730145e6a9b"
+      }
+    },
+    {
+      "Kind": "default.cds_quantum_checkpointitem_actionitems_forms",
+      "Namespace": "checkpointItem_ActionItem (Forms)",
+      "Values": {
+        "Information": "0f8dfa59-9f5a-4fb7-b1e1-b718f80feb16"
+      }
+    },
+    {
+      "Kind": "default.cds_quantum_checkpointitem_images_forms",
+      "Namespace": "checkpointItem_Images (Forms)",
+      "Values": {
+        "Information": "4370766a-dad1-48c1-ab4c-696c167c1132"
+      }
+    },
+    {
+      "Kind": "default.cds_duplicaterecord_forms",
+      "Namespace": "Duplicate Records (Forms)",
+      "Values": {}
+    },
+    {
+      "Kind": "default.cds_quantum_product_forms",
+      "Namespace": "product (Forms)",
+      "Values": {
+        "Information": "be20c0a8-83d6-4208-b016-d7cd9df2adc4"
+      }
+    },
+    {
+      "Kind": "default.cds_quantum_projectaggregation_forms",
+      "Namespace": "projectAggregation (Forms)",
+      "Values": {
+        "Information": "751d3d14-eb7d-40f0-a308-eee1955991a4"
+      }
+    },
+    {
+      "Kind": "default.cds_shlaf_schindlerbank_forms",
+      "Namespace": "schindlerBanks (Forms)",
+      "Values": {
+        "Information": "a44da3e0-0c12-4cb8-8dbb-cbeabbf6e859"
+      }
+    },
+    {
+      "Kind": "default.cds_shlaf_schindlerclient_forms",
+      "Namespace": "schindlerClients (Forms)",
+      "Values": {
+        "Information": "bbc50d0e-ebf3-4ac3-9b3e-6b05c9f15d5f"
+      }
+    },
+    {
+      "Kind": "default.cds_quantum_sectionassessment_forms",
+      "Namespace": "sectionAssessment (Forms)",
+      "Values": {
+        "Information": "87951cec-9e22-47e0-8e66-d6bc3d6f2dc8"
+      }
+    },
+    {
+      "Kind": "default.cds_shlaf_templatecheckpoints_forms",
+      "Namespace": "templateCheckpoints (Forms)",
+      "Values": {
+        "Information": "e8299554-c931-4e15-a497-ca7b2e740690"
+      }
+    },
+    {
+      "Kind": "default.cds_shlaf_templatecheckpointsitem_forms",
+      "Namespace": "templateCheckpointsItems (Forms)",
+      "Values": {
+        "Information": "0a5ef174-7bd8-4d9e-9da1-44a29d241456"
+      }
+    },
+    {
+      "Kind": "default.cds_shlaf_templatesections_forms",
+      "Namespace": "templateSections (Forms)",
+      "Values": {
+        "Information": "1a29ac02-528a-4e48-a384-fd02c4a6fba3"
+      }
+    },
+    {
+      "Kind": "default.cds_quantum_unitassessment_forms",
+      "Namespace": "unitAssessment (Forms)",
+      "Values": {
+        "Information": "2b6eec0a-526e-4e6e-a982-e113a0804dee"
+      }
+    },
+    {
+      "Kind": "default.cds_quantum_bank_forms",
+      "Namespace": "bank (Forms)",
+      "Values": {
+        "Information": "0c94d496-3e40-487f-ae08-8b509afda9d2"
+      }
+    },
+    {
+      "Kind": "default.cds_quantum_client_forms",
+      "Namespace": "Client (Forms)",
+      "Values": {
+        "Information": "66612ec4-0460-4127-a611-7388337ac690"
+      }
+    },
+    {
+      "Kind": "default.cds_quantum_clientinstallation_forms",
+      "Namespace": "clientInstallation (Forms)",
+      "Values": {
+        "Information": "20d6e47d-6014-4eeb-b7bc-f8b654600c67"
+      }
+    },
+    {
+      "Kind": "default.cds_quantum_projectassignment_forms",
+      "Namespace": "projectAssignment_1 (Forms)",
+      "Values": {
+        "Information": "5b92673d-8085-40e6-85e1-c0fe5d109cc4"
+      }
+    },
+    {
+      "Kind": "default.cds_quantum_clientlocation_forms",
+      "Namespace": "clientLocation (Forms)",
+      "Values": {
+        "Information": "81559d26-3e51-4fa0-9d1f-d0ee5c8b9c0a"
+      }
+    },
+    {
+      "Kind": "default.cds_quantum_assessor_forms",
+      "Namespace": "Assessor_1 (Forms)",
+      "Values": {
+        "Information": "06ca05d3-da40-4bbd-a4f9-f7f397fc4fd7"
+      }
+    },
+    {
+      "Kind": "default.cds_cr57c_clientinstallation_forms",
+      "Namespace": "clientInstallations (Forms)",
+      "Values": {
+        "Information": "5dbd8eed-788e-4bef-aea4-f1140528585b"
+      }
+    },
+    {
+      "Kind": "default.cds_cr57c_projectaggregation_forms",
+      "Namespace": "projectAggregations (Forms)",
+      "Values": {
+        "Information": "d5f3f21d-ca48-4ca7-be5a-81ebe977e3a8"
+      }
+    },
+    {
+      "Kind": "default.cds_quantum_reviewer_forms",
+      "Namespace": "Reviewer (Forms)",
+      "Values": {
+        "Information": "4dde2a9f-4c24-4be6-b4ae-e5ac7e1909cb"
+      }
+    },
+    {
+      "Kind": "default.cds_cr57c_schindler_assessor_forms",
+      "Namespace": "schindler_assessors (Forms)",
+      "Values": {
+        "Information": "51f66284-671a-49cb-b222-e3aace3e4143"
+      }
+    },
+    {
+      "Kind": "default.cds_cr57c_schindler_clientbank_forms",
+      "Namespace": "schindler_ClientBanks (Forms)",
+      "Values": {
+        "Information": "fc8aa5d6-6e5a-4a44-8f85-a873e9a54faf"
+      }
+    },
+    {
+      "Kind": "default.cds_cr57c_schindler_client_forms",
+      "Namespace": "schindler_clients (Forms)",
+      "Values": {
+        "Information": "6390644c-1b97-4ef4-88ac-926548447008"
+      }
+    },
+    {
+      "Kind": "default.cds_cr57c_projectassignment_forms",
+      "Namespace": "ProjectAssignments (Forms)",
+      "Values": {
+        "Information": "9d3a592b-4057-4f22-aeb1-a343edca8a7f"
+      }
+    },
+    {
+      "Kind": "default.cds_aaduser_forms",
+      "Namespace": "AAD Users (Forms)",
+      "Values": {}
+    }
+  ]
+}

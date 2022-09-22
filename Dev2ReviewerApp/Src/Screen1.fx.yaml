@@ -1,0 +1,283 @@
+Screen1 As screen:
+
+    "Gallery7 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+        Height: =Parent.Height
+        Items: |-
+            =GroupBy(
+                AddColumns(checkpointItem_ActionItem,
+                    "_sectionid", section_id.sectionName
+                ),
+                "_sectionid",
+                "dataRecords"
+            )
+        Layout: =Layout.Vertical
+        TemplatePadding: =0
+        TemplateSize: =CountRows(Gallery11.AllItems)*(Gallery11.TemplateHeight)
+        Width: =1326
+        X: =40
+        ZIndex: =1
+
+        Title3 As label:
+            Height: =1
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: |-
+                ="Section : " & ThisItem._sectionid
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 104
+            X: =1
+            ZIndex: =1
+
+        "Gallery11 As gallery.'BrowseLayout_Vertical_OneTextVariant_ver4.0'":
+            Fill: =RGBA(207, 198, 198, 0)
+            Height: =CountRows(Gallery11.AllItems)*(Gallery11.TemplateHeight)
+            Items: =ThisItem.dataRecords
+            Layout: =Layout.Vertical
+            TemplatePadding: =0
+            TemplateSize: =350
+            Width: =1324
+            Y: =Title3.Y+Title3.Height
+            ZIndex: =1
+
+            lblCheckpoint As label:
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: |-
+                    ="Checkpoint : " 
+                VerticalAlign: =VerticalAlign.Top
+                Width: =216
+                X: =15
+                Y: =9
+                ZIndex: =1
+
+            sepgallery As rectangle:
+                Height: =0
+                OnSelect: =Select(Parent)
+                Width: =Parent.TemplateWidth
+                Y: =334
+                ZIndex: =3
+
+            lblItem As label:
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: |-
+                    ="Item : " 
+                VerticalAlign: =VerticalAlign.Top
+                Width: =140
+                X: =52
+                Y: =45
+                ZIndex: =4
+
+            Title10_2 As label:
+                Height: =43
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: |-
+                    ="Action Required : " 
+                VerticalAlign: =VerticalAlign.Top
+                Width: =254
+                X: =52
+                Y: =81
+                ZIndex: =5
+
+            Title10_3 As label:
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: |-
+                    ="Duration : "
+                VerticalAlign: =VerticalAlign.Top
+                Width: =190
+                X: =52
+                Y: =126
+                ZIndex: =6
+
+            DatePicker3 As datepicker:
+                OnSelect: =Select(Parent)
+                Width: =218
+                X: =242
+                Y: =124
+                ZIndex: =7
+
+            Title10_4 As label:
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: |-
+                    ="Priority : "
+                VerticalAlign: =VerticalAlign.Top
+                Width: =190
+                X: =52
+                Y: =171
+                ZIndex: =8
+
+            Title10_5 As label:
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: |-
+                    ="OwnerId : "
+                VerticalAlign: =VerticalAlign.Top
+                Width: =190
+                X: =52
+                Y: =208
+                ZIndex: =9
+
+            Title10_6 As label:
+                Height: =34
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: |-
+                    ="Material Estimate : "
+                VerticalAlign: =VerticalAlign.Top
+                Width: =268
+                X: =52
+                Y: =244
+                ZIndex: =10
+
+            Title10_7 As label:
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.priority
+                VerticalAlign: =VerticalAlign.Top
+                Width: =190
+                X: =192
+                Y: =172
+                ZIndex: =11
+
+            Title10_8 As label:
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.OwnerId
+                VerticalAlign: =VerticalAlign.Top
+                Width: =190
+                X: =192
+                Y: =208
+                ZIndex: =12
+
+            Title10_9 As label:
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.MaterialEstimate
+                VerticalAlign: =VerticalAlign.Top
+                Width: =190
+                X: =306
+                Y: =244
+                ZIndex: =13
+
+            Title10_10 As label:
+                Height: =34
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: |-
+                    ="Time Estimate : "
+                VerticalAlign: =VerticalAlign.Top
+                Width: =268
+                X: =52
+                Y: =280
+                ZIndex: =14
+
+            Title10_11 As label:
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.TimeEstimate
+                VerticalAlign: =VerticalAlign.Top
+                Width: =190
+                X: =284
+                Y: =280
+                ZIndex: =15
+
+            Title10_12 As label:
+                Height: =36
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.checkpoint_id.checkpointName
+                VerticalAlign: =VerticalAlign.Top
+                Width: =1012
+                X: =212
+                Y: =9
+                ZIndex: =16
+
+            Title10_13 As label:
+                Height: =41
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.checkpointItem_Id.checkpointItemName
+                VerticalAlign: =VerticalAlign.Top
+                Width: =1048
+                X: =212
+                Y: =40
+                ZIndex: =17
+
+            Title10_14 As label:
+                Height: =44
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.ActionItem_Name
+                VerticalAlign: =VerticalAlign.Top
+                Width: =974
+                X: =286
+                Y: =80
+                ZIndex: =18
+
+        Separator7 As rectangle:
+            Height: =1
+            OnSelect: =Select(Parent)
+            Width: =Parent.TemplateWidth
+            Y: =Parent.TemplateHeight - 1
+            ZIndex: =3
+

@@ -1,0 +1,100 @@
+[
+  {
+    "DisplayName": "actionItems (Views)",
+    "Name": "_shlaf_actionitems_views",
+    "RelatedEntityName": "actionItems",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "7cb66a40-68d4-4420-93e6-fc84bde65b5a": "actionItems Advanced Find View",
+      "af276ac0-beec-4530-a87d-258b190abf9b": "Active actionItems",
+      "b51cb89e-d500-49a9-8291-33b9fa5e4334": "actionItems Lookup View",
+      "e5c16dde-1a3d-432d-a712-e77ec9a57ce1": "actionItems Associated View",
+      "f5dc6ae1-8861-422b-a3f2-d1301e0b8a3b": "Inactive actionItems"
+    }
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "shlaf_actionitemses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "shlaf_actionitems",
+    "MaxGetRowsCount": 500,
+    "Name": "actionItems",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr28a_sectionId": "sectionId",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "shlaf_actionitemid": "actionItemId",
+      "shlaf_actionitemname": "actionItemName",
+      "shlaf_actionitems_AsyncOperations": "System Jobs",
+      "shlaf_actionitems_BulkDeleteFailures": "Bulk Delete Failures",
+      "shlaf_actionitems_DuplicateBaseRecord": "Duplicate Records (shlaf_actionitems_DuplicateBaseRecord)",
+      "shlaf_actionitems_DuplicateMatchingRecord": "Duplicate Records (shlaf_actionitems_DuplicateMatchingRecord)",
+      "shlaf_actionitems_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "shlaf_actionitems_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "shlaf_actionitems_ProcessSession": "Process Sessions",
+      "shlaf_actionitems_SyncErrors": "Sync Errors",
+      "shlaf_actionitemsid": "actionItems",
+      "shlaf_checkpointItemId": "checkpointItemId",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "actionItems",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Status (actionItems)",
+    "Name": "shlaf_actionitems_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "actionItems"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "actionItems",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (actionItems)",
+    "Name": "shlaf_actionitems_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "actionItems"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "actionItems",
+    "Type": "OptionSetInfo"
+  }
+]

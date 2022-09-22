@@ -1,0 +1,100 @@
+"'TripReport Demo' As screen":
+    OnVisible: |
+        =ClearCollect(
+            checkpoint,
+            {
+                projectId: "11",
+                bankId: "b1",
+                GoNumber: "12313",
+                clientProductId: "p1",
+                sectionId: "s1",
+                checkpiontId: "c1",
+                checkpiontItemId: "I1",
+                checkpointItemName: "barieddd",
+                actionItemId: "A1",
+                ActionItemName: "ActionItemName1",
+                priority: "",
+                ownerId: "",
+                DueDate: "12/11/2001"
+            },
+            {
+                projectId: "11",
+                bankId: "b1",
+                GoNumber: "12313",
+                clientProductId: "p1",
+                sectionId: "s1",
+                checkpiontId: "c2",
+                checkpiontItemId: "I1",
+                checkpointItemName: "barieddd",
+                actionItemId: "A1",
+                ActionItemName: "ActionItemName2",
+                priority: "",
+                ownerId: "",
+                DueDate: "12/11/2001"
+            },
+            {
+                projectId: "11",
+                bankId: "b1",
+                GoNumber: "12313",
+                clientProductId: "p1",
+                sectionId: "s1",
+                checkpiontId: "c2",
+                checkpiontItemId: "I1",
+                checkpointItemName: "barieddd",
+                actionItemId: "A1",
+                ActionItemName: "ActionItemName2",
+                priority: "",
+                ownerId: "",
+                DueDate: "12/11/2001"
+            },
+            {
+                projectId: "11",
+                bankId: "b1",
+                GoNumber: "12313",
+                clientProductId: "p1",
+                sectionId: "s2",
+                checkpiontId: "c3",
+                checkpiontItemId: "I1",
+                checkpointItemName: "barieddd",
+                actionItemId: "A1",
+                ActionItemName: "ActionItemName3",
+                priority: "",
+                ownerId: "",
+                DueDate: "12/11/2001"
+            },
+            {
+                projectId: "11",
+                bankId: "b1",
+                GoNumber: "12313",
+                clientProductId: "p1",
+                sectionId: "s2",
+                checkpiontId: "c4",
+                checkpiontItemId: "I1",
+                checkpointItemName: "barieddd",
+                actionItemId: "A1",
+                ActionItemName: "ActionItemName4",
+                priority: "",
+                ownerId: "",
+                DueDate: "12/11/2001"
+            }, {
+                projectId: "11",
+                bankId: "b1",
+                GoNumber: "12313",
+                clientProductId: "p1",
+                sectionId: "s3",
+                checkpiontId: "c5",
+                checkpiontItemId: "I1",
+                checkpointItemName: "barieddd",
+                actionItemId: "A1",
+                ActionItemName: "ActionItemName4",
+                priority: "",
+                ownerId: "",
+                DueDate: "12/11/2001"
+            }
+        );
+
+    Container2_1 As groupContainer.manualLayoutContainer:
+        Height: =Parent.Height
+        Width: =Parent.Width
+        ZIndex: =1
+

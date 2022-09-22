@@ -1,0 +1,310 @@
+ReferanceData As screen:
+
+    Container9_1 As groupContainer.verticalAutoLayoutContainer:
+        Height: =Parent.Height
+        LayoutDirection: =LayoutDirection.Vertical
+        LayoutMode: =LayoutMode.Auto
+        LayoutOverflowY: =LayoutOverflow.Scroll
+        Width: =Parent.Width
+        ZIndex: =1
+
+        Container3_11 As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.Start
+            Fill: =Header.HeaderFill
+            FillPortions: =0
+            Height: =80
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            Width: =Parent.Width
+            ZIndex: =1
+
+            Image1_11 As image:
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =Parent.Height
+                Image: =Schindler_logo_PNG1
+                PaddingBottom: =5
+                PaddingLeft: =2
+                PaddingRight: =1
+                PaddingTop: =5
+                Width: =Container3_11.Width/10
+                ZIndex: =1
+
+            Image2_11 As image:
+                Fill: =RGBA(253, 222, 207, 1)
+                Height: =50
+                Image: =userdata.userImage
+                RadiusBottomLeft: =91
+                RadiusBottomRight: =91
+                RadiusTopLeft: =91
+                RadiusTopRight: =91
+                Width: =50
+                X: =Label3_11.X+Label3_11.Width
+                Y: =16
+                ZIndex: =2
+
+            Icon1_11 As icon.Bell:
+                Color: =RGBA(255, 255, 0, 1)
+                Height: =Parent.Height/2
+                Icon: =Icon.Bell
+                Visible: =false
+                Width: =Parent.Width/28
+                X: =Label1_11.X+Label1_11.Width+10
+                Y: =Parent.Height/4
+                ZIndex: =5
+
+            Label1_11 As label:
+                Align: =Align.Center
+                Color: =Header.HeaderColor
+                Font: =Header.HeaderFont
+                FontWeight: =Header.FontWeight
+                Height: =Parent.Height
+                Size: =Header.HeaderUserFontSize
+                Text: |-
+                    =//"SCHD0023"
+                    //LookUp(ReviewerAD,mail=userdata.userEmail,displayName)
+                    userdata.userdisplayName
+                Width: =Container3_11.Width/8
+                X: =Image2_11.X+ Image2_11.Height
+                ZIndex: =6
+
+            Label3_11 As label:
+                Align: =Align.Center
+                Color: =Header.HeaderColor
+                Font: =Header.HeaderFont
+                FontWeight: =Header.FontWeight
+                Height: =Parent.Height
+                Size: =Header.HeaderFontSize
+                Text: ="Reference Data"
+                Width: =Container3_11.Width/1.6
+                X: =Image1_11.Width+Image1_11.X
+                ZIndex: =8
+
+        Container22 As groupContainer.verticalAutoLayoutContainer:
+            LayoutDirection: =LayoutDirection.Vertical
+            LayoutMinHeight: =100
+            LayoutMinWidth: =250
+            LayoutMode: =LayoutMode.Auto
+            LayoutOverflowY: =LayoutOverflow.Scroll
+            ZIndex: =3
+
+            Container20_2 As groupContainer.verticalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =90
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                PaddingLeft: =20
+                ZIndex: =1
+
+                Button1_2 As button:
+                    BorderColor: =referenceCSS.RActiveColor
+                    Color: =referenceCSS.RColorBlack
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =Parent.Height/1.5
+                    HoverColor: =Self.Color
+                    HoverFill: =Self.Fill //ColorFade(RGBA(56, 96, 178, 1), -20%)
+                    OnSelect: =Navigate(DashboardScreen)
+                    PaddingLeft: =0
+                    PressedBorderColor: =Self.BorderColor
+                    PressedColor: =Self.Color
+                    PressedFill: =Self.Fill
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Text: = "back"
+                    Width: =Parent.Width/6
+                    ZIndex: =1
+
+            Container4_6 As groupContainer.verticalAutoLayoutContainer:
+                Fill: =RGBA(255, 255, 255, 1)
+                FillPortions: =0
+                Height: =If(App.Width>768,(Parent.Height/2),(Parent.Height/1.5))
+                LayoutGap: =20
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                LayoutOverflowY: =LayoutOverflow.Scroll
+                LayoutWrap: =true
+                PaddingLeft: =20
+                PaddingRight: =20
+                Width: |-
+                    =//If(App.Width>765,Parent.Width/1.01,Parent.Width/1.8)
+                    Parent.Width
+                Y: =Container3_11.Height
+                ZIndex: =2
+
+                Container1_12 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    BorderColor: =RGBA(230, 230, 230, 1)
+                    BorderThickness: =5
+                    Height: |-
+                        =If(App.Height<900,Parent.Height/1.04, App.Width<1200,Parent.Height/2.4,Parent.Height/1.2)
+                        //App.Width<1000,Parent.Height/1.8,
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =50
+                    Width: =Parent.Width/2.1
+                    ZIndex: =1
+
+                    Label6_14 As label:
+                        Align: =Align.Center
+                        Color: |-
+                            =//RGBA(0, 0, 0, 1)
+                            referenceCSS.RColorBlack
+                        FontWeight: =FontWeight.Bold
+                        Height: =50
+                        Size: |-
+                            =//(Parent.Height+Parent.Width)/30
+                            //30
+                            referenceCSS.RFontSize
+                        Text: ="Client"
+                        Width: =Parent.Width
+                        Y: =Parent.Height/6
+                        ZIndex: =4
+
+                    Image4_4 As image:
+                        Height: =90
+                        Image: =user
+                        Width: =90
+                        X: =(Parent.Width-Self.Width)/2
+                        Y: =Label6_14.Y+Label6_14.Height+10
+                        ZIndex: =6
+
+                    Button5 As button:
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =Parent.Height
+                        HoverFill: =RGBA(0,0,0,0)
+                        OnSelect: =Navigate(ClientScreen)
+                        Text: =""
+                        Width: =Parent.Width
+                        Y: =Container1_12.Y
+                        ZIndex: =7
+
+                Container1_17 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    BorderColor: =RGBA(230, 230, 230, 1)
+                    BorderThickness: =5
+                    Height: |-
+                        =//If(App.Width<1000,Parent.Height/3.5,App.Width>1000 && App.Width<1200,Parent.Height/2.2,Parent.Height/1.4)
+                        //If(App.Height<900,Parent.Height/1.02,App.Width<1000,Parent.Height/1.8, App.Width<1200,Parent.Height/2.2,Parent.Height/1.02)
+                        
+                        If(App.Height<900,Parent.Height/1.04, App.Width<1200,Parent.Height/2.4,Parent.Height/1.2)
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =50
+                    Width: =Parent.Width/2.1
+                    ZIndex: =3
+
+                    Label6_17 As label:
+                        Align: =Align.Center
+                        Color: |-
+                            =//RGBA(0, 0, 0, 1)
+                            referenceCSS.RColorBlack
+                        FontWeight: =FontWeight.Bold
+                        Height: =50
+                        Size: |-
+                            =//(Parent.Height+Parent.Width)/30
+                            //30
+                            referenceCSS.RFontSize
+                        Text: ="Banks"
+                        Width: =Parent.Width
+                        Y: =Parent.Height/6
+                        ZIndex: =1
+
+                    Image4_7 As image:
+                        Height: =90
+                        Image: =banks
+                        Width: =90
+                        X: =(Parent.Width-Self.Width)/2
+                        Y: =Label6_17.Y +Label6_17.Height+10
+                        ZIndex: =4
+
+                    Button5_4 As button:
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =Parent.Height
+                        HoverFill: =RGBA(0, 0, 0, 0) //ColorFade(RGBA(0, 0, 0, 1), -20%)
+                        OnSelect: |-
+                            =Set(IsEdit,false);
+                            Navigate(AddBanks)
+                        Text: =""
+                        Width: =Parent.Width
+                        Y: =Container1_12.Y
+                        ZIndex: =5
+
+                Container1_16 As groupContainer.manualLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    BorderColor: =RGBA(230, 230, 230, 1)
+                    BorderThickness: =5
+                    Height: |-
+                        =//If(App.Width<1025,(Parent.Height)/3.5,(Parent.Height)/1.4)
+                        //If(App.Height<900,Parent.Height/1.02,App.Width<1000,Parent.Height/1.8, App.Width<1200,Parent.Height/2.2,Parent.Height/1.02)
+                        
+                        If(App.Height<900,Parent.Height/1.04, App.Width<1200,Parent.Height/2.4,Parent.Height/1.2)
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =50
+                    Width: =Parent.Width/2.1
+                    ZIndex: =4
+
+                    Label6_16 As label:
+                        Align: =Align.Center
+                        Color: |-
+                            =//RGBA(0, 0, 0, 1)
+                            referenceCSS.RColorBlack
+                        FontWeight: =FontWeight.Bold
+                        Height: =50
+                        Size: |-
+                            =//(Parent.Height+Parent.Width)/30
+                            //30
+                            referenceCSS.RFontSize
+                        Text: ="Assignments"
+                        Width: =Parent.Width
+                        Y: =Parent.Height/6
+                        ZIndex: =1
+
+                    Image4_6 As image:
+                        Height: =90
+                        Image: ='3250112_building_construction_contructor_professional_project_icon'
+                        Width: =90
+                        X: =(Parent.Width-Self.Width)/2
+                        Y: =Label6_16.Y +Label6_16.Height+10
+                        ZIndex: =3
+
+                    Button5_3 As button:
+                        Fill: =RGBA(0, 0, 0, 0)
+                        Height: =Parent.Height
+                        HoverFill: =RGBA(0, 0, 0, 0) //ColorFade(RGBA(0, 0, 0, 1), -20%)
+                        OnSelect: |-
+                            =Set(IsEdit,false);
+                            Navigate(projectAssignment);
+                        Text: =""
+                        Width: =Parent.Width
+                        Y: =Container1_12.Y
+                        ZIndex: =4
+
+            Container17_3 As groupContainer.verticalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =300
+                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =3
+
+                Image9 As image:
+                    Height: =Parent.Height
+                    Image: ='lpd red'
+                    ImagePosition: =ImagePosition.Center
+                    Width: =Parent.Width
+                    ZIndex: =2
+
+            Container19_3 As groupContainer.verticalAutoLayoutContainer:
+                FillPortions: =0
+                Height: =0
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                ZIndex: =4
+

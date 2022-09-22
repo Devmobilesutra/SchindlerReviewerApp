@@ -1,0 +1,112 @@
+[
+  {
+    "DisplayName": "sectionAssessment (Views)",
+    "Name": "_quantum_sectionassessment_views",
+    "RelatedEntityName": "sectionAssessment",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "11e8f791-c423-4a9d-afef-2afdafdddca4": "Inactive sectionAssessment",
+      "4743cd21-2af8-47ff-9b70-6196ae69998d": "Active sectionAssessment",
+      "4da7c006-97a8-4e73-a1e3-3c24975218c7": "sectionAssessment Associated View",
+      "864657b0-c2c9-4da5-9512-be7d33ac5eda": "sectionAssessment Lookup View",
+      "fd232cc6-2cbe-447d-8343-9ee84085cd2f": "sectionAssessment Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (sectionAssessment)",
+    "Name": "quantum_sectionassessment_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "sectionAssessment"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "sectionAssessment",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (sectionAssessment)",
+    "Name": "quantum_sectionassessment_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "sectionAssessment"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "sectionAssessment",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "quantum_sectionassessments",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "quantum_sectionassessment",
+    "MaxGetRowsCount": 500,
+    "Name": "sectionAssessment",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "cr28a_sectionsequence": "sectionSequence",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "quantum_assessmentstatus": "AssessmentStatus",
+      "quantum_checkpointAssessment_sectionId_qu": "checkpointAssessment (quantum_checkpointAssessment_sectionId_qu)",
+      "quantum_clientBank_Id": "clientBank_Id",
+      "quantum_projectAssingment_Id": "projectAssingment_Id",
+      "quantum_sectionassessment": "sectionAssessment (quantum_sectionassessment)",
+      "quantum_sectionassessment_AsyncOperations": "System Jobs",
+      "quantum_sectionassessment_BulkDeleteFailures": "Bulk Delete Failures",
+      "quantum_sectionassessment_DuplicateBaseRecord": "Duplicate Records (quantum_sectionassessment_DuplicateBaseRecord)",
+      "quantum_sectionassessment_DuplicateMatchingRecord": "Duplicate Records (quantum_sectionassessment_DuplicateMatchingRecord)",
+      "quantum_sectionassessment_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "quantum_sectionassessment_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "quantum_sectionassessment_ProcessSession": "Process Sessions",
+      "quantum_sectionassessment_SyncErrors": "Sync Errors",
+      "quantum_sectionassessmentid": "sectionAssessment (quantum_sectionassessmentid)",
+      "quantum_sectionname": "sectionName",
+      "shlaf_assignmentId": "assignmentId",
+      "shlaf_bankUnitId": "bankUnitId",
+      "shlaf_product_id": "product_id",
+      "shlaf_quantum_checkpointItem_ActionItems_sectio": "checkpointItem_ActionItem",
+      "shlaf_quantum_checkpointItem_Images_section_id_": "checkpointItem_Images",
+      "shlaf_quantum_checkpointItemAssessment_section_": "checkpointItemAssessment",
+      "shlaf_quantum_sectionAssessment_quantum_section": "checkpointAssessment (shlaf_quantum_sectionAssessment_quantum_section)",
+      "shlaf_sectioncomment": "sectionComment",
+      "shlaf_sectionId": "sectionId",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "sectionAssessment",
+    "Type": "NativeCDSDataSourceInfo"
+  }
+]

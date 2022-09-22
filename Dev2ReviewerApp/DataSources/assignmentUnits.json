@@ -1,0 +1,100 @@
+[
+  {
+    "DisplayName": "assignmentUnits (Views)",
+    "Name": "_shlaf_assignmentunits_views",
+    "RelatedEntityName": "assignmentUnits",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "44d17708-095a-46b9-914b-f7c8b622c40c": "assignmentUnits Advanced Find View",
+      "6874f67e-fbad-419c-8ba7-9d9338540581": "assignmentUnits Associated View",
+      "6963e0b0-ac58-466f-bb33-3146ce4506fd": "Active assignmentUnits",
+      "7e23e10f-9938-488b-83c3-4b6079c8f1b7": "assignmentUnits Lookup View",
+      "f8e9dc49-23f5-45c4-a185-e8a7308f23e9": "Inactive assignmentUnits"
+    }
+  },
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "shlaf_assignmentunitses",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "shlaf_assignmentunits",
+    "MaxGetRowsCount": 500,
+    "Name": "assignmentUnits",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "shlaf_assignmentId": "assignmentId",
+      "shlaf_assignmentunits_AsyncOperations": "System Jobs",
+      "shlaf_assignmentunits_BulkDeleteFailures": "Bulk Delete Failures",
+      "shlaf_assignmentunits_DuplicateBaseRecord": "Duplicate Records (shlaf_assignmentunits_DuplicateBaseRecord)",
+      "shlaf_assignmentunits_DuplicateMatchingRecord": "Duplicate Records (shlaf_assignmentunits_DuplicateMatchingRecord)",
+      "shlaf_assignmentunits_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "shlaf_assignmentunits_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "shlaf_assignmentunits_ProcessSession": "Process Sessions",
+      "shlaf_assignmentunits_SyncErrors": "Sync Errors",
+      "shlaf_assignmentunitsid": "assignmentUnits",
+      "shlaf_bankUnitId": "bankUnitId",
+      "shlaf_id": "Id",
+      "shlaf_productmodel": "productModel",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "assignmentUnits",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Status (assignmentUnits)",
+    "Name": "shlaf_assignmentunits_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "assignmentUnits"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "assignmentUnits",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (assignmentUnits)",
+    "Name": "shlaf_assignmentunits_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "assignmentUnits"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "assignmentUnits",
+    "Type": "OptionSetInfo"
+  }
+]
