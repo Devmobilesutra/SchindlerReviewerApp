@@ -1,7 +1,7 @@
 {
   "DatasetName": "default.cds",
   "EntityName": "Duplicate Records",
-  "InstanceUrl": "https://orgffab10ba.crm.dynamics.com/",
+  "InstanceUrl": "https://org037b8467.crm.dynamics.com/",
   "state": "Configured",
   "TableDefinition": {
     "BooleanOptionSetAttribute": "{\"@odata.context\":\"https://org4317772f.crm.dynamics.com/api/data/v9.0/$metadata#EntityDefinitions('duplicaterecord')/Attributes/Microsoft.Dynamics.CRM.BooleanAttributeMetadata(MetadataId,LogicalName,SchemaName,DisplayName,OptionSet())\",\"value\":[]}",

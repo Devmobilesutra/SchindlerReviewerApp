@@ -1,7 +1,7 @@
 {
   "DatasetName": "default.cds",
   "EntityName": "checkpointItem_ActionItem",
-  "InstanceUrl": "https://orgffab10ba.crm.dynamics.com/",
+  "InstanceUrl": "https://org037b8467.crm.dynamics.com/",
   "LocalReferenceDSJson": {
     "entitySetName": "quantum_checkpointitem_actionitemses",
     "logicalName": "quantum_checkpointitem_actionitems"
