@@ -19,7 +19,7 @@ SplashScreen As screen:
         Y: =80
         ZIndex: =2
 
-    Label12 As label:
+    lblVersionLS As label:
         FontWeight: =FontWeight.Bold
         Height: =47
         Text: ="UAT 1.0"

@@ -1,7 +1,8 @@
 ReferanceData As screen:
 
-    Container9_1 As groupContainer.verticalAutoLayoutContainer:
+    ctnMainReferenceData As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
+        LayoutAlignItems: =LayoutAlignItems.Stretch
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
         LayoutOverflowY: =LayoutOverflow.Scroll
@@ -9,7 +10,7 @@ ReferanceData As screen:
         ZIndex: =1
 
         Container3_11 As groupContainer.manualLayoutContainer:
-            AlignInContainer: =AlignInContainer.Start
+            AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =Header.HeaderFill
             FillPortions: =0
             Height: =80
@@ -80,6 +81,7 @@ ReferanceData As screen:
                 ZIndex: =8
 
         Container22 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
             LayoutMinWidth: =250

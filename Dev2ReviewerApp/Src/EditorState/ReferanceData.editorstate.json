@@ -3163,7 +3163,7 @@
       "StyleName": "",
       "Type": "ControlInfo"
     },
-    "Container9_1": {
+    "ctnMainReferenceData": {
       "AllowAccessToGlobals": true,
       "ControlPropertyState": [
         "BorderColor",
@@ -3191,7 +3191,14 @@
         "ChildTabPriority",
         "LayoutMode",
         "LayoutDirection",
-        "LayoutAlignItems",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "LayoutAlignItems",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "LayoutJustifyContent",
         "LayoutGap",
         "LayoutOverflowX",
@@ -3215,7 +3222,7 @@
       "IsLocked": false,
       "LayoutName": "",
       "MetaDataIDKey": "",
-      "Name": "Container9_1",
+      "Name": "ctnMainReferenceData",
       "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
