@@ -110,7 +110,7 @@ ReferanceData As screen:
                     Width: =Parent.Width/6
                     ZIndex: =1
 
-            Container4_6 As groupContainer.verticalAutoLayoutContainer:
+            "'ctnC-B-ARD' As groupContainer.verticalAutoLayoutContainer":
                 AlignInContainer: =AlignInContainer.SetByContainer
                 Fill: =RGBA(255, 255, 255, 1)
                 FillPortions: =0
@@ -129,7 +129,7 @@ ReferanceData As screen:
                 Y: =ctnHeaderRD.Height
                 ZIndex: =2
 
-                Container1_12 As groupContainer.manualLayoutContainer:
+                ctnClientRD As groupContainer.manualLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     BorderColor: =RGBA(230, 230, 230, 1)
                     BorderThickness: =5
@@ -165,14 +165,14 @@ ReferanceData As screen:
                         Y: =Label6_14.Y+Label6_14.Height+10
                         ZIndex: =6
 
-                    Button5 As button:
+                    btnClientRD As button:
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =Parent.Height
                         HoverFill: =RGBA(0,0,0,0)
                         OnSelect: =Navigate(ClientScreen)
                         Text: =""
                         Width: =Parent.Width
-                        Y: =Container1_12.Y
+                        Y: =ctnClientRD.Y
                         ZIndex: =7
 
                 Container1_17 As groupContainer.manualLayoutContainer:
@@ -222,7 +222,7 @@ ReferanceData As screen:
                             Navigate(AddBanks)
                         Text: =""
                         Width: =Parent.Width
-                        Y: =Container1_12.Y
+                        Y: =ctnClientRD.Y
                         ZIndex: =5
 
                 Container1_16 As groupContainer.manualLayoutContainer:
@@ -272,7 +272,7 @@ ReferanceData As screen:
                             Navigate(projectAssignment);
                         Text: =""
                         Width: =Parent.Width
-                        Y: =Container1_12.Y
+                        Y: =ctnClientRD.Y
                         ZIndex: =4
 
             Container17_3 As groupContainer.verticalAutoLayoutContainer:
