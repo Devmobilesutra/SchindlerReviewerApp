@@ -9,7 +9,7 @@ ReferanceData As screen:
         Width: =Parent.Width
         ZIndex: =1
 
-        Container3_11 As groupContainer.manualLayoutContainer:
+        ctnHeaderRD As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =Header.HeaderFill
             FillPortions: =0
@@ -19,7 +19,7 @@ ReferanceData As screen:
             Width: =Parent.Width
             ZIndex: =1
 
-            Image1_11 As image:
+            imgLogoReferenceData As image:
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height
                 Image: =Schindler_logo_PNG1
@@ -27,10 +27,10 @@ ReferanceData As screen:
                 PaddingLeft: =2
                 PaddingRight: =1
                 PaddingTop: =5
-                Width: =Container3_11.Width/10
+                Width: =ctnHeaderRD.Width/10
                 ZIndex: =1
 
-            Image2_11 As image:
+            imguserprofileReferenceData As image:
                 Fill: =RGBA(253, 222, 207, 1)
                 Height: =50
                 Image: =userdata.userImage
@@ -39,21 +39,11 @@ ReferanceData As screen:
                 RadiusTopLeft: =91
                 RadiusTopRight: =91
                 Width: =50
-                X: =Label3_11.X+Label3_11.Width
+                X: =lblReferenceData.X+lblReferenceData.Width
                 Y: =16
                 ZIndex: =2
 
-            Icon1_11 As icon.Bell:
-                Color: =RGBA(255, 255, 0, 1)
-                Height: =Parent.Height/2
-                Icon: =Icon.Bell
-                Visible: =false
-                Width: =Parent.Width/28
-                X: =Label1_11.X+Label1_11.Width+10
-                Y: =Parent.Height/4
-                ZIndex: =5
-
-            Label1_11 As label:
+            lblusernameReferenceData As label:
                 Align: =Align.Center
                 Color: =Header.HeaderColor
                 Font: =Header.HeaderFont
@@ -64,11 +54,11 @@ ReferanceData As screen:
                     =//"SCHD0023"
                     //LookUp(ReviewerAD,mail=userdata.userEmail,displayName)
                     userdata.userdisplayName
-                Width: =Container3_11.Width/8
-                X: =Image2_11.X+ Image2_11.Height
+                Width: =ctnHeaderRD.Width/8
+                X: =imguserprofileReferenceData.X+ imguserprofileReferenceData.Height
                 ZIndex: =6
 
-            Label3_11 As label:
+            lblReferenceData As label:
                 Align: =Align.Center
                 Color: =Header.HeaderColor
                 Font: =Header.HeaderFont
@@ -76,11 +66,11 @@ ReferanceData As screen:
                 Height: =Parent.Height
                 Size: =Header.HeaderFontSize
                 Text: ="Reference Data"
-                Width: =Container3_11.Width/1.6
-                X: =Image1_11.Width+Image1_11.X
+                Width: =ctnHeaderRD.Width/1.6
+                X: =imgLogoReferenceData.Width+imgLogoReferenceData.X
                 ZIndex: =8
 
-        Container22 As groupContainer.verticalAutoLayoutContainer:
+        ctnMiddleRD As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
@@ -89,7 +79,7 @@ ReferanceData As screen:
             LayoutOverflowY: =LayoutOverflow.Scroll
             ZIndex: =3
 
-            Container20_2 As groupContainer.verticalAutoLayoutContainer:
+            ctnBackRD As groupContainer.verticalAutoLayoutContainer:
                 FillPortions: =0
                 Height: =90
                 LayoutDirection: =LayoutDirection.Vertical
@@ -100,7 +90,7 @@ ReferanceData As screen:
                 PaddingLeft: =20
                 ZIndex: =1
 
-                Button1_2 As button:
+                btnBackRD As button:
                     BorderColor: =referenceCSS.RActiveColor
                     Color: =referenceCSS.RColorBlack
                     Fill: =RGBA(255, 255, 255, 1)
@@ -121,6 +111,7 @@ ReferanceData As screen:
                     ZIndex: =1
 
             Container4_6 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 Fill: =RGBA(255, 255, 255, 1)
                 FillPortions: =0
                 Height: =If(App.Width>768,(Parent.Height/2),(Parent.Height/1.5))
@@ -135,7 +126,7 @@ ReferanceData As screen:
                 Width: |-
                     =//If(App.Width>765,Parent.Width/1.01,Parent.Width/1.8)
                     Parent.Width
-                Y: =Container3_11.Height
+                Y: =ctnHeaderRD.Height
                 ZIndex: =2
 
                 Container1_12 As groupContainer.manualLayoutContainer:
@@ -285,6 +276,7 @@ ReferanceData As screen:
                         ZIndex: =4
 
             Container17_3 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =300
                 LayoutAlignItems: =LayoutAlignItems.Center
@@ -302,6 +294,7 @@ ReferanceData As screen:
                     ZIndex: =2
 
             Container19_3 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =0
                 LayoutDirection: =LayoutDirection.Vertical
