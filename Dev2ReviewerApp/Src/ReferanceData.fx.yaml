@@ -141,7 +141,7 @@ ReferanceData As screen:
                     Width: =Parent.Width/2.1
                     ZIndex: =1
 
-                    Label6_14 As label:
+                    lblClientRD As label:
                         Align: =Align.Center
                         Color: |-
                             =//RGBA(0, 0, 0, 1)
@@ -157,12 +157,12 @@ ReferanceData As screen:
                         Y: =Parent.Height/6
                         ZIndex: =4
 
-                    Image4_4 As image:
+                    imgClientRD As image:
                         Height: =90
                         Image: =user
                         Width: =90
                         X: =(Parent.Width-Self.Width)/2
-                        Y: =Label6_14.Y+Label6_14.Height+10
+                        Y: =lblClientRD.Y+lblClientRD.Height+10
                         ZIndex: =6
 
                     btnClientRD As button:
@@ -175,7 +175,7 @@ ReferanceData As screen:
                         Y: =ctnClientRD.Y
                         ZIndex: =7
 
-                Container1_17 As groupContainer.manualLayoutContainer:
+                ctnBankRD As groupContainer.manualLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     BorderColor: =RGBA(230, 230, 230, 1)
                     BorderThickness: =5
@@ -189,7 +189,7 @@ ReferanceData As screen:
                     Width: =Parent.Width/2.1
                     ZIndex: =3
 
-                    Label6_17 As label:
+                    lblBankRD As label:
                         Align: =Align.Center
                         Color: |-
                             =//RGBA(0, 0, 0, 1)
@@ -205,15 +205,15 @@ ReferanceData As screen:
                         Y: =Parent.Height/6
                         ZIndex: =1
 
-                    Image4_7 As image:
+                    imgBankRD As image:
                         Height: =90
                         Image: =banks
                         Width: =90
                         X: =(Parent.Width-Self.Width)/2
-                        Y: =Label6_17.Y +Label6_17.Height+10
+                        Y: =lblBankRD.Y +lblBankRD.Height+10
                         ZIndex: =4
 
-                    Button5_4 As button:
+                    btnBankRD As button:
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =Parent.Height
                         HoverFill: =RGBA(0, 0, 0, 0) //ColorFade(RGBA(0, 0, 0, 1), -20%)
@@ -225,7 +225,7 @@ ReferanceData As screen:
                         Y: =ctnClientRD.Y
                         ZIndex: =5
 
-                Container1_16 As groupContainer.manualLayoutContainer:
+                ctnAssignmentRD As groupContainer.manualLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     BorderColor: =RGBA(230, 230, 230, 1)
                     BorderThickness: =5
@@ -239,7 +239,7 @@ ReferanceData As screen:
                     Width: =Parent.Width/2.1
                     ZIndex: =4
 
-                    Label6_16 As label:
+                    lblAssignmentRD As label:
                         Align: =Align.Center
                         Color: |-
                             =//RGBA(0, 0, 0, 1)
@@ -255,15 +255,15 @@ ReferanceData As screen:
                         Y: =Parent.Height/6
                         ZIndex: =1
 
-                    Image4_6 As image:
+                    imgAssignmentRD As image:
                         Height: =90
                         Image: ='3250112_building_construction_contructor_professional_project_icon'
                         Width: =90
                         X: =(Parent.Width-Self.Width)/2
-                        Y: =Label6_16.Y +Label6_16.Height+10
+                        Y: =lblAssignmentRD.Y +lblAssignmentRD.Height+10
                         ZIndex: =3
 
-                    Button5_3 As button:
+                    btnAssignmentRD As button:
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: =Parent.Height
                         HoverFill: =RGBA(0, 0, 0, 0) //ColorFade(RGBA(0, 0, 0, 1), -20%)
@@ -275,25 +275,24 @@ ReferanceData As screen:
                         Y: =ctnClientRD.Y
                         ZIndex: =4
 
-            Container17_3 As groupContainer.verticalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.SetByContainer
+            ctnLPDReferenceData As groupContainer.verticalAutoLayoutContainer:
                 FillPortions: =0
                 Height: =300
-                LayoutAlignItems: =LayoutAlignItems.Center
+                LayoutAlignItems: =LayoutAlignItems.Stretch
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =3
 
-                Image9 As image:
+                imgLPDRD As image:
                     Height: =Parent.Height
                     Image: ='lpd red'
                     ImagePosition: =ImagePosition.Center
                     Width: =Parent.Width
                     ZIndex: =2
 
-            Container19_3 As groupContainer.verticalAutoLayoutContainer:
+            ctnforsetUIRD As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =0

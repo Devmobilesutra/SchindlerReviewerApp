@@ -20,7 +20,7 @@ ClientScreen As screen:
           Reset(CZip);
           Reset(CState);
           Reset(txtContactName);
-          Reset(CContact1_2);
+          Reset(txtContactNumber);
                   
 
     ctnMainClient As groupContainer.verticalAutoLayoutContainer:
@@ -40,7 +40,7 @@ ClientScreen As screen:
             Width: =Parent.Width
             ZIndex: =1
 
-            Image1_16 As image:
+            imgLogoCS As image:
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height
                 Image: =Schindler_logo_PNG1
@@ -51,7 +51,7 @@ ClientScreen As screen:
                 Width: =ctnHeaderClient.Width/10
                 ZIndex: =1
 
-            Image2_16 As image:
+            imgUserProfileCS As image:
                 Fill: =RGBA(253, 222, 207, 1)
                 Height: =50
                 Image: =userdata.userImage
@@ -60,21 +60,11 @@ ClientScreen As screen:
                 RadiusTopLeft: =91
                 RadiusTopRight: =91
                 Width: =50
-                X: =Label3_16.X+Label3_16.Width
+                X: =lblClientCS.X+lblClientCS.Width
                 Y: =16
                 ZIndex: =2
 
-            Icon1_16 As icon.Bell:
-                Color: =RGBA(255, 255, 0, 1)
-                Height: =Parent.Height/2
-                Icon: =Icon.Bell
-                Visible: =false
-                Width: =Parent.Width/28
-                X: =Label1_16.X+Label1_16.Width+10
-                Y: =Parent.Height/4
-                ZIndex: =5
-
-            Label1_16 As label:
+            lbluserNameCS As label:
                 Align: =Align.Center
                 Color: =Header.HeaderColor
                 Font: =Header.HeaderFont
@@ -88,10 +78,10 @@ ClientScreen As screen:
                     //LookUp(ReviewerAD,mail=User().Email,displayName)
                     userdata.userdisplayName
                 Width: =ctnHeaderClient.Width/7.5
-                X: =Image2_16.X+ Image2_16.Height
+                X: =imgUserProfileCS.X+ imgUserProfileCS.Height
                 ZIndex: =6
 
-            Label3_16 As label:
+            lblClientCS As label:
                 Align: =Align.Center
                 Color: =Header.HeaderColor
                 Font: =Header.HeaderFont
@@ -100,7 +90,7 @@ ClientScreen As screen:
                 Size: =Header.HeaderFontSize
                 Text: ="Clients"
                 Width: =ctnHeaderClient.Width/1.6
-                X: =Image1_16.Width+Image1_16.X
+                X: =imgLogoCS.Width+imgLogoCS.X
                 ZIndex: =8
 
         ctnMiddleClient As groupContainer.verticalAutoLayoutContainer:
@@ -117,7 +107,7 @@ ClientScreen As screen:
             Y: =ctnHeaderClient.Height
             ZIndex: =4
 
-            Container20_10 As groupContainer.verticalAutoLayoutContainer:
+            ctnBackCS As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =90
@@ -130,7 +120,7 @@ ClientScreen As screen:
                 Width: =Parent.Width
                 ZIndex: =1
 
-                Button1_11 As button:
+                btnBackCS As button:
                     BorderColor: =referenceCSS.RActiveColor
                     Color: =referenceCSS.RColorBlack
                     Fill: =referenceCSS.RColorWhite
@@ -150,11 +140,10 @@ ClientScreen As screen:
                     Width: =Parent.Width/6
                     ZIndex: =1
 
-            Container6_4 As groupContainer.verticalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.SetByContainer
+            ctnbuttonsCS As groupContainer.verticalAutoLayoutContainer:
                 FillPortions: =0
                 Height: =90
-                LayoutAlignItems: =LayoutAlignItems.End
+                LayoutAlignItems: =LayoutAlignItems.Stretch
                 LayoutGap: =20
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
@@ -162,8 +151,10 @@ ClientScreen As screen:
                 Width: =Parent.Width
                 ZIndex: =2
 
-                Container8_8 As groupContainer.verticalAutoLayoutContainer:
+                ctnNewClientCS As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
+                    LayoutAlignItems: =LayoutAlignItems.Stretch
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
@@ -171,7 +162,7 @@ ClientScreen As screen:
                     Width: =Parent.Width/3
                     ZIndex: =1
 
-                    Button7_8 As button:
+                    btnNewClientCS As button:
                         AutoDisableOnSelect: =false
                         BorderThickness: =0
                         Color: |-
@@ -201,7 +192,7 @@ ClientScreen As screen:
                                         Reset(CZip);
                                         Reset(CState);
                                         Reset(txtContactName);
-                                        Reset(CContact1_2);
+                                        Reset(txtContactNumber);
                         PressedBorderColor: =//Self.Fill
                         PressedFill: =//Self.Color
                         Size: |-
@@ -211,8 +202,7 @@ ClientScreen As screen:
                         Width: =Parent.Width
                         ZIndex: =1
 
-                    Icon5_4 As icon.Edit:
-                        AlignInContainer: =AlignInContainer.Center
+                    iconNewClientCS As icon.Edit:
                         Color: =RGBA(0, 0, 0, 0)
                         Fill: =referenceCSS.RActiveColor
                         Height: =5
@@ -221,7 +211,8 @@ ClientScreen As screen:
                         Width: =Parent.Width/1.3
                         ZIndex: =2
 
-                Container8_9 As groupContainer.verticalAutoLayoutContainer:
+                ctnExistingClientCS As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =100
@@ -230,7 +221,7 @@ ClientScreen As screen:
                     Width: =Parent.Width/2.5
                     ZIndex: =2
 
-                    Button7_9 As button:
+                    btnExistingClientCS As button:
                         BorderThickness: =0
                         Color: =If(A,referenceCSS.RActiveColor,referenceCSS.RInActiveColor)
                         DisabledColor: =RGBA(204, 204, 204, 1)
@@ -258,8 +249,7 @@ ClientScreen As screen:
                         Width: =Parent.Width
                         ZIndex: =1
 
-                    Icon6_4 As icon.Add:
-                        AlignInContainer: =AlignInContainer.Center
+                    iconExistingClientCS As icon.Add:
                         AutoDisableOnSelect: =false
                         Color: |
                             =RGBA(0, 0, 0, 0)
@@ -272,7 +262,7 @@ ClientScreen As screen:
                         Width: =Parent.Width/1.2
                         ZIndex: =2
 
-            Container7_5 As groupContainer.verticalAutoLayoutContainer:
+            ctnbuttonsUnderlineCS As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 Fill: =RGBA(204, 204, 204, 1)
                 FillPortions: =0
@@ -284,7 +274,7 @@ ClientScreen As screen:
                 Width: =Parent.Width
                 ZIndex: =3
 
-            Container18_5 As groupContainer.manualLayoutContainer:
+            ctnMainCS As groupContainer.manualLayoutContainer:
                 FillPortions: =0
                 Height: |-
                     =/*If(App.Height<=600,Parent.Height-Container20_10.Height-Container6_4.Height-Container7_5.Height+800,
@@ -295,15 +285,15 @@ ClientScreen As screen:
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 Width: =Parent.Width
-                Y: =Container7_5.Height+Container7_5.Y
+                Y: =ctnbuttonsUnderlineCS.Height+ctnbuttonsUnderlineCS.Y
                 ZIndex: =4
 
-                Container21_7 As groupContainer.manualLayoutContainer:
+                ctnMainClientScreen As groupContainer.manualLayoutContainer:
                     Height: =Parent.Height
                     Width: =Parent.Width
                     ZIndex: =1
 
-                    Container25_4 As groupContainer.verticalAutoLayoutContainer:
+                    ctnEexistingClientScreen As groupContainer.verticalAutoLayoutContainer:
                         Height: |-
                             =Parent.Height
                             //Gallery9_2.Height
@@ -314,15 +304,12 @@ ClientScreen As screen:
                         ZIndex: =1
 
                         "Gallery9_2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
-                            AlignInContainer: =AlignInContainer.Start
-                            FillPortions: =0
+                            AlignInContainer: =AlignInContainer.SetByContainer
                             Height: |-
                                 =//Parent.Height
                                 CountRows(Gallery9_2.AllItems)*Gallery9_2.TemplateHeight
                             Items: =Sort(schindlerClients,name,Ascending)
                             Layout: =Layout.Vertical
-                            LayoutMinHeight: =287
-                            LayoutMinWidth: =320
                             ShowScrollbar: =false
                             TemplatePadding: =0
                             Width: =Parent.Width/1.01
@@ -972,7 +959,7 @@ ClientScreen As screen:
                                     Y: =Gallery9_2.TemplateHeight/1.3
                                     ZIndex: =28
 
-                    Container31_7 As groupContainer.verticalAutoLayoutContainer:
+                    ctnclientScreen As groupContainer.verticalAutoLayoutContainer:
                         Height: =Parent.Height
                         LayoutDirection: =LayoutDirection.Vertical
                         LayoutMode: =LayoutMode.Auto
@@ -1021,7 +1008,7 @@ ClientScreen As screen:
                             Y: =lblClientName.Y+lblClientName.Height+100
                             ZIndex: =2
 
-                        BProduct_Label_19 As label:
+                        BProduct_LabelCS As label:
                             Color: =referenceCSS.RActiveColor
                             Font: =referenceCSS.RFont
                             FontWeight: =referenceCSS.RFontWeight
@@ -1230,7 +1217,8 @@ ClientScreen As screen:
                             Width: =Parent.Width/2
                             ZIndex: =15
 
-                        Container11 As groupContainer.manualLayoutContainer:
+                        ctnContactNumber As groupContainer.manualLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
                             FillPortions: =0
                             Height: =100
                             LayoutMinHeight: =100
@@ -1239,7 +1227,7 @@ ClientScreen As screen:
                             Width: =Parent.Width
                             ZIndex: =16
 
-                            Label20_6 As label:
+                            lblcontactNumber As label:
                                 Font: =referenceCSS.RFont
                                 FontWeight: =FontWeight.Bold
                                 PaddingTop: =20
@@ -1248,21 +1236,21 @@ ClientScreen As screen:
                                 Width: =Parent.Width/3
                                 ZIndex: =1
 
-                            Label9 As label:
+                            lblCNumber As label:
                                 BorderColor: =RGBA(0, 0, 0, 0)
                                 DisabledColor: =RGBA(0, 0, 0, 1)
                                 Font: =referenceCSS.RFont
-                                Height: =CContact1_2.Height
+                                Height: =txtContactNumber.Height
                                 PaddingLeft: =12
                                 Size: =referenceCSS.RInputFontSize
                                 Text: |-
-                                    =If(IsBlank(CContact1_2.Text),"",Text(Value(CContact1_2.Text), "[$-en-US](###) ###-####"))
+                                    =If(IsBlank(txtContactNumber.Text),"",Text(Value(txtContactNumber.Text), "[$-en-US](###) ###-####"))
                                 Width: =Parent.Width/1.94
                                 X: =1
-                                Y: =CContact1_2.Y
+                                Y: =txtContactNumber.Y
                                 ZIndex: =2
 
-                            CContact1_2 As text:
+                            txtContactNumber As text:
                                 BorderColor: =RGBA(0, 0, 0, 1)
                                 Color: =RGBA(0, 0, 0, 0)
                                 Default: =formattedNumber
@@ -1271,7 +1259,7 @@ ClientScreen As screen:
                                 Fill: =RGBA(0, 0, 0, 0)
                                 Font: =referenceCSS.RFont
                                 Format: =TextFormat.Number
-                                Height: =Container11.Height/2
+                                Height: =ctnContactNumber.Height/2
                                 HintText: ="Enter Contact Number"
                                 HoverBorderColor: =RGBA(0, 0, 0, 1)
                                 HoverColor: =RGBA(0, 0, 0, 0)
@@ -1286,11 +1274,12 @@ ClientScreen As screen:
                                 Size: =referenceCSS.RInputFontSize
                                 Width: =Parent.Width/1.94
                                 X: =1
-                                Y: =Label20_6.Height
+                                Y: =lblcontactNumber.Height
                                 ZIndex: =3
 
-                        Container1 As groupContainer.verticalAutoLayoutContainer:
+                        ctnButtonAdd As groupContainer.verticalAutoLayoutContainer:
                             FillPortions: =0
+                            LayoutAlignItems: =LayoutAlignItems.Center
                             LayoutDirection: =LayoutDirection.Vertical
                             LayoutGap: =20
                             LayoutMinHeight: =100
@@ -1300,7 +1289,8 @@ ClientScreen As screen:
                             Width: =Parent.Width
                             ZIndex: =17
 
-                            Container20_15 As groupContainer.verticalAutoLayoutContainer:
+                            ctnbuttonLine As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.SetByContainer
                                 Fill: =RGBA(204, 204, 204, 1)
                                 FillPortions: =0
                                 Height: =5
@@ -1314,8 +1304,7 @@ ClientScreen As screen:
                                 Y: =1129
                                 ZIndex: =1
 
-                            Button1_15 As button:
-                                AlignInContainer: =AlignInContainer.Center
+                            btnAdd As button:
                                 Color: =referenceCSS.RColorWhite
                                 Fill: =RGBA(255, 0, 0, 1)
                                 Font: =referenceCSS.RFont
@@ -1399,7 +1388,7 @@ ClientScreen As screen:
                                                     city:CCity.Text,
                                                     state:CState.Text,
                                                     contactName:txtContactName.Text,
-                                                    contactNumber:CContact1_2.Text
+                                                    contactNumber:txtContactNumber.Text
                                                     
                                                 })
                                             
@@ -1416,7 +1405,7 @@ ClientScreen As screen:
                                                 Reset(CZip);
                                                 Reset(CState);
                                                 Reset(txtContactName);
-                                                Reset(CContact1_2);
+                                                Reset(txtContactNumber);
                                                 ,
                                                 Notify(
                                                     "Error patch function",
