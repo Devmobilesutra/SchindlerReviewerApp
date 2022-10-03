@@ -305,6 +305,7 @@ ClientScreen As screen:
 
                         "Gallery9_2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
                             AlignInContainer: =AlignInContainer.SetByContainer
+                            FillPortions: =0
                             Height: |-
                                 =//Parent.Height
                                 CountRows(Gallery9_2.AllItems)*Gallery9_2.TemplateHeight
