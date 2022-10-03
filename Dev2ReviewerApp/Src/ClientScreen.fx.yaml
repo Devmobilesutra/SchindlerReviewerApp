@@ -281,7 +281,7 @@ ClientScreen As screen:
                     App.Height >600 && App.Height<=950,Parent.Height-Container20_10.Height-Container6_4.Height-Container7_5.Height+650,App.Height > 500 && App.Height<=1057,Parent.Height/4,Parent.Height-Container20_10.Height-Container6_4.Height-Container7_5.Height+80) */
                     
                     //Gallery9_2.Height
-                    If(P,1000,Gallery9_2.Height)
+                    If(P,1000,glryExistingClients.Height)
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 Width: =Parent.Width
@@ -303,11 +303,11 @@ ClientScreen As screen:
                         Width: =Parent.Width
                         ZIndex: =1
 
-                        "Gallery9_2 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+                        "glryExistingClients As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
                             AlignInContainer: =AlignInContainer.SetByContainer
                             Height: |-
                                 =//Parent.Height
-                                CountRows(Gallery9_2.AllItems)*Gallery9_2.TemplateHeight
+                                CountRows(glryExistingClients.AllItems)*glryExistingClients.TemplateHeight
                             Items: =Sort(schindlerClients,name,Ascending)
                             Layout: =Layout.Vertical
                             ShowScrollbar: =false
@@ -319,22 +319,22 @@ ClientScreen As screen:
                                 AutoHeight: =true
                                 Color: =RGBA(0, 0, 0, 0)
                                 OnSelect: =Select(Parent)
-                                Text: =txtContactName_1.Text
-                                Width: =txtContactName_1.Width
-                                X: =txtContactName_1.X
-                                Y: =txtContactName_1.Y
+                                Text: =txtContactNameECS.Text
+                                Width: =txtContactNameECS.Width
+                                X: =txtContactNameECS.X
+                                Y: =txtContactNameECS.Y
                                 ZIndex: =1
 
-                            Separator1_2 As rectangle:
+                            iconglrytemplateECS As rectangle:
                                 BorderColor: =RGBA(184, 0, 0, 1)
                                 BorderThickness: =3
                                 Fill: =RGBA(0, 0, 0, 0)
-                                Height: =Gallery9_2.TemplateHeight/1.1
+                                Height: =glryExistingClients.TemplateHeight/1.1
                                 Width: =Parent.TemplateWidth
                                 Y: =2
                                 ZIndex: =5
 
-                            lblClientName_1 As label:
+                            lblClientNameECS As label:
                                 Font: =referenceCSS.RFont
                                 FontWeight: =FontWeight.Semibold
                                 PaddingBottom: =10
@@ -345,7 +345,7 @@ ClientScreen As screen:
                                 Y: =30
                                 ZIndex: =6
 
-                            txtClientName_1 As text:
+                            txtClientNameECS As text:
                                 BorderColor: =RGBA(0, 0, 0, 1)
                                 BorderThickness: =1
                                 Default: =ThisItem.name
@@ -359,7 +359,7 @@ ClientScreen As screen:
                                 HoverFill: =RGBA(0, 0, 0, 0)
                                 OnChange: |-
                                     =If(
-                                       IsBlank(LookUp(schindlerClients,name= txtClientName_1.Text)),
+                                       IsBlank(LookUp(schindlerClients,name= txtClientNameECS.Text)),
                                        Set(ShowErrorMsgClient, false),
                                        Set(ShowErrorMsgClient, true)
                                     )
@@ -370,11 +370,11 @@ ClientScreen As screen:
                                 RadiusTopRight: =1
                                 Size: =referenceCSS.RInputFontSize
                                 Width: =Parent.Width/1.5
-                                X: =lblClientName_1.X+lblClientName_1.Width+10
+                                X: =lblClientNameECS.X+lblClientNameECS.Width+10
                                 Y: =30
                                 ZIndex: =7
 
-                            lblAddress1_1 As label:
+                            lblAddress1ECS As label:
                                 Font: =referenceCSS.RFont
                                 FontWeight: =FontWeight.Semibold
                                 PaddingBottom: =10
@@ -382,10 +382,10 @@ ClientScreen As screen:
                                 Text: ="Address1"
                                 Width: =180
                                 X: =31
-                                Y: =5+BProduct_Label_20.Y+BProduct_Label_20.Height
+                                Y: =5+lblErrormsgclient.Y+lblErrormsgclient.Height
                                 ZIndex: =8
 
-                            txtAddress1_1 As text:
+                            txtAddress1ECS As text:
                                 BorderColor: =RGBA(0, 0, 0, 1)
                                 BorderThickness: =1
                                 Default: =ThisItem.address1
@@ -404,11 +404,11 @@ ClientScreen As screen:
                                 RadiusTopRight: =1
                                 Size: =referenceCSS.RInputFontSize
                                 Width: =Parent.Width/1.5
-                                X: =lblClientName_1.X+lblClientName_1.Width+10
-                                Y: =5+BProduct_Label_20.Y+BProduct_Label_20.Height
+                                X: =lblClientNameECS.X+lblClientNameECS.Width+10
+                                Y: =5+lblErrormsgclient.Y+lblErrormsgclient.Height
                                 ZIndex: =9
 
-                            lblAddress2_1 As label:
+                            lblAddress2ECS As label:
                                 Font: =referenceCSS.RFont
                                 FontWeight: =FontWeight.Semibold
                                 PaddingBottom: =10
@@ -416,10 +416,10 @@ ClientScreen As screen:
                                 Text: ="Address2"
                                 Width: =180
                                 X: =31
-                                Y: =lblAddress1_1.Y+lblAddress1_1.Height
+                                Y: =lblAddress1ECS.Y+lblAddress1ECS.Height
                                 ZIndex: =10
 
-                            txtAddress2_1 As text:
+                            txtAddress2ECS As text:
                                 BorderColor: =RGBA(0, 0, 0, 1)
                                 BorderThickness: =1
                                 Default: =ThisItem.address2
@@ -439,11 +439,11 @@ ClientScreen As screen:
                                 RadiusTopRight: =1
                                 Size: =referenceCSS.RInputFontSize
                                 Width: =Parent.Width/1.5
-                                X: =lblAddress2_1.X+lblAddress2_1.Width+10
-                                Y: =lblAddress1_1.Y+lblAddress1_1.Height
+                                X: =lblAddress2ECS.X+lblAddress2ECS.Width+10
+                                Y: =lblAddress1ECS.Y+lblAddress1ECS.Height
                                 ZIndex: =11
 
-                            lblCity_1 As label:
+                            lblCityECS As label:
                                 Font: =referenceCSS.RFont
                                 FontWeight: =FontWeight.Semibold
                                 PaddingBottom: =10
@@ -451,10 +451,10 @@ ClientScreen As screen:
                                 Text: ="City"
                                 Width: =180
                                 X: =31
-                                Y: =lblAddress2_1.Y+lblAddress2_1.Height
+                                Y: =lblAddress2ECS.Y+lblAddress2ECS.Height
                                 ZIndex: =12
 
-                            CCity_1 As text:
+                            txtCityECS As text:
                                 BorderColor: =RGBA(0, 0, 0, 1)
                                 BorderThickness: =1
                                 Default: =ThisItem.city
@@ -468,8 +468,8 @@ ClientScreen As screen:
                                 HoverFill: =RGBA(0, 0, 0, 0)
                                 OnChange: |-
                                     ="(" &
-                                    Left(Concat(Filter(Split(CCity_1.Text,""),Result in "0123456789"),Result),3)& " ) " &
-                                    Mid(Concat(Filter(Split(CCity_1.Text,""),Result in "0123456789"),Result),4,3) & " - " &
+                                    Left(Concat(Filter(Split(txtCityECS.Text,""),Result in "0123456789"),Result),3)& " ) " &
+                                    Mid(Concat(Filter(Split(txtCityECS.Text,""),Result in "0123456789"),Result),4,3) & " - " &
                                     Mid(Concat(Filter(Split(TextInput1.Text,""),Result in "0123456789"),Result),7,4)
                                 PaddingLeft: =5
                                 PaddingTop: =10
@@ -479,11 +479,11 @@ ClientScreen As screen:
                                 RadiusTopRight: =1
                                 Size: =referenceCSS.RInputFontSize
                                 Width: =Parent.Width/8
-                                X: =lblClientName_1.X+lblClientName_1.Width+10
-                                Y: =lblAddress2_1.Y+lblAddress2_1.Height
+                                X: =lblClientNameECS.X+lblClientNameECS.Width+10
+                                Y: =lblAddress2ECS.Y+lblAddress2ECS.Height
                                 ZIndex: =13
 
-                            lbZip_1 As label:
+                            lbZipECS As label:
                                 Font: =referenceCSS.RFont
                                 FontWeight: =FontWeight.Semibold
                                 PaddingBottom: =10
@@ -491,12 +491,12 @@ ClientScreen As screen:
                                 Text: ="ZipCode"
                                 Width: =100
                                 X: |-
-                                    =CState_1.X+CContact1_3.Width
+                                    =txtStateECS.X+txtContactECS.Width
                                     //Parent.Width-Self.Width-CZip_1.Width-215
-                                Y: =5+(txtAddress2_1.Y+txtAddress2_1.Height)
+                                Y: =5+(txtAddress2ECS.Y+txtAddress2ECS.Height)
                                 ZIndex: =14
 
-                            CZip_1 As text:
+                            txtZipECS As text:
                                 BorderColor: =RGBA(0, 0, 0, 1)
                                 BorderThickness: =1
                                 Default: =ThisItem.zip
@@ -512,8 +512,8 @@ ClientScreen As screen:
                                 MaxLength: =5
                                 OnChange: |-
                                     ="(" &
-                                    Left(Concat(Filter(Split(CZip_1.Text,""),Result in "0123456789"),Result),3)& " ) " &
-                                    Mid(Concat(Filter(Split(CZip_1.Text,""),Result in "0123456789"),Result),4,3) & " - " &
+                                    Left(Concat(Filter(Split(txtZipECS.Text,""),Result in "0123456789"),Result),3)& " ) " &
+                                    Mid(Concat(Filter(Split(txtZipECS.Text,""),Result in "0123456789"),Result),4,3) & " - " &
                                     Mid(Concat(Filter(Split(TextInput1.Text,""),Result in "0123456789"),Result),7,4)
                                 PaddingLeft: =5
                                 RadiusBottomLeft: =1
@@ -523,12 +523,12 @@ ClientScreen As screen:
                                 Size: =referenceCSS.RInputFontSize
                                 Width: =Parent.Width/14
                                 X: |-
-                                    =lbZip_1.X+lbZip_1.Width
+                                    =lbZipECS.X+lbZipECS.Width
                                     //Parent.Width-Self.Width-215
-                                Y: =5+(txtAddress2_1.Y+txtAddress2_1.Height)
+                                Y: =5+(txtAddress2ECS.Y+txtAddress2ECS.Height)
                                 ZIndex: =15
 
-                            lblState_1 As label:
+                            lblStateECS As label:
                                 Font: =referenceCSS.RFont
                                 FontWeight: =FontWeight.Semibold
                                 PaddingBottom: =10
@@ -538,12 +538,12 @@ ClientScreen As screen:
                                     =//Parent.Width/16
                                     70
                                 X: |-
-                                    =Label20_7.X
+                                    =lblContactNumberECS.X
                                     //Parent.Width-Self.Width-CZip_1.Width-lbZip_1.Width-CState_1.Width-260
-                                Y: =(lblCity_1.Y)
+                                Y: =(lblCityECS.Y)
                                 ZIndex: =16
 
-                            CState_1 As text:
+                            txtStateECS As text:
                                 BorderColor: =RGBA(0, 0, 0, 1)
                                 BorderThickness: =1
                                 Default: =ThisItem.state
@@ -557,8 +557,8 @@ ClientScreen As screen:
                                 HoverFill: =RGBA(0, 0, 0, 0)
                                 OnChange: |-
                                     ="(" &
-                                    Left(Concat(Filter(Split(CState_1.Text,""),Result in "0123456789"),Result),3)& " ) " &
-                                    Mid(Concat(Filter(Split(CState_1.Text,""),Result in "0123456789"),Result),4,3) & " - " &
+                                    Left(Concat(Filter(Split(txtStateECS.Text,""),Result in "0123456789"),Result),3)& " ) " &
+                                    Mid(Concat(Filter(Split(txtStateECS.Text,""),Result in "0123456789"),Result),4,3) & " - " &
                                     Mid(Concat(Filter(Split(TextInput1.Text,""),Result in "0123456789"),Result),7,4)
                                 PaddingLeft: =5
                                 RadiusBottomLeft: =1
@@ -568,12 +568,12 @@ ClientScreen As screen:
                                 Size: =referenceCSS.RInputFontSize
                                 Width: =Parent.Width/8
                                 X: |-
-                                    =lblState_1.X+lblState_1.Width
+                                    =lblStateECS.X+lblStateECS.Width
                                     //Parent.Width-Self.Width-CZip_1.Width-lbZip_1.Width-272
-                                Y: =(CCity_1.Y)
+                                Y: =(txtCityECS.Y)
                                 ZIndex: =17
 
-                            lblContactName_1 As label:
+                            lblContactNameECS As label:
                                 Font: =referenceCSS.RFont
                                 FontWeight: =FontWeight.Semibold
                                 PaddingBottom: =10
@@ -581,10 +581,10 @@ ClientScreen As screen:
                                 Text: ="Contact Name"
                                 Width: =180
                                 X: =31
-                                Y: =(CState_1.Height+CState_1.Y+10)
+                                Y: =(txtStateECS.Height+txtStateECS.Y+10)
                                 ZIndex: =18
 
-                            txtContactName_1 As text:
+                            txtContactNameECS As text:
                                 BorderColor: =RGBA(0, 0, 0, 1)
                                 BorderThickness: =1
                                 Default: =ThisItem.contactName
@@ -599,8 +599,8 @@ ClientScreen As screen:
                                 Mode: =TextMode.MultiLine
                                 OnChange: |-
                                     ="(" &
-                                    Left(Concat(Filter(Split(txtContactName_1.Text,""),Result in "0123456789"),Result),3)& " ) " &
-                                    Mid(Concat(Filter(Split(txtContactName_1.Text,""),Result in "0123456789"),Result),4,3) & " - " &
+                                    Left(Concat(Filter(Split(txtContactNameECS.Text,""),Result in "0123456789"),Result),3)& " ) " &
+                                    Mid(Concat(Filter(Split(txtContactNameECS.Text,""),Result in "0123456789"),Result),4,3) & " - " &
                                     Mid(Concat(Filter(Split(TextInput1.Text,""),Result in "0123456789"),Result),7,4)
                                 PaddingLeft: =5
                                 PaddingTop: =8
@@ -610,34 +610,34 @@ ClientScreen As screen:
                                 RadiusTopRight: =1
                                 Size: =referenceCSS.RInputFontSize
                                 Width: =Parent.Width/5
-                                X: =lblClientName_1.X+lblClientName_1.Width+10
-                                Y: =(CState_1.Height+CState_1.Y)+10
+                                X: =lblClientNameECS.X+lblClientNameECS.Width+10
+                                Y: =(txtStateECS.Height+txtStateECS.Y)+10
                                 ZIndex: =19
 
-                            Label20_7 As label:
+                            lblContactNumberECS As label:
                                 Font: =referenceCSS.RFont
                                 FontWeight: =FontWeight.Semibold
                                 PaddingBottom: =10
                                 Size: =referenceCSS.RLabelFontSize
                                 Text: ="Contact Number"
                                 Width: =200
-                                X: =txtContactName_1.X+txtContactName_1.Width
-                                Y: =lblContactName_1.Y
+                                X: =txtContactNameECS.X+txtContactNameECS.Width
+                                Y: =lblContactNameECS.Y
                                 ZIndex: =20
 
-                            Label9_3 As label:
+                            lblContactECS As label:
                                 BorderColor: =RGBA(0, 0, 0, 0)
                                 Font: =referenceCSS.RFont
                                 Height: =35
                                 Size: =referenceCSS.RInputFontSize
                                 Text: |-
-                                    =If(IsBlank(CContact1_3.Text),"",Text(Value(CContact1_3.Text), "[$-en-US](###) ###-####"))
+                                    =If(IsBlank(txtContactECS.Text),"",Text(Value(txtContactECS.Text), "[$-en-US](###) ###-####"))
                                 Width: =Parent.Width/8
-                                X: =Label20_7.X+Label20_7.Width
-                                Y: =txtContactName_1.Y
+                                X: =lblContactNumberECS.X+lblContactNumberECS.Width
+                                Y: =txtContactNameECS.Y
                                 ZIndex: =21
 
-                            CContact1_3 As text:
+                            txtContactECS As text:
                                 BorderColor: =RGBA(0, 0, 0, 1)
                                 BorderThickness: =1
                                 Color: =RGBA(0, 0, 0, 0)
@@ -664,8 +664,8 @@ ClientScreen As screen:
                                 RadiusTopRight: =1
                                 Size: =referenceCSS.RLabelFontSize
                                 Width: =Parent.Width/8
-                                X: =Label20_7.X+Label20_7.Width
-                                Y: =txtContactName_1.Y
+                                X: =lblContactNumberECS.X+lblContactNumberECS.Width
+                                Y: =txtContactNameECS.Y
                                 ZIndex: =22
 
                             GroupSaveCS As group:
@@ -675,7 +675,7 @@ ClientScreen As screen:
                                 Y: =40
                                 ZIndex: =27
 
-                                ButtonSaveCs As button:
+                                ButtonSaveCS As button:
                                     Color: =RGBA(0, 0, 0, 1)
                                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                     DisabledColor: =RGBA(0, 0, 0, 0)
@@ -720,7 +720,7 @@ ClientScreen As screen:
                                             Connection.Connected = false,
                                             Notify("Network is not Available"),
                                             If(
-                                                IsBlank(txtClientName_1.Text),
+                                                IsBlank(txtClientNameECS.Text),
                                                 Notify(
                                                     "Please Enter Client Name",
                                                     NotificationType.Error
@@ -736,14 +736,14 @@ ClientScreen As screen:
                                                schindlerClients,
                                                ThisItem,
                                                {
-                                                    name: txtClientName_1.Text,
-                                                    address1: txtAddress1_1.Text,
-                                                    address2: txtAddress2_1.Text,
-                                                    city: CCity_1.Text,
-                                                    zip: CZip_1.Text,
-                                                    state: CState_1.Text,
-                                                    contactName: txtContactName_1.Text,
-                                                    contactNumber: CContact1_3.Text
+                                                    name: txtClientNameECS.Text,
+                                                    address1: txtAddress1ECS.Text,
+                                                    address2: txtAddress2ECS.Text,
+                                                    city: txtCityECS.Text,
+                                                    zip: txtZipECS.Text,
+                                                    state: txtStateECS.Text,
+                                                    contactName: txtContactNameECS.Text,
+                                                    contactNumber: txtContactECS.Text
                                                });
                                             );
                                                
@@ -754,14 +754,14 @@ ClientScreen As screen:
                                                     F,
                                                     false
                                                    );
-                                                     Reset( txtClientName_1);
-                                                     Reset( txtAddress1_1);
-                                                     Reset( txtAddress2_1);
-                                                     Reset( CCity_1);
-                                                     Reset(  CZip_1);
-                                                     Reset( CState_1);
-                                                     Reset( txtContactName_1);
-                                                     Reset( CContact1_3);
+                                                     Reset( txtClientNameECS);
+                                                     Reset( txtAddress1ECS);
+                                                     Reset( txtAddress2ECS);
+                                                     Reset( txtCityECS);
+                                                     Reset(  txtZipECS);
+                                                     Reset( txtStateECS);
+                                                     Reset( txtContactNameECS);
+                                                     Reset( txtContactECS);
                                                     ,
                                                     Notify(
                                                         "Error patch function",
@@ -780,8 +780,8 @@ ClientScreen As screen:
                                     Width: =100
                                     X: |-
                                         =//Parent.Width/1.39
-                                        Parent.Width-Self.Width-ButtonEditCs.Width-ButtonRemoveCs.Width-40
-                                    Y: =Gallery9_2.TemplateHeight/1.3
+                                        Parent.Width-Self.Width-btnEditCS.Width-btnRemoveCS.Width-40
+                                    Y: =glryExistingClients.TemplateHeight/1.3
                                     ZIndex: =25
 
                                 IconSaVE As icon.Trash:
@@ -829,9 +829,9 @@ ClientScreen As screen:
                                             false
                                         );
                                     Visible: =If(varEditMode=ThisItem.Id && F=true,true,false)
-                                    Width: =ButtonRemoveCs.Width/4
-                                    X: =ButtonSaveCs.X
-                                    Y: =Gallery9_2.TemplateHeight/1.3
+                                    Width: =btnRemoveCS.Width/4
+                                    X: =ButtonSaveCS.X
+                                    Y: =glryExistingClients.TemplateHeight/1.3
                                     ZIndex: =26
 
                             GroupEditCS As group:
@@ -841,7 +841,7 @@ ClientScreen As screen:
                                 Y: =40
                                 ZIndex: =28
 
-                                ButtonEditCs As button:
+                                btnEditCS As button:
                                     Color: =RGBA(0, 0, 0, 1)
                                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                     DisabledColor: =RGBA(0, 0, 0, 0)
@@ -864,19 +864,19 @@ ClientScreen As screen:
                                     Width: =80
                                     X: |-
                                         =//Parent.Width/1.24
-                                        Parent.Width-Self.Width-ButtonRemoveCs.Width-20
-                                    Y: =Gallery9_2.TemplateHeight/1.3
+                                        Parent.Width-Self.Width-btnRemoveCS.Width-20
+                                    Y: =glryExistingClients.TemplateHeight/1.3
                                     ZIndex: =23
 
-                                Image10_9 As image:
+                                imgEditCS As image:
                                     Height: =30
                                     Image: ='writing-black_1'
                                     Width: =20
-                                    X: =ButtonEditCs.X-10
-                                    Y: =Gallery9_2.TemplateHeight/1.3
+                                    X: =btnEditCS.X-10
+                                    Y: =glryExistingClients.TemplateHeight/1.3
                                     ZIndex: =27
 
-                            BProduct_Label_20 As label:
+                            lblErrormsgclient As label:
                                 Color: =referenceCSS.RActiveColor
                                 Font: =referenceCSS.RFont
                                 FontWeight: =referenceCSS.RFontWeight
@@ -888,18 +888,18 @@ ClientScreen As screen:
                                 Text: ="Client name already exist."
                                 Visible: =ShowErrorMsgClient= true && varEditMode=ThisItem.Id
                                 Width: =Parent.Width/1.2
-                                X: =lblClientName_1.X+lblClientName_1.Width+10
-                                Y: =5+txtClientName_1.Y+txtClientName_1.Height
+                                X: =lblClientNameECS.X+lblClientNameECS.Width+10
+                                Y: =5+txtClientNameECS.Y+txtClientNameECS.Height
                                 ZIndex: =29
 
-                            GroupRemoveCs As group:
+                            GroupRemoveCS As group:
                                 Height: =5
                                 Width: =5
                                 X: =40
                                 Y: =40
                                 ZIndex: =29
 
-                                ButtonRemoveCs As button:
+                                btnRemoveCS As button:
                                     Color: =RGBA(0, 0, 0, 1)
                                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                     DisabledColor: =RGBA(153, 153, 153, 1)
@@ -937,10 +937,10 @@ ClientScreen As screen:
                                     X: |-
                                         =//Parent.Width/1.15
                                         Parent.Width-Self.Width-20
-                                    Y: =Gallery9_2.TemplateHeight/1.3
+                                    Y: =glryExistingClients.TemplateHeight/1.3
                                     ZIndex: =24
 
-                                Image10_10 As image:
+                                imgRemoveCS As image:
                                     Height: =30
                                     Image: |-
                                         =//If units are assign to client then client can't delete
@@ -955,8 +955,8 @@ ClientScreen As screen:
                                              trashGray
                                         )
                                     Width: =20
-                                    X: =ButtonRemoveCs.X+5
-                                    Y: =Gallery9_2.TemplateHeight/1.3
+                                    X: =btnRemoveCS.X+5
+                                    Y: =glryExistingClients.TemplateHeight/1.3
                                     ZIndex: =28
 
                     ctnclientScreen As groupContainer.verticalAutoLayoutContainer:
