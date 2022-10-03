@@ -9074,36 +9074,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "assessmentGallery.GalleryV1.AccessibleLabel"
                 }
               ],
@@ -9134,19 +9104,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_5.lblAssStatusBS_5.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_5.lblAssStatusBS_5.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.ctnbank_5.lblAssStatusBS_5"
+                "type": "assessmentGallery.GalleryV1"
               }
             }
           ],
@@ -9194,19 +9164,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_5.LblAssStatuscountBS_4.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_5.lblAssStatusBS_5.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_5.LblAssStatuscountBS_4.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_5.lblAssStatusBS_5.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.ctnbank_5.LblAssStatuscountBS_4"
+                "type": "assessmentGallery.GalleryV1.ctnbank_5.lblAssStatusBS_5"
               }
             }
           ],
@@ -9254,19 +9224,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_4.lblAssStatusBS_4.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_5.LblAssStatuscountBS_4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_4.lblAssStatusBS_4.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_5.LblAssStatuscountBS_4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.ctnbank_4.lblAssStatusBS_4"
+                "type": "assessmentGallery.GalleryV1.ctnbank_5.LblAssStatuscountBS_4"
               }
             }
           ],
@@ -9314,19 +9284,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_4.LblAssStatuscountBS_3.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_4.lblAssStatusBS_4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_4.LblAssStatuscountBS_3.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_4.lblAssStatusBS_4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.ctnbank_4.LblAssStatuscountBS_3"
+                "type": "assessmentGallery.GalleryV1.ctnbank_4.lblAssStatusBS_4"
               }
             }
           ],
@@ -9374,19 +9344,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_6.lblAssStatusBS_6.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_4.LblAssStatuscountBS_3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_6.lblAssStatusBS_6.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_4.LblAssStatuscountBS_3.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.ctnbank_6.lblAssStatusBS_6"
+                "type": "assessmentGallery.GalleryV1.ctnbank_4.LblAssStatuscountBS_3"
               }
             }
           ],
@@ -9434,19 +9404,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_7.lblAssStatusBS_7.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_6.lblAssStatusBS_6.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_7.lblAssStatusBS_7.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_6.lblAssStatusBS_6.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.ctnbank_7.lblAssStatusBS_7"
+                "type": "assessmentGallery.GalleryV1.ctnbank_6.lblAssStatusBS_6"
               }
             }
           ],
@@ -9494,19 +9464,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_7.LblAssStatuscountBS_6.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_7.lblAssStatusBS_7.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_7.LblAssStatuscountBS_6.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_7.lblAssStatusBS_7.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.ctnbank_7.LblAssStatuscountBS_6"
+                "type": "assessmentGallery.GalleryV1.ctnbank_7.lblAssStatusBS_7"
               }
             }
           ],
@@ -9554,19 +9524,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_7.ctnbank_8.lblAssStatusBS_8.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_7.LblAssStatuscountBS_6.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_7.ctnbank_8.lblAssStatusBS_8.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_7.LblAssStatuscountBS_6.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.ctnbank_7.ctnbank_8.lblAssStatusBS_8"
+                "type": "assessmentGallery.GalleryV1.ctnbank_7.LblAssStatuscountBS_6"
               }
             }
           ],
@@ -9614,19 +9584,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_7.ctnbank_8.LblAssStatuscountBS_7.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_7.ctnbank_8.lblAssStatusBS_8.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_7.ctnbank_8.LblAssStatuscountBS_7.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_7.ctnbank_8.lblAssStatusBS_8.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.ctnbank_7.ctnbank_8.LblAssStatuscountBS_7"
+                "type": "assessmentGallery.GalleryV1.ctnbank_7.ctnbank_8.lblAssStatusBS_8"
               }
             }
           ],
@@ -9674,19 +9644,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_5.lblAssessmentByPFS_4.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_7.ctnbank_8.LblAssStatuscountBS_7.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_5.lblAssessmentByPFS_4.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_7.ctnbank_8.LblAssStatuscountBS_7.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_5.lblAssessmentByPFS_4"
+                "type": "assessmentGallery.GalleryV1.ctnbank_7.ctnbank_8.LblAssStatuscountBS_7"
               }
             }
           ],
@@ -9734,19 +9704,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_5.lblAssessorNamePFS_4.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_5.lblAssessmentByPFS_4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_5.lblAssessorNamePFS_4.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_5.lblAssessmentByPFS_4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_5.lblAssessorNamePFS_4"
+                "type": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_5.lblAssessmentByPFS_4"
               }
             }
           ],
@@ -9794,19 +9764,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_6.lblAssessmntTypePFS_4.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_5.lblAssessorNamePFS_4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_6.lblAssessmntTypePFS_4.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_5.lblAssessorNamePFS_4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_6.lblAssessmntTypePFS_4"
+                "type": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_5.lblAssessorNamePFS_4"
               }
             }
           ],
@@ -9854,19 +9824,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_6.lblAssesmentTypeLPFS_4.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_6.lblAssessmntTypePFS_4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_6.lblAssesmentTypeLPFS_4.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_6.lblAssessmntTypePFS_4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_6.lblAssesmentTypeLPFS_4"
+                "type": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_6.lblAssessmntTypePFS_4"
               }
             }
           ],
@@ -9914,19 +9884,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_7.lblAssessmentByPFS_5.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_6.lblAssesmentTypeLPFS_4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_7.lblAssessmentByPFS_5.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_6.lblAssesmentTypeLPFS_4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_7.lblAssessmentByPFS_5"
+                "type": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_6.lblAssesmentTypeLPFS_4"
               }
             }
           ],
@@ -9974,19 +9944,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_7.lblAssessorNamePFS_5.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_7.lblAssessmentByPFS_5.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_7.lblAssessorNamePFS_5.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_7.lblAssessmentByPFS_5.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_7.lblAssessorNamePFS_5"
+                "type": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_7.lblAssessmentByPFS_5"
               }
             }
           ],
@@ -10034,19 +10004,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_9.lblAssStatusBS_9.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_7.lblAssessorNamePFS_5.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_9.lblAssStatusBS_9.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_7.lblAssessorNamePFS_5.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.ctnbank_9.lblAssStatusBS_9"
+                "type": "assessmentGallery.GalleryV1.ctnAssessmentType_3.ctnAssessmentBy_7.lblAssessorNamePFS_5"
               }
             }
           ],
@@ -10094,19 +10064,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_9.Label22_2.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_9.lblAssStatusBS_9.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_9.Label22_2.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_9.lblAssStatusBS_9.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.ctnbank_9.Label22_2"
+                "type": "assessmentGallery.GalleryV1.ctnbank_9.lblAssStatusBS_9"
               }
             }
           ],
@@ -10154,19 +10124,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_9.Label22_2.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.ctnbank_9.Label22_2.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.Gallery5_4"
+                "type": "assessmentGallery.GalleryV1.ctnbank_9.Label22_2"
               }
             }
           ],
@@ -10214,19 +10184,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_4.Label16_4.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_4.Label16_4.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_4.Label16_4"
+                "type": "assessmentGallery.GalleryV1.Gallery5_4"
               }
             }
           ],
@@ -10274,19 +10244,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_4.Label17_4.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_4.Label16_4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_4.Label17_4.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_4.Label16_4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_4.Label17_4"
+                "type": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_4.Label16_4"
               }
             }
           ],
@@ -10334,19 +10304,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_4.Label18_4.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_4.Label17_4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_4.Label18_4.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_4.Label17_4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_4.Label18_4"
+                "type": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_4.Label17_4"
               }
             }
           ],
@@ -10394,19 +10364,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_4.Label19_4.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_4.Label18_4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_4.Label19_4.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_4.Label18_4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_4.Label19_4"
+                "type": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_4.Label18_4"
               }
             }
           ],
@@ -10454,19 +10424,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_5.Label16_5.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_4.Label19_4.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_5.Label16_5.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_4.Label19_4.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_5.Label16_5"
+                "type": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_4.Label19_4"
               }
             }
           ],
@@ -10514,19 +10484,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_5.Label17_5.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_5.Label16_5.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_5.Label17_5.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_5.Label16_5.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_5.Label17_5"
+                "type": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_5.Label16_5"
               }
             }
           ],
@@ -10574,19 +10544,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_5.Label18_5.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_5.Label17_5.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_5.Label18_5.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_5.Label17_5.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_5.Label18_5"
+                "type": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_5.Label17_5"
               }
             }
           ],
@@ -10634,19 +10604,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_5.Label19_5.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_5.Label18_5.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_5.Label19_5.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_5.Label18_5.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_5.Label19_5"
+                "type": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_5.Label18_5"
               }
             }
           ],
@@ -10694,19 +10664,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery14_2.TabIndex"
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_5.Label19_5.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery14_2.TabIndex",
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_5.Label19_5.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "assessmentGallery",
-                "type": "assessmentGallery.GalleryV1.Gallery14_2"
+                "type": "assessmentGallery.GalleryV1.Gallery5_4.Container4_14.Container5_5.Label19_5"
               }
             }
           ],
@@ -10748,6 +10718,36 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery14_2.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "assessmentGallery.GalleryV1.Gallery14_2.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "assessmentGallery",
+                "type": "assessmentGallery.GalleryV1.Gallery14_2"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 3
         },
         {
           "locations": [
