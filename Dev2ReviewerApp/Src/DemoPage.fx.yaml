@@ -10,10 +10,7 @@ DemoPage As screen:
 
         Container3_6 As groupContainer.manualLayoutContainer:
             Fill: =RGBA(255, 0, 0, 1)
-            FillPortions: =0
             Height: =90
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
             Width: =Parent.Width
             ZIndex: =1
 
@@ -83,8 +80,6 @@ DemoPage As screen:
 
         Container11_2 As groupContainer.verticalAutoLayoutContainer:
             LayoutDirection: =LayoutDirection.Vertical
-            LayoutMinHeight: =100
-            LayoutMinWidth: =250
             LayoutMode: =LayoutMode.Auto
             LayoutOverflowY: =LayoutOverflow.Scroll
             ZIndex: =2
@@ -92,11 +87,8 @@ DemoPage As screen:
             Container4_5 As groupContainer.verticalAutoLayoutContainer:
                 BorderThickness: =2
                 Fill: =RGBA(255, 255, 255, 1)
-                FillPortions: =0
                 Height: =(Parent.Height-(Parent.Height/8))
                 LayoutGap: =20
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 LayoutOverflowY: =LayoutOverflow.Scroll
                 PaddingLeft: =20
@@ -107,21 +99,15 @@ DemoPage As screen:
                 ZIndex: =1
 
                 Container29 As groupContainer.verticalAutoLayoutContainer:
-                    FillPortions: =0
                     Height: =Parent.Height
                     LayoutDirection: =LayoutDirection.Vertical
-                    LayoutMinHeight: =100
-                    LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
                     Width: =Parent.Width
                     ZIndex: =1
 
                     Container30 As groupContainer.verticalAutoLayoutContainer:
-                        FillPortions: =0
                         Height: =Container29.Height/12
                         LayoutDirection: =LayoutDirection.Vertical
-                        LayoutMinHeight: =100
-                        LayoutMinWidth: =250
                         LayoutMode: =LayoutMode.Auto
                         PaddingLeft: =5
                         ZIndex: =1
@@ -137,12 +123,9 @@ DemoPage As screen:
                             ZIndex: =1
 
                     Container31 As groupContainer.verticalAutoLayoutContainer:
-                        FillPortions: =0
                         Height: =Container29.Height/1.8
                         LayoutDirection: =LayoutDirection.Vertical
                         LayoutGap: =20
-                        LayoutMinHeight: =100
-                        LayoutMinWidth: =250
                         LayoutMode: =LayoutMode.Auto
                         PaddingLeft: =20
                         PaddingRight: =20
@@ -177,10 +160,7 @@ DemoPage As screen:
                             ZIndex: =3
 
                     Container26 As groupContainer.horizontalAutoLayoutContainer:
-                        FillPortions: =0
                         Height: =60
-                        LayoutMinHeight: =100
-                        LayoutMinWidth: =250
                         LayoutMode: =LayoutMode.Auto
                         PaddingLeft: =40
                         Y: =Container31.Height+Container31.Y
@@ -194,11 +174,8 @@ DemoPage As screen:
                             ZIndex: =1
 
                     Container27 As groupContainer.verticalAutoLayoutContainer:
-                        FillPortions: =0
                         Height: =Container29.Height/2
                         LayoutDirection: =LayoutDirection.Vertical
-                        LayoutMinHeight: =100
-                        LayoutMinWidth: =250
                         LayoutMode: =LayoutMode.Auto
                         PaddingTop: =10
                         Width: =Parent.Width
@@ -206,27 +183,20 @@ DemoPage As screen:
                         ZIndex: =4
 
             Container17_2 As groupContainer.verticalAutoLayoutContainer:
-                FillPortions: =2
                 Height: =Parent.Height
                 LayoutAlignItems: =LayoutAlignItems.Center
                 LayoutDirection: =LayoutDirection.Vertical
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =2
 
                 Label9_2 As label:
-                    FillPortions: =1
                     FontWeight: =FontWeight.Bold
                     Size: =50
                     Text: ="LDP"
                     ZIndex: =1
 
             Container19_2 As groupContainer.verticalAutoLayoutContainer:
-                FillPortions: =0
                 LayoutDirection: =LayoutDirection.Vertical
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =3
 
