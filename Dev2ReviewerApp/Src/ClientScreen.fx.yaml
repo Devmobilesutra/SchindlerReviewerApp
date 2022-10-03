@@ -310,6 +310,8 @@ ClientScreen As screen:
                                 CountRows(Gallery9_2.AllItems)*Gallery9_2.TemplateHeight
                             Items: =Sort(schindlerClients,name,Ascending)
                             Layout: =Layout.Vertical
+                            LayoutMinHeight: =287
+                            LayoutMinWidth: =320
                             ShowScrollbar: =false
                             TemplatePadding: =0
                             Width: =Parent.Width/1.01
