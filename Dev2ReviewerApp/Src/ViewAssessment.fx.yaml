@@ -1,7 +1,6 @@
 ViewAssessment As screen:
     OnVisible: |-
         =Set(varComment,false);
-        //UpdateContext({varcomments:false});
         Refresh(sectionAssessment);
         Refresh(checkpointAssessment);
         Refresh(checkpointItemAssessment);
