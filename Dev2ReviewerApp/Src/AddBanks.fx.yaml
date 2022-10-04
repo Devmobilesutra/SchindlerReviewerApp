@@ -38,7 +38,7 @@ AddBanks As screen:
         Width: =Parent.Width
         ZIndex: =1
 
-        Container3_14 As groupContainer.manualLayoutContainer:
+        ctnHeaderAddBanks As groupContainer.manualLayoutContainer:
             Fill: =Header.HeaderFill
             FillPortions: =0
             Height: =80
@@ -47,7 +47,7 @@ AddBanks As screen:
             Width: =Parent.Width
             ZIndex: =1
 
-            Image1_14 As image:
+            imglogoAddBanks As image:
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height
                 Image: =Schindler_logo_PNG1
@@ -55,10 +55,10 @@ AddBanks As screen:
                 PaddingLeft: =2
                 PaddingRight: =1
                 PaddingTop: =5
-                Width: =Container3_14.Width/10
+                Width: =ctnHeaderAddBanks.Width/10
                 ZIndex: =1
 
-            Image2_14 As image:
+            imguserprofileAddBanks As image:
                 Fill: =RGBA(253, 222, 207, 1)
                 Height: =50
                 Image: =userdata.userImage
@@ -67,21 +67,11 @@ AddBanks As screen:
                 RadiusTopLeft: =91
                 RadiusTopRight: =91
                 Width: =50
-                X: =Label3_14.X+Label3_14.Width
+                X: =lblHeaderAddBanks.X+lblHeaderAddBanks.Width
                 Y: =16
                 ZIndex: =2
 
-            Icon1_14 As icon.Bell:
-                Color: =RGBA(255, 255, 0, 1)
-                Height: =Parent.Height/2
-                Icon: =Icon.Bell
-                Visible: =false
-                Width: =Parent.Width/28
-                X: =Label1_14.X+Label1_14.Width+10
-                Y: =Parent.Height/4
-                ZIndex: =5
-
-            Label1_14 As label:
+            lblusernameAddBanks As label:
                 Align: =Align.Center
                 Color: =Header.HeaderColor
                 Font: =Header.HeaderFont
@@ -92,11 +82,11 @@ AddBanks As screen:
                     =//"SCHD0023"
                     //LookUp(ReviewerAD,mail=User().Email,displayName)
                     userdata.userdisplayName
-                Width: =Container3_14.Width/8
-                X: =Image2_14.X+ Image2_14.Height
+                Width: =ctnHeaderAddBanks.Width/8
+                X: =imguserprofileAddBanks.X+ imguserprofileAddBanks.Height
                 ZIndex: =6
 
-            Label3_14 As label:
+            lblHeaderAddBanks As label:
                 Align: =Align.Center
                 Color: =Header.HeaderColor
                 Font: =Header.HeaderFont
@@ -104,8 +94,8 @@ AddBanks As screen:
                 Height: =Parent.Height
                 Size: =Header.HeaderFontSize
                 Text: ="Banks"
-                Width: =Container3_14.Width/1.6
-                X: =Image1_14.Width+Image1_14.X
+                Width: =ctnHeaderAddBanks.Width/1.6
+                X: =imglogoAddBanks.Width+imglogoAddBanks.X
                 ZIndex: =8
 
         Container4_10 As groupContainer.verticalAutoLayoutContainer:
@@ -120,7 +110,7 @@ AddBanks As screen:
             LayoutOverflowY: =LayoutOverflow.Scroll
             PaddingLeft: =20
             Width: =Parent.Width
-            Y: =Container3_14.Height
+            Y: =ctnHeaderAddBanks.Height
             ZIndex: =4
 
             Container20_9 As groupContainer.verticalAutoLayoutContainer:
@@ -1317,7 +1307,7 @@ AddBanks As screen:
             Y: =Label21_3.Y+Label21_3.Height
             ZIndex: =18
 
-    Timer3 As timer:
+    timerUnitAB As timer:
         AutoPause: =false
         AutoStart: =//unitTimer = true
         Duration: =2000

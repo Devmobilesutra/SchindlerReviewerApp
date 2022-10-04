@@ -120,7 +120,7 @@
             "Name": "AlertlabelNew",
             "Parent": "Container2_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 812,
+            "PublishOrderIndex": 811,
             "Rules": [
               {
                 "Category": "Data",
@@ -456,7 +456,7 @@
             "Name": "AlerticonNew",
             "Parent": "Container2_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 813,
+            "PublishOrderIndex": 812,
             "Rules": [
               {
                 "Category": "Design",
@@ -674,7 +674,7 @@
         "Name": "Container2_2",
         "Parent": "AlertComponentNew",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 811,
+        "PublishOrderIndex": 810,
         "Rules": [
           {
             "Category": "Design",
