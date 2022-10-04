@@ -218,7 +218,7 @@ AddBanks As screen:
                         Width: =Parent.Width/1.3
                         ZIndex: =2
 
-                Container8_7 As groupContainer.verticalAutoLayoutContainer:
+                ctnExistingBanks As groupContainer.verticalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     LayoutDirection: =LayoutDirection.Vertical
@@ -228,7 +228,7 @@ AddBanks As screen:
                     Width: =Parent.Width/2.5
                     ZIndex: =2
 
-                    Button7_7 As button:
+                    btnExistingBanks As button:
                         BorderThickness: =0
                         Color: =If(A,referenceCSS.RActiveColor,referenceCSS.RInActiveColor)
                         DisabledColor: =RGBA(204, 204, 204, 1)
@@ -256,8 +256,7 @@ AddBanks As screen:
                         Width: =Parent.Width
                         ZIndex: =1
 
-                    Icon6_3 As icon.Add:
-                        AlignInContainer: =AlignInContainer.Center
+                    iconLineExistingBanks As icon.Add:
                         AutoDisableOnSelect: =false
                         Color: |
                             =RGBA(0, 0, 0, 0)
@@ -270,8 +269,7 @@ AddBanks As screen:
                         Width: =Parent.Width/1.2
                         ZIndex: =2
 
-            Container7_4 As groupContainer.verticalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.SetByContainer
+            ctnlineAddBanks As groupContainer.verticalAutoLayoutContainer:
                 Fill: =RGBA(204, 204, 204, 1)
                 FillPortions: =0
                 Height: =3
@@ -282,7 +280,7 @@ AddBanks As screen:
                 Y: =ctnbuttonsAddBanks.Y
                 ZIndex: =3
 
-            Container18_4 As groupContainer.manualLayoutContainer:
+            ctnMainBanks As groupContainer.manualLayoutContainer:
                 FillPortions: =0
                 Height: |
                     =/*If(App.Height<=950,Parent.Height-Container20_9.Height-Container6_3.Height-Container7_4.Height-Container20_5.Height -FooterContainer1_3.Height+500 ,Parent.Height-Container20_9.Height-Container6_3.Height-Container7_4.Height-Container20_5.Height -FooterContainer1_3.Height+500)*/
@@ -290,7 +288,7 @@ AddBanks As screen:
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 Y: |
-                    =Container7_4.Height+Container7_4.Y
+                    =ctnlineAddBanks.Height+ctnlineAddBanks.Y
                 ZIndex: =4
 
                 Container25_3 As groupContainer.verticalAutoLayoutContainer:
