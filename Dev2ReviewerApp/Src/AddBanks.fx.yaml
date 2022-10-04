@@ -284,17 +284,17 @@ AddBanks As screen:
                 FillPortions: =0
                 Height: |
                     =/*If(App.Height<=950,Parent.Height-Container20_9.Height-Container6_3.Height-Container7_4.Height-Container20_5.Height -FooterContainer1_3.Height+500 ,Parent.Height-Container20_9.Height-Container6_3.Height-Container7_4.Height-Container20_5.Height -FooterContainer1_3.Height+500)*/
-                    If(P,600+glryunitNB.Height,Gallery12_1.Height)
+                    If(P,600+glryunitNB.Height,glryExistingClient.Height)
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 Y: |
                     =ctnlineAddBanks.Height+ctnlineAddBanks.Y
                 ZIndex: =4
 
-                Container25_3 As groupContainer.verticalAutoLayoutContainer:
+                ctnExistingClient As groupContainer.verticalAutoLayoutContainer:
                     Height: |-
                         =//Parent.Height
-                        Gallery12_1.Height
+                        glryExistingClient.Height
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMode: =LayoutMode.Auto
                     Visible: =A
@@ -302,11 +302,12 @@ AddBanks As screen:
                     Y: =Parent.Y/0
                     ZIndex: =2
 
-                    Gallery12_1 As gallery.variableTemplateHeightGallery:
+                    glryExistingClient As gallery.variableTemplateHeightGallery:
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         FillPortions: =0
                         Height: |-
                             =//Parent.Height
-                            CountRows(Gallery12_1.AllItems)*(Gallery12_1.TemplateHeight + Gallery12_1.TemplatePadding +100)
+                            CountRows(glryExistingClient.AllItems)*(glryExistingClient.TemplateHeight + glryExistingClient.TemplatePadding +100)
                         Items: |-
                             =Sort(schindlerBanks,goNumber,Ascending)
                             
@@ -345,7 +346,7 @@ AddBanks As screen:
                             PaddingLeft: =40
                             Text: =
                             Width: =Parent.Width/1.02
-                            Y: =Gallery12_1.Y
+                            Y: =glryExistingClient.Y
                             ZIndex: =1
 
                         Gallery13_3 As gallery.variableTemplateHeightGallery:
