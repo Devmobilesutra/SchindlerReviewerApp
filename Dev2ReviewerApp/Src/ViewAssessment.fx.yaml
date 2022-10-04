@@ -529,7 +529,7 @@ ViewAssessment As screen:
                                     Size: =referenceCSS.RLabelFontSize
                                     Text: ="Material Estimate "
                                     Width: =If(ViewAssessment.Width>900,Parent.Width/5,250)
-                                    X: =Label18_8.X +Label18.Height
+                                    X: =Label18_8.X +Label18_8.Height
                                     ZIndex: =4
 
                             Container5_9 As groupContainer.horizontalAutoLayoutContainer:
@@ -666,7 +666,7 @@ ViewAssessment As screen:
                         PaddingLeft: =20
                         PaddingRight: =40
                         Width: =Parent.Width-150
-                        Y: =ctnbank_4.Height+ctnbank_4.Y
+                        Y: =ctnbank_17.Height+ctnbank_17.Y
                         ZIndex: =14
 
                         lblAssStatusBS_18 As label:
@@ -718,7 +718,7 @@ ViewAssessment As screen:
                         PaddingLeft: =20
                         PaddingRight: =40
                         Width: =Parent.Width - 150
-                        Y: =ctnbank_5.Y+ctnbank_5.Height
+                        Y: =ctnbank_16.Y+ctnbank_16.Height
                         ZIndex: =16
 
                         lblAssStatusBS_17 As label:
@@ -871,7 +871,7 @@ ViewAssessment As screen:
                         Width: =1308
                         Y: |-
                             =//Icon3_12.Y+Icon3_12.Height+10 
-                            ctnbank_7.Height+ctnbank_7.Y
+                            ctnbank_19.Height+ctnbank_19.Y
                         ZIndex: =18
 
                         lblAssStatusBS_21 As label:
