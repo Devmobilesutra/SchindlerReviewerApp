@@ -678,7 +678,7 @@ ClientScreen As screen:
                                 Y: =40
                                 ZIndex: =27
 
-                                ButtonSaveCs As button:
+                                btnSaveEC As button:
                                     Color: =RGBA(0, 0, 0, 1)
                                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                     DisabledColor: =RGBA(0, 0, 0, 0)
@@ -833,7 +833,7 @@ ClientScreen As screen:
                                         );
                                     Visible: =If(varEditMode=ThisItem.Id && F=true,true,false)
                                     Width: =btnRemoveCS.Width/4
-                                    X: =ButtonSaveCs.X
+                                    X: =btnSaveEC.X
                                     Y: =glryExistingClients.TemplateHeight/1.3
                                     ZIndex: =26
 
@@ -1426,21 +1426,21 @@ ClientScreen As screen:
                                 Width: =Parent.Width/6
                                 ZIndex: =2
 
-    Group5_1 As group:
+    grpEditSuccessPopup As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =19
 
-        Rectangle1_4 As rectangle:
+        outerRectgangleEC As rectangle:
             Fill: =RGBA(0, 0, 0, 0.29)
             Height: =Parent.Height
             Visible: =popupsuccess =true
             Width: =Parent.Width
             ZIndex: =13
 
-        Rectangle2_4 As rectangle:
+        innerRectangleEC As rectangle:
             Fill: =RGBA(255, 255, 255, 1)
             Height: =220
             Visible: =popupsuccess =true
@@ -1449,16 +1449,16 @@ ClientScreen As screen:
             Y: =Parent.Height/3
             ZIndex: =14
 
-        Image2_8 As image:
+        imgSuccessEC As image:
             Height: =52
             Image: =success
             Visible: =popupsuccess =true
             Width: =52
             X: =(Parent.Width-Self.Width)/2
-            Y: =Rectangle2_4.Y+20
+            Y: =innerRectangleEC.Y+20
             ZIndex: =15
 
-        Label1_8 As label:
+        lblSucessEC As label:
             Align: =Align.Center
             Color: =RGBA(14, 161, 26, 1)
             FontWeight: =FontWeight.Bold
@@ -1467,10 +1467,10 @@ ClientScreen As screen:
             Visible: =popupsuccess =true
             Width: =324
             X: =(Parent.Width-Self.Width)/2
-            Y: =Image2_8.Y+Self.Height+10
+            Y: =imgSuccessEC.Y+Self.Height+10
             ZIndex: =16
 
-        Label2_6 As label:
+        lblupdatesuccessEC As label:
             Align: =Align.Center
             FontWeight: =FontWeight.Bold
             Size: =15
@@ -1478,10 +1478,10 @@ ClientScreen As screen:
             Visible: =popupsuccess =true
             Width: =324
             X: =(Parent.Width-Self.Width)/2
-            Y: =Label1_8.Y+ Self.Height+5
+            Y: =lblSucessEC.Y+ Self.Height+5
             ZIndex: =17
 
-        Button11_1 As button:
+        btnOkEC As button:
             Fill: =RGBA(54, 176, 75, 1)
             HoverFill: =RGBA(75, 125, 6, 1)
             OnSelect: |-
@@ -1492,24 +1492,24 @@ ClientScreen As screen:
             Visible: =popupsuccess =true
             Width: =140
             X: =(Parent.Width-Self.Width)/2
-            Y: =Label2_6.Y+ Self.Height+10
+            Y: =lblupdatesuccessEC.Y+ Self.Height+10
             ZIndex: =18
 
-    GroupRemovePopupCS As group:
+    grpRemovePopupCS As group:
         Height: =5
         Width: =5
         X: =20
         Y: =20
         ZIndex: =20
 
-        Rectangle3_2 As rectangle:
+        outerRectangleCS As rectangle:
             Fill: =RGBA(0, 0, 0, 0.29)
             Height: =Parent.Height
             Visible: =IsRemove =true
             Width: =Parent.Width
             ZIndex: =2
 
-        Rectangle4_2 As rectangle:
+        innerRectangleCS As rectangle:
             Fill: =referenceCSS.RColorWhite
             Height: =160
             Visible: =IsRemove =true
@@ -1518,7 +1518,7 @@ ClientScreen As screen:
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =3
 
-        Label21_2 As label:
+        lblremoveCS As label:
             Align: =Align.Center
             Height: =80
             PaddingLeft: =10
@@ -1526,12 +1526,12 @@ ClientScreen As screen:
             Size: =14
             Text: ="Do you want to remove  " & removeId.name &" ?"
             Visible: =IsRemove =true
-            Width: =Rectangle4_2.Width
-            X: =Rectangle4_2.X
-            Y: =Rectangle4_2.Y+20
+            Width: =innerRectangleCS.Width
+            X: =innerRectangleCS.X
+            Y: =innerRectangleCS.Y+20
             ZIndex: =4
 
-        Button4_2 As button:
+        btnCancelCS As button:
             BorderColor: =referenceCSS.RActiveColor
             Color: =referenceCSS.RColorBlack
             Fill: =referenceCSS.RColorWhite
@@ -1547,11 +1547,11 @@ ClientScreen As screen:
             Text: ="Cancel"
             Visible: =IsRemove =true
             Width: =100
-            X: =Rectangle4_2.X+(Rectangle4_2.Width-Self.Width)/4
-            Y: =Label21_2.Y+Label21_2.Height
+            X: =innerRectangleCS.X+(innerRectangleCS.Width-Self.Width)/4
+            Y: =lblremoveCS.Y+lblremoveCS.Height
             ZIndex: =5
 
-        Button6_2 As button:
+        btnOkremoveCS As button:
             BorderColor: =Self.Fill
             Color: =referenceCSS.RColorWhite
             Fill: =referenceCSS.RActiveColor
@@ -1569,25 +1569,25 @@ ClientScreen As screen:
             Text: ="Ok"
             Visible: =IsRemove =true
             Width: =100
-            X: =Button4_2.X+Self.Width+50
-            Y: =Label21_2.Y+Label21_2.Height
+            X: =btnCancelCS.X+Self.Width+50
+            Y: =lblremoveCS.Y+lblremoveCS.Height
             ZIndex: =6
 
-    Group5 As group:
+    grpSavePopupCS As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =20
 
-        Rectangle1_2 As rectangle:
+        outerectanglesaveCS As rectangle:
             Fill: =RGBA(0, 0, 0, 0.29)
             Height: =Parent.Height
             Visible: =popupAddsuccess =true
             Width: =Parent.Width
             ZIndex: =7
 
-        Rectangle2_2 As rectangle:
+        innerrectanglesaveCS As rectangle:
             Fill: =RGBA(255, 255, 255, 1)
             Height: =220
             Visible: =popupAddsuccess =true
@@ -1596,16 +1596,16 @@ ClientScreen As screen:
             Y: =Parent.Height/3
             ZIndex: =8
 
-        Image2_3 As image:
+        imgSuccessCS As image:
             Height: =52
             Image: =success
             Visible: =popupAddsuccess =true
             Width: =52
             X: =(Parent.Width-Self.Width)/2
-            Y: =Rectangle2_2.Y+20
+            Y: =innerrectanglesaveCS.Y+20
             ZIndex: =9
 
-        Label1_3 As label:
+        lblSuccessCS As label:
             Align: =Align.Center
             Color: =RGBA(14, 161, 26, 1)
             FontWeight: =FontWeight.Bold
@@ -1614,10 +1614,10 @@ ClientScreen As screen:
             Visible: =popupAddsuccess =true
             Width: =324
             X: =(Parent.Width-Self.Width)/2
-            Y: =Image2_3.Y+Self.Height+10
+            Y: =imgSuccessCS.Y+Self.Height+10
             ZIndex: =10
 
-        Label2_3 As label:
+        lblclientAddedCS As label:
             Align: =Align.Center
             FontWeight: =FontWeight.Bold
             Size: =15
@@ -1625,10 +1625,10 @@ ClientScreen As screen:
             Visible: =popupAddsuccess =true
             Width: =324
             X: =(Parent.Width-Self.Width)/2
-            Y: =Label1_3.Y+ Self.Height+5
+            Y: =lblSuccessCS.Y+ Self.Height+5
             ZIndex: =11
 
-        Button11_2 As button:
+        btnOkSaveCS As button:
             Fill: =RGBA(54, 176, 75, 1)
             HoverFill: =RGBA(75, 125, 6, 1)
             OnSelect: |-
@@ -1639,6 +1639,6 @@ ClientScreen As screen:
             Visible: =popupAddsuccess =true
             Width: =140
             X: =(Parent.Width-Self.Width)/2
-            Y: =Label2_6.Y+ Self.Height+10
+            Y: =lblupdatesuccessEC.Y+ Self.Height+10
             ZIndex: =19
 

@@ -812,6 +812,6 @@ EditprojectAssignment As screen:
             Visible: =updatePopup =true
             Width: =120
             X: =(Parent.Width-Self.Width)/2
-            Y: =Label2_6.Y+ Self.Height+15
+            Y: =lblupdatesuccessEC.Y+ Self.Height+15
             ZIndex: =7
 
