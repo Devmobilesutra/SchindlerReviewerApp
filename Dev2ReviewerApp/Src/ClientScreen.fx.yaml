@@ -318,7 +318,7 @@ ClientScreen As screen:
                             Width: =Parent.Width/1.01
                             ZIndex: =1
 
-                            Label3 As label:
+                            txtContactnameEC As label:
                                 AutoHeight: =true
                                 Color: =RGBA(0, 0, 0, 0)
                                 OnSelect: =Select(Parent)
@@ -328,7 +328,7 @@ ClientScreen As screen:
                                 Y: =txtContactNameEC.Y
                                 ZIndex: =1
 
-                            Separator1_2 As rectangle:
+                            iconborderEC As rectangle:
                                 BorderColor: =RGBA(184, 0, 0, 1)
                                 BorderThickness: =3
                                 Fill: =RGBA(0, 0, 0, 0)
@@ -385,7 +385,7 @@ ClientScreen As screen:
                                 Text: ="Address1"
                                 Width: =180
                                 X: =31
-                                Y: =5+BProduct_Label_20.Y+BProduct_Label_20.Height
+                                Y: =5+lblnotiexistingclientsEC.Y+lblnotiexistingclientsEC.Height
                                 ZIndex: =8
 
                             txtAddress1EC As text:
@@ -408,7 +408,7 @@ ClientScreen As screen:
                                 Size: =referenceCSS.RInputFontSize
                                 Width: =Parent.Width/1.5
                                 X: =lblClientNameEC.X+lblClientNameEC.Width+10
-                                Y: =5+BProduct_Label_20.Y+BProduct_Label_20.Height
+                                Y: =5+lblnotiexistingclientsEC.Y+lblnotiexistingclientsEC.Height
                                 ZIndex: =9
 
                             lblAddress2EC As label:
@@ -595,7 +595,7 @@ ClientScreen As screen:
                                 DisplayMode: =If(varEditMode=ThisItem.Id && F=true,DisplayMode.Edit,DisplayMode.View)
                                 FocusedBorderThickness: =2
                                 Font: =referenceCSS.RFont
-                                Height: =Max(35,Label3.Height)
+                                Height: =Max(35,txtContactnameEC.Height)
                                 HintText: =""
                                 HoverBorderColor: =RGBA(0, 0, 0, 1)
                                 HoverFill: =RGBA(0, 0, 0, 0)
@@ -879,7 +879,7 @@ ClientScreen As screen:
                                     Y: =glryExistingClients.TemplateHeight/1.3
                                     ZIndex: =27
 
-                            BProduct_Label_20 As label:
+                            lblnotiexistingclientsEC As label:
                                 Color: =referenceCSS.RActiveColor
                                 Font: =referenceCSS.RFont
                                 FontWeight: =referenceCSS.RFontWeight
