@@ -478,14 +478,14 @@ AddBanks As screen:
                             Y: =lblLocationEC.Height
                             ZIndex: =7
 
-                        Groupedit_2 As group:
+                        grpEditEC As group:
                             Height: =5
                             Width: =5
                             X: =40
                             Y: =40
                             ZIndex: =7
 
-                            Image10_8 As image:
+                            imgEditEC As image:
                                 Height: =30
                                 Image: |-
                                     =If(
@@ -502,11 +502,11 @@ AddBanks As screen:
                                         writingGray
                                     )
                                 Width: =20
-                                X: =Buttonedi_3.X+10
-                                Y: =Buttonedi_3.Y+(Buttonedi_3.Height/5)
+                                X: =btnEditEC.X+10
+                                Y: =btnEditEC.Y+(btnEditEC.Height/5)
                                 ZIndex: =5
 
-                            Buttonedi_3 As button:
+                            btnEditEC As button:
                                 BorderThickness: =0
                                 Color: =referenceCSS.RColorBlack
                                 DisabledBorderColor: =RGBA(0, 0, 0, 0)

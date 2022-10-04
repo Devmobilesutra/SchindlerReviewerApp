@@ -4994,19 +4994,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnExistingClient.glryExistingClient.Image10_8.AccessibleLabel"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnExistingClient.glryExistingClient.imgEditEC.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnExistingClient.glryExistingClient.Image10_8.AccessibleLabel",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnExistingClient.glryExistingClient.imgEditEC.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnExistingClient.glryExistingClient.Image10_8"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnExistingClient.glryExistingClient.imgEditEC"
               }
             }
           ],
@@ -5024,19 +5024,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnExistingClient.glryExistingClient.Image10_8.TabIndex"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnExistingClient.glryExistingClient.imgEditEC.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnExistingClient.glryExistingClient.Image10_8.TabIndex",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnExistingClient.glryExistingClient.imgEditEC.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnExistingClient.glryExistingClient.Image10_8"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnExistingClient.glryExistingClient.imgEditEC"
               }
             }
           ],
