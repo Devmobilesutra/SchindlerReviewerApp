@@ -494,7 +494,7 @@ ClientScreen As screen:
                                 Text: ="ZipCode"
                                 Width: =100
                                 X: |-
-                                    =CState_1.X+CContact1_3.Width
+                                    =CState_1.X+txtContactNumberEC.Width
                                     //Parent.Width-Self.Width-CZip_1.Width-215
                                 Y: =5+(txtAddress2_1.Y+txtAddress2_1.Height)
                                 ZIndex: =14
@@ -541,7 +541,7 @@ ClientScreen As screen:
                                     =//Parent.Width/16
                                     70
                                 X: |-
-                                    =Label20_7.X
+                                    =lblcontactnumberEC.X
                                     //Parent.Width-Self.Width-CZip_1.Width-lbZip_1.Width-CState_1.Width-260
                                 Y: =(lblCity_1.Y)
                                 ZIndex: =16
@@ -617,7 +617,7 @@ ClientScreen As screen:
                                 Y: =(CState_1.Height+CState_1.Y)+10
                                 ZIndex: =19
 
-                            Label20_7 As label:
+                            lblcontactnumberEC As label:
                                 Font: =referenceCSS.RFont
                                 FontWeight: =FontWeight.Semibold
                                 PaddingBottom: =10
@@ -628,19 +628,19 @@ ClientScreen As screen:
                                 Y: =lblContactName_1.Y
                                 ZIndex: =20
 
-                            Label9_3 As label:
+                            lblContactNumeverEC As label:
                                 BorderColor: =RGBA(0, 0, 0, 0)
                                 Font: =referenceCSS.RFont
                                 Height: =35
                                 Size: =referenceCSS.RInputFontSize
                                 Text: |-
-                                    =If(IsBlank(CContact1_3.Text),"",Text(Value(CContact1_3.Text), "[$-en-US](###) ###-####"))
+                                    =If(IsBlank(txtContactNumberEC.Text),"",Text(Value(txtContactNumberEC.Text), "[$-en-US](###) ###-####"))
                                 Width: =Parent.Width/8
-                                X: =Label20_7.X+Label20_7.Width
+                                X: =lblcontactnumberEC.X+lblcontactnumberEC.Width
                                 Y: =txtContactName_1.Y
                                 ZIndex: =21
 
-                            CContact1_3 As text:
+                            txtContactNumberEC As text:
                                 BorderColor: =RGBA(0, 0, 0, 1)
                                 BorderThickness: =1
                                 Color: =RGBA(0, 0, 0, 0)
@@ -667,7 +667,7 @@ ClientScreen As screen:
                                 RadiusTopRight: =1
                                 Size: =referenceCSS.RLabelFontSize
                                 Width: =Parent.Width/8
-                                X: =Label20_7.X+Label20_7.Width
+                                X: =lblcontactnumberEC.X+lblcontactnumberEC.Width
                                 Y: =txtContactName_1.Y
                                 ZIndex: =22
 
@@ -746,7 +746,7 @@ ClientScreen As screen:
                                                     zip: CZip_1.Text,
                                                     state: CState_1.Text,
                                                     contactName: txtContactName_1.Text,
-                                                    contactNumber: CContact1_3.Text
+                                                    contactNumber: txtContactNumberEC.Text
                                                });
                                             );
                                                
@@ -764,7 +764,7 @@ ClientScreen As screen:
                                                      Reset(  CZip_1);
                                                      Reset( CState_1);
                                                      Reset( txtContactName_1);
-                                                     Reset( CContact1_3);
+                                                     Reset( txtContactNumberEC);
                                                     ,
                                                     Notify(
                                                         "Error patch function",
