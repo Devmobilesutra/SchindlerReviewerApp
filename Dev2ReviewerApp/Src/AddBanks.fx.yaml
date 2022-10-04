@@ -98,7 +98,7 @@ AddBanks As screen:
                 X: =imglogoAddBanks.Width+imglogoAddBanks.X
                 ZIndex: =8
 
-        Container4_10 As groupContainer.verticalAutoLayoutContainer:
+        ctnMainAddBanks As groupContainer.verticalAutoLayoutContainer:
             Fill: =RGBA(255, 255, 255, 1)
             Height: |-
                 =//(Parent.Height-(Parent.Height/8))
@@ -113,7 +113,7 @@ AddBanks As screen:
             Y: =ctnHeaderAddBanks.Height
             ZIndex: =4
 
-            Container20_9 As groupContainer.verticalAutoLayoutContainer:
+            ctnbackAddBanks As groupContainer.verticalAutoLayoutContainer:
                 FillPortions: =0
                 Height: =90
                 LayoutDirection: =LayoutDirection.Vertical
@@ -122,10 +122,10 @@ AddBanks As screen:
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 PaddingLeft: =10
-                Y: =Container4_10.Y
+                Y: =ctnMainAddBanks.Y
                 ZIndex: =1
 
-                Button1_9 As button:
+                btnBackAddBanks As button:
                     BorderColor: =referenceCSS.RActiveColor
                     Color: =referenceCSS.RColorBlack
                     Fill: =referenceCSS.RColorWhite
@@ -148,21 +148,21 @@ AddBanks As screen:
                     Width: =Parent.Width/6
                     ZIndex: =1
 
-            Container6_3 As groupContainer.verticalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.SetByContainer
+            ctnbuttonsAddBanks As groupContainer.verticalAutoLayoutContainer:
                 FillPortions: =0
                 Height: =90
-                LayoutAlignItems: =LayoutAlignItems.End
+                LayoutAlignItems: =LayoutAlignItems.Stretch
                 LayoutGap: =20
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
                 Width: =Parent.Width
-                Y: =Container20_9.Height
+                Y: =ctnbackAddBanks.Height
                 ZIndex: =2
 
-                Container8_6 As groupContainer.verticalAutoLayoutContainer:
+                ctnNewBank As groupContainer.verticalAutoLayoutContainer:
                     FillPortions: =0
+                    LayoutAlignItems: =LayoutAlignItems.Center
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
@@ -170,7 +170,7 @@ AddBanks As screen:
                     Width: =Parent.Width/3
                     ZIndex: =1
 
-                    Button7_6 As button:
+                    btnNewBank As button:
                         AutoDisableOnSelect: =false
                         BorderThickness: =0
                         Color: |-
@@ -209,8 +209,7 @@ AddBanks As screen:
                         Width: =Parent.Width
                         ZIndex: =1
 
-                    Icon5_3 As icon.Edit:
-                        AlignInContainer: =AlignInContainer.Center
+                    iconLineNewBank As icon.Edit:
                         Color: =RGBA(0, 0, 0, 0)
                         Fill: =referenceCSS.RActiveColor
                         Height: =5
@@ -220,6 +219,7 @@ AddBanks As screen:
                         ZIndex: =2
 
                 Container8_7 As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =100
@@ -271,6 +271,7 @@ AddBanks As screen:
                         ZIndex: =2
 
             Container7_4 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 Fill: =RGBA(204, 204, 204, 1)
                 FillPortions: =0
                 Height: =3
@@ -278,7 +279,7 @@ AddBanks As screen:
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
-                Y: =Container6_3.Y
+                Y: =ctnbuttonsAddBanks.Y
                 ZIndex: =3
 
             Container18_4 As groupContainer.manualLayoutContainer:
