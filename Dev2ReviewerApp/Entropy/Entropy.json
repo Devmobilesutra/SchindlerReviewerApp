@@ -76,6 +76,7 @@
     "btnCancel_2": 825,
     "btnClientRD": 209,
     "btnCompletedDS": 770,
+    "btnEditCS": 712,
     "btnExistingClientCS": 681,
     "btnInprogressDS": 776,
     "btnNewClientCS": 678,
@@ -147,7 +148,6 @@
     "Buttonedi_2": 627,
     "Buttonedi_3": 451,
     "ButtonEdit": 174,
-    "ButtonEditCs": 712,
     "Buttonremove": 175,
     "Buttonremove_2": 628,
     "Buttonremove_4": 452,
@@ -501,7 +501,6 @@
     "Image10_6": 458,
     "Image10_7": 573,
     "Image10_8": 457,
-    "Image10_9": 711,
     "Image16_2": 414,
     "Image2": 24,
     "Image2_12": 656,
@@ -539,6 +538,7 @@
     "imgContact": 532,
     "imgDashboardScreen": 786,
     "imgDueDate": 546,
+    "imgEditCS": 711,
     "imgInprogressDS": 779,
     "imglogo": 543,
     "imgLogoCS": 669,
@@ -851,7 +851,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/04/2022 07:35:18",
+  "HeaderLastSavedDateTimeUTC": "10/04/2022 07:36:09",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "109da5d5-9c29-4725-abc3-d1208c528a84": "\"/providers/microsoft.powerapps/apis/shared_powerappsnotificationv2/connections/0e0f912444994a6fa4619cd9c027cb56\"",
@@ -1222,8 +1222,8 @@
       "Image10_8": 0
     },
     "GroupEditCS": {
-      "ButtonEditCs": 0,
-      "Image10_9": 1
+      "btnEditCS": 0,
+      "imgEditCS": 1
     },
     "GroupRemove": {
       "Buttonremove": 1,
@@ -1372,6 +1372,7 @@
     "btnCancel_2": 263,
     "btnClientRD": 42,
     "btnCompletedDS": 12,
+    "btnEditCS": 102,
     "btnExistingClientCS": 70,
     "btnInprogressDS": 18,
     "btnNewClientCS": 67,
@@ -1443,7 +1444,6 @@
     "Buttonedi_2": 731,
     "Buttonedi_3": 176,
     "ButtonEdit": 348,
-    "ButtonEditCs": 102,
     "Buttonremove": 349,
     "Buttonremove_2": 732,
     "Buttonremove_4": 178,
@@ -1797,7 +1797,6 @@
     "Image10_6": 181,
     "Image10_7": 479,
     "Image10_8": 180,
-    "Image10_9": 101,
     "Image16_2": 590,
     "Image2": 815,
     "Image2_12": 761,
@@ -1835,6 +1834,7 @@
     "imgContact": 437,
     "imgDashboardScreen": 28,
     "imgDueDate": 451,
+    "imgEditCS": 101,
     "imgInprogressDS": 21,
     "imglogo": 448,
     "imgLogoCS": 58,
