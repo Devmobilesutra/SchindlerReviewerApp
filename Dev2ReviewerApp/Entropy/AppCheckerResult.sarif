@@ -9254,19 +9254,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ClientScreen.ctnMainClient.ctnMiddleClient.ctnMainCS.ctnMainClientScreen.ctnEexistingClientScreen.glryExistingClients.txtClientName_1.AccessibleLabel"
+                  "fullyQualifiedName": "ClientScreen.ctnMainClient.ctnMiddleClient.ctnMainCS.ctnMainClientScreen.ctnEexistingClientScreen.glryExistingClients.txtClientNameEC.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ClientScreen.ctnMainClient.ctnMiddleClient.ctnMainCS.ctnMainClientScreen.ctnEexistingClientScreen.glryExistingClients.txtClientName_1.AccessibleLabel",
+                  "fullyQualifiedName": "ClientScreen.ctnMainClient.ctnMiddleClient.ctnMainCS.ctnMainClientScreen.ctnEexistingClientScreen.glryExistingClients.txtClientNameEC.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ClientScreen",
-                "type": "ClientScreen.ctnMainClient.ctnMiddleClient.ctnMainCS.ctnMainClientScreen.ctnEexistingClientScreen.glryExistingClients.txtClientName_1"
+                "type": "ClientScreen.ctnMainClient.ctnMiddleClient.ctnMainCS.ctnMainClientScreen.ctnEexistingClientScreen.glryExistingClients.txtClientNameEC"
               }
             }
           ],
@@ -9344,19 +9344,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ClientScreen.ctnMainClient.ctnMiddleClient.ctnMainCS.ctnMainClientScreen.ctnEexistingClientScreen.glryExistingClients.txtAddress1_1.AccessibleLabel"
+                  "fullyQualifiedName": "ClientScreen.ctnMainClient.ctnMiddleClient.ctnMainCS.ctnMainClientScreen.ctnEexistingClientScreen.glryExistingClients.txtAddress1EC.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "ClientScreen.ctnMainClient.ctnMiddleClient.ctnMainCS.ctnMainClientScreen.ctnEexistingClientScreen.glryExistingClients.txtAddress1_1.AccessibleLabel",
+                  "fullyQualifiedName": "ClientScreen.ctnMainClient.ctnMiddleClient.ctnMainCS.ctnMainClientScreen.ctnEexistingClientScreen.glryExistingClients.txtAddress1EC.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "ClientScreen",
-                "type": "ClientScreen.ctnMainClient.ctnMiddleClient.ctnMainCS.ctnMainClientScreen.ctnEexistingClientScreen.glryExistingClients.txtAddress1_1"
+                "type": "ClientScreen.ctnMainClient.ctnMiddleClient.ctnMainCS.ctnMainClientScreen.ctnEexistingClientScreen.glryExistingClients.txtAddress1EC"
               }
             }
           ],

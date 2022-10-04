@@ -337,7 +337,7 @@ ClientScreen As screen:
                                 Y: =2
                                 ZIndex: =5
 
-                            lblClientName_1 As label:
+                            lblClientNameEC As label:
                                 Font: =referenceCSS.RFont
                                 FontWeight: =FontWeight.Semibold
                                 PaddingBottom: =10
@@ -348,7 +348,7 @@ ClientScreen As screen:
                                 Y: =30
                                 ZIndex: =6
 
-                            txtClientName_1 As text:
+                            txtClientNameEC As text:
                                 BorderColor: =RGBA(0, 0, 0, 1)
                                 BorderThickness: =1
                                 Default: =ThisItem.name
@@ -362,7 +362,7 @@ ClientScreen As screen:
                                 HoverFill: =RGBA(0, 0, 0, 0)
                                 OnChange: |-
                                     =If(
-                                       IsBlank(LookUp(schindlerClients,name= txtClientName_1.Text)),
+                                       IsBlank(LookUp(schindlerClients,name= txtClientNameEC.Text)),
                                        Set(ShowErrorMsgClient, false),
                                        Set(ShowErrorMsgClient, true)
                                     )
@@ -373,11 +373,11 @@ ClientScreen As screen:
                                 RadiusTopRight: =1
                                 Size: =referenceCSS.RInputFontSize
                                 Width: =Parent.Width/1.5
-                                X: =lblClientName_1.X+lblClientName_1.Width+10
+                                X: =lblClientNameEC.X+lblClientNameEC.Width+10
                                 Y: =30
                                 ZIndex: =7
 
-                            lblAddress1_1 As label:
+                            lblAddress1EC As label:
                                 Font: =referenceCSS.RFont
                                 FontWeight: =FontWeight.Semibold
                                 PaddingBottom: =10
@@ -388,7 +388,7 @@ ClientScreen As screen:
                                 Y: =5+BProduct_Label_20.Y+BProduct_Label_20.Height
                                 ZIndex: =8
 
-                            txtAddress1_1 As text:
+                            txtAddress1EC As text:
                                 BorderColor: =RGBA(0, 0, 0, 1)
                                 BorderThickness: =1
                                 Default: =ThisItem.address1
@@ -407,11 +407,11 @@ ClientScreen As screen:
                                 RadiusTopRight: =1
                                 Size: =referenceCSS.RInputFontSize
                                 Width: =Parent.Width/1.5
-                                X: =lblClientName_1.X+lblClientName_1.Width+10
+                                X: =lblClientNameEC.X+lblClientNameEC.Width+10
                                 Y: =5+BProduct_Label_20.Y+BProduct_Label_20.Height
                                 ZIndex: =9
 
-                            lblAddress2_1 As label:
+                            lblAddress2EC As label:
                                 Font: =referenceCSS.RFont
                                 FontWeight: =FontWeight.Semibold
                                 PaddingBottom: =10
@@ -419,7 +419,7 @@ ClientScreen As screen:
                                 Text: ="Address2"
                                 Width: =180
                                 X: =31
-                                Y: =lblAddress1_1.Y+lblAddress1_1.Height
+                                Y: =lblAddress1EC.Y+lblAddress1EC.Height
                                 ZIndex: =10
 
                             txtAddress2EC As text:
@@ -442,8 +442,8 @@ ClientScreen As screen:
                                 RadiusTopRight: =1
                                 Size: =referenceCSS.RInputFontSize
                                 Width: =Parent.Width/1.5
-                                X: =lblAddress2_1.X+lblAddress2_1.Width+10
-                                Y: =lblAddress1_1.Y+lblAddress1_1.Height
+                                X: =lblAddress2EC.X+lblAddress2EC.Width+10
+                                Y: =lblAddress1EC.Y+lblAddress1EC.Height
                                 ZIndex: =11
 
                             lblCityEC As label:
@@ -454,7 +454,7 @@ ClientScreen As screen:
                                 Text: ="City"
                                 Width: =180
                                 X: =31
-                                Y: =lblAddress2_1.Y+lblAddress2_1.Height
+                                Y: =lblAddress2EC.Y+lblAddress2EC.Height
                                 ZIndex: =12
 
                             txtCityEC As text:
@@ -482,8 +482,8 @@ ClientScreen As screen:
                                 RadiusTopRight: =1
                                 Size: =referenceCSS.RInputFontSize
                                 Width: =Parent.Width/8
-                                X: =lblClientName_1.X+lblClientName_1.Width+10
-                                Y: =lblAddress2_1.Y+lblAddress2_1.Height
+                                X: =lblClientNameEC.X+lblClientNameEC.Width+10
+                                Y: =lblAddress2EC.Y+lblAddress2EC.Height
                                 ZIndex: =13
 
                             lblZipEC As label:
@@ -613,7 +613,7 @@ ClientScreen As screen:
                                 RadiusTopRight: =1
                                 Size: =referenceCSS.RInputFontSize
                                 Width: =Parent.Width/5
-                                X: =lblClientName_1.X+lblClientName_1.Width+10
+                                X: =lblClientNameEC.X+lblClientNameEC.Width+10
                                 Y: =(txtStateEC.Height+txtStateEC.Y)+10
                                 ZIndex: =19
 
@@ -723,7 +723,7 @@ ClientScreen As screen:
                                             Connection.Connected = false,
                                             Notify("Network is not Available"),
                                             If(
-                                                IsBlank(txtClientName_1.Text),
+                                                IsBlank(txtClientNameEC.Text),
                                                 Notify(
                                                     "Please Enter Client Name",
                                                     NotificationType.Error
@@ -739,8 +739,8 @@ ClientScreen As screen:
                                                schindlerClients,
                                                ThisItem,
                                                {
-                                                    name: txtClientName_1.Text,
-                                                    address1: txtAddress1_1.Text,
+                                                    name: txtClientNameEC.Text,
+                                                    address1: txtAddress1EC.Text,
                                                     address2: txtAddress2EC.Text,
                                                     city: txtCityEC.Text,
                                                     zip: txtZipEC.Text,
@@ -757,8 +757,8 @@ ClientScreen As screen:
                                                     F,
                                                     false
                                                    );
-                                                     Reset( txtClientName_1);
-                                                     Reset( txtAddress1_1);
+                                                     Reset( txtClientNameEC);
+                                                     Reset( txtAddress1EC);
                                                      Reset( txtAddress2EC);
                                                      Reset( txtCityEC);
                                                      Reset(  txtZipEC);
@@ -891,8 +891,8 @@ ClientScreen As screen:
                                 Text: ="Client name already exist."
                                 Visible: =ShowErrorMsgClient= true && varEditMode=ThisItem.Id
                                 Width: =Parent.Width/1.2
-                                X: =lblClientName_1.X+lblClientName_1.Width+10
-                                Y: =5+txtClientName_1.Y+txtClientName_1.Height
+                                X: =lblClientNameEC.X+lblClientNameEC.Width+10
+                                Y: =5+txtClientNameEC.Y+txtClientNameEC.Height
                                 ZIndex: =29
 
                             GroupRemoveCs As group:
