@@ -602,34 +602,39 @@ TripReport As screen:
                     Height: |-
                         =//Parent.Height
                         CountRows(Gallery14.AllItems)*Gallery14.TemplateHeight+Gallery15.Height
-                    Items: |+
-                        =/*GroupBy(
-                            AddColumns(checkpointItem_ActionItem,
-                                
-                                "bank",bankId.Id,
-                                "unit",bankUnitId.Id,
-                                "_sectionid", section_id.sectionName
+                    Items: |-
+                        =Sort(
+                            Sort(
+                                Filter(
+                                    GroupBy(
+                                        AddColumns(
+                                            Filter(
+                                                checkpointItem_ActionItem,
+                                                priority = "High" || priority = "high"
+                                            ),
+                                            "assign",
+                                            assignmentId.Id,
+                                            "unit",
+                                            bankUnitId.unitNumber,
+                                            "section",
+                                            section_id.sectionName,
+                                            "sectionSequence",
+                                            section_id.sectionSequence
+                                        ),
+                                        "assign",
+                                        "unit",
+                                        "section",
+                                        "sectionSequence",
+                                        "data"
+                                    ),
+                                    assign = glryProject.Selected.Id
+                                ),
+                                sectionSequence,
+                                Ascending
                             ),
-                            "bank","unit","_sectionid",
-                            "dataRecords"
-                        )*/
-                        /*Filter(GroupBy(AddColumns(Filter(checkpointItem_ActionItem,priority="High" || priority="high"),
-                        "assign",assignmentId.Id,
-                        //"bank",bankId.Id,
-                        "unit",bankUnitId.unitNumber,
-                        "section",section_id.sectionName),
-                        "assign","unit","section","data"),assign=glryProject.Selected.Id)
-                         //&& LookUp(ThisRecord.data,priority="Low",priority))
-                        //Filter(checkpointItemAssessment,assignmentId.Id=glryProject.Selected.Id && //bankUnitId.Id=glryBankGo_1.Selected.bankUnitId.Id)*/
-                        
-                        Sort(Sort(Filter(GroupBy(AddColumns(Filter(checkpointItem_ActionItem,priority="High" || priority="high"),
-                        "assign",assignmentId.Id,
-                        //"bank",bankId.Id,
-                        "unit",bankUnitId.unitNumber,
-                        "section",section_id.sectionName,
-                        "sectionSequence",section_id.sectionSequence),
-                        "assign","unit","section","sectionSequence","data"),assign=glryProject.Selected.Id),sectionSequence,Ascending),unit,Ascending)
-                        
+                            unit,
+                            Ascending
+                        )
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =287
                     LayoutMinWidth: =320
@@ -647,7 +652,6 @@ TripReport As screen:
                         Size: =20
                         Text: |-
                             ="Unit : " & ThisItem.unit & "  " & "Section : " & ThisItem.section
-                            //& ThisItem.unit & "  "
                         Width: =630
                         Y: =3
                         ZIndex: =1
@@ -657,9 +661,7 @@ TripReport As screen:
                         BorderThickness: =3
                         Fill: =RGBA(237, 237, 237, 1)
                         Height: =CountRows(Gallery15.AllItems)*Gallery15.TemplateHeight
-                        Items: |-
-                            =Sort(ThisItem.data,checkpoint_id.CheckpointSequence)
-                            //Filter(checkpointItem_ActionItem,assignmentId.Id=glryProject.Selected.Id&& //bankUnitId.Id=glryBankGo_1.Selected.bankUnitId.Id)
+                        Items: =Sort(ThisItem.data,checkpoint_id.CheckpointSequence)
                         Layout: =Layout.Vertical
                         ShowScrollbar: =false
                         TemplatePadding: =1

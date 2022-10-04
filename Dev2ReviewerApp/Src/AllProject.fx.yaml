@@ -1,7 +1,5 @@
 AllProject As screen:
-    OnVisible: |-
-        =//Reset(tmr_logout);
-        //Set(UserLastNavigated, Now());
+    OnVisible: =
 
     ctnMainPS As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height

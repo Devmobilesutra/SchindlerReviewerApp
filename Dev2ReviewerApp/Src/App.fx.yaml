@@ -1,6 +1,6 @@
 App As appinfo:
     BackEnabled: =false
-    OnStart: |+
+    OnStart: |-
         =ClearCollect(asasas,assignmentUnits);
         
         // Global CSS
@@ -126,29 +126,4 @@ App As appinfo:
             lodder,
             false
         );
-        
-        
-        //ClearCollect(
-        //   GCprojectAggregation,
-        //   Filter(
-        //        projectAggregation,
-        //        assessor_id=LookUp(AssessorAD,mail= User().Email,id)
-        //    )
-        //);
-        
-        //ClearCollect(
-         //   ClientCollection,
-         //   Client
-        //);
-        //ClearCollect(schindlerAssessorCollection,schindler_assessors);
-        //ClearCollect(
-          //  banksCollection,
-           // bank
-        //);
-        
-        //ClearCollect(
-         //   projectAssignmentcollection,
-         //   projectAssignment_1
-        //);
-        
 
