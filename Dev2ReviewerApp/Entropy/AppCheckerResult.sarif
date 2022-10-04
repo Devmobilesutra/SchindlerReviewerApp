@@ -7154,19 +7154,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProduct_Label_8.FocusedBorderThickness"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblnotificationexistNB.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProduct_Label_8.FocusedBorderThickness",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblnotificationexistNB.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProduct_Label_8"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblnotificationexistNB"
               }
             }
           ],
@@ -7184,19 +7184,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProduct_Label_8.TabIndex"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblnotificationexistNB.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProduct_Label_8.TabIndex",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblnotificationexistNB.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProduct_Label_8"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblnotificationexistNB"
               }
             }
           ],
@@ -7214,19 +7214,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BClient_Label_3.FocusedBorderThickness"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblClientNewClientNB.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BClient_Label_3.FocusedBorderThickness",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblClientNewClientNB.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BClient_Label_3"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblClientNewClientNB"
               }
             }
           ],
@@ -7244,19 +7244,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BClient_Label_3.TabIndex"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblClientNewClientNB.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BClient_Label_3.TabIndex",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblClientNewClientNB.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BClient_Label_3"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblClientNewClientNB"
               }
             }
           ],
@@ -7274,19 +7274,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BCilent_Combobox_3.AccessibleLabel"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.cboxClientNameNB.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BCilent_Combobox_3.AccessibleLabel",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.cboxClientNameNB.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BCilent_Combobox_3"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.cboxClientNameNB"
               }
             }
           ],
@@ -7304,19 +7304,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProduct_Label_3.FocusedBorderThickness"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblGoNumberNB.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProduct_Label_3.FocusedBorderThickness",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblGoNumberNB.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProduct_Label_3"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblGoNumberNB"
               }
             }
           ],
@@ -7334,19 +7334,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProduct_Label_3.TabIndex"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblGoNumberNB.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProduct_Label_3.TabIndex",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblGoNumberNB.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProduct_Label_3"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblGoNumberNB"
               }
             }
           ],
@@ -7364,19 +7364,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProduct_Input_3.AccessibleLabel"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.txtgONumberNB.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProduct_Input_3.AccessibleLabel",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.txtgONumberNB.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProduct_Input_3"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.txtgONumberNB"
               }
             }
           ],
@@ -7394,19 +7394,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProduct_Label_13.FocusedBorderThickness"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblLocationNB.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProduct_Label_13.FocusedBorderThickness",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblLocationNB.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProduct_Label_13"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblLocationNB"
               }
             }
           ],
@@ -7424,19 +7424,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProduct_Label_13.TabIndex"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblLocationNB.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProduct_Label_13.TabIndex",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblLocationNB.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProduct_Label_13"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblLocationNB"
               }
             }
           ],
@@ -7454,19 +7454,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProduct_Input_7.AccessibleLabel"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.txtLocationNB.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProduct_Input_7.AccessibleLabel",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.txtLocationNB.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProduct_Input_7"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.txtLocationNB"
               }
             }
           ],
@@ -7484,19 +7484,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProducttype_Label_4.FocusedBorderThickness"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblProductTypeNB.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProducttype_Label_4.FocusedBorderThickness",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblProductTypeNB.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProducttype_Label_4"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblProductTypeNB"
               }
             }
           ],
@@ -7514,19 +7514,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProducttype_Label_4.TabIndex"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblProductTypeNB.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProducttype_Label_4.TabIndex",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblProductTypeNB.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProducttype_Label_4"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.lblProductTypeNB"
               }
             }
           ],
@@ -7544,19 +7544,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProducttype_Combobox_4.AccessibleLabel"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.cboxProductTypeNB.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProducttype_Combobox_4.AccessibleLabel",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.cboxProductTypeNB.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.BProducttype_Combobox_4"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.cboxProductTypeNB"
               }
             }
           ],
@@ -7574,19 +7574,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Container23.BProducttype_Label_3.FocusedBorderThickness"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.ctnunittsNB.lblunitNB.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Container23.BProducttype_Label_3.FocusedBorderThickness",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.ctnunittsNB.lblunitNB.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Container23.BProducttype_Label_3"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.ctnunittsNB.lblunitNB"
               }
             }
           ],
@@ -7604,19 +7604,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Container23.BProducttype_Label_3.TabIndex"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.ctnunittsNB.lblunitNB.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Container23.BProducttype_Label_3.TabIndex",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.ctnunittsNB.lblunitNB.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Container23.BProducttype_Label_3"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.ctnunittsNB.lblunitNB"
               }
             }
           ],
@@ -7634,19 +7634,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Container23.BProduct_Label_12.FocusedBorderThickness"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.ctnunittsNB.lblUnittipNB.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Container23.BProduct_Label_12.FocusedBorderThickness",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.ctnunittsNB.lblUnittipNB.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Container23.BProduct_Label_12"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.ctnunittsNB.lblUnittipNB"
               }
             }
           ],
@@ -7664,19 +7664,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Container23.BProduct_Label_12.TabIndex"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.ctnunittsNB.lblUnittipNB.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Container23.BProduct_Label_12.TabIndex",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.ctnunittsNB.lblUnittipNB.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Container23.BProduct_Label_12"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.ctnunittsNB.lblUnittipNB"
               }
             }
           ],
@@ -7694,19 +7694,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Gallery19_1.AccessibleLabel"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.Gallery19_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Gallery19_1.AccessibleLabel",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.Gallery19_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Gallery19_1"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.Gallery19_1"
               }
             }
           ],
@@ -7724,19 +7724,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Gallery19_1.TabIndex"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.Gallery19_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Gallery19_1.TabIndex",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.Gallery19_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Gallery19_1"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.Gallery19_1"
               }
             }
           ],
@@ -7754,19 +7754,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Gallery19_1.BProduct_Input_8.AccessibleLabel"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.Gallery19_1.BProduct_Input_8.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Gallery19_1.BProduct_Input_8.AccessibleLabel",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.Gallery19_1.BProduct_Input_8.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Gallery19_1.BProduct_Input_8"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.Gallery19_1.BProduct_Input_8"
               }
             }
           ],
@@ -7784,19 +7784,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Gallery19_1.BProduct_Label_18.FocusedBorderThickness"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.Gallery19_1.BProduct_Label_18.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Gallery19_1.BProduct_Label_18.FocusedBorderThickness",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.Gallery19_1.BProduct_Label_18.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Gallery19_1.BProduct_Label_18"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.Gallery19_1.BProduct_Label_18"
               }
             }
           ],
@@ -7814,19 +7814,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Gallery19_1.BProduct_Label_18.TabIndex"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.Gallery19_1.BProduct_Label_18.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Gallery19_1.BProduct_Label_18.TabIndex",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.Gallery19_1.BProduct_Label_18.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Gallery19_1.BProduct_Label_18"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.Gallery19_1.BProduct_Label_18"
               }
             }
           ],
@@ -7844,19 +7844,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Gallery19_1.Icon2_1.AccessibleLabel"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.Gallery19_1.Icon2_1.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Gallery19_1.Icon2_1.AccessibleLabel",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.Gallery19_1.Icon2_1.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Gallery19_1.Icon2_1"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.Gallery19_1.Icon2_1"
               }
             }
           ],
@@ -7874,19 +7874,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Gallery19_1.Icon2_1.TabIndex"
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.Gallery19_1.Icon2_1.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Gallery19_1.Icon2_1.TabIndex",
+                  "fullyQualifiedName": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.Gallery19_1.Icon2_1.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "AddBanks",
-                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.Container31_6.Gallery19_1.Icon2_1"
+                "type": "AddBanks.Container9_9.ctnMainAddBanks.ctnMainBanks.ctnNewClient.Gallery19_1.Icon2_1"
               }
             }
           ],

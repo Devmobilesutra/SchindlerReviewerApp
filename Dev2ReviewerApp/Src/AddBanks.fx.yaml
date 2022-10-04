@@ -25,10 +25,10 @@ AddBanks As screen:
         Set( unitduplicate,false);
         Set(popupsuccess,false);
         
-          Reset(BCilent_Combobox_3);
-          Reset(BProduct_Input_3);
-          Reset(BProduct_Input_7);
-          Reset(BProducttype_Combobox_4);
+          Reset(cboxClientNameNB);
+          Reset(txtgONumberNB);
+          Reset(txtLocationNB);
+          Reset(cboxProductTypeNB);
                
 
     Container9_9 As groupContainer.verticalAutoLayoutContainer:
@@ -195,10 +195,10 @@ AddBanks As screen:
                             Set(P,true);
                             Set(A,false);
                             
-                                    Reset(BCilent_Combobox_3);
-                                    Reset(BProduct_Input_3);
-                                    Reset(BProduct_Input_7);
-                                    Reset(BProducttype_Combobox_4);
+                                    Reset(cboxClientNameNB);
+                                    Reset(txtgONumberNB);
+                                    Reset(txtLocationNB);
+                                    Reset(cboxProductTypeNB);
                                     ClearCollect(rows1,{id:GUID(),lineno1:1});
                         PressedBorderColor: =//Self.Fill
                         PressedFill: =//Self.Color
@@ -619,7 +619,7 @@ AddBanks As screen:
                                 0
                             ZIndex: =10
 
-                Container31_6 As groupContainer.verticalAutoLayoutContainer:
+                ctnNewClient As groupContainer.verticalAutoLayoutContainer:
                     Height: =Parent.Height
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMode: =LayoutMode.Auto
@@ -630,7 +630,7 @@ AddBanks As screen:
                     Width: =Parent.Width
                     ZIndex: =3
 
-                    BClient_Label_3 As label:
+                    lblClientNewClientNB As label:
                         Font: =referenceCSS.RFont
                         FontWeight: =referenceCSS.RFontWeight
                         Height: =50
@@ -641,7 +641,7 @@ AddBanks As screen:
                         Width: =Parent.Width/3
                         ZIndex: =1
 
-                    BCilent_Combobox_3 As combobox:
+                    cboxClientNameNB As combobox:
                         BorderColor: =referenceCSS.RColorBlack
                         ChevronBackground: =RGBA(255, 255, 255, 1)
                         ChevronFill: =RGBA(0, 0, 0, 1)
@@ -667,7 +667,7 @@ AddBanks As screen:
                         Width: =Parent.Width/3
                         ZIndex: =2
 
-                    BProduct_Label_3 As label:
+                    lblGoNumberNB As label:
                         Font: =referenceCSS.RFont
                         FontWeight: =referenceCSS.RFontWeight
                         Height: =50
@@ -678,7 +678,7 @@ AddBanks As screen:
                         Width: =Parent.Width/2
                         ZIndex: =3
 
-                    BProduct_Input_3 As text:
+                    txtgONumberNB As text:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         Default: =""
                         Font: =referenceCSS.RFont
@@ -690,7 +690,7 @@ AddBanks As screen:
                         OnChange: |-
                             =//clientId.client_name =BCilent_Combobox_3.Selected.name
                             If(
-                               IsBlank(LookUp(schindlerBanks,goNumber= BProduct_Input_3.Text)),
+                               IsBlank(LookUp(schindlerBanks,goNumber= txtgONumberNB.Text)),
                                Set(ShowErrorMsgBank, false),
                                Set(ShowErrorMsgBank, true)
                             )
@@ -707,7 +707,7 @@ AddBanks As screen:
                         Y: =67
                         ZIndex: =4
 
-                    BProduct_Label_8 As label:
+                    lblnotificationexistNB As label:
                         Color: =referenceCSS.RActiveColor
                         Font: =referenceCSS.RFont
                         FontWeight: =referenceCSS.RFontWeight
@@ -721,7 +721,7 @@ AddBanks As screen:
                         Width: =Parent.Width/1.2
                         ZIndex: =5
 
-                    BProduct_Label_13 As label:
+                    lblLocationNB As label:
                         Font: =referenceCSS.RFont
                         FontWeight: =referenceCSS.RFontWeight
                         Height: =50
@@ -732,7 +732,7 @@ AddBanks As screen:
                         Width: =Parent.Width/3
                         ZIndex: =6
 
-                    BProduct_Input_7 As text:
+                    txtLocationNB As text:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         Default: =""
                         Font: =referenceCSS.RFont
@@ -752,7 +752,7 @@ AddBanks As screen:
                         Y: =67
                         ZIndex: =7
 
-                    BProducttype_Label_4 As label:
+                    lblProductTypeNB As label:
                         Font: =referenceCSS.RFont
                         FontWeight: =referenceCSS.RFontWeight
                         Height: =50
@@ -763,7 +763,7 @@ AddBanks As screen:
                         Width: =Parent.Width/3
                         ZIndex: =8
 
-                    BProducttype_Combobox_4 As combobox:
+                    cboxProductTypeNB As combobox:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         ChevronBackground: =RGBA(255, 255, 255, 1)
                         ChevronFill: =RGBA(0, 0, 0, 1)
@@ -791,7 +791,8 @@ AddBanks As screen:
                         Y: =67
                         ZIndex: =9
 
-                    Container23 As groupContainer.horizontalAutoLayoutContainer:
+                    ctnunittsNB As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         Height: =50
                         LayoutAlignItems: =LayoutAlignItems.End
                         LayoutGap: =10
@@ -802,7 +803,7 @@ AddBanks As screen:
                         Width: =Parent.Width-40
                         ZIndex: =10
 
-                        BProducttype_Label_3 As label:
+                        lblunitNB As label:
                             Font: =referenceCSS.RFont
                             FontWeight: =referenceCSS.RFontWeight
                             Height: =50
@@ -812,7 +813,7 @@ AddBanks As screen:
                             Width: =80
                             ZIndex: =1
 
-                        Button9_4 As button:
+                        btnUnitNB As button:
                             Fill: =referenceCSS.RActiveColor
                             Height: =30
                             HoverFill: =referenceCSS.RActiveColor
@@ -833,7 +834,7 @@ AddBanks As screen:
                             Y: =78
                             ZIndex: =2
 
-                        BProduct_Label_12 As label:
+                        lblUnittipNB As label:
                             Color: =referenceCSS.RColorBlack
                             Font: =referenceCSS.RFont
                             FontWeight: =referenceCSS.RFontWeight
@@ -847,6 +848,7 @@ AddBanks As screen:
                             ZIndex: =3
 
                     Gallery19_1 As gallery.variableTemplateHeightGallery:
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         FillPortions: =0
                         Height: =CountRows(Gallery19_1.AllItems)*(Gallery19_1.TemplateHeight+ Gallery19_1.TemplatePadding)/1.7
                         Items: =rows1
@@ -935,6 +937,7 @@ AddBanks As screen:
                             ZIndex: =4
 
                     Container20_11 As groupContainer.verticalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         Fill: =RGBA(204, 204, 204, 1)
                         FillPortions: =0
                         Height: =5
@@ -947,6 +950,7 @@ AddBanks As screen:
                         ZIndex: =12
 
                     FooterContainer1_4 As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         Height: =90
                         LayoutAlignItems: =LayoutAlignItems.Center
                         LayoutJustifyContent: =LayoutJustifyContent.Center
@@ -980,12 +984,12 @@ AddBanks As screen:
                                     Notify("Network is not Available"),
                                 
                                    If(
-                                        IsBlank(BCilent_Combobox_3.Selected.name),
+                                        IsBlank(cboxClientNameNB.Selected.name),
                                         Notify(
                                             "Please Enter Client Name .",
                                             NotificationType.Error
                                         ),
-                                        IsBlank(BProduct_Input_3.Text),
+                                        IsBlank(txtgONumberNB.Text),
                                         Notify(
                                             "Please Enter GO Number.",
                                             NotificationType.Error
@@ -997,7 +1001,7 @@ AddBanks As screen:
                                             NotificationType.Error
                                         ), 
                                 
-                                        IsBlank(BProducttype_Combobox_4.Selected.product_Model),
+                                        IsBlank(cboxProductTypeNB.Selected.product_Model),
                                         
                                         Notify(
                                             "Please Select Product type .",
@@ -1019,10 +1023,10 @@ AddBanks As screen:
                                             Defaults(schindlerBanks),
                                             {
                                               Id:GUID(),
-                                              clientId:LookUp(schindlerClients,name=BCilent_Combobox_3.Selected.name),
-                                              goNumber:BProduct_Input_3.Text,
-                                              location:BProduct_Input_7.Text,
-                                              productId:LookUp(product,product_Model=BProducttype_Combobox_4.Selected.product_Model)
+                                              clientId:LookUp(schindlerClients,name=cboxClientNameNB.Selected.name),
+                                              goNumber:txtgONumberNB.Text,
+                                              location:txtLocationNB.Text,
+                                              productId:LookUp(product,product_Model=cboxProductTypeNB.Selected.product_Model)
                                              
                                 
                                         });
@@ -1034,9 +1038,9 @@ AddBanks As screen:
                                             Defaults(bankUnits),
                                             {
                                                 Id:GUID(),
-                                                bankId:LookUp(schindlerBanks,goNumber =BProduct_Input_3.Text),
-                                                location:BProduct_Input_7.Text,
-                                                productId:LookUp(product,product_Model=BProducttype_Combobox_4.Selected.product_Model),
+                                                bankId:LookUp(schindlerBanks,goNumber =txtgONumberNB.Text),
+                                                location:txtLocationNB.Text,
+                                                productId:LookUp(product,product_Model=cboxProductTypeNB.Selected.product_Model),
                                                 unitNumber:i.BProduct_Input_8.Text//,
                                                 //unitAssignmentStatus:"false"
                                             }));
@@ -1044,10 +1048,10 @@ AddBanks As screen:
                                         If(
                                         (IsEmpty(Errors( schindlerBanks)) && IsEmpty( Errors( bankUnits))),
                                         Set(popupsuccess,true);
-                                        Reset(BCilent_Combobox_3);
-                                        Reset(BProduct_Input_3);
-                                        Reset(BProduct_Input_7);
-                                        Reset(BProducttype_Combobox_4);
+                                        Reset(cboxClientNameNB);
+                                        Reset(txtgONumberNB);
+                                        Reset(txtLocationNB);
+                                        Reset(cboxProductTypeNB);
                                         ClearCollect(rows1,{id:GUID(),lineno1:1}); ,
                                 
                                         Notify("Error Patch")
