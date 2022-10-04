@@ -284,7 +284,7 @@ AddBanks As screen:
                 FillPortions: =0
                 Height: |
                     =/*If(App.Height<=950,Parent.Height-Container20_9.Height-Container6_3.Height-Container7_4.Height-Container20_5.Height -FooterContainer1_3.Height+500 ,Parent.Height-Container20_9.Height-Container6_3.Height-Container7_4.Height-Container20_5.Height -FooterContainer1_3.Height+500)*/
-                    If(P,600+Gallery19_1.Height,Gallery12_1.Height)
+                    If(P,600+glryunitNB.Height,Gallery12_1.Height)
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 Y: |
@@ -847,10 +847,10 @@ AddBanks As screen:
                             Width: =Parent.Width-100
                             ZIndex: =3
 
-                    Gallery19_1 As gallery.variableTemplateHeightGallery:
+                    glryunitNB As gallery.variableTemplateHeightGallery:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         FillPortions: =0
-                        Height: =CountRows(Gallery19_1.AllItems)*(Gallery19_1.TemplateHeight+ Gallery19_1.TemplatePadding)/1.7
+                        Height: =CountRows(glryunitNB.AllItems)*(glryunitNB.TemplateHeight+ glryunitNB.TemplatePadding)/1.7
                         Items: =rows1
                         Layout: =Layout.Vertical
                         LayoutMinHeight: =287
@@ -861,17 +861,17 @@ AddBanks As screen:
                         Y: =//Label2_2.Y +Label2_2.Height
                         ZIndex: =11
 
-                        Icon2_1 As icon.Cancel:
+                        iconCancelNB As icon.Cancel:
                             Height: =20
                             Icon: =Icon.Cancel
                             OnSelect: |
                                 =RemoveIf(rows1,id=ThisItem.id);
                             Width: =20
-                            X: =BProduct_Input_8.X +BProduct_Input_8.Width+20
-                            Y: =(BProduct_Input_8.Height - Self.Height)/2 +5
+                            X: =txtunitnumberNB.X +txtunitnumberNB.Width+20
+                            Y: =(txtunitnumberNB.Height - Self.Height)/2 +5
                             ZIndex: =2
 
-                        BProduct_Input_8 As text:
+                        txtunitnumberNB As text:
                             BorderColor: =RGBA(0, 0, 0, 1)
                             Default: =""
                             Font: =referenceCSS.RFont
@@ -885,7 +885,7 @@ AddBanks As screen:
                                 
                                 Collect(
                                     uniqueUnits,
-                                    {unit:  BProduct_Input_8.Text,id:ThisItem.id,status:false}
+                                    {unit:  txtunitnumberNB.Text,id:ThisItem.id,status:false}
                                 );
                                 
                                 
@@ -893,7 +893,7 @@ AddBanks As screen:
                                     CountRows(
                                         Filter(
                                             uniqueUnits,
-                                            unit= BProduct_Input_8.Text
+                                            unit= txtunitnumberNB.Text
                                         )
                                     ) > 1,
                                   
@@ -920,7 +920,7 @@ AddBanks As screen:
                             Y: =5
                             ZIndex: =3
 
-                        BProduct_Label_18 As label:
+                        lblunitexistNB As label:
                             Color: =referenceCSS.RActiveColor
                             Font: =referenceCSS.RFont
                             FontWeight: =referenceCSS.RFontWeight
@@ -932,11 +932,11 @@ AddBanks As screen:
                             Visible: |
                                 =ThisItem.status = true
                             Width: =Parent.Width/1.2
-                            X: =Icon2_1.X +Icon2_1.Width
+                            X: =iconCancelNB.X +iconCancelNB.Width
                             Y: =5
                             ZIndex: =4
 
-                    Container20_11 As groupContainer.verticalAutoLayoutContainer:
+                    ctnLineNB As groupContainer.verticalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         Fill: =RGBA(204, 204, 204, 1)
                         FillPortions: =0
@@ -946,10 +946,10 @@ AddBanks As screen:
                         LayoutMinWidth: =250
                         LayoutMode: =LayoutMode.Auto
                         Width: =Parent.Width
-                        Y: =Gallery19_1.Height+Gallery19_1.Y
+                        Y: =glryunitNB.Height+glryunitNB.Y
                         ZIndex: =12
 
-                    FooterContainer1_4 As groupContainer.horizontalAutoLayoutContainer:
+                    ctnfooterNB As groupContainer.horizontalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         Height: =90
                         LayoutAlignItems: =LayoutAlignItems.Center
@@ -960,10 +960,10 @@ AddBanks As screen:
                         PaddingBottom: =20
                         Visible: =P
                         Width: =Parent.Width
-                        Y: =Container20_11.Height+Container20_11.Y
+                        Y: =ctnLineNB.Height+ctnLineNB.Y
                         ZIndex: =13
 
-                        Button1_8 As button:
+                        btnAddNB As button:
                             Color: =referenceCSS.RColorWhite
                             Fill: =RGBA(255, 0, 0, 1)
                             Font: =referenceCSS.RFont
@@ -976,8 +976,8 @@ AddBanks As screen:
                                 //ColorFade(RGBA(56, 96, 178, 1), -20%)
                             OnSelect: |+
                                 =  
-                                  ForAll(Gallery19_1.AllItems.BProduct_Input_8,
-                                        Collect(LCunit,{unitno:ThisRecord.BProduct_Input_8}));
+                                  ForAll(glryunitNB.AllItems.txtunitnumberNB,
+                                        Collect(LCunit,{unitno:ThisRecord.txtunitnumberNB}));
                                 
                                 If(
                                     Connection.Connected = false,
@@ -1032,7 +1032,7 @@ AddBanks As screen:
                                         });
                                 
                                 
-                                        ForAll(Gallery19_1.AllItems.BProduct_Input_8 As i,
+                                        ForAll(glryunitNB.AllItems.txtunitnumberNB As i,
                                         Patch(
                                             bankUnits,
                                             Defaults(bankUnits),
@@ -1041,7 +1041,7 @@ AddBanks As screen:
                                                 bankId:LookUp(schindlerBanks,goNumber =txtgONumberNB.Text),
                                                 location:txtLocationNB.Text,
                                                 productId:LookUp(product,product_Model=cboxProductTypeNB.Selected.product_Model),
-                                                unitNumber:i.BProduct_Input_8.Text//,
+                                                unitNumber:i.txtunitnumberNB.Text//,
                                                 //unitAssignmentStatus:"false"
                                             }));
                                 

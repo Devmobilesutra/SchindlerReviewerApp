@@ -540,7 +540,7 @@ EditBank As screen:
                             Visible: |
                                 =ThisItem.status = true
                             Width: =Parent.Width/1.2
-                            X: =Icon2_1.X +Icon2_1.Width
+                            X: =iconCancelNB.X +iconCancelNB.Width
                             Y: =5
                             ZIndex: =4
 
