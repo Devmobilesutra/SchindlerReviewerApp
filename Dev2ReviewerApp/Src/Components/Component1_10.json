@@ -66,7 +66,7 @@
         "Name": "Image1_21",
         "Parent": "Component1_10",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 801,
+        "PublishOrderIndex": 2,
         "Rules": [
           {
             "Category": "Data",
@@ -327,7 +327,7 @@
         "Name": "Image2_27",
         "Parent": "Component1_10",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 802,
+        "PublishOrderIndex": 3,
         "Rules": [
           {
             "Category": "Data",
@@ -557,7 +557,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638004597188130056",
+    "LastModifiedTimestamp": "638004638341855805",
     "Name": "Component1_10",
     "Rules": [
       {
@@ -622,7 +622,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638004597188130056",
+  "LastModifiedTimestamp": "638004638341855805",
   "Name": "f88dc54986464f11bfc7d2f435ac48d5",
   "OverridableProperties": {},
   "TemplateOriginalName": "3c0e5be0a2954f3a96c4de253feb8456",

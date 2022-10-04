@@ -120,7 +120,7 @@
             "Name": "AlertlabelNew",
             "Parent": "Container2_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 812,
+            "PublishOrderIndex": 18,
             "Rules": [
               {
                 "Category": "Data",
@@ -456,7 +456,7 @@
             "Name": "AlerticonNew",
             "Parent": "Container2_2",
             "PersistMetaDataIDKey": false,
-            "PublishOrderIndex": 813,
+            "PublishOrderIndex": 19,
             "Rules": [
               {
                 "Category": "Design",
@@ -674,7 +674,7 @@
         "Name": "Container2_2",
         "Parent": "AlertComponentNew",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 811,
+        "PublishOrderIndex": 17,
         "Rules": [
           {
             "Category": "Design",
@@ -825,7 +825,7 @@
       "FillColor",
       "AlertDuration"
     ],
-    "LastModifiedTimestamp": "638004597188139421",
+    "LastModifiedTimestamp": "638004638341865470",
     "Name": "AlertComponentNew",
     "Rules": [
       {
@@ -990,7 +990,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638004597188139421",
+  "LastModifiedTimestamp": "638004638341865470",
   "Name": "5757318381704004861c66c2e0533a53",
   "OverridableProperties": {},
   "SourceLibraryId": "b0eab7b3-28be-4b19-b479-c5ab4283b8bf",
