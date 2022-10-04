@@ -460,7 +460,7 @@ AddBanks As screen:
                                 Y: =Parent.Y
                                 ZIndex: =4
 
-                        Label26_1 As label:
+                        lblLocationEC As label:
                             Font: =referenceCSS.RFont
                             Height: =50
                             OnSelect: =Select(Parent)
@@ -475,7 +475,7 @@ AddBanks As screen:
                                 =//Label25.X +Label25.Width +10
                                 //Parent.Width/4
                                 0
-                            Y: =Label26_1.Height
+                            Y: =lblLocationEC.Height
                             ZIndex: =7
 
                         Groupedit_2 As group:
@@ -569,7 +569,7 @@ AddBanks As screen:
                                 Y: =Parent.Y
                                 ZIndex: =6
 
-                        Label27_1 As label:
+                        lblProducttypeEC As label:
                             Font: =referenceCSS.RFont
                             Height: =50
                             OnSelect: =Select(Parent)
@@ -581,11 +581,11 @@ AddBanks As screen:
                                 //ThisItem.clientInstallationId.product_Id.product_Type
                             Width: =Parent.Width/5
                             X: |-
-                                =Label27_2.X +Label27_2.Width + 10
+                                =lblGoUnitNumberEC.X +lblGoUnitNumberEC.Width + 10
                                 //Parent.Width/2
                             ZIndex: =8
 
-                        Label27_2 As label:
+                        lblGoUnitNumberEC As label:
                             Font: =referenceCSS.RFont
                             Height: =50
                             OnSelect: =Select(Parent)
@@ -598,11 +598,11 @@ AddBanks As screen:
                             Width: |
                                 =Parent.Width/5
                             X: |-
-                                =Label27_3.X +Label27_3.Width + 10
+                                =lblClientEC.X +lblClientEC.Width + 10
                                 //Parent.Width/7
                             ZIndex: =9
 
-                        Label27_3 As label:
+                        lblClientEC As label:
                             Font: =referenceCSS.RFont
                             Height: =50
                             OnSelect: =Select(Parent)
