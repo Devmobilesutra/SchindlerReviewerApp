@@ -422,7 +422,7 @@ ClientScreen As screen:
                                 Y: =lblAddress1_1.Y+lblAddress1_1.Height
                                 ZIndex: =10
 
-                            txtAddress2_1 As text:
+                            txtAddress2EC As text:
                                 BorderColor: =RGBA(0, 0, 0, 1)
                                 BorderThickness: =1
                                 Default: =ThisItem.address2
@@ -446,7 +446,7 @@ ClientScreen As screen:
                                 Y: =lblAddress1_1.Y+lblAddress1_1.Height
                                 ZIndex: =11
 
-                            lblCity_1 As label:
+                            lblCityEC As label:
                                 Font: =referenceCSS.RFont
                                 FontWeight: =FontWeight.Semibold
                                 PaddingBottom: =10
@@ -457,7 +457,7 @@ ClientScreen As screen:
                                 Y: =lblAddress2_1.Y+lblAddress2_1.Height
                                 ZIndex: =12
 
-                            CCity_1 As text:
+                            txtCityEC As text:
                                 BorderColor: =RGBA(0, 0, 0, 1)
                                 BorderThickness: =1
                                 Default: =ThisItem.city
@@ -471,8 +471,8 @@ ClientScreen As screen:
                                 HoverFill: =RGBA(0, 0, 0, 0)
                                 OnChange: |-
                                     ="(" &
-                                    Left(Concat(Filter(Split(CCity_1.Text,""),Result in "0123456789"),Result),3)& " ) " &
-                                    Mid(Concat(Filter(Split(CCity_1.Text,""),Result in "0123456789"),Result),4,3) & " - " &
+                                    Left(Concat(Filter(Split(txtCityEC.Text,""),Result in "0123456789"),Result),3)& " ) " &
+                                    Mid(Concat(Filter(Split(txtCityEC.Text,""),Result in "0123456789"),Result),4,3) & " - " &
                                     Mid(Concat(Filter(Split(txtClientName.Text,""),Result in "0123456789"),Result),7,4)
                                 PaddingLeft: =5
                                 PaddingTop: =10
@@ -496,7 +496,7 @@ ClientScreen As screen:
                                 X: |-
                                     =txtStateEC.X+txtContactNumberEC.Width
                                     //Parent.Width-Self.Width-CZip_1.Width-215
-                                Y: =5+(txtAddress2_1.Y+txtAddress2_1.Height)
+                                Y: =5+(txtAddress2EC.Y+txtAddress2EC.Height)
                                 ZIndex: =14
 
                             txtZipEC As text:
@@ -528,7 +528,7 @@ ClientScreen As screen:
                                 X: |-
                                     =lblZipEC.X+lblZipEC.Width
                                     //Parent.Width-Self.Width-215
-                                Y: =5+(txtAddress2_1.Y+txtAddress2_1.Height)
+                                Y: =5+(txtAddress2EC.Y+txtAddress2EC.Height)
                                 ZIndex: =15
 
                             lblStateEC As label:
@@ -543,7 +543,7 @@ ClientScreen As screen:
                                 X: |-
                                     =lblcontactnumberEC.X
                                     //Parent.Width-Self.Width-CZip_1.Width-lbZip_1.Width-CState_1.Width-260
-                                Y: =(lblCity_1.Y)
+                                Y: =(lblCityEC.Y)
                                 ZIndex: =16
 
                             txtStateEC As text:
@@ -573,7 +573,7 @@ ClientScreen As screen:
                                 X: |-
                                     =lblStateEC.X+lblStateEC.Width
                                     //Parent.Width-Self.Width-CZip_1.Width-lbZip_1.Width-272
-                                Y: =(CCity_1.Y)
+                                Y: =(txtCityEC.Y)
                                 ZIndex: =17
 
                             lblContactNameEC As label:
@@ -741,8 +741,8 @@ ClientScreen As screen:
                                                {
                                                     name: txtClientName_1.Text,
                                                     address1: txtAddress1_1.Text,
-                                                    address2: txtAddress2_1.Text,
-                                                    city: CCity_1.Text,
+                                                    address2: txtAddress2EC.Text,
+                                                    city: txtCityEC.Text,
                                                     zip: txtZipEC.Text,
                                                     state: txtStateEC.Text,
                                                     contactName: txtContactNameEC.Text,
@@ -759,8 +759,8 @@ ClientScreen As screen:
                                                    );
                                                      Reset( txtClientName_1);
                                                      Reset( txtAddress1_1);
-                                                     Reset( txtAddress2_1);
-                                                     Reset( CCity_1);
+                                                     Reset( txtAddress2EC);
+                                                     Reset( txtCityEC);
                                                      Reset(  txtZipEC);
                                                      Reset( txtStateEC);
                                                      Reset( txtContactNameEC);
