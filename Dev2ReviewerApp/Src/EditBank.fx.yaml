@@ -102,11 +102,11 @@ EditBank As screen:
                 ZIndex: =8
 
         ctnMainEditBank As groupContainer.verticalAutoLayoutContainer:
-            AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             Height: |-
                 =//(Parent.Height-(Parent.Height/8))
                 Parent.Height
+            LayoutAlignItems: =LayoutAlignItems.Stretch
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
             LayoutMinWidth: =250
