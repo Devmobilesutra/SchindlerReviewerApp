@@ -38,6 +38,7 @@
     "btnClientRD": 37,
     "btnCompletedDS": 625,
     "btnEditCS": 566,
+    "btnEditEA": 325,
     "btnEditEB": 374,
     "btnExistingAssignmentPA": 272,
     "btnExistingBanks": 363,
@@ -57,6 +58,7 @@
     "btnprojecttype": 453,
     "btnReferenceDataDS": 636,
     "btnRemoveCS": 567,
+    "btnRemoveEA": 326,
     "btnRemoveEB": 375,
     "btnSave": 731,
     "btnSaveEC": 563,
@@ -90,8 +92,6 @@
     "Button9_2": 145,
     "Button9_3": 142,
     "Button9_6": 140,
-    "ButtonEdit": 325,
-    "Buttonremove": 326,
     "cboxAssessmentTypeNA": 288,
     "cboxAssessorNA": 290,
     "cboxClientEditBank": 660,
@@ -323,13 +323,11 @@
     "glryunitNB": 399,
     "Group1": 255,
     "Group1_1": 155,
-    "Group2": 331,
     "Group3_1": 518,
     "Group5_4": 347,
     "Group5_5": 739,
     "Group5_8": 519,
     "GroupEditCS": 571,
-    "GroupRemove": 330,
     "GroupRemoveBankPopup": 426,
     "GroupRemoveCS": 570,
     "GroupRemoveEditBank": 693,
@@ -337,8 +335,10 @@
     "GroupRemoveUnitPopup": 425,
     "GroupSaveCS": 569,
     "grpAddBankSuccessPopup": 424,
+    "grpEditEA": 331,
     "grpEditEB": 384,
     "grpEditSuccessPopup": 613,
+    "grpRemoveEA": 330,
     "grpRemoveEB": 383,
     "grpRemovePopupCS": 612,
     "grpSavePopupCS": 614,
@@ -393,8 +393,6 @@
     "Image1_25": 159,
     "Image1_27": 58,
     "Image10": 492,
-    "Image10_1": 328,
-    "Image10_2": 327,
     "Image10_3": 493,
     "Image10_7": 494,
     "Image16_2": 242,
@@ -424,6 +422,7 @@
     "imgDashboardScreen": 641,
     "imgDueDate": 465,
     "imgEditCS": 565,
+    "imgEditEA": 327,
     "imgEditEB": 376,
     "imgInprogressDS": 634,
     "imglogo": 462,
@@ -437,6 +436,7 @@
     "ImgLS": 52,
     "imgReferenceDataDS": 639,
     "imgRemoveCS": 568,
+    "imgRemoveEA": 328,
     "imgRemoveEB": 377,
     "imgSchindlerlogoDS": 618,
     "imgspinnerDS": 616,
@@ -749,7 +749,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/06/2022 12:10:58",
+  "HeaderLastSavedDateTimeUTC": "10/06/2022 12:12:52",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "109da5d5-9c29-4725-abc3-d1208c528a84": "\"/providers/microsoft.powerapps/apis/shared_powerappsnotificationv2/connections/0e0f912444994a6fa4619cd9c027cb56\"",
@@ -1026,10 +1026,6 @@
       "Rectangle6_1": 3,
       "TextInput2_1": 6
     },
-    "Group2": {
-      "ButtonEdit": 0,
-      "Image10_2": 1
-    },
     "Group3_1": {
       "Button11_5": 4,
       "ComboBox6_1": 6,
@@ -1065,10 +1061,6 @@
     "GroupEditCS": {
       "btnEditCS": 0,
       "imgEditCS": 1
-    },
-    "GroupRemove": {
-      "Buttonremove": 1,
-      "Image10_1": 0
     },
     "GroupRemoveBankPopup": {
       "btnCancelRemoveBank": 3,
@@ -1114,6 +1106,10 @@
       "lblbankSuccessAB": 4,
       "lblSuccessAB": 3
     },
+    "grpEditEA": {
+      "btnEditEA": 0,
+      "imgEditEA": 1
+    },
     "grpEditEB": {
       "btnEditEB": 1,
       "imgEditEB": 0
@@ -1125,6 +1121,10 @@
       "lblSucessEC": 3,
       "lblupdatesuccessEC": 4,
       "outerRectgangleEC": 0
+    },
+    "grpRemoveEA": {
+      "btnRemoveEA": 1,
+      "imgRemoveEA": 0
     },
     "grpRemoveEB": {
       "btnRemoveEB": 1,
@@ -1200,6 +1200,7 @@
     "btnClientRD": 42,
     "btnCompletedDS": 11,
     "btnEditCS": 104,
+    "btnEditEA": 346,
     "btnEditEB": 175,
     "btnExistingAssignmentPA": 293,
     "btnExistingBanks": 164,
@@ -1219,6 +1220,7 @@
     "btnprojecttype": 436,
     "btnReferenceDataDS": 22,
     "btnRemoveCS": 105,
+    "btnRemoveEA": 348,
     "btnRemoveEB": 176,
     "btnSave": 402,
     "btnSaveEC": 101,
@@ -1252,8 +1254,6 @@
     "Button9_2": 690,
     "Button9_3": 687,
     "Button9_6": 685,
-    "ButtonEdit": 346,
-    "Buttonremove": 348,
     "cboxAssessmentTypeNA": 309,
     "cboxAssessorNA": 311,
     "cboxClientEditBank": 243,
@@ -1485,13 +1485,11 @@
     "glryunitNB": 200,
     "Group1": 596,
     "Group1_1": 696,
-    "Group2": 347,
     "Group3_1": 495,
     "Group5_4": 356,
     "Group5_5": 407,
     "Group5_8": 496,
     "GroupEditCS": 82,
-    "GroupRemove": 349,
     "GroupRemoveBankPopup": 213,
     "GroupRemoveCS": 83,
     "GroupRemoveEditBank": 265,
@@ -1499,8 +1497,10 @@
     "GroupRemoveUnitPopup": 211,
     "GroupSaveCS": 81,
     "grpAddBankSuccessPopup": 209,
+    "grpEditEA": 347,
     "grpEditEB": 177,
     "grpEditSuccessPopup": 135,
+    "grpRemoveEA": 349,
     "grpRemoveEB": 179,
     "grpRemovePopupCS": 139,
     "grpSavePopupCS": 136,
@@ -1555,8 +1555,6 @@
     "Image1_25": 504,
     "Image1_27": 603,
     "Image10": 474,
-    "Image10_1": 351,
-    "Image10_2": 350,
     "Image10_3": 475,
     "Image10_7": 476,
     "Image16_2": 587,
@@ -1586,6 +1584,7 @@
     "imgDashboardScreen": 27,
     "imgDueDate": 448,
     "imgEditCS": 103,
+    "imgEditEA": 350,
     "imgEditEB": 178,
     "imgInprogressDS": 20,
     "imglogo": 445,
@@ -1599,6 +1598,7 @@
     "ImgLS": 0,
     "imgReferenceDataDS": 25,
     "imgRemoveCS": 106,
+    "imgRemoveEA": 351,
     "imgRemoveEB": 180,
     "imgSchindlerlogoDS": 4,
     "imgspinnerDS": 30,

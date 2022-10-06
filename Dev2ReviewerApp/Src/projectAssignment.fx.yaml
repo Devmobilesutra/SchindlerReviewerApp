@@ -1321,14 +1321,14 @@ projectAssignment As screen:
                                 Y: =lblStartDateEA.Y+lblStartDateEA.Height+10
                                 ZIndex: =15
 
-                            GroupRemove As group:
+                            grpRemoveEA As group:
                                 Height: =5
                                 Width: =5
                                 X: =40
                                 Y: =2
                                 ZIndex: =20
 
-                                Image10_1 As image:
+                                imgRemoveEA As image:
                                     BorderColor: =RGBA(0, 0, 0, 1)
                                     Height: =30
                                     Image: |+
@@ -1342,11 +1342,11 @@ projectAssignment As screen:
                                         
                                         
                                     Width: =20
-                                    X: =Buttonremove.X+10
-                                    Y: =Buttonremove.Y+(Buttonremove.Height/5)
+                                    X: =btnRemoveEA.X+10
+                                    Y: =btnRemoveEA.Y+(btnRemoveEA.Height/5)
                                     ZIndex: =18
 
-                                Buttonremove As button:
+                                btnRemoveEA As button:
                                     Color: =referenceCSS.RColorBlack
                                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                     DisabledColor: =RGBA(179, 179, 179, 1)
@@ -1373,7 +1373,7 @@ projectAssignment As screen:
                                     X: |-
                                         =//Parent.Width-180
                                         Parent.Width - Self.Width	
-                                    Y: =ButtonEdit.Y
+                                    Y: =btnEditEA.Y
                                     ZIndex: =19
 
                             lblUnitEA As label:
@@ -1392,14 +1392,14 @@ projectAssignment As screen:
                                 Y: =lblGOnumberEA.Y+lblGOnumberEA.Height+10
                                 ZIndex: =23
 
-                            Group2 As group:
+                            grpEditEA As group:
                                 Height: =5
                                 Width: =5
                                 X: =60
                                 Y: =60
                                 ZIndex: =23
 
-                                ButtonEdit As button:
+                                btnEditEA As button:
                                     Align: =Align.Left
                                     Color: =referenceCSS.RColorBlack
                                     DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -1444,11 +1444,11 @@ projectAssignment As screen:
                                     Width: =120
                                     X: |-
                                         =//Parent.Width-360
-                                        Parent.Width-Self.Width-Buttonremove.Width-10
+                                        Parent.Width-Self.Width-btnRemoveEA.Width-10
                                     Y: =GalleryExistingAssignment.TemplateHeight/1.2
                                     ZIndex: =21
 
-                                Image10_2 As image:
+                                imgEditEA As image:
                                     BorderColor: =RGBA(0, 0, 0, 1)
                                     Height: =30
                                     Image: |-
@@ -1459,8 +1459,8 @@ projectAssignment As screen:
                                              writingGray
                                         )
                                     Width: =20
-                                    X: =ButtonEdit.X+3
-                                    Y: =ButtonEdit.Y+(ButtonEdit.Height/5)
+                                    X: =btnEditEA.X+3
+                                    Y: =btnEditEA.Y+(btnEditEA.Height/5)
                                     ZIndex: =22
 
                             lblUnitnumberEA As label:
