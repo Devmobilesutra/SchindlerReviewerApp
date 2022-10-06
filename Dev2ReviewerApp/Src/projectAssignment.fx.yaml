@@ -1441,14 +1441,14 @@ projectAssignment As screen:
         Y: =20
         ZIndex: =13
 
-        iconOuterRectanglePA As rectangle:
+        iconOuterRectangleRemovePA As rectangle:
             Fill: =RGBA(0, 0, 0, 0.29)
             Height: =Parent.Height
             Visible: =IsRemove =true
             Width: =Parent.Width
             ZIndex: =8
 
-        iconInnerRectanglePA As rectangle:
+        iconInnerRectangleRemovePA As rectangle:
             Fill: =referenceCSS.RColorWhite
             Height: =160
             Visible: =IsRemove =true
@@ -1466,9 +1466,9 @@ projectAssignment As screen:
                  & 
                 " ?"
             Visible: =IsRemove =true
-            Width: =iconInnerRectanglePA.Width
-            X: =iconInnerRectanglePA.X
-            Y: =iconInnerRectanglePA.Y+20
+            Width: =iconInnerRectangleRemovePA.Width
+            X: =iconInnerRectangleRemovePA.X
+            Y: =iconInnerRectangleRemovePA.Y+20
             ZIndex: =10
 
         btnCancelPopupPA As button:
@@ -1487,7 +1487,7 @@ projectAssignment As screen:
             Text: ="Cancel"
             Visible: =IsRemove =true
             Width: =100
-            X: =iconInnerRectanglePA.X+(iconInnerRectanglePA.Width-Self.Width)/4
+            X: =iconInnerRectangleRemovePA.X+(iconInnerRectangleRemovePA.Width-Self.Width)/4
             Y: =lblRemoveassignmentPA.Y+lblRemoveassignmentPA.Height
             ZIndex: =11
 
