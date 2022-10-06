@@ -307,7 +307,7 @@ projectAssignment As screen:
                     */
                     //Gallery3.Height
                     //Parent.Height
-                    If(P,1100+glryUnitNA.Height,Gallery3.Height+80)
+                    If(P,1100+glryUnitNA.Height,GalleryExistingAssignment.Height+80)
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 Y: =ctnLineProjectAssignmentPA.Height+ctnLineProjectAssignmentPA.Y
@@ -1044,10 +1044,10 @@ projectAssignment As screen:
                         Width: =Parent.Width
                         ZIndex: =2
 
-                        "Gallery3 As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
+                        "GalleryExistingAssignment As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
                             FillPortions: =0
                             Height: |
-                                =CountRows(Gallery3.AllItems)*(Gallery3.TemplateHeight)
+                                =CountRows(GalleryExistingAssignment.AllItems)*(GalleryExistingAssignment.TemplateHeight)
                                 //Parent.Height
                             Items: =Sort(assignments,startDate,Descending)
                             Layout: =Layout.Vertical
@@ -1061,7 +1061,7 @@ projectAssignment As screen:
                                 =Parent.Y
                             ZIndex: =1
 
-                            c_name As label:
+                            lblC_nameEA As label:
                                 FontWeight: =FontWeight.Bold
                                 Height: =30
                                 OnSelect: =Select(Parent)
@@ -1074,7 +1074,7 @@ projectAssignment As screen:
                                 VerticalAlign: =VerticalAlign.Top
                                 Width: =200
                                 X: =10
-                                Y: =Gallery3.Y+20
+                                Y: =GalleryExistingAssignment.Y+20
                                 ZIndex: =1
 
                             "Gallery18 As gallery.'BrowseLayout_Vertical_TwoTextOneImageTwoColumnVariant_ver4.0'":
@@ -1090,8 +1090,8 @@ projectAssignment As screen:
                                 Visible: =false
                                 Width: =Parent.Width/1.2
                                 WrapCount: =15
-                                X: =c_name.X+c_name.Width+10
-                                Y: =Gono.Y+Gono.Height+10
+                                X: =lblC_nameEA.X+lblC_nameEA.Width+10
+                                Y: =lblGOnumberEA.Y+lblGOnumberEA.Height+10
                                 ZIndex: =1
 
                                 Title6 As label:
@@ -1122,7 +1122,7 @@ projectAssignment As screen:
                                     Y: =5
                                     ZIndex: =3
 
-                            b_name As label:
+                            lblGo_NumberEA As label:
                                 FontWeight: =FontWeight.Bold
                                 Height: =30
                                 OnSelect: =Select(Parent)
@@ -1135,10 +1135,10 @@ projectAssignment As screen:
                                 VerticalAlign: =VerticalAlign.Top
                                 Width: =250
                                 X: =10
-                                Y: =client_Name.Y+client_Name.Height+10
+                                Y: =lblClientnameEA.Y+lblClientnameEA.Height+10
                                 ZIndex: =2
 
-                            a_type As label:
+                            "'lblA-typeEA' As label":
                                 FontWeight: =FontWeight.Bold
                                 Height: =30
                                 OnSelect: =Select(Parent)
@@ -1152,11 +1152,11 @@ projectAssignment As screen:
                                 Width: =200
                                 X: =10
                                 Y: |-
-                                    =Gono_1.Y+Gono_1.Height+10
+                                    =lblUnitnumberEA.Y+lblUnitnumberEA.Height+10
                                     //Gallery18.Height+Gallery18.Y
                                 ZIndex: =3
 
-                            Separator5 As rectangle:
+                            iconSeparatorEA As rectangle:
                                 Fill: =RGBA(153, 153, 153, 1)
                                 Height: =2
                                 OnSelect: =Select(Parent)
@@ -1164,7 +1164,7 @@ projectAssignment As screen:
                                 Y: =Parent.TemplateHeight - 1
                                 ZIndex: =4
 
-                            client_Name As label:
+                            lblClientnameEA As label:
                                 Height: =30
                                 OnSelect: =Select(Parent)
                                 Size: =referenceCSS.RLabelFontSize
@@ -1178,11 +1178,11 @@ projectAssignment As screen:
                                         name
                                     )
                                 Width: =350
-                                X: =c_name.X+c_name.Width+10
-                                Y: =Gallery3.Y+20
+                                X: =lblC_nameEA.X+lblC_nameEA.Width+10
+                                Y: =GalleryExistingAssignment.Y+20
                                 ZIndex: =5
 
-                            assessment As label:
+                            lblAssessmentTypeEA As label:
                                 Height: =30
                                 OnSelect: =Select(Parent)
                                 PaddingBottom: =0
@@ -1192,13 +1192,13 @@ projectAssignment As screen:
                                 Size: =referenceCSS.RLabelFontSize
                                 Text: =ThisItem.assessmentType
                                 Width: =350
-                                X: =a_type.X+a_type.Width+10
+                                X: ='lblA-typeEA'.X+'lblA-typeEA'.Width+10
                                 Y: |-
-                                    =Gono_1.Y+Gono_1.Height+10
+                                    =lblUnitnumberEA.Y+lblUnitnumberEA.Height+10
                                     //Gallery18.Height+Gallery18.Y
                                 ZIndex: =6
 
-                            Gono As label:
+                            lblGOnumberEA As label:
                                 Height: =30
                                 OnSelect: =Select(Parent)
                                 Size: =referenceCSS.RLabelFontSize
@@ -1208,11 +1208,11 @@ projectAssignment As screen:
                                     //LookUp(banksCollection,'bank (quantum_bank)'=ThisItem.bankId.'bank (quantum_bank)',Go_Number)
                                     LookUp(schindlerBanks,Id = ThisItem.bankId.Id,goNumber)
                                 Width: =350
-                                X: =b_name.X+b_name.Width+10
-                                Y: =client_Name.Y+client_Name.Height+10
+                                X: =lblGo_NumberEA.X+lblGo_NumberEA.Width+10
+                                Y: =lblClientnameEA.Y+lblClientnameEA.Height+10
                                 ZIndex: =7
 
-                            rev As label:
+                            lblReviewerEA As label:
                                 FontWeight: =FontWeight.Bold
                                 Height: =30
                                 OnSelect: =Select(Parent)
@@ -1225,10 +1225,10 @@ projectAssignment As screen:
                                 VerticalAlign: =VerticalAlign.Top
                                 Width: =200
                                 X: =10
-                                Y: =ass_name.Y+ass_name.Height+10
+                                Y: =lblAssessornameEA.Y+lblAssessornameEA.Height+10
                                 ZIndex: =8
 
-                            rev_name As label:
+                            lblReviewvernameEA As label:
                                 Height: =30
                                 OnSelect: =Select(Parent)
                                 Size: =referenceCSS.RLabelFontSize
@@ -1236,11 +1236,11 @@ projectAssignment As screen:
                                     =//LookUp(ReviewerAD,id=ThisItem.reviewer_id,displayName)
                                     ThisItem.reviewerName
                                 Width: =350
-                                X: =rev.X+rev.Width+10
-                                Y: =ass_name.Y+ass_name.Height+10
+                                X: =lblReviewerEA.X+lblReviewerEA.Width+10
+                                Y: =lblAssessornameEA.Y+lblAssessornameEA.Height+10
                                 ZIndex: =9
 
-                            asse As label:
+                            lblAssessorEA As label:
                                 FontWeight: =FontWeight.Bold
                                 Height: =30
                                 OnSelect: =Select(Parent)
@@ -1253,10 +1253,10 @@ projectAssignment As screen:
                                 VerticalAlign: =VerticalAlign.Top
                                 Width: =200
                                 X: =10
-                                Y: =assessment.Y+assessment.Height+10
+                                Y: =lblAssessmentTypeEA.Y+lblAssessmentTypeEA.Height+10
                                 ZIndex: =10
 
-                            ass_name As label:
+                            lblAssessornameEA As label:
                                 Height: =30
                                 OnSelect: =Select(Parent)
                                 Size: =referenceCSS.RLabelFontSize
@@ -1265,11 +1265,11 @@ projectAssignment As screen:
                                     //ThisItem.assessor_id
                                     ThisItem.assessorName
                                 Width: =350
-                                X: =asse.X+asse.Width+10
-                                Y: =assessment.Y+assessment.Height+10
+                                X: =lblAssessorEA.X+lblAssessorEA.Width+10
+                                Y: =lblAssessmentTypeEA.Y+lblAssessmentTypeEA.Height+10
                                 ZIndex: =11
 
-                            s_date As label:
+                            lblS_dateEA As label:
                                 FontWeight: =FontWeight.Bold
                                 Height: =30
                                 OnSelect: =Select(Parent)
@@ -1282,20 +1282,20 @@ projectAssignment As screen:
                                 VerticalAlign: =VerticalAlign.Top
                                 Width: =200
                                 X: =10
-                                Y: =rev_name.Y+rev_name.Height+10
+                                Y: =lblReviewvernameEA.Y+lblReviewvernameEA.Height+10
                                 ZIndex: =12
 
-                            startDate As label:
+                            lblStartDateEA As label:
                                 Height: =30
                                 OnSelect: =Select(Parent)
                                 Size: =referenceCSS.RLabelFontSize
                                 Text: =Text(ThisItem.startDate,"mm-dd-yyyy")
                                 Width: =350
-                                X: =s_date.X+s_date.Width+10
-                                Y: =rev_name.Y+rev_name.Height+10
+                                X: =lblS_dateEA.X+lblS_dateEA.Width+10
+                                Y: =lblReviewvernameEA.Y+lblReviewvernameEA.Height+10
                                 ZIndex: =13
 
-                            D_date As label:
+                            lblD_dateEA As label:
                                 FontWeight: =FontWeight.Bold
                                 Height: =30
                                 OnSelect: =Select(Parent)
@@ -1308,17 +1308,17 @@ projectAssignment As screen:
                                 VerticalAlign: =VerticalAlign.Top
                                 Width: =200
                                 X: =10
-                                Y: =startDate.Y+startDate.Height+10
+                                Y: =lblStartDateEA.Y+lblStartDateEA.Height+10
                                 ZIndex: =14
 
-                            dueDate As label:
+                            lblDuedateEA As label:
                                 Height: =30
                                 OnSelect: =Select(Parent)
                                 Size: =referenceCSS.RLabelFontSize
                                 Text: =Text(ThisItem.dueDate,"mm-dd-yyyy")
                                 Width: =350
-                                X: =D_date.X+D_date.Width+10
-                                Y: =startDate.Y+startDate.Height+10
+                                X: =lblD_dateEA.X+lblD_dateEA.Width+10
+                                Y: =lblStartDateEA.Y+lblStartDateEA.Height+10
                                 ZIndex: =15
 
                             GroupRemove As group:
@@ -1376,7 +1376,7 @@ projectAssignment As screen:
                                     Y: =ButtonEdit.Y
                                     ZIndex: =19
 
-                            b_name_1 As label:
+                            lblUnitEA As label:
                                 FontWeight: =FontWeight.Bold
                                 Height: =30
                                 OnSelect: =Select(Parent)
@@ -1389,7 +1389,7 @@ projectAssignment As screen:
                                 VerticalAlign: =VerticalAlign.Top
                                 Width: =200
                                 X: =10
-                                Y: =Gono.Y+Gono.Height+10
+                                Y: =lblGOnumberEA.Y+lblGOnumberEA.Height+10
                                 ZIndex: =23
 
                             Group2 As group:
@@ -1445,7 +1445,7 @@ projectAssignment As screen:
                                     X: |-
                                         =//Parent.Width-360
                                         Parent.Width-Self.Width-Buttonremove.Width-10
-                                    Y: =Gallery3.TemplateHeight/1.2
+                                    Y: =GalleryExistingAssignment.TemplateHeight/1.2
                                     ZIndex: =21
 
                                 Image10_2 As image:
@@ -1463,38 +1463,17 @@ projectAssignment As screen:
                                     Y: =ButtonEdit.Y+(ButtonEdit.Height/5)
                                     ZIndex: =22
 
-                            Gono_1 As label:
+                            lblUnitnumberEA As label:
                                 Height: =30
                                 OnSelect: =Select(Parent)
                                 Size: =referenceCSS.RLabelFontSize
                                 Text: |+
-                                    =//LookUp(schindlerClientCollection,clientName=ThisItem.clientId,completedProjects)
-                                    //ThisItem.Project
-                                    //LookUp(banksCollection,'bank (quantum_bank)'=ThisItem.bankId.'bank (quantum_bank)',Go_Number)
-                                    //LookUp(bank,'bank (quantum_bank)' = ThisItem.bankId.'bank (quantum_bank)',Go_Number)
-                                    //Filter(assignmentUnits,assignmentId.Id =ThisItem.Id,bankUnitId.unitNumber)
-                                    /*
-                                    ClearCollect(
-                                        ItemDefaults;
-                                        Filter(
-                                            ShowColumns(
-                                                AddColumns(
-                                                    Split(Gono_1.Text; ",");
-                                                    "Value";
-                                                    Trim(Result));
-                                                "Value");
-                                            Not(IsBlank(Value)) And Not(IsEmpty(Value))))*/
-                                    
-                                    //Concat(Filter(assignmentUnits,assignmentId.Id =ThisItem), ThisItem.assignmentUnits.bankUnitId,","))
+                                    =Concat(Sort(Filter(assignmentUnits,assignmentId.assignments=ThisItem.assignments),bankUnitId.unitNumber),bankUnitId.unitNumber,"   ")
                                     
                                     
-                                    //Concat(Filter(assignmentUnits,assignmentId.Id=ThisItem.Id),bankUnitId.unitNumber,"   ")
-                                    Concat(Sort(Filter(assignmentUnits,assignmentId.assignments=ThisItem.assignments),bankUnitId.unitNumber),bankUnitId.unitNumber,"   ")
-                                    
-                                    
-                                Width: =Parent.Width-b_name_1.Width-40
-                                X: =c_name.X+c_name.Width+10
-                                Y: =Gono.Y+Gono.Height+10
+                                Width: =Parent.Width-lblUnitEA.Width-40
+                                X: =lblC_nameEA.X+lblC_nameEA.Width+10
+                                Y: =lblGOnumberEA.Y+lblGOnumberEA.Height+10
                                 ZIndex: =24
 
             Container20 As groupContainer.verticalAutoLayoutContainer:
@@ -1735,7 +1714,7 @@ projectAssignment As screen:
             Height: =80
             Size: =14
             Text: |-
-                ="Do you want to remove assignment of bank " & Gallery3.Selected.bankId.goNumber// &" to "& Gallery3.Selected.assessor_name
+                ="Do you want to remove assignment of bank " & GalleryExistingAssignment.Selected.bankId.goNumber// &" to "& Gallery3.Selected.assessor_name
                  & 
                 " ?"
             Visible: =IsRemove =true
@@ -1789,16 +1768,16 @@ projectAssignment As screen:
                       }
                       ));
                 */
-                RemoveIf(unitAssessment,assignmentId.Id=Gallery3.Selected.Id);
-                RemoveIf(bankAssessment,assignmentId.Id=Gallery3.Selected.Id);
-                RemoveIf(assignmentUnits,assignmentId.Id=Gallery3.Selected.Id);
+                RemoveIf(unitAssessment,assignmentId.Id=GalleryExistingAssignment.Selected.Id);
+                RemoveIf(bankAssessment,assignmentId.Id=GalleryExistingAssignment.Selected.Id);
+                RemoveIf(assignmentUnits,assignmentId.Id=GalleryExistingAssignment.Selected.Id);
                 
                 Remove(
                     assignments,
-                    Gallery3.Selected
+                    GalleryExistingAssignment.Selected
                 );
                 If(
-                    Gallery3.Selected in assignments,
+                    GalleryExistingAssignment.Selected in assignments,
                     Notify(
                         "Error Record not Delete",
                         NotificationType.Error
