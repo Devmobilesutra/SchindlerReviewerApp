@@ -284,17 +284,17 @@ AddBanks As screen:
                 FillPortions: =0
                 Height: |
                     =/*If(App.Height<=950,Parent.Height-Container20_9.Height-Container6_3.Height-Container7_4.Height-Container20_5.Height -FooterContainer1_3.Height+500 ,Parent.Height-Container20_9.Height-Container6_3.Height-Container7_4.Height-Container20_5.Height -FooterContainer1_3.Height+500)*/
-                    If(P,600+glryunitNB.Height,glryExistingClient.Height)
+                    If(P,600+glryunitNB.Height,glryExistingBanks.Height)
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 Y: |
                     =ctnlineAddBanks.Height+ctnlineAddBanks.Y
                 ZIndex: =4
 
-                ctnExistingClient As groupContainer.verticalAutoLayoutContainer:
+                ctnExistingbanks As groupContainer.verticalAutoLayoutContainer:
                     Height: |-
                         =//Parent.Height
-                        glryExistingClient.Height
+                        glryExistingBanks.Height
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMode: =LayoutMode.Auto
                     Visible: =A
@@ -302,12 +302,12 @@ AddBanks As screen:
                     Y: =Parent.Y/0
                     ZIndex: =2
 
-                    glryExistingClient As gallery.variableTemplateHeightGallery:
+                    glryExistingBanks As gallery.variableTemplateHeightGallery:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         FillPortions: =0
                         Height: |-
                             =//Parent.Height
-                            CountRows(glryExistingClient.AllItems)*(glryExistingClient.TemplateHeight + glryExistingClient.TemplatePadding +100)
+                            CountRows(glryExistingBanks.AllItems)*(glryExistingBanks.TemplateHeight + glryExistingBanks.TemplatePadding +100)
                         Items: |-
                             =Sort(schindlerBanks,goNumber,Ascending)
                             
@@ -346,11 +346,11 @@ AddBanks As screen:
                             PaddingLeft: =40
                             Text: =
                             Width: =Parent.Width/1.02
-                            Y: =glryExistingClient.Y
+                            Y: =glryExistingBanks.Y
                             ZIndex: =1
 
-                        Gallery13_3 As gallery.variableTemplateHeightGallery:
-                            Height: =CountRows(Gallery13_3.AllItems)*(Gallery13_3.TemplateHeight+Gallery13_3.TemplatePadding)*0.99
+                        glryExstingUnit As gallery.variableTemplateHeightGallery:
+                            Height: =CountRows(glryExstingUnit.AllItems)*(glryExstingUnit.TemplateHeight+glryExstingUnit.TemplatePadding)*0.99
                             Items: |-
                                 =Sort(Filter(bankUnits,bankId.goNumber = ThisItem.goNumber),unitNumber,Ascending)
                                 
@@ -375,7 +375,7 @@ AddBanks As screen:
                                     //ThisItem.clientInstallationId.unit_Number
                                 Width: =Parent.Width/2//5
                                 X: =Parent.Width/8
-                                Y: =Gallery13_3.Y
+                                Y: =glryExstingUnit.Y
                                 ZIndex: =1
 
                             Icon1_2 As icon.HorizontalLine:
@@ -387,17 +387,17 @@ AddBanks As screen:
                                 OnSelect: =Select(Parent)
                                 Width: =Parent.Width/1.03 -Parent.Width/10
                                 X: =Parent.Width/10
-                                Y: =Gallery13_3.Y+ Label25_1.Height+5
+                                Y: =glryExstingUnit.Y+ Label25_1.Height+5
                                 ZIndex: =10
 
-                        GroupRemove_3 As group:
+                        grpRemoveEB As group:
                             Height: =5
                             Width: =5
                             X: =40
                             Y: =40
                             ZIndex: =5
 
-                            Image10_6 As image:
+                            imgRemoveEB As image:
                                 Height: =30
                                 Image: |-
                                     =//If Assessor and reviewer  are assign to bank then bank can't delete
@@ -415,11 +415,11 @@ AddBanks As screen:
                                         trashGray
                                     )
                                 Width: =20
-                                X: =Buttonremove_4.X+10
-                                Y: =Buttonremove_4.Y+(Buttonremove_4.Height/5)
+                                X: =btnRemoveEB.X+10
+                                Y: =btnRemoveEB.Y+(btnRemoveEB.Height/5)
                                 ZIndex: =3
 
-                            Buttonremove_4 As button:
+                            btnRemoveEB As button:
                                 Color: =referenceCSS.RColorBlack
                                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
                                 DisabledColor: =RGBA(179, 179, 179, 1)
@@ -460,7 +460,7 @@ AddBanks As screen:
                                 Y: =Parent.Y
                                 ZIndex: =4
 
-                        lblLocationEC As label:
+                        lblLocationEB As label:
                             Font: =referenceCSS.RFont
                             Height: =50
                             OnSelect: =Select(Parent)
@@ -475,17 +475,17 @@ AddBanks As screen:
                                 =//Label25.X +Label25.Width +10
                                 //Parent.Width/4
                                 0
-                            Y: =lblLocationEC.Height
+                            Y: =lblLocationEB.Height
                             ZIndex: =7
 
-                        grpEditEC As group:
+                        grpEditEB As group:
                             Height: =5
                             Width: =5
                             X: =40
                             Y: =40
                             ZIndex: =7
 
-                            imgEditEC As image:
+                            imgEditEB As image:
                                 Height: =30
                                 Image: |-
                                     =If(
@@ -502,11 +502,11 @@ AddBanks As screen:
                                         writingGray
                                     )
                                 Width: =20
-                                X: =btnEditEC.X+10
-                                Y: =btnEditEC.Y+(btnEditEC.Height/5)
+                                X: =btnEditEB.X+10
+                                Y: =btnEditEB.Y+(btnEditEB.Height/5)
                                 ZIndex: =5
 
-                            btnEditEC As button:
+                            btnEditEB As button:
                                 BorderThickness: =0
                                 Color: =referenceCSS.RColorBlack
                                 DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -569,7 +569,7 @@ AddBanks As screen:
                                 Y: =Parent.Y
                                 ZIndex: =6
 
-                        lblProducttypeEC As label:
+                        lblProducttypeEB As label:
                             Font: =referenceCSS.RFont
                             Height: =50
                             OnSelect: =Select(Parent)
@@ -581,11 +581,11 @@ AddBanks As screen:
                                 //ThisItem.clientInstallationId.product_Id.product_Type
                             Width: =Parent.Width/5
                             X: |-
-                                =lblGoUnitNumberEC.X +lblGoUnitNumberEC.Width + 10
+                                =lblGoUnitNumberEB.X +lblGoUnitNumberEB.Width + 10
                                 //Parent.Width/2
                             ZIndex: =8
 
-                        lblGoUnitNumberEC As label:
+                        lblGoUnitNumberEB As label:
                             Font: =referenceCSS.RFont
                             Height: =50
                             OnSelect: =Select(Parent)
@@ -598,11 +598,11 @@ AddBanks As screen:
                             Width: |
                                 =Parent.Width/5
                             X: |-
-                                =lblClientEC.X +lblClientEC.Width + 10
+                                =lblClientEB.X +lblClientEB.Width + 10
                                 //Parent.Width/7
                             ZIndex: =9
 
-                        lblClientEC As label:
+                        lblClientEB As label:
                             Font: =referenceCSS.RFont
                             Height: =50
                             OnSelect: =Select(Parent)
@@ -620,7 +620,7 @@ AddBanks As screen:
                                 0
                             ZIndex: =10
 
-                ctnNewClient As groupContainer.verticalAutoLayoutContainer:
+                ctnNewBanks As groupContainer.verticalAutoLayoutContainer:
                     Height: =Parent.Height
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMode: =LayoutMode.Auto
