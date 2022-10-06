@@ -244,7 +244,7 @@ projectAssignment As screen:
                         // Parent.Width/2.5
                     ZIndex: =2
 
-                    Button7_1 As button:
+                    btnExistingAssignmentPA As button:
                         BorderThickness: =0
                         Color: =If(A,referenceCSS.RActiveColor,referenceCSS.RInActiveColor)
                         DisabledColor: =RGBA(204, 204, 204, 1)
@@ -272,6 +272,7 @@ projectAssignment As screen:
                         ZIndex: =1
 
                     Icon6 As icon.Add:
+                        AlignInContainer: =AlignInContainer.Center
                         AutoDisableOnSelect: =false
                         Color: |
                             =RGBA(0, 0, 0, 0)
