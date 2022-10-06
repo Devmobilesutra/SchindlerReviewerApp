@@ -40,7 +40,7 @@ EditBank As screen:
         Width: =Parent.Width
         ZIndex: =1
 
-        Container3_17 As groupContainer.manualLayoutContainer:
+        ctcHeaderEditBank As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =Header.HeaderFill
             FillPortions: =0
@@ -50,7 +50,7 @@ EditBank As screen:
             Width: =Parent.Width
             ZIndex: =1
 
-            Image1_18 As image:
+            imgLogoEB As image:
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height
                 Image: =Schindler_logo_PNG1
@@ -58,10 +58,10 @@ EditBank As screen:
                 PaddingLeft: =2
                 PaddingRight: =1
                 PaddingTop: =5
-                Width: =Container3_17.Width/10
+                Width: =ctcHeaderEditBank.Width/10
                 ZIndex: =1
 
-            Image2_22 As image:
+            imguserprofileEB As image:
                 Fill: =RGBA(253, 222, 207, 1)
                 Height: =50
                 Image: =userdata.userImage
@@ -70,21 +70,11 @@ EditBank As screen:
                 RadiusTopLeft: =91
                 RadiusTopRight: =91
                 Width: =50
-                X: =Label3_18.X+Label3_18.Width
+                X: =lblDashboardEB.X+lblDashboardEB.Width
                 Y: =16
                 ZIndex: =2
 
-            Icon1_18 As icon.Bell:
-                Color: =RGBA(255, 255, 0, 1)
-                Height: =Parent.Height/2
-                Icon: =Icon.Bell
-                Visible: =false
-                Width: =Parent.Width/28
-                X: =Label1_22.X+Label1_22.Width+10
-                Y: =Parent.Height/4
-                ZIndex: =5
-
-            Label1_22 As label:
+            lblusernameEB As label:
                 Align: =Align.Center
                 Color: =Header.HeaderColor
                 Font: =Header.HeaderFont
@@ -95,11 +85,11 @@ EditBank As screen:
                     =//"SCHD0023"
                     //LookUp(ReviewerAD,mail=User().Email,displayName)
                     userdata.userdisplayName
-                Width: =Container3_17.Width/8
-                X: =Image2_22.X+ Image2_22.Height
+                Width: =ctcHeaderEditBank.Width/6
+                X: =imguserprofileEB.X+ imguserprofileEB.Height
                 ZIndex: =6
 
-            Label3_18 As label:
+            lblDashboardEB As label:
                 Align: =Align.Center
                 Color: =Header.HeaderColor
                 Font: =Header.HeaderFont
@@ -107,8 +97,8 @@ EditBank As screen:
                 Height: =Parent.Height
                 Size: =Header.HeaderFontSize
                 Text: ="Banks"
-                Width: =Container3_17.Width/1.6
-                X: =Image1_18.Width+Image1_18.X
+                Width: =ctcHeaderEditBank.Width/1.6
+                X: =imgLogoEB.Width+imgLogoEB.X
                 ZIndex: =8
 
         Container4_13 As groupContainer.verticalAutoLayoutContainer:
@@ -124,7 +114,7 @@ EditBank As screen:
             LayoutOverflowY: =LayoutOverflow.Scroll
             PaddingLeft: =20
             Width: =Parent.Width
-            Y: =Container3_17.Height
+            Y: =ctcHeaderEditBank.Height
             ZIndex: =4
 
             Container20_13 As groupContainer.verticalAutoLayoutContainer:
