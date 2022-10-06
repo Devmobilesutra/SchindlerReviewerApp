@@ -4724,66 +4724,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "projectAssignment.Container9_4.ctnMainProjectAssignment.ctnMiddleProjectAssignmentPA.ctnMainPA.ctnExistingAssignment.GalleryExistingAssignment.Gallery18.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "projectAssignment.Container9_4.ctnMainProjectAssignment.ctnMiddleProjectAssignmentPA.ctnMainPA.ctnExistingAssignment.GalleryExistingAssignment.Gallery18.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "projectAssignment",
-                "type": "projectAssignment.Container9_4.ctnMainProjectAssignment.ctnMiddleProjectAssignmentPA.ctnMainPA.ctnExistingAssignment.GalleryExistingAssignment.Gallery18"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "projectAssignment.Container9_4.ctnMainProjectAssignment.ctnMiddleProjectAssignmentPA.ctnMainPA.ctnExistingAssignment.GalleryExistingAssignment.Gallery18.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "projectAssignment.Container9_4.ctnMainProjectAssignment.ctnMiddleProjectAssignmentPA.ctnMainPA.ctnExistingAssignment.GalleryExistingAssignment.Gallery18.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "projectAssignment",
-                "type": "projectAssignment.Container9_4.ctnMainProjectAssignment.ctnMiddleProjectAssignmentPA.ctnMainPA.ctnExistingAssignment.GalleryExistingAssignment.Gallery18"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "AddBanks.ctnAddBanks.ctnMainAddBanks.ctnbuttonsAddBanks.ctnNewBank.iconLineNewBank.AccessibleLabel"
                 }
               ],
