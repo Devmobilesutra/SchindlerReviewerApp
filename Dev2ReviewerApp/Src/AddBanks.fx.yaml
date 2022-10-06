@@ -31,7 +31,7 @@ AddBanks As screen:
           Reset(cboxProductTypeNB);
                
 
-    Container9_9 As groupContainer.verticalAutoLayoutContainer:
+    ctnAddBanks As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
@@ -39,6 +39,7 @@ AddBanks As screen:
         ZIndex: =1
 
         ctnHeaderAddBanks As groupContainer.manualLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =Header.HeaderFill
             FillPortions: =0
             Height: =80
@@ -99,6 +100,7 @@ AddBanks As screen:
                 ZIndex: =8
 
         ctnMainAddBanks As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             Height: |-
                 =//(Parent.Height-(Parent.Height/8))

@@ -775,7 +775,7 @@ EditBank As screen:
             Y: =lblupdatesuccessEC.Y+ Self.Height+10
             ZIndex: =13
 
-    Timer3_1 As timer:
+    TimerUnitEdit As timer:
         AutoPause: =false
         AutoStart: =//unitTimer = true
         Duration: =2000
