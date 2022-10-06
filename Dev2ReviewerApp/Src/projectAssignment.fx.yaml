@@ -1,14 +1,14 @@
 projectAssignment As screen:
     OnVisible: |+
-        =        Reset(ComboBox1);
-                Reset(ComboBox2);
+        =        Reset(cboxClientNA);
+                Reset(cboxGONumberNA);
                 Clear(selectedUnit);
-                Reset(ComboBox3);
-                Reset(ComboBox4);
-                Reset(ComboBox5);
-                Reset(DatePicker1);
-                Reset(DatePicker1_2);
-                Reset(DatePicker2);
+                Reset(cboxAssessmentTypeNA);
+                Reset(cboxAssessorNA);
+                Reset(cboxReviewerNA);
+                Reset(DatePickerDueDateNA);
+                Reset(DatePickerAssignDateNA);
+                Reset(DatePickerStartDateNA);
         
         If(IsEdit =false,
         Set(
@@ -205,15 +205,15 @@ projectAssignment As screen:
                             =//If(P,Set(P,true);Set(A,false))
                             Set(P,true);
                             Set(A,false);
-                                    Reset(ComboBox1);
-                                    Reset(ComboBox2);
+                                    Reset(cboxClientNA);
+                                    Reset(cboxGONumberNA);
                                     Clear(selectedUnit);
-                                    Reset(ComboBox3);
-                                    Reset(ComboBox4);
-                                    Reset(ComboBox5);
-                                    Reset(DatePicker1);
-                                    Reset(DatePicker1_2);
-                                    Reset(DatePicker2);
+                                    Reset(cboxAssessmentTypeNA);
+                                    Reset(cboxAssessorNA);
+                                    Reset(cboxReviewerNA);
+                                    Reset(DatePickerDueDateNA);
+                                    Reset(DatePickerAssignDateNA);
+                                    Reset(DatePickerStartDateNA);
                         PressedBorderColor: =//Self.Fill
                         PressedFill: =//Self.Color
                         Size: |-
@@ -271,7 +271,7 @@ projectAssignment As screen:
                         Width: =Parent.Width
                         ZIndex: =1
 
-                    Icon6 As icon.Add:
+                    iconExistingAssignmentPA As icon.Add:
                         AlignInContainer: =AlignInContainer.Center
                         AutoDisableOnSelect: =false
                         Color: |
@@ -286,7 +286,7 @@ projectAssignment As screen:
                         Width: =Parent.Width/1.3
                         ZIndex: =2
 
-            Container7 As groupContainer.verticalAutoLayoutContainer:
+            ctnLineProjectAssignmentPA As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 Fill: =RGBA(204, 204, 204, 1)
                 FillPortions: =0
@@ -297,7 +297,7 @@ projectAssignment As screen:
                 LayoutMode: =LayoutMode.Auto
                 ZIndex: =3
 
-            Container18 As groupContainer.manualLayoutContainer:
+            ctnMiddleProjectAssignmentPA As groupContainer.manualLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: |-
@@ -307,20 +307,20 @@ projectAssignment As screen:
                     */
                     //Gallery3.Height
                     //Parent.Height
-                    If(P,1100+Gallery16_1.Height,Gallery3.Height+80)
+                    If(P,1100+glryUnitNA.Height,Gallery3.Height+80)
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
-                Y: =Container7.Height+Container7.Y
+                Y: =ctnLineProjectAssignmentPA.Height+ctnLineProjectAssignmentPA.Y
                 ZIndex: =4
 
-                Container21 As groupContainer.manualLayoutContainer:
+                ctnMainPA As groupContainer.manualLayoutContainer:
                     Height: |-
                         =Parent.Height
                         //Gallery3.Height
                     Width: =Parent.Width
                     ZIndex: =1
 
-                    Container24 As groupContainer.verticalAutoLayoutContainer:
+                    ctnNewAssignment As groupContainer.verticalAutoLayoutContainer:
                         Height: =Parent.Height
                         LayoutDirection: =LayoutDirection.Vertical
                         LayoutMode: =LayoutMode.Auto
@@ -332,7 +332,7 @@ projectAssignment As screen:
                         Width: =Parent.Width
                         ZIndex: =1
 
-                        Label14 As label:
+                        lblClientNA As label:
                             Font: =referenceCSS.RFont
                             FontWeight: =FontWeight.Bold
                             Height: =50
@@ -341,10 +341,10 @@ projectAssignment As screen:
                             Size: =referenceCSS.RLabelFontSize
                             Text: ="Client *"
                             Width: =Parent.Width/3
-                            Y: =Container24.Y+100
+                            Y: =ctnNewAssignment.Y+100
                             ZIndex: =1
 
-                        ComboBox1 As combobox:
+                        cboxClientNA As combobox:
                             BorderColor: =RGBA(0, 0, 0, 1)
                             ChevronBackground: =RGBA(0, 0, 0, 0)
                             ChevronFill: =RGBA(0, 0, 0, 1)
@@ -370,7 +370,7 @@ projectAssignment As screen:
                             Width: =Parent.Width/3
                             ZIndex: =2
 
-                        Label14_2 As label:
+                        lblGONumberNA As label:
                             Font: =referenceCSS.RFont
                             FontWeight: =FontWeight.Bold
                             Height: =50
@@ -382,7 +382,7 @@ projectAssignment As screen:
                             Y: =10
                             ZIndex: =3
 
-                        ComboBox2 As combobox:
+                        cboxGONumberNA As combobox:
                             BorderColor: =RGBA(0, 0, 0, 1)
                             ChevronBackground: =RGBA(0, 0, 0, 0)
                             ChevronFill: =RGBA(0, 0, 0, 1)
@@ -405,7 +405,7 @@ projectAssignment As screen:
                                 
                                 //Sort(Distinct(Filter(schindlerBanks,clientId.name=ComboBox1.Selected.name),Go_Number),Result,Ascending) 
                                 
-                                Filter(schindlerBanks,clientId.name=ComboBox1.Selected.name).goNumber
+                                Filter(schindlerBanks,clientId.name=cboxClientNA.Selected.name).goNumber
                             OnChange: |-
                                 =/*If(
                                    IsBlank(LookUp(projectAssignment_1, bankId.Go_Number= ComboBox2.Selected.Result)),
@@ -423,7 +423,7 @@ projectAssignment As screen:
                             Width: =Parent.Width/3
                             ZIndex: =4
 
-                        BProduct_Label_9 As label:
+                        lblbankexistNA As label:
                             Color: =referenceCSS.RActiveColor
                             Font: =referenceCSS.RFont
                             FontWeight: =referenceCSS.RFontWeight
@@ -437,7 +437,7 @@ projectAssignment As screen:
                             Width: =Parent.Width
                             ZIndex: =5
 
-                        Label14_27 As label:
+                        lblUnitNA As label:
                             Font: =referenceCSS.RFont
                             FontWeight: =FontWeight.Bold
                             Height: =50
@@ -448,12 +448,13 @@ projectAssignment As screen:
                             Width: =Parent.Width/3
                             ZIndex: =6
 
-                        "Gallery16_1 As gallery.'BrowseLayout_Flexible_SocialFeed_ver4.0'":
+                        "glryUnitNA As gallery.'BrowseLayout_Flexible_SocialFeed_ver4.0'":
+                            AlignInContainer: =AlignInContainer.SetByContainer
                             FillPortions: =0
-                            Height: =CountRows(Gallery16_1.AllItems)*(Gallery16_1.TemplateHeight)+20
+                            Height: =CountRows(glryUnitNA.AllItems)*(glryUnitNA.TemplateHeight)+20
                             Items: |-
                                 =
-                                Sort(Filter(bankUnits,bankId.goNumber=ComboBox2.Selected.goNumber),unitNumber)
+                                Sort(Filter(bankUnits,bankId.goNumber=cboxGONumberNA.Selected.goNumber),unitNumber)
                                 
                                 //Filter(bankUnits,bankId.goNumber=ComboBox2.Selected.goNumber && unitAssignmentStatus="false").unitNumber
                                 
@@ -487,7 +488,7 @@ projectAssignment As screen:
                             TemplateSize: =60
                             ZIndex: =7
 
-                            Checkbox1_1 As checkbox:
+                            CboxUnitNA As checkbox:
                                 BorderColor: =//RGBA(0, 18, 107, 1)
                                 CheckboxBorderColor: =RGBA(0, 0, 0, 1)
                                 Default: |-
@@ -565,7 +566,7 @@ projectAssignment As screen:
                                 Y: =10
                                 ZIndex: =3
 
-                        Label14_3 As label:
+                        lblAssessmentTypeNA As label:
                             Font: =referenceCSS.RFont
                             FontWeight: =FontWeight.Bold
                             Height: =50
@@ -576,7 +577,7 @@ projectAssignment As screen:
                             Width: =Parent.Width/3
                             ZIndex: =8
 
-                        ComboBox3 As combobox:
+                        cboxAssessmentTypeNA As combobox:
                             BorderColor: =RGBA(0, 0, 0, 1)
                             ChevronBackground: =RGBA(0, 0, 0, 0)
                             ChevronFill: =RGBA(0, 0, 0, 1)
@@ -602,7 +603,7 @@ projectAssignment As screen:
                             Width: =Parent.Width/3
                             ZIndex: =9
 
-                        Label14_5 As label:
+                        lblAssessorNA As label:
                             Font: =referenceCSS.RFont
                             FontWeight: =FontWeight.Bold
                             Height: =50
@@ -613,7 +614,7 @@ projectAssignment As screen:
                             Width: =Parent.Width/3
                             ZIndex: =10
 
-                        ComboBox4 As combobox:
+                        cboxAssessorNA As combobox:
                             BorderColor: =RGBA(0, 0, 0, 1)
                             ChevronBackground: =RGBA(0, 0, 0, 0)
                             ChevronFill: =RGBA(0, 0, 0, 1)
@@ -638,7 +639,7 @@ projectAssignment As screen:
                             Width: =Parent.Width/3
                             ZIndex: =11
 
-                        Label14_4 As label:
+                        lblReviewverNA As label:
                             Font: =referenceCSS.RFont
                             FontWeight: =FontWeight.Bold
                             Height: =50
@@ -649,7 +650,7 @@ projectAssignment As screen:
                             Width: =Parent.Width/3
                             ZIndex: =12
 
-                        ComboBox5 As combobox:
+                        cboxReviewerNA As combobox:
                             BorderColor: =RGBA(0, 0, 0, 1)
                             ChevronBackground: =RGBA(0, 0, 0, 0)
                             ChevronFill: =RGBA(0, 0, 0, 1)
@@ -675,7 +676,7 @@ projectAssignment As screen:
                             Width: =Parent.Width/3
                             ZIndex: =13
 
-                        Label14_6 As label:
+                        lblstartDateNA As label:
                             Font: =referenceCSS.RFont
                             FontWeight: =FontWeight.Bold
                             Height: =50
@@ -686,7 +687,7 @@ projectAssignment As screen:
                             Width: =Parent.Width/3
                             ZIndex: =14
 
-                        DatePicker2 As datepicker:
+                        DatePickerStartDateNA As datepicker:
                             BorderColor: =RGBA(0, 0, 0, 1)
                             Font: =referenceCSS.RFont
                             Height: =50
@@ -696,7 +697,7 @@ projectAssignment As screen:
                             Width: =Parent.Width/3
                             ZIndex: =15
 
-                        Label14_7 As label:
+                        lblDueDateNA As label:
                             Font: =referenceCSS.RFont
                             FontWeight: =FontWeight.Bold
                             Height: =50
@@ -707,7 +708,7 @@ projectAssignment As screen:
                             Width: =Parent.Width/3
                             ZIndex: =16
 
-                        DatePicker1 As datepicker:
+                        DatePickerDueDateNA As datepicker:
                             BorderColor: =RGBA(0, 0, 0, 1)
                             Font: =referenceCSS.RFont
                             Height: =50
@@ -717,7 +718,7 @@ projectAssignment As screen:
                             Width: =Parent.Width/3
                             ZIndex: =17
 
-                        Label14_8 As label:
+                        lblAssignDateNA As label:
                             Font: =referenceCSS.RFont
                             FontWeight: =FontWeight.Bold
                             Height: =50
@@ -728,7 +729,7 @@ projectAssignment As screen:
                             Width: =Parent.Width/3
                             ZIndex: =18
 
-                        DatePicker1_2 As datepicker:
+                        DatePickerAssignDateNA As datepicker:
                             BorderColor: =RGBA(0, 0, 0, 1)
                             Font: =referenceCSS.RFont
                             Height: =50
@@ -738,7 +739,8 @@ projectAssignment As screen:
                             Width: =Parent.Width/3
                             ZIndex: =19
 
-                        Container28 As groupContainer.verticalAutoLayoutContainer:
+                        ctnFooterNewAssignment As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
                             Height: =150
                             LayoutDirection: =LayoutDirection.Vertical
                             LayoutGap: =20
@@ -748,7 +750,8 @@ projectAssignment As screen:
                             PaddingTop: =30
                             ZIndex: =20
 
-                            Container20_1 As groupContainer.verticalAutoLayoutContainer:
+                            ctnLineNewAssignment As groupContainer.verticalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.SetByContainer
                                 Fill: =RGBA(204, 204, 204, 1)
                                 FillPortions: =0
                                 Height: =5
@@ -759,8 +762,7 @@ projectAssignment As screen:
                                 Width: =Parent.Width
                                 ZIndex: =1
 
-                            Button1_5 As button:
-                                AlignInContainer: =AlignInContainer.Center
+                            btnAssignNA As button:
                                 Color: =referenceCSS.RColorWhite
                                 Fill: =RGBA(255, 0, 0, 1)
                                 Font: =referenceCSS.RFont
@@ -777,12 +779,12 @@ projectAssignment As screen:
                                         Connection.Connected = false,
                                         Notify("Network is not Available"),
                                         If(
-                                            IsBlank(ComboBox1.Selected.name),
+                                            IsBlank(cboxClientNA.Selected.name),
                                             Notify(
                                                 "Please Enter Client Name .",
                                                 NotificationType.Error
                                             ),
-                                            IsBlank(ComboBox2.Selected.goNumber),
+                                            IsBlank(cboxGONumberNA.Selected.goNumber),
                                             Notify(
                                                 "Please Select Bank.",
                                                 NotificationType.Error
@@ -807,26 +809,26 @@ projectAssignment As screen:
                                              Clear(selectedUnit),*/
                                             
                                     
-                                            IsBlank(ComboBox3.Selected.type),
+                                            IsBlank(cboxAssessmentTypeNA.Selected.type),
                                             Notify(
                                                 "Please Select Assessment Type.",
                                                 NotificationType.Error
                                             ),
-                                             IsBlank(ComboBox4.Selected.displayName),
+                                             IsBlank(cboxAssessorNA.Selected.displayName),
                                             Notify(
                                                 "Please Select Assessor.",
                                                 NotificationType.Error
                                             ),
-                                             IsBlank(ComboBox5.Selected.displayName),
+                                             IsBlank(cboxReviewerNA.Selected.displayName),
                                             Notify(
                                                 "Please Select Reviewer.",
                                                 NotificationType.Error
                                             ),
-                                             IsBlank(DatePicker1.SelectedDate),
+                                             IsBlank(DatePickerDueDateNA.SelectedDate),
                                             Notify("Please Select Due Date",NotificationType.Error),
                                               DateDiff(
-                                                DatePicker2,
-                                                DatePicker1
+                                                DatePickerStartDateNA,
+                                                DatePickerDueDateNA
                                             ) <= 0,
                                             Notify("The Due date can not be before Assessment start date ",NotificationType.Error),
                                     
@@ -841,45 +843,45 @@ projectAssignment As screen:
                                                         Id:Text(idvariable),
                                                         clientId: LookUp(
                                                             schindlerClients,
-                                                            name = ComboBox1.Selected.name
+                                                            name = cboxClientNA.Selected.name
                                                         ),
                                                         bankId: LookUp(
                                                             schindlerBanks,
-                                                           goNumber= ComboBox2.Selected.goNumber
+                                                           goNumber= cboxGONumberNA.Selected.goNumber
                                                            //ThisRecord.Go_Number
                                                         ),
                                                         assessorId: LookUp(
                                                             AssessorAD,
-                                                            displayName = ComboBox4.Selected.displayName,
+                                                            displayName = cboxAssessorNA.Selected.displayName,
                                                             id
                                                         ),
                                                         reviewerId: LookUp(
                                                             ReviewerAD,
-                                                            displayName = ComboBox5.Selected.displayName,
+                                                            displayName = cboxReviewerNA.Selected.displayName,
                                                             id
                                                         ),
-                                                        assessmentType: ComboBox3.Selected.type,
-                                                        startDate: DatePicker2.SelectedDate,
-                                                        dueDate: DatePicker1.SelectedDate,
+                                                        assessmentType: cboxAssessmentTypeNA.Selected.type,
+                                                        startDate: DatePickerStartDateNA.SelectedDate,
+                                                        dueDate: DatePickerDueDateNA.SelectedDate,
                                                         //completionDate:
-                                                        assignedDate: DatePicker1_2.SelectedDate,
+                                                        assignedDate: DatePickerAssignDateNA.SelectedDate,
                                                         isCompleted: "Upcomming",
                                                         assessorEmail: LookUp(
                                                             AssessorAD,
-                                                            displayName = ComboBox4.Selected.displayName,
+                                                            displayName = cboxAssessorNA.Selected.displayName,
                                                             mail
                                                         ),
                                                         reviewerEmail: LookUp(
                                                             ReviewerAD,
-                                                            displayName = ComboBox5.Selected.displayName,
+                                                            displayName = cboxReviewerNA.Selected.displayName,
                                                             mail
                                                         ),
                                                         assessorName: LookUp(
                                                             AssessorAD,
-                                                            displayName = ComboBox4.Selected.displayName,
+                                                            displayName = cboxAssessorNA.Selected.displayName,
                                                             displayName
                                                         ),
-                                                        reviewerName: ComboBox5.Selected.displayName
+                                                        reviewerName: cboxReviewerNA.Selected.displayName
                                                           //LookUp(ReviewerAD,
                                                          //   displayName = ComboBox5.Selected.displayName,
                                                          //   displayName
@@ -901,7 +903,7 @@ projectAssignment As screen:
                                                     Id:GUID(),
                                                     bankUnitId:LookUp(bankUnits,Id=p.Id),
                                                     assignmentId:LookUp(assignments,Id=Text(idvariable)),
-                                                    productModel:LookUp(schindlerBanks,goNumber=ComboBox2.Selected.goNumber,productId.product_Model)
+                                                    productModel:LookUp(schindlerBanks,goNumber=cboxGONumberNA.Selected.goNumber,productId.product_Model)
                                                    // productId:LookUp(product,'product (quantum_product)'=LookUp(bankUnits,Id=p.Id,Id))
                                                    // productid:lookup(product,pro)
                                     
@@ -920,7 +922,7 @@ projectAssignment As screen:
                                                 {
                                                   'bankAssessment (quantum_bankassessment)':GUID(),
                                                   assignmentId:LookUp(assignments,Id=Text(idvariable)),
-                                                  bankId : LookUp(schindlerBanks,goNumber= ComboBox2.Selected.goNumber),
+                                                  bankId : LookUp(schindlerBanks,goNumber= cboxGONumberNA.Selected.goNumber),
                                                   Assessment_Status:"Upcomming"
                                                 }
                                              ) ;   
@@ -950,7 +952,7 @@ projectAssignment As screen:
                                                      bankUnitId:LookUp(bankUnits,Id=p.Id),
                                                      assignmentId:LookUp(assignments,Id=Text(idvariable)),
                                                      Assessment_status:"Upcomming",
-                                                     product_id:LookUp(schindlerBanks,goNumber=ComboBox2.Selected.goNumber,productId),
+                                                     product_id:LookUp(schindlerBanks,goNumber=cboxGONumberNA.Selected.goNumber,productId),
                                                      Reviewer_Comments:""
                                     
                                                 }
@@ -961,15 +963,15 @@ projectAssignment As screen:
                                           If(IsEmpty(Errors(assignments)) && IsEmpty(Errors(assignmentUnits)),
                                            //Notify("Success");
                                            Set(popupsuccess,true);
-                                            Reset(ComboBox1);
-                                            Reset(ComboBox2);
+                                            Reset(cboxClientNA);
+                                            Reset(cboxGONumberNA);
                                             Clear(selectedUnit);
-                                            Reset(ComboBox3);
-                                            Reset(ComboBox4);
-                                            Reset(ComboBox5);
-                                            Reset(DatePicker1);
-                                            Reset(DatePicker1_2);
-                                            Reset(DatePicker2);
+                                            Reset(cboxAssessmentTypeNA);
+                                            Reset(cboxAssessorNA);
+                                            Reset(cboxReviewerNA);
+                                            Reset(DatePickerDueDateNA);
+                                            Reset(DatePickerAssignDateNA);
+                                            Reset(DatePickerStartDateNA);
                                     
                                       ,Notify("Error patch function"))
                                         
@@ -1030,10 +1032,11 @@ projectAssignment As screen:
                                 Width: =Parent.Width/5
                                 ZIndex: =2
 
-                    Container25 As groupContainer.verticalAutoLayoutContainer:
+                    ctnExistingAssignment As groupContainer.verticalAutoLayoutContainer:
                         Height: |-
                             =Parent.Height
                             //Gallery3.Height
+                        LayoutAlignItems: =LayoutAlignItems.Stretch
                         LayoutDirection: =LayoutDirection.Vertical
                         LayoutMode: =LayoutMode.Auto
                         PaddingLeft: =20
