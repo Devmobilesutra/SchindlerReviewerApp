@@ -11922,19 +11922,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditBank.btnSuccess_5.Y"
+                  "fullyQualifiedName": "EditBank.btnOkSuccessEditBank.Y"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditBank.btnSuccess_5.Y",
+                  "fullyQualifiedName": "EditBank.btnOkSuccessEditBank.Y",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Y",
                 "module": "EditBank",
-                "type": "EditBank.btnSuccess_5"
+                "type": "EditBank.btnOkSuccessEditBank"
               }
             }
           ],

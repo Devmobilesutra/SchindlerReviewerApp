@@ -704,14 +704,14 @@ EditBank As screen:
         Y: =40
         ZIndex: =14
 
-        Rectangle1_10 As rectangle:
+        iconOuterRectabgleEditbank As rectangle:
             Fill: =RGBA(0, 0, 0, 0.29)
             Height: =Parent.Height
             Visible: =popupsuccess =true
             Width: =Parent.Width
             ZIndex: =8
 
-        Rectangle2_10 As rectangle:
+        iconInnerRectangleEditbank As rectangle:
             Fill: =RGBA(255, 255, 255, 1)
             Height: =230
             Visible: =popupsuccess =true
@@ -720,16 +720,16 @@ EditBank As screen:
             Y: =Parent.Height/3
             ZIndex: =9
 
-        Image2_23 As image:
+        imgSuccessEditBank As image:
             Height: =52
             Image: =success
             Visible: =popupsuccess =true
             Width: =52
             X: =(Parent.Width-Self.Width)/2
-            Y: =Rectangle2_10.Y+20
+            Y: =iconInnerRectangleEditbank.Y+20
             ZIndex: =10
 
-        Label1_23 As label:
+        lblSuccessEditBank As label:
             Align: =Align.Center
             Color: =RGBA(14, 161, 26, 1)
             Font: =referenceCSS.RFont
@@ -739,10 +739,10 @@ EditBank As screen:
             Visible: =popupsuccess =true
             Width: =324
             X: =(Parent.Width-Self.Width)/2
-            Y: =Image2_23.Y+Self.Height+10
+            Y: =imgSuccessEditBank.Y+Self.Height+10
             ZIndex: =11
 
-        Label2_12 As label:
+        lblUpdatedSuccessEditBank As label:
             Align: =Align.Center
             Font: =referenceCSS.RFont
             FontWeight: =FontWeight.Bold
@@ -751,10 +751,10 @@ EditBank As screen:
             Visible: =popupsuccess =true
             Width: =324
             X: =(Parent.Width-Self.Width)/2
-            Y: =Label1_23.Y+ Self.Height+5
+            Y: =lblSuccessEditBank.Y+ Self.Height+5
             ZIndex: =12
 
-        btnSuccess_5 As button:
+        btnOkSuccessEditBank As button:
             Fill: =RGBA(54, 176, 75, 1)
             Font: =referenceCSS.RFont
             HoverFill: =RGBA(75, 125, 6, 1)
