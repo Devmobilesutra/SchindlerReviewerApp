@@ -39,7 +39,7 @@ projectAssignment As screen:
         
         
 
-    Container9_4 As groupContainer.verticalAutoLayoutContainer:
+    ctnProjectAssignment As groupContainer.verticalAutoLayoutContainer:
         ContentLanguage: =
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
@@ -48,7 +48,7 @@ projectAssignment As screen:
         ZIndex: =1
 
         ctnHeaderPA As groupContainer.manualLayoutContainer:
-            AlignInContainer: =AlignInContainer.Start
+            AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =Header.HeaderFill
             FillPortions: =0
             Height: =80
@@ -109,6 +109,7 @@ projectAssignment As screen:
                 ZIndex: =8
 
         ctnMainProjectAssignment As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
             Height: |-
@@ -740,8 +741,8 @@ projectAssignment As screen:
                             ZIndex: =19
 
                         ctnFooterNewAssignment As groupContainer.verticalAutoLayoutContainer:
-                            AlignInContainer: =AlignInContainer.SetByContainer
                             Height: =150
+                            LayoutAlignItems: =LayoutAlignItems.Stretch
                             LayoutDirection: =LayoutDirection.Vertical
                             LayoutGap: =20
                             LayoutMinHeight: =100
@@ -755,6 +756,7 @@ projectAssignment As screen:
                                 Fill: =RGBA(204, 204, 204, 1)
                                 FillPortions: =0
                                 Height: =5
+                                LayoutAlignItems: =LayoutAlignItems.Stretch
                                 LayoutDirection: =LayoutDirection.Vertical
                                 LayoutMinHeight: =100
                                 LayoutMinWidth: =250
@@ -763,6 +765,7 @@ projectAssignment As screen:
                                 ZIndex: =1
 
                             btnAssignNA As button:
+                                AlignInContainer: =AlignInContainer.Center
                                 Color: =referenceCSS.RColorWhite
                                 Fill: =RGBA(255, 0, 0, 1)
                                 Font: =referenceCSS.RFont
@@ -1431,231 +1434,21 @@ projectAssignment As screen:
                                 Y: =lblGOnumberEA.Y+lblGOnumberEA.Height+10
                                 ZIndex: =24
 
-            Container20 As groupContainer.verticalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.SetByContainer
-                Fill: =RGBA(204, 204, 204, 1)
-                FillPortions: =0
-                Height: =5
-                LayoutDirection: =LayoutDirection.Vertical
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                Visible: =//true
-                Width: =Parent.Width
-                ZIndex: =5
-
-            FooterContainer1_1 As groupContainer.horizontalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.SetByContainer
-                FillPortions: =0
-                Height: =90
-                LayoutAlignItems: =LayoutAlignItems.Center
-                LayoutJustifyContent: =LayoutJustifyContent.Center
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                PaddingBottom: =20
-                Visible: |-
-                    =//P
-                    false
-                Width: =Parent.Width
-                ZIndex: =6
-
-                Button1 As button:
-                    Color: =referenceCSS.RColorWhite
-                    Fill: =RGBA(255, 0, 0, 1)
-                    Font: =referenceCSS.RFont
-                    FontWeight: =FontWeight.Bold
-                    Height: =Parent.Height/1.8
-                    HoverBorderColor: =referenceCSS.RActiveColor //ColorFade(Self.BorderColor, 20%)
-                    HoverFill: |-
-                        =
-                        referenceCSS.RActiveColor
-                        //ColorFade(RGBA(56, 96, 178, 1), -20%)
-                    OnSelect: |
-                        =/*If(
-                            Connection.Connected = false,
-                            Notify("Network is not Available"),
-                            If(
-                                IsBlank(ComboBox1.Selected.na),
-                                Notify(
-                                    "Please Enter Client Name .",
-                                    NotificationType.Error
-                                ),
-                                IsBlank(ComboBox2.Selected.Result),
-                                Notify(
-                                    "Please Select Bank.",
-                                    NotificationType.Error
-                                ),
-                        
-                                  ShowErrorMsgBAssign = true,
-                                Notify(
-                                    "Bank already assigned.",
-                                    NotificationType.Error
-                                ), 
-                        
-                                IsBlank(ComboBox3.Selected.type),
-                                Notify(
-                                    "Please Select Assessment Type.",
-                                    NotificationType.Error
-                                ),
-                                 IsBlank(ComboBox4.Selected.displayName),
-                                Notify(
-                                    "Please Select Assessor.",
-                                    NotificationType.Error
-                                ),
-                                 IsBlank(ComboBox5.Selected.displayName),
-                                Notify(
-                                    "Please Select Reviewer.",
-                                    NotificationType.Error
-                                ),
-                                 IsBlank(DatePicker1.SelectedDate),
-                                Notify("Please Select Due Date",NotificationType.Error),
-                                  DateDiff(
-                                    DatePicker2,
-                                    DatePicker1
-                                ) <= 0,
-                                Notify("The Due date can not be before Assessment start date ",NotificationType.Error),
-                        
-                              //   Set popupsuccess, true);
-                              //  ForAll(
-                                //    ComboBox2.SelectedItems,
-                                Set(patchResultAss,          
-                                  Patch(
-                                        projectAssignment_1,
-                                        Defaults(projectAssignment_1),
-                                        {
-                                            'projectAssignment (quantum_projectassignment)':GUID(),
-                                            clientId: LookUp(
-                                                Client,
-                                                client_name = ComboBox1.Selected.client_name
-                                            ),
-                                            bankId: LookUp(
-                                                bank,
-                                               Go_Number= ComboBox2.Selected.Result
-                                               //ThisRecord.Go_Number
-                                            ),
-                                            assessor_id: LookUp(
-                                                AssessorAD,
-                                                displayName = ComboBox4.Selected.displayName,
-                                                id
-                                            ),
-                                            reviewer_id: LookUp(
-                                                ReviewerAD,
-                                                displayName = ComboBox5.Selected.displayName,
-                                                id
-                                            ),
-                                            assessment_type_1: ComboBox3.Selected.type,
-                                            start_date: DatePicker2.SelectedDate,
-                                            due_date: DatePicker1.SelectedDate,
-                                            //completion_date:
-                                            'Assigned_date ': DatePicker1_2.SelectedDate,
-                                            IsComplete: "Upcomming",
-                                            assessor_email: LookUp(
-                                                AssessorAD,
-                                                displayName = ComboBox4.Selected.displayName,
-                                                mail
-                                            ),
-                                            Reviewer_email: LookUp(
-                                                ReviewerAD,
-                                                displayName = ComboBox5.Selected.displayName,
-                                                mail
-                                            ),
-                                            assessor_name: LookUp(
-                                                AssessorAD,
-                                                displayName = ComboBox4.Selected.displayName,
-                                                displayName
-                                            ),
-                                            reviewer_name: ComboBox5.Selected.displayName
-                                              //LookUp(ReviewerAD,
-                                             //   displayName = ComboBox5.Selected.displayName,
-                                             //   displayName
-                                           // )
-                                        }
-                                    );
-                              );
-                        
-                              If(!IsBlank(patchResultAss),
-                               //Notify("Success");
-                               Set(popupsuccess,true);
-                                Reset(ComboBox1);
-                                Reset(ComboBox2);
-                                Reset(ComboBox3);
-                                Reset(ComboBox4);
-                                Reset(ComboBox5);
-                                Reset(DatePicker1);
-                                Reset(DatePicker1_2);
-                                Reset(DatePicker2);
-                        
-                          ,Notify("Error patch function"));
-                            
-                            
-                           
-                            )
-                        )*/
-                           /* If(
-                                !IsBlank(ComboBox1.Selected.client_name) && !IsBlank(ComboBox2.Selected.Go_Number) && !IsBlank(ComboBox3.Selected.type) && !IsBlank(ComboBox4.Selected.displayName) && !IsBlank(ComboBox5.Selected.displayName) && DateDiff(
-                                    DatePicker2,
-                                    DatePicker1
-                                ) >= 1,
-                               
-                                )
-                        
-                          //Reset(ComboBox1,ComboBox2,ComboBox3)
-                                Reset(ComboBox1);
-                                Reset(ComboBox2);
-                                Reset(ComboBox3);
-                                Reset(ComboBox4);
-                                Reset(ComboBox5);
-                                Reset(DatePicker1);
-                                Reset(DatePicker1_2);
-                                Reset(DatePicker2);
-                                Set(
-                                    popupsuccess,
-                                    false
-                                );
-                            );*/
-                        
-                        //Clear(assign);
-                        //ForAll(ComboBox2.SelectedItems,Collect(assign,{ProjectId:LookUp(ClientCollection,client_name=ComboBox1.Selected.client_name,client),ClientId:LookUp(ClientCollection,client_name=ComboBox1.Selected.client_name,client),
-                                //ComboBox1.Selected.client_name, 
-                                //for specific bank
-                                // ClientBankId: ComboBox2.Selected.clientBankId,
-                                //each client id 
-                                //clientBankId:ThisRecord.Go_Number,
-                                //assessor from collection from AAD
-                                //AssessorId:LookUp(AssessorAD,displayName=ComboBox4.Selected.displayName,id),
-                                //Reviewer from collection from dataverse
-                                //ReviewerId: LookUp(schindlerAssessorCollection,name = ComboBox5.Selected.displayName,assessorId),ReviewerId:LookUp(ReviewerAD,displayName=ComboBox5.Selected.displayName,id),AssessmentType:ComboBox3.Selected.Value,ProjectStartDate:Text(DatePicker2.SelectedDate,"mm-dd-yyyy"),ProjectDueDate:Text(DatePicker1.SelectedDate,"mm-dd-yyyy"),ProjectCompletionDate:"",AssignedDate:Text(DatePicker1_2.SelectedDate,"mm-dd-yyyy"),Is_completed:"Upcomming",AssessorEmail:LookUp(AssessorAD,displayName=ComboBox4.Selected.displayName,mail),ReviewerEmail:LookUp(ReviewerAD,displayName=ComboBox5.Selected.displayName,mail)}));
-                        //If(Connection.Connected,
-                        //ForAll(assign,Patch(projectAssignment_1,Defaults(projectAssignment_1),  {
-                        //    'projectAssignment (quantum_projectassignment)':ThisRecord.ProjectId,
-                         //    clientId: LookUp(Client,client=ThisRecord.ClientId)
-                          // projectAssignment: ThisRecord.ProjectId
-                           // clientId: LookUp(Client,client= ThisRecord.ClientId,client),
-                          // bankId:LookUp(banksCollection,Go_Number=ThisRecord.clientBankId,bank),
-                        //})))
-                        //ForAll(ComboBox2.SelectedItems,Collect(bank,{bankname:ThisRecord.clientBankId}))
-                    PressedBorderColor: =referenceCSS.RActiveColor//Self.Fill
-                    Size: =referenceCSS.RLabelFontSize
-                    Text: ="Assign"
-                    Width: =Parent.Width/5
-                    ZIndex: =1
-
-    GroupRemovePopup As group:
+    grpRemovePopupPA As group:
         Height: =5
         Width: =5
         X: =20
         Y: =20
         ZIndex: =13
 
-        Rectangle3 As rectangle:
+        iconOuterRectanglePA As rectangle:
             Fill: =RGBA(0, 0, 0, 0.29)
             Height: =Parent.Height
             Visible: =IsRemove =true
             Width: =Parent.Width
             ZIndex: =8
 
-        Rectangle4 As rectangle:
+        iconInnerRectanglePA As rectangle:
             Fill: =referenceCSS.RColorWhite
             Height: =160
             Visible: =IsRemove =true
@@ -1664,7 +1457,7 @@ projectAssignment As screen:
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =9
 
-        Label21 As label:
+        lblRemoveassignmentPA As label:
             Align: =Align.Center
             Height: =80
             Size: =14
@@ -1673,12 +1466,12 @@ projectAssignment As screen:
                  & 
                 " ?"
             Visible: =IsRemove =true
-            Width: =Rectangle4.Width
-            X: =Rectangle4.X
-            Y: =Rectangle4.Y+20
+            Width: =iconInnerRectanglePA.Width
+            X: =iconInnerRectanglePA.X
+            Y: =iconInnerRectanglePA.Y+20
             ZIndex: =10
 
-        Button4 As button:
+        btnCancelPopupPA As button:
             BorderColor: =referenceCSS.RActiveColor
             Color: =referenceCSS.RColorBlack
             Fill: =referenceCSS.RColorWhite
@@ -1694,11 +1487,11 @@ projectAssignment As screen:
             Text: ="Cancel"
             Visible: =IsRemove =true
             Width: =100
-            X: =Rectangle4.X+(Rectangle4.Width-Self.Width)/4
-            Y: =Label21.Y+Label21.Height
+            X: =iconInnerRectanglePA.X+(iconInnerRectanglePA.Width-Self.Width)/4
+            Y: =lblRemoveassignmentPA.Y+lblRemoveassignmentPA.Height
             ZIndex: =11
 
-        Button6 As button:
+        btnOkRemovePopupPA As button:
             BorderColor: =Self.Fill
             Color: =referenceCSS.RColorWhite
             Fill: =referenceCSS.RActiveColor
@@ -1748,25 +1541,25 @@ projectAssignment As screen:
             Text: ="Ok"
             Visible: =IsRemove =true
             Width: =100
-            X: =Button4.X+Self.Width+50
-            Y: =Label21.Y+Label21.Height
+            X: =btnCancelPopupPA.X+Self.Width+50
+            Y: =lblRemoveassignmentPA.Y+lblRemoveassignmentPA.Height
             ZIndex: =12
 
-    Group5_4 As group:
+    grpSuccessPopupPA As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =19
 
-        Rectangle1_7 As rectangle:
+        iconOuterRectangleSuccessPA As rectangle:
             Fill: =RGBA(0, 0, 0, 0.29)
             Height: =Parent.Height
             Visible: =popupsuccess =true
             Width: =Parent.Width
             ZIndex: =13
 
-        Rectangle2_7 As rectangle:
+        iconInnerRectangleSuccessPA As rectangle:
             Fill: =RGBA(255, 255, 255, 1)
             Height: =230
             Visible: =popupsuccess =true
@@ -1775,16 +1568,16 @@ projectAssignment As screen:
             Y: =Parent.Height/3
             ZIndex: =14
 
-        Image2_19 As image:
+        imgSuccessPA As image:
             Height: =52
             Image: =success
             Visible: =popupsuccess =true
             Width: =52
             X: =(Parent.Width-Self.Width)/2
-            Y: =Rectangle2_7.Y+20
+            Y: =iconInnerRectangleSuccessPA.Y+20
             ZIndex: =15
 
-        Label1_19 As label:
+        lblSuccessPA As label:
             Align: =Align.Center
             Color: =RGBA(14, 161, 26, 1)
             Font: =referenceCSS.RFont
@@ -1794,10 +1587,10 @@ projectAssignment As screen:
             Visible: =popupsuccess =true
             Width: =324
             X: =(Parent.Width-Self.Width)/2
-            Y: =Image2_19.Y+Self.Height+10
+            Y: =imgSuccessPA.Y+Self.Height+10
             ZIndex: =16
 
-        Label2_9 As label:
+        lblAssignSuccessPA As label:
             Align: =Align.Center
             Font: =referenceCSS.RFont
             FontWeight: =FontWeight.Bold
@@ -1806,10 +1599,10 @@ projectAssignment As screen:
             Visible: =popupsuccess =true
             Width: =324
             X: =(Parent.Width-Self.Width)/2
-            Y: =Label1_19.Y+ Self.Height+5
+            Y: =lblSuccessPA.Y+ Self.Height+5
             ZIndex: =17
 
-        btnSuccess_2 As button:
+        btnOkSuccessPA As button:
             Fill: =RGBA(54, 176, 75, 1)
             Font: =referenceCSS.RFont
             HoverFill: =RGBA(75, 125, 6, 1)
