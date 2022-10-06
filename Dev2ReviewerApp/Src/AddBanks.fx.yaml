@@ -337,14 +337,14 @@ AddBanks As screen:
                         Y: =Parent.Y
                         ZIndex: =1
 
-                        Label24_1 As label:
+                        lblbackgroundunit As label:
                             BorderColor: =referenceCSS.RActiveColor
                             BorderThickness: =2
                             Fill: =RGBA(239, 239, 239, 1)
                             Height: =100
                             OnSelect: =Select(Parent)
                             PaddingLeft: =40
-                            Text: =
+                            Text: =""
                             Width: =Parent.Width/1.02
                             Y: =glryExistingBanks.Y
                             ZIndex: =1
@@ -362,10 +362,10 @@ AddBanks As screen:
                             TemplatePadding: =-95
                             TemplateSize: =150
                             Width: =1336
-                            Y: =Label24_1.Y+Label24_1.Height
+                            Y: =lblbackgroundunit.Y+lblbackgroundunit.Height
                             ZIndex: =2
 
-                            Label25_1 As label:
+                            lblunitExistingunit As label:
                                 Font: =referenceCSS.RFont
                                 OnSelect: =Select(Parent)
                                 Size: =referenceCSS.RInputFontSize
@@ -378,7 +378,7 @@ AddBanks As screen:
                                 Y: =glryExstingUnit.Y
                                 ZIndex: =1
 
-                            Icon1_2 As icon.HorizontalLine:
+                            iconlineglryExistingunit As icon.HorizontalLine:
                                 BorderColor: =RGBA(0, 0, 0, 1)
                                 Color: =RGBA(0, 0, 0, 1)
                                 Fill: =RGBA(0, 0, 0, 1)
@@ -387,7 +387,7 @@ AddBanks As screen:
                                 OnSelect: =Select(Parent)
                                 Width: =Parent.Width/1.03 -Parent.Width/10
                                 X: =Parent.Width/10
-                                Y: =glryExstingUnit.Y+ Label25_1.Height+5
+                                Y: =glryExstingUnit.Y+ lblunitExistingunit.Height+5
                                 ZIndex: =10
 
                         grpRemoveEB As group:
