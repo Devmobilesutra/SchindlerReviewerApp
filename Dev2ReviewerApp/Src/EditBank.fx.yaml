@@ -792,21 +792,21 @@ EditBank As screen:
         Y: =40
         ZIndex: =24
 
-    GroupRemoveBankPopup_1 As group:
+    GroupRemoveEditBank As group:
         Height: =5
         Width: =5
         X: =20
         Y: =20
         ZIndex: =24
 
-        Rectangle3_6 As rectangle:
+        iconOuterRectangleEditBank As rectangle:
             Fill: =RGBA(0, 0, 0, 0.29)
             Height: =Parent.Height
             Visible: =IsRemoveBank =true
             Width: =Parent.Width
             ZIndex: =19
 
-        Rectangle4_6 As rectangle:
+        iconInnerRectangleEditBank As rectangle:
             Fill: =referenceCSS.RColorWhite
             Height: =160
             Visible: =IsRemoveBank =true
@@ -815,7 +815,7 @@ EditBank As screen:
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =20
 
-        Label21_6 As label:
+        lblRemoveBankEditBank As label:
             Align: =Align.Center
             Font: =referenceCSS.RFont
             Height: =80
@@ -824,12 +824,12 @@ EditBank As screen:
             Size: =14
             Text: ="Do you want to remove Bank " & removeBankUnit.goNumber & " ?"
             Visible: =IsRemoveBank =true
-            Width: =Rectangle4_6.Width
-            X: =Rectangle4_6.X
-            Y: =Rectangle4_6.Y+20
+            Width: =iconInnerRectangleEditBank.Width
+            X: =iconInnerRectangleEditBank.X
+            Y: =iconInnerRectangleEditBank.Y+20
             ZIndex: =21
 
-        Button4_6 As button:
+        btnCancekEditBank As button:
             BorderColor: =referenceCSS.RActiveColor
             Color: =referenceCSS.RColorBlack
             Fill: =referenceCSS.RColorWhite
@@ -846,11 +846,11 @@ EditBank As screen:
             Text: ="Cancel"
             Visible: =IsRemoveBank =true
             Width: =100
-            X: =Rectangle4_6.X+(Rectangle4_6.Width-Self.Width)/4
-            Y: =Label21_6.Y+Label21_6.Height
+            X: =iconInnerRectangleEditBank.X+(iconInnerRectangleEditBank.Width-Self.Width)/4
+            Y: =lblRemoveBankEditBank.Y+lblRemoveBankEditBank.Height
             ZIndex: =22
 
-        Button6_6 As button:
+        btnOkEditBank As button:
             BorderColor: =Self.Fill
             Color: =referenceCSS.RColorWhite
             Fill: =referenceCSS.RActiveColor
@@ -883,7 +883,7 @@ EditBank As screen:
             Text: ="Ok"
             Visible: =IsRemoveBank =true
             Width: =100
-            X: =Button4_6.X+Self.Width+50
-            Y: =Label21_6.Y+Label21_6.Height
+            X: =btnCancekEditBank.X+Self.Width+50
+            Y: =lblRemoveBankEditBank.Y+lblRemoveBankEditBank.Height
             ZIndex: =23
 
