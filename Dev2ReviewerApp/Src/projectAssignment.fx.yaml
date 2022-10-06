@@ -47,7 +47,7 @@ projectAssignment As screen:
         Width: =Parent.Width
         ZIndex: =1
 
-        Container3_7 As groupContainer.manualLayoutContainer:
+        ctnHeaderPA As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.Start
             Fill: =Header.HeaderFill
             FillPortions: =0
@@ -57,7 +57,7 @@ projectAssignment As screen:
             Width: =Parent.Width
             ZIndex: =1
 
-            Image1_7 As image:
+            imgLogoPA As image:
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height
                 Image: =Schindler_logo_PNG1
@@ -65,10 +65,10 @@ projectAssignment As screen:
                 PaddingLeft: =2
                 PaddingRight: =1
                 PaddingTop: =5
-                Width: =Container3_7.Width/10
+                Width: =ctnHeaderPA.Width/10
                 ZIndex: =1
 
-            Image2_7 As image:
+            imgUserProfilePA As image:
                 Fill: =RGBA(253, 222, 207, 1)
                 Height: =50
                 Image: =userdata.userImage
@@ -77,21 +77,11 @@ projectAssignment As screen:
                 RadiusTopLeft: =91
                 RadiusTopRight: =91
                 Width: =50
-                X: =Label3_7.X+Label3_7.Width
+                X: =lblAssignmentPA.X+lblAssignmentPA.Width
                 Y: =16
                 ZIndex: =2
 
-            Icon1_7 As icon.Bell:
-                Color: =RGBA(255, 255, 0, 1)
-                Height: =Parent.Height/2
-                Icon: =Icon.Bell
-                Visible: =false
-                Width: =Parent.Width/28
-                X: =Label1_7.X+Label1_7.Width+10
-                Y: =Parent.Height/4
-                ZIndex: =5
-
-            Label1_7 As label:
+            lblUsernamePA As label:
                 Align: =Align.Center
                 Color: =Header.HeaderColor
                 Font: =Header.HeaderFont
@@ -102,11 +92,11 @@ projectAssignment As screen:
                     =//"SCHD0023"
                     //LookUp(ReviewerAD,mail=User().Email,displayName)
                     userdata.userdisplayName
-                Width: =Container3_7.Width/8
-                X: =Image2_7.X+ Image2_7.Height
+                Width: =ctnHeaderPA.Width/8
+                X: =imgUserProfilePA.X+ imgUserProfilePA.Height
                 ZIndex: =6
 
-            Label3_7 As label:
+            lblAssignmentPA As label:
                 Align: =Align.Center
                 Color: =Header.HeaderColor
                 Font: =Header.HeaderFont
@@ -114,16 +104,17 @@ projectAssignment As screen:
                 Height: =Parent.Height
                 Size: =Header.HeaderFontSize
                 Text: ="Assignment"
-                Width: =Container3_7.Width/1.6
-                X: =Image1_7.Width+Image1_7.X
+                Width: =ctnHeaderPA.Width/1.6
+                X: =imgLogoPA.Width+imgLogoPA.X
                 ZIndex: =8
 
-        Container4_7 As groupContainer.verticalAutoLayoutContainer:
+        ctnMainProjectAssignment As groupContainer.verticalAutoLayoutContainer:
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
             Height: |-
                 =//(Parent.Height-90)
                 Parent.Height
+            LayoutAlignItems: =LayoutAlignItems.Stretch
             LayoutDirection: =LayoutDirection.Vertical
             LayoutMinHeight: =100
             LayoutMinWidth: =250
@@ -131,10 +122,11 @@ projectAssignment As screen:
             LayoutOverflowY: =LayoutOverflow.Scroll
             PaddingLeft: =20
             Width: =Parent.Width
-            Y: =Container3_7.Height
+            Y: =ctnHeaderPA.Height
             ZIndex: =4
 
             Container20_3 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =90
                 LayoutDirection: =LayoutDirection.Vertical
@@ -169,6 +161,7 @@ projectAssignment As screen:
                     ZIndex: =1
 
             Container6 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =90
                 LayoutAlignItems: =LayoutAlignItems.End
@@ -293,6 +286,7 @@ projectAssignment As screen:
                         ZIndex: =2
 
             Container7 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 Fill: =RGBA(204, 204, 204, 1)
                 FillPortions: =0
                 Height: =3
@@ -303,6 +297,7 @@ projectAssignment As screen:
                 ZIndex: =3
 
             Container18 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: |-
                     =/*If(App.Height<=600, Parent .Height-Container20_3.Height-Container6.Height-Container7.Height-Container20.Height-FooterContainer1_1.Height+780,App.Height>600 && App.Height<=950, Parent .Height-Container20_3.Height-Container6.Height-Container7.Height-Container20.Height-FooterContainer1_1.Height+600,App.Height>800&&App.Height<=1025, Parent .Height/4,
@@ -1499,6 +1494,7 @@ projectAssignment As screen:
                                 ZIndex: =24
 
             Container20 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 Fill: =RGBA(204, 204, 204, 1)
                 FillPortions: =0
                 Height: =5
@@ -1511,6 +1507,7 @@ projectAssignment As screen:
                 ZIndex: =5
 
             FooterContainer1_1 As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =90
                 LayoutAlignItems: =LayoutAlignItems.Center
