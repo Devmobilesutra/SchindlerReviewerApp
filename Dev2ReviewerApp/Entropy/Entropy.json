@@ -340,7 +340,6 @@
     "Group3_1": 518,
     "Group5_4": 347,
     "Group5_5": 739,
-    "Group5_7": 692,
     "Group5_8": 519,
     "GroupEditCS": 571,
     "GroupRemove": 330,
@@ -356,6 +355,7 @@
     "grpRemoveEB": 383,
     "grpRemovePopupCS": 612,
     "grpSavePopupCS": 614,
+    "grpSuccessEditBank": 692,
     "Icon1_12": 434,
     "Icon1_13": 701,
     "Icon1_19": 476,
@@ -750,7 +750,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "10/06/2022 10:21:13",
+  "HeaderLastSavedDateTimeUTC": "10/06/2022 10:22:07",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {
     "109da5d5-9c29-4725-abc3-d1208c528a84": "\"/providers/microsoft.powerapps/apis/shared_powerappsnotificationv2/connections/0e0f912444994a6fa4619cd9c027cb56\"",
@@ -1056,14 +1056,6 @@
       "Rectangle1_8": 0,
       "Rectangle2_8": 1
     },
-    "Group5_7": {
-      "btnSuccess_5": 5,
-      "Image2_23": 2,
-      "Label1_23": 3,
-      "Label2_12": 4,
-      "Rectangle1_10": 0,
-      "Rectangle2_10": 1
-    },
     "Group5_8": {
       "btnSuccess_6": 4,
       "Image2_34": 2,
@@ -1153,6 +1145,14 @@
       "lblclientAddedCS": 4,
       "lblSuccessCS": 3,
       "outerectanglesaveCS": 0
+    },
+    "grpSuccessEditBank": {
+      "btnSuccess_5": 5,
+      "Image2_23": 2,
+      "Label1_23": 3,
+      "Label2_12": 4,
+      "Rectangle1_10": 0,
+      "Rectangle2_10": 1
     }
   },
   "OrderPcfTemplate": {},
@@ -1503,7 +1503,6 @@
     "Group3_1": 496,
     "Group5_4": 362,
     "Group5_5": 409,
-    "Group5_7": 263,
     "Group5_8": 497,
     "GroupEditCS": 82,
     "GroupRemove": 324,
@@ -1519,6 +1518,7 @@
     "grpRemoveEB": 179,
     "grpRemovePopupCS": 139,
     "grpSavePopupCS": 136,
+    "grpSuccessEditBank": 263,
     "Icon1_12": 418,
     "Icon1_13": 373,
     "Icon1_19": 459,
