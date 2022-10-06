@@ -101,7 +101,7 @@ EditBank As screen:
                 X: =imgLogoEB.Width+imgLogoEB.X
                 ZIndex: =8
 
-        Container4_13 As groupContainer.verticalAutoLayoutContainer:
+        ctnMainEditBank As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             Height: |-
@@ -118,6 +118,7 @@ EditBank As screen:
             ZIndex: =4
 
             Container20_13 As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =90
                 LayoutDirection: =LayoutDirection.Vertical
@@ -174,6 +175,7 @@ EditBank As screen:
                     ZIndex: =2
 
             Container18_7 As groupContainer.manualLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: |-
                     =/*If(App.Height<=950,Parent.Height-Container20_9.Height-Container6_3.Height-Container7_4.Height-Container20_5.Height -FooterContainer1_3.Height+500 ,Parent.Height-Container20_9.Height-Container6_3.Height-Container7_4.Height-Container20_5.Height -FooterContainer1_3.Height+500)*/
