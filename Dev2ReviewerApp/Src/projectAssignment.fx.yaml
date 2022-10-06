@@ -125,7 +125,7 @@ projectAssignment As screen:
             Y: =ctnHeaderPA.Height
             ZIndex: =4
 
-            Container20_3 As groupContainer.verticalAutoLayoutContainer:
+            ctnBackProjectAssignment As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =90
@@ -137,7 +137,7 @@ projectAssignment As screen:
                 PaddingLeft: =10
                 ZIndex: =1
 
-                Button1_3 As button:
+                btnBackPA As button:
                     BorderColor: =referenceCSS.RActiveColor
                     Color: =referenceCSS.RColorBlack
                     Fill: =referenceCSS.RColorWhite
@@ -160,11 +160,11 @@ projectAssignment As screen:
                     Width: =Parent.Width/6
                     ZIndex: =1
 
-            Container6 As groupContainer.verticalAutoLayoutContainer:
+            ctnButtonsPA As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =90
-                LayoutAlignItems: =LayoutAlignItems.End
+                LayoutAlignItems: =LayoutAlignItems.Stretch
                 LayoutGap: =20
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
@@ -172,7 +172,8 @@ projectAssignment As screen:
                 Width: =Parent.Width
                 ZIndex: =2
 
-                Container8 As groupContainer.verticalAutoLayoutContainer:
+                ctnNewAssignmentPA As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =100
@@ -181,7 +182,7 @@ projectAssignment As screen:
                     Width: =Parent.Width/3
                     ZIndex: =1
 
-                    Button7 As button:
+                    btnNewAssignmentPA As button:
                         AutoDisableOnSelect: =false
                         BorderThickness: =0
                         Color: |-
@@ -222,8 +223,7 @@ projectAssignment As screen:
                         Width: =Parent.Width
                         ZIndex: =1
 
-                    Icon5 As icon.Edit:
-                        AlignInContainer: =AlignInContainer.Center
+                    iconlineNewAssignmentPA As icon.Edit:
                         Color: =RGBA(0, 0, 0, 0)
                         Fill: =referenceCSS.RActiveColor
                         Height: =5
@@ -232,7 +232,8 @@ projectAssignment As screen:
                         Width: =Parent.Width/1.3
                         ZIndex: =2
 
-                Container8_1 As groupContainer.verticalAutoLayoutContainer:
+                ctnExistingAssignmentPA As groupContainer.verticalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
                     FillPortions: =0
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMinHeight: =100
@@ -271,7 +272,6 @@ projectAssignment As screen:
                         ZIndex: =1
 
                     Icon6 As icon.Add:
-                        AlignInContainer: =AlignInContainer.Center
                         AutoDisableOnSelect: =false
                         Color: |
                             =RGBA(0, 0, 0, 0)

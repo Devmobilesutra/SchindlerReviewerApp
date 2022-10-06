@@ -4274,19 +4274,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "projectAssignment.Container9_4.ctnMainProjectAssignment.Container6.Container8_1.Button7_1.FocusedBorderThickness"
+                  "fullyQualifiedName": "projectAssignment.Container9_4.ctnMainProjectAssignment.ctnButtonsPA.ctnExistingAssignmentPA.Button7_1.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "projectAssignment.Container9_4.ctnMainProjectAssignment.Container6.Container8_1.Button7_1.FocusedBorderThickness",
+                  "fullyQualifiedName": "projectAssignment.Container9_4.ctnMainProjectAssignment.ctnButtonsPA.ctnExistingAssignmentPA.Button7_1.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "projectAssignment",
-                "type": "projectAssignment.Container9_4.ctnMainProjectAssignment.Container6.Container8_1.Button7_1"
+                "type": "projectAssignment.Container9_4.ctnMainProjectAssignment.ctnButtonsPA.ctnExistingAssignmentPA.Button7_1"
               }
             }
           ],
