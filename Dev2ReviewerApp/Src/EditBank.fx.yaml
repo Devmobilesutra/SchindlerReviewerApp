@@ -552,7 +552,7 @@ EditBank As screen:
                         PaddingLeft: =10
                         PaddingTop: =10
                         X: =40
-                        Y: =DatePicker1_4.Y +DatePicker1_4.Height+10
+                        Y: =DatePickerDueDateEditA.Y +DatePickerDueDateEditA.Height+10
                         ZIndex: =12
 
                         btnSaveEditBank As button:

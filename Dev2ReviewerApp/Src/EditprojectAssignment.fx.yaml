@@ -11,7 +11,7 @@ EditprojectAssignment As screen:
         Width: =Parent.Width
         ZIndex: =1
 
-        Container3_13 As groupContainer.manualLayoutContainer:
+        ctnHeaderEditAssignment As groupContainer.manualLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =Header.HeaderFill
             FillPortions: =0
@@ -21,7 +21,7 @@ EditprojectAssignment As screen:
             Width: =Parent.Width
             ZIndex: =1
 
-            Image1_13 As image:
+            imgLogoEA As image:
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height
                 Image: =Schindler_logo_PNG1
@@ -29,10 +29,10 @@ EditprojectAssignment As screen:
                 PaddingLeft: =2
                 PaddingRight: =1
                 PaddingTop: =5
-                Width: =Container3_13.Width/10
+                Width: =ctnHeaderEditAssignment.Width/10
                 ZIndex: =1
 
-            Image2_13 As image:
+            imgUserProfileEA As image:
                 Fill: =RGBA(253, 222, 207, 1)
                 Height: =50
                 Image: =userdata.userImage
@@ -41,21 +41,11 @@ EditprojectAssignment As screen:
                 RadiusTopLeft: =91
                 RadiusTopRight: =91
                 Width: =50
-                X: =Label3_13.X+Label3_13.Width
+                X: =lblAssignmentEA.X+lblAssignmentEA.Width
                 Y: =16
                 ZIndex: =2
 
-            Icon1_13 As icon.Bell:
-                Color: =RGBA(255, 255, 0, 1)
-                Height: =Parent.Height/2
-                Icon: =Icon.Bell
-                Visible: =false
-                Width: =Parent.Width/28
-                X: =Label1_13.X+Label1_13.Width+10
-                Y: =Parent.Height/4
-                ZIndex: =5
-
-            Label1_13 As label:
+            lblUsernameEA As label:
                 Align: =Align.Center
                 Color: =Header.HeaderColor
                 Font: =Header.HeaderFont
@@ -66,11 +56,11 @@ EditprojectAssignment As screen:
                     =//"SCHD0023"
                     //LookUp(ReviewerAD,mail=User().Email,displayName)
                     userdata.userdisplayName
-                Width: =Container3_13.Width/8
-                X: =Image2_13.X+ Image2_13.Height
+                Width: =ctnHeaderEditAssignment.Width/6
+                X: =imgUserProfileEA.X+ imgUserProfileEA.Height
                 ZIndex: =6
 
-            Label3_13 As label:
+            lblAssignmentEA As label:
                 Align: =Align.Center
                 Color: =Header.HeaderColor
                 Font: =Header.HeaderFont
@@ -78,11 +68,11 @@ EditprojectAssignment As screen:
                 Height: =Parent.Height
                 Size: =Header.HeaderFontSize
                 Text: ="Assignment"
-                Width: =Container3_13.Width/1.6
-                X: =Image1_13.Width+Image1_13.X
+                Width: =ctnHeaderEditAssignment.Width/1.6
+                X: =imgLogoEA.Width+imgLogoEA.X
                 ZIndex: =8
 
-        Container4_11 As groupContainer.verticalAutoLayoutContainer:
+        ctnMiddleEditAssignment As groupContainer.verticalAutoLayoutContainer:
             AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             FillPortions: =0
@@ -94,10 +84,10 @@ EditprojectAssignment As screen:
             LayoutOverflowY: =LayoutOverflow.Scroll
             PaddingLeft: =20
             Width: =Parent.Width
-            Y: =Container3_13.Height
+            Y: =ctnHeaderEditAssignment.Height
             ZIndex: =4
 
-            Container20_8 As groupContainer.verticalAutoLayoutContainer:
+            ctnBackEA As groupContainer.verticalAutoLayoutContainer:
                 FillPortions: =0
                 Height: =90
                 LayoutDirection: =LayoutDirection.Vertical
@@ -108,7 +98,7 @@ EditprojectAssignment As screen:
                 PaddingLeft: =10
                 ZIndex: =1
 
-                Button1_7 As button:
+                btnBackEA As button:
                     BorderColor: =referenceCSS.RActiveColor
                     Color: =referenceCSS.RColorBlack
                     Fill: =referenceCSS.RColorWhite
@@ -130,7 +120,8 @@ EditprojectAssignment As screen:
                     Width: =Parent.Width/6
                     ZIndex: =1
 
-            Container6_1 As groupContainer.verticalAutoLayoutContainer:
+            ctnLabelEA As groupContainer.verticalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =70
                 LayoutAlignItems: =LayoutAlignItems.Center
@@ -141,7 +132,7 @@ EditprojectAssignment As screen:
                 Width: =Parent.Width
                 ZIndex: =2
 
-                Label17 As label:
+                lblEditAssignment As label:
                     Color: =referenceCSS.RColorBlack
                     Font: =referenceCSS.RFont
                     FontWeight: =referenceCSS.RFontWeight
@@ -151,14 +142,14 @@ EditprojectAssignment As screen:
                     Width: =Parent.Width/3
                     ZIndex: =1
 
-            Container18_3 As groupContainer.manualLayoutContainer:
+            ctnMainEditAssignment As groupContainer.manualLayoutContainer:
                 FillPortions: =0
-                Height: =If(App.Height<=950,Parent.Height-Container20_8.Height-Container6_1.Height+700 + Gallery16_2.Height,Parent.Height-Container20_8.Height-Container6_1.Height+ Gallery16_2.Height )
+                Height: =If(App.Height<=950,Parent.Height-ctnBackEA.Height-ctnLabelEA.Height+700 + glryUnitEditA.Height,Parent.Height-ctnBackEA.Height-ctnLabelEA.Height+ glryUnitEditA.Height )
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 ZIndex: =4
 
-                Container24_3 As groupContainer.verticalAutoLayoutContainer:
+                ctnEditAssignment As groupContainer.verticalAutoLayoutContainer:
                     Height: =Parent.Height
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMode: =LayoutMode.Auto
@@ -166,7 +157,7 @@ EditprojectAssignment As screen:
                     Width: =Parent.Width
                     ZIndex: =2
 
-                    Label14_17 As label:
+                    lblClientEditA As label:
                         Font: =referenceCSS.RFont
                         FontWeight: =FontWeight.Bold
                         Height: =50
@@ -175,10 +166,10 @@ EditprojectAssignment As screen:
                         Size: =referenceCSS.RLabelFontSize
                         Text: ="Client"
                         Width: =Parent.Width/3
-                        Y: =Container24_3.Y+100
+                        Y: =ctnEditAssignment.Y+100
                         ZIndex: =1
 
-                    ComboBox1_2 As combobox:
+                    cboxClientEditA As combobox:
                         ChevronBackground: =RGBA(0, 0, 0, 0)
                         ChevronDisabledBackground: =RGBA(0, 0, 0, 0)
                         ChevronFill: =RGBA(0, 0, 0, 1)
@@ -212,7 +203,7 @@ EditprojectAssignment As screen:
                         Width: =Parent.Width/3
                         ZIndex: =2
 
-                    Label14_18 As label:
+                    lblGoNumberEditA As label:
                         Font: =referenceCSS.RFont
                         FontWeight: =FontWeight.Bold
                         Height: =50
@@ -224,7 +215,7 @@ EditprojectAssignment As screen:
                         Y: =10
                         ZIndex: =3
 
-                    ComboBox1_5 As combobox:
+                    cboxGonumberEditA As combobox:
                         ChevronBackground: =RGBA(0, 0, 0, 0)
                         ChevronDisabledBackground: =RGBA(0, 0, 0, 0)
                         ChevronFill: =RGBA(0, 0, 0, 1)
@@ -241,7 +232,7 @@ EditprojectAssignment As screen:
                         HoverFill: =RGBA(0,0,0,0)
                         InputTextPlaceholder: ="Select Client"
                         IsSearchable: =false
-                        Items: =Filter(schindlerBanks,clientId.name=ComboBox1_2.Selected.name).goNumber
+                        Items: =Filter(schindlerBanks,clientId.name=cboxClientEditA.Selected.name).goNumber
                         OnChange: =false //Set(IsEdit,true);
                         PaddingBottom: =0
                         PaddingTop: =0
@@ -254,7 +245,7 @@ EditprojectAssignment As screen:
                         Width: =Parent.Width/3
                         ZIndex: =4
 
-                    Label14_28 As label:
+                    lblunitEditA As label:
                         Font: =referenceCSS.RFont
                         FontWeight: =FontWeight.Bold
                         Height: =50
@@ -265,12 +256,13 @@ EditprojectAssignment As screen:
                         Width: =Parent.Width/3
                         ZIndex: =5
 
-                    "Gallery16_2 As gallery.'BrowseLayout_Flexible_SocialFeed_ver4.0'":
+                    "glryUnitEditA As gallery.'BrowseLayout_Flexible_SocialFeed_ver4.0'":
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         FillPortions: =0
-                        Height: =CountRows(Gallery16_2.AllItems)*(Gallery16_2.TemplateHeight)+20
+                        Height: =CountRows(glryUnitEditA.AllItems)*(glryUnitEditA.TemplateHeight)+20
                         Items: |-
                             =
-                            Sort(Filter(bankUnits,bankId.goNumber=ComboBox1_5.Selected.goNumber),unitNumber)
+                            Sort(Filter(bankUnits,bankId.goNumber=cboxGonumberEditA.Selected.goNumber),unitNumber)
                             //Filter(assignmentUnits,assignmentId.Id=nprojectassignment)
                             
                             //Filter(bankUnits,bankId.goNumber=ComboBox2.Selected.goNumber && unitAssignmentStatus="false").unitNumber
@@ -305,7 +297,7 @@ EditprojectAssignment As screen:
                         TemplateSize: =60
                         ZIndex: =6
 
-                        Checkbox1_2 As checkbox:
+                        cboxunitEditA As checkbox:
                             BorderColor: =//RGBA(0, 18, 107, 1)
                             CheckboxBorderColor: =RGBA(0, 0, 0, 1)
                             Default: |-
@@ -361,7 +353,7 @@ EditprojectAssignment As screen:
                             Y: =10
                             ZIndex: =3
 
-                    BProduct_Label_10 As label:
+                    lblexistBankEditA As label:
                         Color: =referenceCSS.RActiveColor
                         Font: =referenceCSS.RFont
                         FontWeight: =referenceCSS.RFontWeight
@@ -375,7 +367,7 @@ EditprojectAssignment As screen:
                         Width: =Parent.Width/3
                         ZIndex: =7
 
-                    Label14_19 As label:
+                    lblAssesssmenttypeEditA As label:
                         Font: =referenceCSS.RFont
                         FontWeight: =FontWeight.Bold
                         Height: =50
@@ -386,7 +378,7 @@ EditprojectAssignment As screen:
                         Width: =Parent.Width/3
                         ZIndex: =8
 
-                    ComboBox3_2 As combobox:
+                    cboxAssessmntTypeEditA As combobox:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         ChevronBackground: =RGBA(0, 0, 0, 0)
                         ChevronFill: =RGBA(0, 0, 0, 1)
@@ -413,7 +405,7 @@ EditprojectAssignment As screen:
                         Width: =Parent.Width/3
                         ZIndex: =9
 
-                    Label14_20 As label:
+                    lblAssessorEditA As label:
                         Font: =referenceCSS.RFont
                         FontWeight: =FontWeight.Bold
                         Height: =50
@@ -424,7 +416,7 @@ EditprojectAssignment As screen:
                         Width: =Parent.Width/3
                         ZIndex: =10
 
-                    ComboBox4_2 As combobox:
+                    cboxAssessornameEditA As combobox:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         ChevronBackground: =RGBA(0, 0, 0, 0)
                         ChevronFill: =RGBA(0, 0, 0, 1)
@@ -444,13 +436,13 @@ EditprojectAssignment As screen:
                         PaddingTop: =0
                         Reset: =true
                         SearchFields: =["displayName"]
-                        SearchItems: =Search(AssessorAD.displayName,ComboBox4_2.SearchText,"displayName")
+                        SearchItems: =Search(AssessorAD.displayName,cboxAssessornameEditA.SearchText,"displayName")
                         SelectionFill: =RGBA(0, 0, 0, 1)
                         SelectMultiple: =false
                         Width: =Parent.Width/3
                         ZIndex: =11
 
-                    Label14_21 As label:
+                    lblReviewerEditA As label:
                         Font: =referenceCSS.RFont
                         FontWeight: =FontWeight.Bold
                         Height: =50
@@ -461,7 +453,7 @@ EditprojectAssignment As screen:
                         Width: =Parent.Width/3
                         ZIndex: =12
 
-                    ComboBox5_2 As combobox:
+                    cboxReviewerEditA As combobox:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         ChevronBackground: =RGBA(0, 0, 0, 0)
                         ChevronFill: =RGBA(0, 0, 0, 1)
@@ -481,13 +473,13 @@ EditprojectAssignment As screen:
                         PaddingTop: =0
                         Reset: =true
                         SearchFields: =["displayName"]
-                        SearchItems: =Search(ReviewerAD.displayName,ComboBox5_2.SearchText,"displayName")
+                        SearchItems: =Search(ReviewerAD.displayName,cboxReviewerEditA.SearchText,"displayName")
                         SelectionFill: =RGBA(0, 0, 0, 1)
                         SelectMultiple: =false
                         Width: =Parent.Width/3
                         ZIndex: =13
 
-                    Label14_22 As label:
+                    lblStartdateEditA As label:
                         Font: =referenceCSS.RFont
                         FontWeight: =FontWeight.Bold
                         Height: =50
@@ -498,7 +490,7 @@ EditprojectAssignment As screen:
                         Width: =Parent.Width/3
                         ZIndex: =14
 
-                    DatePicker2_2 As datepicker:
+                    DatePickerStartDateEditA As datepicker:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         DefaultDate: =nstartdate
                         Font: =referenceCSS.RFont
@@ -508,7 +500,7 @@ EditprojectAssignment As screen:
                         Width: =Parent.Width/3
                         ZIndex: =15
 
-                    Label14_23 As label:
+                    lblDuedateEditA As label:
                         Font: =referenceCSS.RFont
                         FontWeight: =FontWeight.Bold
                         Height: =50
@@ -519,7 +511,7 @@ EditprojectAssignment As screen:
                         Width: =Parent.Width/3
                         ZIndex: =16
 
-                    DatePicker1_4 As datepicker:
+                    DatePickerDueDateEditA As datepicker:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         DefaultDate: =nduedate
                         Font: =referenceCSS.RFont
@@ -529,7 +521,7 @@ EditprojectAssignment As screen:
                         Width: =Parent.Width/3
                         ZIndex: =17
 
-                    Label14_24 As label:
+                    lblAssignDateEditA As label:
                         Font: =referenceCSS.RFont
                         FontWeight: =FontWeight.Bold
                         Height: =50
@@ -540,7 +532,7 @@ EditprojectAssignment As screen:
                         Width: =Parent.Width/3
                         ZIndex: =18
 
-                    DatePicker1_5 As datepicker:
+                    DatePickerAssignDateEditA As datepicker:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         DefaultDate: =nassigndate
                         Font: =referenceCSS.RFont
@@ -550,7 +542,8 @@ EditprojectAssignment As screen:
                         Width: =Parent.Width/3
                         ZIndex: =19
 
-                    Container4 As groupContainer.horizontalAutoLayoutContainer:
+                    ctnFooterEditAssignment As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         FillPortions: =0
                         Height: =90
                         LayoutAlignItems: =LayoutAlignItems.End
@@ -562,10 +555,10 @@ EditprojectAssignment As screen:
                         PaddingLeft: =10
                         PaddingTop: =10
                         X: =40
-                        Y: =DatePicker1_4.Y +DatePicker1_4.Height+10
+                        Y: =DatePickerDueDateEditA.Y +DatePickerDueDateEditA.Height+10
                         ZIndex: =20
 
-                        btnSave As button:
+                        btnSaveEditA As button:
                             Color: =referenceCSS.RColorWhite
                             DisabledBorderColor: |-
                                 =//referenceCSS.RActiveColor
@@ -582,7 +575,7 @@ EditprojectAssignment As screen:
                                     Notify("Network is not Available",NotificationType.Error),
                                 
                                     If(
-                                        IsBlank(ComboBox1_5.Selected.goNumber),
+                                        IsBlank(cboxGonumberEditA.Selected.goNumber),
                                         Notify(
                                             "Please Select Bank.",
                                             NotificationType.Error
@@ -594,28 +587,28 @@ EditprojectAssignment As screen:
                                             NotificationType.Error
                                         ), */
                                 
-                                        IsBlank(ComboBox3_2.Selected.type),
+                                        IsBlank(cboxAssessmntTypeEditA.Selected.type),
                                         Notify(
                                             "Please Select Assessment Type.",
                                             NotificationType.Error
                                         ),
-                                         IsBlank(ComboBox4_2.Selected.displayName),
+                                         IsBlank(cboxAssessornameEditA.Selected.displayName),
                                         Notify(
                                             "Please Select Assessor.",
                                             NotificationType.Error
                                         ),
-                                        IsBlank(ComboBox5_2.Selected.displayName),
+                                        IsBlank(cboxReviewerEditA.Selected.displayName),
                                         Notify(
                                             "Please Select Reviewer.",
                                             NotificationType.Error
                                         ),
                                           
-                                        IsBlank(DatePicker1_4.SelectedDate),
+                                        IsBlank(DatePickerDueDateEditA.SelectedDate),
                                         Notify("Please Select Due Date",NotificationType.Error),
                                          
                                         DateDiff(
-                                            DatePicker2_2,
-                                            DatePicker1_4
+                                            DatePickerStartDateEditA,
+                                            DatePickerDueDateEditA
                                         ) <= 0,
                                         Notify("The Due date can not be before Assessment start date"),
                                 
@@ -635,40 +628,40 @@ EditprojectAssignment As screen:
                                                    // ),
                                                     bankId: LookUp(
                                                         schindlerBanks,
-                                                        goNumber = ComboBox1_5.Selected.goNumber
+                                                        goNumber = cboxGonumberEditA.Selected.goNumber
                                                          // ThisRecord.Go_Number
                                                     ),
-                                                    assessmentType: ComboBox3_2.Selected.type,
+                                                    assessmentType: cboxAssessmntTypeEditA.Selected.type,
                                                     assessorId: LookUp(
                                                         AssessorAD,
-                                                        displayName = ComboBox4_2.Selected.displayName,
+                                                        displayName = cboxAssessornameEditA.Selected.displayName,
                                                         id
                                                     ),
                                                     reviewerId: LookUp(
                                                         ReviewerAD,
-                                                        displayName = ComboBox5_2.Selected.displayName,
+                                                        displayName = cboxReviewerEditA.Selected.displayName,
                                                         id
                                                     ),
-                                                    startDate: DatePicker2_2.SelectedDate,
-                                                    dueDate: DatePicker1_4.SelectedDate,
-                                                    assignedDate: DatePicker1_5.SelectedDate,
+                                                    startDate: DatePickerStartDateEditA.SelectedDate,
+                                                    dueDate: DatePickerDueDateEditA.SelectedDate,
+                                                    assignedDate: DatePickerAssignDateEditA.SelectedDate,
                                                     isCompleted: "Upcomming",
                                                     assessorEmail: LookUp(
                                                         AssessorAD,
-                                                        displayName = ComboBox4_2.Selected.displayName,
+                                                        displayName = cboxAssessornameEditA.Selected.displayName,
                                                         mail
                                                     ),
                                                     reviewerEmail: LookUp(
                                                         ReviewerAD,
-                                                        displayName = ComboBox5_2.Selected.displayName,
+                                                        displayName = cboxReviewerEditA.Selected.displayName,
                                                         mail
                                                     ),
                                                     assessorName: LookUp(
                                                         AssessorAD,
-                                                        displayName = ComboBox4_2.Selected.displayName,
+                                                        displayName = cboxAssessornameEditA.Selected.displayName,
                                                         displayName
                                                     ),
-                                                    reviewerName: ComboBox5_2.Selected.displayName
+                                                    reviewerName: cboxReviewerEditA.Selected.displayName
                                                      
                                                 }
                                             )
@@ -678,14 +671,14 @@ EditprojectAssignment As screen:
                                      If(!IsBlank(patchresult),
                                      //Notify("Success");
                                        Set(updatePopup,true);
-                                        Reset(ComboBox1_2);
-                                        Reset(ComboBox1_5);
-                                        Reset(ComboBox3_2);
-                                        Reset(ComboBox4_2);
-                                        Reset(ComboBox5_2);
-                                        Reset(DatePicker2_2);
-                                        Reset(DatePicker1_4);
-                                        Reset(DatePicker1_5);
+                                        Reset(cboxClientEditA);
+                                        Reset(cboxGonumberEditA);
+                                        Reset(cboxAssessmntTypeEditA);
+                                        Reset(cboxAssessornameEditA);
+                                        Reset(cboxReviewerEditA);
+                                        Reset(DatePickerStartDateEditA);
+                                        Reset(DatePickerDueDateEditA);
+                                        Reset(DatePickerAssignDateEditA);
                                        
                                    ,Notify("Error patch function "));
                                 
@@ -702,7 +695,7 @@ EditprojectAssignment As screen:
                             Width: =170
                             ZIndex: =1
 
-                        btnCancel As button:
+                        btnCancelEditA As button:
                             BorderColor: =referenceCSS.RActiveColor
                             Color: =referenceCSS.RActiveColor
                             DisabledBorderColor: |-
@@ -721,14 +714,14 @@ EditprojectAssignment As screen:
                             OnSelect: |-
                                 =    
                                     //Reset the all recent changes go back to existing assignment page
-                                        Reset(ComboBox1_2);
-                                        Reset(ComboBox1_5);
-                                        Reset(ComboBox3_2);
-                                        Reset(ComboBox4_2);
-                                        Reset(ComboBox5_2);
-                                        Reset(DatePicker2_2);
-                                        Reset(DatePicker1_4);
-                                        Reset(DatePicker1_5);
+                                        Reset(cboxClientEditA);
+                                        Reset(cboxGonumberEditA);
+                                        Reset(cboxAssessmntTypeEditA);
+                                        Reset(cboxAssessornameEditA);
+                                        Reset(cboxReviewerEditA);
+                                        Reset(DatePickerStartDateEditA);
+                                        Reset(DatePickerDueDateEditA);
+                                        Reset(DatePickerAssignDateEditA);
                                       Set(IsEdit,true);
                                       Navigate(projectAssignment,ScreenTransition.None);
                                         
