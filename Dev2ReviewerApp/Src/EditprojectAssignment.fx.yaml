@@ -4,7 +4,7 @@ EditprojectAssignment As screen:
         Set(IsEdit,false);
         
 
-    Container9_8 As groupContainer.verticalAutoLayoutContainer:
+    ctnMainEditProjectAssignment As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
