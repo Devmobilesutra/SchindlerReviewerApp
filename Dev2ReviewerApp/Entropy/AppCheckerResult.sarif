@@ -11832,19 +11832,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditprojectAssignment.btnSuccess_3.Y"
+                  "fullyQualifiedName": "EditprojectAssignment.btnOkEditA.Y"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditprojectAssignment.btnSuccess_3.Y",
+                  "fullyQualifiedName": "EditprojectAssignment.btnOkEditA.Y",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Y",
                 "module": "EditprojectAssignment",
-                "type": "EditprojectAssignment.btnSuccess_3"
+                "type": "EditprojectAssignment.btnOkEditA"
               }
             }
           ],
