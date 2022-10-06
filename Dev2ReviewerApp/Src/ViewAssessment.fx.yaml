@@ -902,7 +902,7 @@ ViewAssessment As screen:
                         BorderThickness: =2
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: |-
-                            = 350 + CountRows(Gallery5_6.AllItems)*Gallery5_6.TemplateHeight +CountRows(Gallery14_3.AllItems)*Gallery14_3.TemplateHeight
+                            = 800 + CountRows(Gallery5_6.AllItems)*Gallery5_6.TemplateHeight +CountRows(Gallery14_3.AllItems)*Gallery14_3.TemplateHeight
                              //If( (CountRows(Gallery14_3.AllItems)*Gallery14_3.TemplateHeight)/2=1, (CountRows(Gallery14_3.AllItems)*Gallery14_3.TemplateHeight),(CountRows(Gallery14_3.AllItems)*Gallery14_3.TemplateHeight)/2)
                             //If(CountRows(Gallery14_3.AllItems)=1,380,CountRows(Gallery14_3.AllItems)*(Gallery14_3.TemplateHeight)/2)
                             //700
