@@ -1226,14 +1226,14 @@ AddBanks As screen:
         Y: =20
         ZIndex: =19
 
-        iconOuterRectangle As rectangle:
+        iconOuterRectangleUnit As rectangle:
             Fill: =RGBA(0, 0, 0, 0.29)
             Height: =Parent.Height
             Visible: =IsRemove =true
             Width: =Parent.Width
             ZIndex: =14
 
-        iconInnerRectangle As rectangle:
+        iconInnerRectangleUnit As rectangle:
             Fill: =referenceCSS.RColorWhite
             Height: =160
             Visible: =IsRemove =true
@@ -1251,9 +1251,9 @@ AddBanks As screen:
             Size: =14
             Text: ="Do you want to remove Unit " //& removeProductBank.clientInstallationId.unit_Number &" from  "& LookUp(bank,'bank (quantum_bank)'= bankno,Go_Number) &" bank ?"
             Visible: =IsRemove =true
-            Width: =iconInnerRectangle.Width
-            X: =iconInnerRectangle.X
-            Y: =iconInnerRectangle.Y+20
+            Width: =iconInnerRectangleUnit.Width
+            X: =iconInnerRectangleUnit.X
+            Y: =iconInnerRectangleUnit.Y+20
             ZIndex: =16
 
         btnCancelRemoveUnit As button:
@@ -1273,7 +1273,7 @@ AddBanks As screen:
             Text: ="Cancel"
             Visible: =IsRemove =true
             Width: =100
-            X: =iconInnerRectangle.X+(iconInnerRectangle.Width-Self.Width)/4
+            X: =iconInnerRectangleUnit.X+(iconInnerRectangleUnit.Width-Self.Width)/4
             Y: =lblRemoveUnit.Y+lblRemoveUnit.Height
             ZIndex: =17
 
@@ -1341,14 +1341,14 @@ AddBanks As screen:
         Y: =20
         ZIndex: =24
 
-        Rectangle3_4 As rectangle:
+        iconOuterRectangleBank As rectangle:
             Fill: =RGBA(0, 0, 0, 0.29)
             Height: =Parent.Height
             Visible: =IsRemoveBank =true
             Width: =Parent.Width
             ZIndex: =19
 
-        Rectangle4_4 As rectangle:
+        iconinnerRectangleBank As rectangle:
             Fill: =referenceCSS.RColorWhite
             Height: =160
             Visible: =IsRemoveBank =true
@@ -1357,7 +1357,7 @@ AddBanks As screen:
             Y: =(Parent.Height-Self.Height)/2
             ZIndex: =20
 
-        Label21_4 As label:
+        lblRemoveBank As label:
             Align: =Align.Center
             Font: =referenceCSS.RFont
             Height: =80
@@ -1366,12 +1366,12 @@ AddBanks As screen:
             Size: =14
             Text: ="Do you want to remove Bank " & removeBankUnit.goNumber & " ?"
             Visible: =IsRemoveBank =true
-            Width: =Rectangle4_4.Width
-            X: =Rectangle4_4.X
-            Y: =Rectangle4_4.Y+20
+            Width: =iconinnerRectangleBank.Width
+            X: =iconinnerRectangleBank.X
+            Y: =iconinnerRectangleBank.Y+20
             ZIndex: =21
 
-        Button4_4 As button:
+        btnCancelRemoveBank As button:
             BorderColor: =referenceCSS.RActiveColor
             Color: =referenceCSS.RColorBlack
             Fill: =referenceCSS.RColorWhite
@@ -1388,8 +1388,8 @@ AddBanks As screen:
             Text: ="Cancel"
             Visible: =IsRemoveBank =true
             Width: =100
-            X: =Rectangle4_4.X+(Rectangle4_4.Width-Self.Width)/4
-            Y: =Label21_4.Y+Label21_4.Height
+            X: =iconinnerRectangleBank.X+(iconinnerRectangleBank.Width-Self.Width)/4
+            Y: =lblRemoveBank.Y+lblRemoveBank.Height
             ZIndex: =22
 
         btnOkRemoveBank As button:
@@ -1425,7 +1425,7 @@ AddBanks As screen:
             Text: ="Ok"
             Visible: =IsRemoveBank =true
             Width: =100
-            X: =Button4_4.X+Self.Width+50
-            Y: =Label21_4.Y+Label21_4.Height
+            X: =btnCancelRemoveBank.X+Self.Width+50
+            Y: =lblRemoveBank.Y+lblRemoveBank.Height
             ZIndex: =23
 

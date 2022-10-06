@@ -32,7 +32,7 @@ EditBank As screen:
         Set(popupsuccess,false);
         
 
-    Container9_11 As groupContainer.verticalAutoLayoutContainer:
+    ctnEditBank As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
         LayoutDirection: =LayoutDirection.Vertical
         LayoutMode: =LayoutMode.Auto
@@ -41,7 +41,7 @@ EditBank As screen:
         ZIndex: =1
 
         Container3_17 As groupContainer.manualLayoutContainer:
-            AlignInContainer: =AlignInContainer.Start
+            AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =Header.HeaderFill
             FillPortions: =0
             Height: =80
@@ -112,6 +112,7 @@ EditBank As screen:
                 ZIndex: =8
 
         Container4_13 As groupContainer.verticalAutoLayoutContainer:
+            AlignInContainer: =AlignInContainer.SetByContainer
             Fill: =RGBA(255, 255, 255, 1)
             Height: |-
                 =//(Parent.Height-(Parent.Height/8))
