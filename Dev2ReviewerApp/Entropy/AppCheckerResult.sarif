@@ -11232,19 +11232,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "AddBanks.btnSuccess_4.Y"
+                  "fullyQualifiedName": "AddBanks.btnSuccessAB.Y"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "AddBanks.btnSuccess_4.Y",
+                  "fullyQualifiedName": "AddBanks.btnSuccessAB.Y",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Y",
                 "module": "AddBanks",
-                "type": "AddBanks.btnSuccess_4"
+                "type": "AddBanks.btnSuccessAB"
               }
             }
           ],
