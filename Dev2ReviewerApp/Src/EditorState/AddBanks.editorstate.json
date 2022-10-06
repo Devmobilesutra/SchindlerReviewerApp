@@ -4450,7 +4450,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "cboxClientNameNB",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14400,7 +14400,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblClientNewClientNB",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14786,7 +14786,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblGoNumberNB",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16488,7 +16488,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblnotificationexistNB",
-      "ParentIndex": 4,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -20584,7 +20584,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "txtgONumberNB",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

@@ -117,7 +117,7 @@ EditBank As screen:
             Y: =ctcHeaderEditBank.Height
             ZIndex: =4
 
-            Container20_13 As groupContainer.verticalAutoLayoutContainer:
+            ctnBackEditBank As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =90
@@ -129,7 +129,7 @@ EditBank As screen:
                 PaddingLeft: =10
                 ZIndex: =1
 
-                Button1_12 As button:
+                btnBackEditBank As button:
                     BorderColor: =referenceCSS.RActiveColor
                     Color: =referenceCSS.RColorBlack
                     Fill: =referenceCSS.RColorWhite
@@ -151,7 +151,7 @@ EditBank As screen:
                     Width: =Parent.Width/6
                     ZIndex: =1
 
-            Container6_6 As groupContainer.verticalAutoLayoutContainer:
+            ctnTitleEditBank As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =90
@@ -163,7 +163,7 @@ EditBank As screen:
                 Width: =Parent.Width
                 ZIndex: =2
 
-                Label17_2 As label:
+                lblEditBank As label:
                     Color: =referenceCSS.RColorBlack
                     Font: =referenceCSS.RFont
                     FontWeight: =referenceCSS.RFontWeight
@@ -174,17 +174,17 @@ EditBank As screen:
                     Width: =Parent.Width/3
                     ZIndex: =2
 
-            Container18_7 As groupContainer.manualLayoutContainer:
+            ctnMaineditbank As groupContainer.manualLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: |-
                     =/*If(App.Height<=950,Parent.Height-Container20_9.Height-Container6_3.Height-Container7_4.Height-Container20_5.Height -FooterContainer1_3.Height+500 ,Parent.Height-Container20_9.Height-Container6_3.Height-Container7_4.Height-Container20_5.Height -FooterContainer1_3.Height+500)*/
-                    600+Gallery19_2.Height
+                    600+glryUnitEditBank.Height
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 ZIndex: =4
 
-                Container31_8 As groupContainer.verticalAutoLayoutContainer:
+                ctnEditBankEB As groupContainer.verticalAutoLayoutContainer:
                     Height: =Parent.Height
                     LayoutDirection: =LayoutDirection.Vertical
                     LayoutMode: =LayoutMode.Auto
@@ -194,7 +194,7 @@ EditBank As screen:
                     Width: =Parent.Width
                     ZIndex: =2
 
-                    BClient_Label_4 As label:
+                    lblClientEditbank As label:
                         Font: =referenceCSS.RFont
                         FontWeight: =referenceCSS.RFontWeight
                         Height: =50
@@ -204,7 +204,7 @@ EditBank As screen:
                         Width: =Parent.Width/3
                         ZIndex: =1
 
-                    ComboBox1_4 As combobox:
+                    cboxClientEditBank As combobox:
                         ChevronBackground: =RGBA(0, 0, 0, 0)
                         ChevronDisabledBackground: =RGBA(0, 0, 0, 0)
                         ChevronFill: =RGBA(0, 0, 0, 1)
@@ -240,7 +240,7 @@ EditBank As screen:
                         Width: =Parent.Width/3
                         ZIndex: =2
 
-                    BProduct_Label_14 As label:
+                    lblGonumberEditBank As label:
                         Font: =referenceCSS.RFont
                         FontWeight: =referenceCSS.RFontWeight
                         Height: =50
@@ -250,13 +250,13 @@ EditBank As screen:
                         Width: =Parent.Width/2
                         ZIndex: =3
 
-                    BProduct_Input_9 As text:
+                    TxtGonumberEditBank As text:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         Default: |
                             =LookUp(schindlerBanks,Id = nbank,goNumber)
                         Font: =referenceCSS.RFont
                         Height: =50 //(Parent.Height+Parent.Width)/36.735
-                        HintText: ="Enter Product name"
+                        HintText: ="Enter Go/Commission no "
                         HoverBorderColor: =referenceCSS.RColorBlack
                         HoverColor: =referenceCSS.RColorBlack
                         HoverFill: =RGBA(0, 0, 0, 0)
@@ -265,10 +265,10 @@ EditBank As screen:
                             Set(lcgono,LookUp(schindlerBanks,Id=nbank,goNumber));
                             
                             If(
-                                lcgono=BProduct_Input_9.Text,
+                                lcgono=TxtGonumberEditBank.Text,
                                 Set(ShowErrorMsgBank, false),
                             
-                                IsBlank(LookUp(schindlerBanks,goNumber= BProduct_Input_9.Text)),
+                                IsBlank(LookUp(schindlerBanks,goNumber= TxtGonumberEditBank.Text)),
                                 Set(ShowErrorMsgBank, false),
                                 Set(ShowErrorMsgBank, true)
                             )
@@ -285,7 +285,7 @@ EditBank As screen:
                         Y: =67
                         ZIndex: =4
 
-                    BProduct_Label_15 As label:
+                    lblunitexistEditBank As label:
                         Color: =referenceCSS.RActiveColor
                         Font: =referenceCSS.RFont
                         FontWeight: =referenceCSS.RFontWeight
@@ -299,7 +299,7 @@ EditBank As screen:
                         Width: =Parent.Width/1.2
                         ZIndex: =5
 
-                    BProduct_Label_16 As label:
+                    lblLocationEditBank As label:
                         Font: =referenceCSS.RFont
                         FontWeight: =referenceCSS.RFontWeight
                         Height: =50
@@ -310,7 +310,7 @@ EditBank As screen:
                         Width: =Parent.Width/3
                         ZIndex: =6
 
-                    BProduct_Input_10 As text:
+                    txtLocationEditBank As text:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         Default: =nlocation
                         Font: =referenceCSS.RFont
@@ -330,7 +330,7 @@ EditBank As screen:
                         Y: =67
                         ZIndex: =7
 
-                    BProducttype_Label_5 As label:
+                    lblProductTypeEditbank As label:
                         Font: =referenceCSS.RFont
                         FontWeight: =referenceCSS.RFontWeight
                         Height: =50
@@ -341,7 +341,7 @@ EditBank As screen:
                         Width: =Parent.Width/3
                         ZIndex: =8
 
-                    BProducttype_Combobox_5 As combobox:
+                    cboxProductTypeEditBank As combobox:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         ChevronBackground: =RGBA(255, 255, 255, 1)
                         ChevronFill: =RGBA(0, 0, 0, 1)
@@ -370,7 +370,8 @@ EditBank As screen:
                         Y: =67
                         ZIndex: =9
 
-                    Container23_1 As groupContainer.horizontalAutoLayoutContainer:
+                    ctnunitEditBank As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         FillPortions: =0
                         Height: =50
                         LayoutAlignItems: =LayoutAlignItems.End
@@ -382,7 +383,7 @@ EditBank As screen:
                         Width: =Parent.Width-40
                         ZIndex: =10
 
-                        BProducttype_Label_6 As label:
+                        lblunitEditBank As label:
                             Font: =referenceCSS.RFont
                             FontWeight: =referenceCSS.RFontWeight
                             Height: =50
@@ -392,7 +393,7 @@ EditBank As screen:
                             Width: =80
                             ZIndex: =1
 
-                        Button9_5 As button:
+                        btnUnitEditBank As button:
                             Fill: =referenceCSS.RActiveColor
                             Height: =30
                             HoverFill: =referenceCSS.RActiveColor
@@ -414,7 +415,7 @@ EditBank As screen:
                             Y: =78
                             ZIndex: =2
 
-                        BProduct_Label_17 As label:
+                        lblAddUnitEditBank As label:
                             Color: =referenceCSS.RColorBlack
                             Font: =referenceCSS.RFont
                             FontWeight: =referenceCSS.RFontWeight
@@ -427,9 +428,10 @@ EditBank As screen:
                             Width: =Parent.Width-100
                             ZIndex: =3
 
-                    Gallery19_2 As gallery.variableTemplateHeightGallery:
+                    glryUnitEditBank As gallery.variableTemplateHeightGallery:
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         FillPortions: =0
-                        Height: =CountRows(Gallery19_2.AllItems)*(Gallery19_2.TemplateHeight+ Gallery19_2.TemplatePadding)/1.7
+                        Height: =CountRows(glryUnitEditBank.AllItems)*(glryUnitEditBank.TemplateHeight+ glryUnitEditBank.TemplatePadding)/1.7
                         Items: |-
                             =//Filter(bankUnits,bankId.Id=nbank)
                             //existingUnits
@@ -443,7 +445,7 @@ EditBank As screen:
                         Y: =//Label2_2.Y +Label2_2.Height
                         ZIndex: =11
 
-                        Icon2_2 As icon.Cancel:
+                        iconCancelEditBank As icon.Cancel:
                             DisplayMode: |-
                                 =DisplayMode.Edit
                                 //If unit assessment is start then unit can't delete
@@ -466,11 +468,11 @@ EditBank As screen:
                                 //Remove(existingUnits,ThisItem);
                                 RemoveIf(lcUnitedit,id = ThisItem.id)
                             Width: =20
-                            X: =BProduct_Input_11.X +BProduct_Input_11.Width+20
-                            Y: =(BProduct_Input_11.Height - Self.Height)/2 +5
+                            X: =txtUnitEditBank.X +txtUnitEditBank.Width+20
+                            Y: =(txtUnitEditBank.Height - Self.Height)/2 +5
                             ZIndex: =2
 
-                        BProduct_Input_11 As text:
+                        txtUnitEditBank As text:
                             BorderColor: =RGBA(0, 0, 0, 1)
                             Default: =ThisItem.unit
                             Font: =referenceCSS.RFont
@@ -484,9 +486,9 @@ EditBank As screen:
                                 //ForAll(lcUnitedit As ii,
                                 
                                 If(!IsBlank(LookUp(lcUnitedit,id = ThisItem.id)),
-                                UpdateIf(lcUnitedit,id = ThisItem.id ,{unit:BProduct_Input_11.Text}),
+                                UpdateIf(lcUnitedit,id = ThisItem.id ,{unit:txtUnitEditBank.Text}),
                                 
-                                Collect(lcUnitedit,{id:GUID(),unit:BProduct_Input_11.Text})
+                                Collect(lcUnitedit,{id:GUID(),unit:txtUnitEditBank.Text})
                                 );
                                 
                                 
@@ -494,7 +496,7 @@ EditBank As screen:
                                     CountRows(
                                         Filter(
                                             lcUnitedit,
-                                            unit= BProduct_Input_11.Text
+                                            unit= txtUnitEditBank.Text
                                         )
                                     ) > 1,
                                   
@@ -502,7 +504,7 @@ EditBank As screen:
                                 UpdateIf(
                                         lcUnitedit,
                                         id = ThisItem.id,
-                                        {unit:BProduct_Input_11.Text,status: true}
+                                        {unit:txtUnitEditBank.Text,status: true}
                                     );
                                     Set(varUnitIdEdit,ThisItem.id);
                                     Set(unitTimerEdit,true);
@@ -521,7 +523,7 @@ EditBank As screen:
                             Y: =5
                             ZIndex: =3
 
-                        BProduct_Label_21 As label:
+                        lblUnitnumberexistEditBank As label:
                             Color: =referenceCSS.RActiveColor
                             Font: =referenceCSS.RFont
                             FontWeight: =referenceCSS.RFontWeight
@@ -538,6 +540,7 @@ EditBank As screen:
                             ZIndex: =4
 
                     Container4_8 As groupContainer.horizontalAutoLayoutContainer:
+                        AlignInContainer: =AlignInContainer.SetByContainer
                         FillPortions: =0
                         Height: =90
                         LayoutAlignItems: =LayoutAlignItems.End
@@ -568,8 +571,8 @@ EditBank As screen:
                                 Refresh(bankUnits);
                                 
                                 
-                                  ForAll(Gallery19_2.AllItems.BProduct_Input_11,
-                                        Collect(LCunitedit,{unitno:ThisRecord.BProduct_Input_11}));
+                                  ForAll(glryUnitEditBank.AllItems.txtUnitEditBank,
+                                        Collect(LCunitedit,{unitno:ThisRecord.txtUnitEditBank}));
                                 
                                 If(
                                     Connection.Connected = false,
@@ -582,7 +585,7 @@ EditBank As screen:
                                             NotificationType.Error
                                         ),
                                         */
-                                        IsBlank(BProduct_Input_9.Text),
+                                        IsBlank(TxtGonumberEditBank.Text),
                                         Notify(
                                             "Please Enter GO Number.",
                                             NotificationType.Error
@@ -594,7 +597,7 @@ EditBank As screen:
                                             NotificationType.Error
                                         ), 
                                 
-                                        IsBlank(BProducttype_Combobox_5.Selected.product_Model),
+                                        IsBlank(cboxProductTypeEditBank.Selected.product_Model),
                                         
                                         Notify(
                                             "Please Select Product type .",
@@ -614,33 +617,33 @@ EditBank As screen:
                                             {
                                               //Id:GUID(),
                                              // clientId:LookUp(schindlerClients,name=BCilent_Combobox_4.Selected.name),
-                                              goNumber:BProduct_Input_9.Text,
-                                              location:BProduct_Input_10.Text,
-                                              productId:LookUp(product,product_Model=BProducttype_Combobox_5.Selected.product_Model)
+                                              goNumber:TxtGonumberEditBank.Text,
+                                              location:txtLocationEditBank.Text,
+                                              productId:LookUp(product,product_Model=cboxProductTypeEditBank.Selected.product_Model)
                                              
                                 
                                         });
                                 
                                 
-                                        ForAll(Gallery19_2.AllItems.BProduct_Input_11 As i,
+                                        ForAll(glryUnitEditBank.AllItems.txtUnitEditBank As i,
                                         Patch(
                                             bankUnits,
                                             Defaults(bankUnits),
                                             {
                                                 Id:GUID(),
-                                                bankId:LookUp(schindlerBanks,goNumber =BProduct_Input_9.Text),
-                                                location:BProduct_Input_10.Text,
-                                                productId:LookUp(product,product_Model=BProducttype_Combobox_5.Selected.product_Model),
-                                                unitNumber:i.BProduct_Input_11.Text
+                                                bankId:LookUp(schindlerBanks,goNumber =TxtGonumberEditBank.Text),
+                                                location:txtLocationEditBank.Text,
+                                                productId:LookUp(product,product_Model=cboxProductTypeEditBank.Selected.product_Model),
+                                                unitNumber:i.txtUnitEditBank.Text
                                             }));
                                 
                                         If(
                                         (IsEmpty(Errors( schindlerBanks)) && IsEmpty( Errors( bankUnits))),
                                         Set(popupsuccess,true);
-                                        Reset(ComboBox1_4);
-                                        Reset(BProduct_Input_9);
-                                        Reset(BProduct_Input_10);
-                                        Reset(BProducttype_Combobox_5);
+                                        Reset(cboxClientEditBank);
+                                        Reset(TxtGonumberEditBank);
+                                        Reset(txtLocationEditBank);
+                                        Reset(cboxProductTypeEditBank);
                                         ClearCollect(existingUnits,{}); ,
                                 
                                         Notify("Error Patch")
@@ -677,10 +680,10 @@ EditBank As screen:
                             OnSelect: |-
                                 =    
                                     //Reset the all recent changes go back to existing assignment page
-                                        Reset(ComboBox1_4);
-                                        Reset(BProduct_Input_9);
-                                        Reset(BProduct_Input_10);
-                                        Reset(BProducttype_Combobox_5);
+                                        Reset(cboxClientEditBank);
+                                        Reset(TxtGonumberEditBank);
+                                        Reset(txtLocationEditBank);
+                                        Reset(cboxProductTypeEditBank);
                                         ClearCollect(existingUnits,{});
                                        
                                       Set(IsEdit,true);
