@@ -11892,19 +11892,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "EditBank.ctnEditBank.ctnMainEditBank.ctnMaineditbank.ctnEditBankEB.Container4_8.Y"
+                  "fullyQualifiedName": "EditBank.ctnEditBank.ctnMainEditBank.ctnMaineditbank.ctnEditBankEB.ctnbuttonsEditBanks.Y"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "EditBank.ctnEditBank.ctnMainEditBank.ctnMaineditbank.ctnEditBankEB.Container4_8.Y",
+                  "fullyQualifiedName": "EditBank.ctnEditBank.ctnMainEditBank.ctnMaineditbank.ctnEditBankEB.ctnbuttonsEditBanks.Y",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Y",
                 "module": "EditBank",
-                "type": "EditBank.ctnEditBank.ctnMainEditBank.ctnMaineditbank.ctnEditBankEB.Container4_8"
+                "type": "EditBank.ctnEditBank.ctnMainEditBank.ctnMaineditbank.ctnEditBankEB.ctnbuttonsEditBanks"
               }
             }
           ],

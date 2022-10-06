@@ -539,7 +539,7 @@ EditBank As screen:
                             Y: =5
                             ZIndex: =4
 
-                    Container4_8 As groupContainer.horizontalAutoLayoutContainer:
+                    ctnbuttonsEditBanks As groupContainer.horizontalAutoLayoutContainer:
                         AlignInContainer: =AlignInContainer.SetByContainer
                         FillPortions: =0
                         Height: =90
@@ -555,7 +555,7 @@ EditBank As screen:
                         Y: =DatePicker1_4.Y +DatePicker1_4.Height+10
                         ZIndex: =12
 
-                        btnSave_2 As button:
+                        btnSaveEditBank As button:
                             Color: =referenceCSS.RColorWhite
                             DisabledBorderColor: |-
                                 =//referenceCSS.RActiveColor
@@ -661,7 +661,7 @@ EditBank As screen:
                             Width: =170
                             ZIndex: =1
 
-                        btnCancel_2 As button:
+                        btnCancelEditBank As button:
                             BorderColor: =referenceCSS.RActiveColor
                             Color: =referenceCSS.RActiveColor
                             DisabledBorderColor: |-
