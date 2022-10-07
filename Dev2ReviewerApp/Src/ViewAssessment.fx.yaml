@@ -265,9 +265,9 @@ ViewAssessment As screen:
                 FillPortions: =0
                 Height: |-
                     =//Parent.Height
-                    //Gallery1_3.Height
+                    Gallery1_3.Height
                     //CountRows(Gallery1_3.AllItems)*(Gallery1_3.TemplateHeight)
-                    (CountRows(Gallery1_3.AllItems)*(Gallery1_3.TemplateHeight))+Gallery5_6.Height+Gallery14_3.Height
+                    //(CountRows(Gallery1_3.AllItems)*(Gallery1_3.TemplateHeight))+Gallery5_6.Height+Gallery14_3.Height
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutMinHeight: =1000
                 LayoutMinWidth: =250
@@ -906,7 +906,7 @@ ViewAssessment As screen:
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: |-
                             =//210+
-                            (CountRows(Gallery5_6.AllItems)*Gallery5_6.TemplateHeight)+(CountRows(Gallery14_3.AllItems)*Gallery14_3.TemplateHeight)+Icon3_12.Height+Icon3_13.Height+ctnbank_16.Height+ctnbank_18.Height+ctnbank_19.Height+ctnbank_17.Height+ctnAssessmentType_6.Height+ctnbank_21.Height
+                            (CountRows(Gallery5_6.AllItems)*Gallery5_6.TemplateHeight)+(CountRows(Gallery14_3.AllItems)*Gallery14_3.TemplateHeight)+Icon3_12.Height+Button2_5.Height+Icon3_13.Height+ctnbank_16.Height+ctnbank_18.Height+ctnbank_19.Height+ctnbank_17.Height+ctnAssessmentType_6.Height+ctnbank_21.Height
                              
                              
                              
