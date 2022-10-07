@@ -9,7 +9,7 @@ AllProject As screen:
         Width: =Parent.Width
         ZIndex: =1
 
-        Container3_12 As groupContainer.manualLayoutContainer:
+        ctnHeaderAllProject As groupContainer.manualLayoutContainer:
             Fill: =Header.HeaderFill
             FillPortions: =0
             Height: =80
@@ -18,7 +18,7 @@ AllProject As screen:
             Width: =Parent.Width
             ZIndex: =1
 
-            Image1_23 As image:
+            imgLogoAllProject As image:
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height
                 Image: =Schindler_logo_PNG1
@@ -26,10 +26,10 @@ AllProject As screen:
                 PaddingLeft: =2
                 PaddingRight: =1
                 PaddingTop: =5
-                Width: =Container3_12.Width/10
+                Width: =ctnHeaderAllProject.Width/10
                 ZIndex: =1
 
-            Image2_29 As image:
+            imgUserprofileAllProject As image:
                 Fill: =RGBA(253, 222, 207, 1)
                 Height: =50
                 Image: =userdata.userImage
@@ -38,21 +38,11 @@ AllProject As screen:
                 RadiusTopLeft: =91
                 RadiusTopRight: =91
                 Width: =50
-                X: =Label3_12.X+Label3_12.Width
+                X: =lblAssignmentAllProject.X+lblAssignmentAllProject.Width
                 Y: =16
                 ZIndex: =2
 
-            Icon1_12 As icon.Bell:
-                Color: =RGBA(255, 255, 0, 1)
-                Height: =Parent.Height/2
-                Icon: =Icon.Bell
-                Visible: =false
-                Width: =Parent.Width/28
-                X: =Label1_24.X+Label1_24.Width+10
-                Y: =Parent.Height/4
-                ZIndex: =5
-
-            Label1_24 As label:
+            lblusernameAllProject As label:
                 Align: =Align.Center
                 Color: =Header.HeaderColor
                 Font: =Header.HeaderFont
@@ -63,11 +53,11 @@ AllProject As screen:
                     =//"SCHD0023"
                     //LookUp(ReviewerAD,mail=userdata.userEmail,displayName)
                     userdata.userdisplayName
-                Width: =Container3_12.Width/8
-                X: =Image2_29.X+ Image2_29.Height
+                Width: =ctnHeaderAllProject.Width/8
+                X: =imgUserprofileAllProject.X+ imgUserprofileAllProject.Height
                 ZIndex: =6
 
-            Label3_12 As label:
+            lblAssignmentAllProject As label:
                 Align: =Align.Center
                 Color: =Header.HeaderColor
                 Font: =Header.HeaderFont
@@ -75,8 +65,8 @@ AllProject As screen:
                 Height: =Parent.Height
                 Size: =Header.HeaderFontSize
                 Text: ="Assignments"
-                Width: =Container3_12.Width/1.6
-                X: =Image1_23.Width+Image1_23.X
+                Width: =ctnHeaderAllProject.Width/1.6
+                X: =imgLogoAllProject.Width+imgLogoAllProject.X
                 ZIndex: =8
 
         ctnMiddlePS As groupContainer.verticalAutoLayoutContainer:
@@ -89,80 +79,44 @@ AllProject As screen:
             LayoutMode: =LayoutMode.Auto
             LayoutOverflowY: =LayoutOverflow.Scroll
             Width: =Parent.Width
-            Y: =Container3_12.Height+Container3_12.Y
+            Y: =ctnHeaderAllProject.Height+ctnHeaderAllProject.Y
             ZIndex: =3
 
-            "'ctnBack&onlinestatusPS' As groupContainer.verticalAutoLayoutContainer":
-                AlignInContainer: =AlignInContainer.SetByContainer
+            ctnBackAllProject As groupContainer.verticalAutoLayoutContainer:
                 FillPortions: =0
-                Height: =80
-                LayoutMinHeight: =80
+                Height: =90
+                LayoutDirection: =LayoutDirection.Vertical
+                LayoutGap: =10
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
-                PaddingBottom: =5
-                Width: =Parent.Width
-                Y: =Container3_12.Y+Container3_12.Height
+                LayoutWrap: =true
+                PaddingLeft: =40
+                Visible: =true//RoughWork3.Size>2
+                Width: =Parent.Width/2
+                Y: =ctnHeaderAllProject.Y+ctnHeaderAllProject.Height
                 ZIndex: =1
 
-                ctnBack_2 As groupContainer.verticalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
-                    FillPortions: =0
-                    Height: =80
-                    LayoutDirection: =LayoutDirection.Vertical
-                    LayoutGap: =10
-                    LayoutJustifyContent: =LayoutJustifyContent.Center
-                    LayoutMinHeight: =100
-                    LayoutMinWidth: =250
-                    LayoutMode: =LayoutMode.Auto
-                    LayoutWrap: =true
-                    PaddingLeft: =40
-                    Visible: =true//RoughWork3.Size>2
-                    Width: =Parent.Width/2
-                    Y: =Container3_12.Y+Container3_12.Height
-                    ZIndex: =1
-
-                    Button1_14 As button:
-                        BorderColor: =referenceCSS.RActiveColor
-                        Color: =referenceCSS.RColorBlack
-                        Fill: =RGBA(255, 255, 255, 1)
-                        Height: =Parent.Height/1.5
-                        HoverColor: =Self.Color
-                        HoverFill: =Self.Fill //ColorFade(RGBA(56, 96, 178, 1), -20%)
-                        OnSelect: =Navigate(DashboardScreen)
-                        PaddingLeft: =0
-                        PressedBorderColor: =Self.BorderColor
-                        PressedColor: =Self.Color
-                        PressedFill: =Self.Fill
-                        RadiusBottomLeft: =0
-                        RadiusBottomRight: =0
-                        RadiusTopLeft: =0
-                        RadiusTopRight: =0
-                        Text: = "back"
-                        Width: ='ctnBack&onlinestatusPS'.Width/6
-                        ZIndex: =2
-
-                ctnOnlineStatus_2 As groupContainer.verticalAutoLayoutContainer:
-                    AlignInContainer: =AlignInContainer.SetByContainer
-                    FillPortions: =0
-                    Height: =80
-                    LayoutAlignItems: =LayoutAlignItems.End
-                    LayoutDirection: =LayoutDirection.Vertical
-                    LayoutGap: =10
-                    LayoutJustifyContent: =LayoutJustifyContent.Center
-                    LayoutMinHeight: =100
-                    LayoutMinWidth: =250
-                    LayoutMode: =LayoutMode.Auto
-                    LayoutWrap: =true
-                    PaddingLeft: =40
-                    PaddingRight: =40
-                    Visible: =false
-                    Width: =Parent.Width/2
-                    Y: =Container3_12.Y+Container3_12.Height
+                btnBackAllProject As button:
+                    BorderColor: =referenceCSS.RActiveColor
+                    Color: =referenceCSS.RColorBlack
+                    Fill: =RGBA(255, 255, 255, 1)
+                    Height: =Parent.Height/1.5
+                    HoverColor: =Self.Color
+                    HoverFill: =Self.Fill //ColorFade(RGBA(56, 96, 178, 1), -20%)
+                    OnSelect: =Navigate(DashboardScreen)
+                    PaddingLeft: =0
+                    PressedBorderColor: =Self.BorderColor
+                    PressedColor: =Self.Color
+                    PressedFill: =Self.Fill
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Text: = "back"
+                    Width: =ctnBackAllProject.Width/6
                     ZIndex: =2
-
-                    "'CmpOnline/offlineStatus_2' As Component1_10":
-                        LayoutMinHeight: =640
-                        LayoutMinWidth: =640
 
             "glryProject As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
                 Height: |-
@@ -180,7 +134,7 @@ AllProject As screen:
                 TemplatePadding: =10
                 TemplateSize: =425
                 Width: =Parent.Width
-                Y: ='ctnBack&onlinestatusPS'.Height+'ctnBack&onlinestatusPS'.Y
+                Y: =ctnBackAllProject.Height+ctnBackAllProject.Y
                 ZIndex: =2
 
                 lblProjectName As label:

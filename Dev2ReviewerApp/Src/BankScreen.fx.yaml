@@ -55,9 +55,9 @@ BankScreen As screen:
                             =lblProjectName.Text
                             
                             //lblBankName.Text go no
-                        Width: =Container3_18.Width/1.02
+                        Width: =ctnHeaderBankScreen.Width/1.02
                         X: |
-                            =Container3_18.X+Container3_18.Width
+                            =ctnHeaderBankScreen.X+ctnHeaderBankScreen.Width
                         ZIndex: =1
 
                 ctnbank_1 As groupContainer.horizontalAutoLayoutContainer:
@@ -252,7 +252,7 @@ BankScreen As screen:
                     ShowScrollbar: =false
                     TemplateSize: =200
                     Width: =Parent.Width -50
-                    Y: =Container3_18.Height+300
+                    Y: =ctnHeaderBankScreen.Height+300
                     ZIndex: =1
 
                     lblProductName_1 As label:
@@ -344,11 +344,11 @@ BankScreen As screen:
                         ZIndex: =5
 
         "'ctnBack&onlinestatusPS_1' As groupContainer.verticalAutoLayoutContainer":
-            Height: =Container3_18.Height+Container3_18.Y
+            Height: =ctnHeaderBankScreen.Height+ctnHeaderBankScreen.Y
             LayoutMode: =LayoutMode.Auto
             PaddingBottom: =5
             Width: =Parent.Width
-            Y: =Container3_18.Height+Container3_18.Y
+            Y: =ctnHeaderBankScreen.Height+ctnHeaderBankScreen.Y
             ZIndex: =5
 
             ctnBack_3 As groupContainer.verticalAutoLayoutContainer:
@@ -365,7 +365,7 @@ BankScreen As screen:
                 PaddingLeft: =40
                 Visible: =true//RoughWork3.Size>2
                 Width: =Parent.Width/2
-                Y: =Container3_18.Y+Container3_18.Height
+                Y: =ctnHeaderBankScreen.Y+ctnHeaderBankScreen.Height
                 ZIndex: =1
 
                 Button1_16 As button:
@@ -404,20 +404,20 @@ BankScreen As screen:
                 PaddingRight: =40
                 Visible: =false
                 Width: =Parent.Width/2
-                Y: =Container3_18.Y+Container3_18.Height
+                Y: =ctnHeaderBankScreen.Y+ctnHeaderBankScreen.Height
                 ZIndex: =2
 
                 "'CmpOnline/offlineStatus_3' As Component1_11":
                     LayoutMinHeight: =640
                     LayoutMinWidth: =640
 
-        Container3_18 As groupContainer.manualLayoutContainer:
+        ctnHeaderBankScreen As groupContainer.manualLayoutContainer:
             Fill: =Header.HeaderFill
             Height: =80
             Width: =Parent.Width
             ZIndex: =6
 
-            Image1_24 As image:
+            imgLogoBankScreen As image:
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height
                 Image: =Schindler_logo_PNG1
@@ -425,10 +425,10 @@ BankScreen As screen:
                 PaddingLeft: =2
                 PaddingRight: =1
                 PaddingTop: =5
-                Width: =Container3_18.Width/10
+                Width: =ctnHeaderBankScreen.Width/10
                 ZIndex: =1
 
-            Image2_30 As image:
+            imgUsernameBankScreen As image:
                 Fill: =RGBA(253, 222, 207, 1)
                 Height: =50
                 Image: =userdata.userImage
@@ -437,21 +437,11 @@ BankScreen As screen:
                 RadiusTopLeft: =91
                 RadiusTopRight: =91
                 Width: =50
-                X: =Label3_19.X+Label3_19.Width
+                X: =lblHeaderBankScreen.X+lblHeaderBankScreen.Width
                 Y: =16
                 ZIndex: =2
 
-            Icon1_19 As icon.Bell:
-                Color: =RGBA(255, 255, 0, 1)
-                Height: =Parent.Height/2
-                Icon: =Icon.Bell
-                Visible: =false
-                Width: =Parent.Width/28
-                X: =Label1_25.X+Label1_25.Width+10
-                Y: =Parent.Height/4
-                ZIndex: =5
-
-            Label1_25 As label:
+            lblusernameBankScreen As label:
                 Align: =Align.Center
                 Color: =Header.HeaderColor
                 Font: =Header.HeaderFont
@@ -462,11 +452,11 @@ BankScreen As screen:
                     =//"SCHD0023"
                     //LookUp(ReviewerAD,mail=userdata.userEmail,displayName)
                     userdata.userdisplayName
-                Width: =Container3_18.Width/8
-                X: =Image2_30.X+ Image2_30.Height
+                Width: =ctnHeaderBankScreen.Width/6
+                X: =imgUsernameBankScreen.X+ imgUsernameBankScreen.Height
                 ZIndex: =6
 
-            Label3_19 As label:
+            lblHeaderBankScreen As label:
                 Align: =Align.Center
                 Color: =Header.HeaderColor
                 Font: =Header.HeaderFont
@@ -474,8 +464,8 @@ BankScreen As screen:
                 Height: =Parent.Height
                 Size: =Header.HeaderFontSize
                 Text: ="Banks"
-                Width: =Container3_18.Width/1.6
-                X: =Image1_24.Width+Image1_24.X
+                Width: =ctnHeaderBankScreen.Width/1.6
+                X: =imgLogoBankScreen.Width+imgLogoBankScreen.X
                 ZIndex: =8
 
     Group3_1 As group:

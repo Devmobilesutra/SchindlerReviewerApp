@@ -397,8 +397,7 @@ ViewAssessment As screen:
                         ZIndex: =8
 
                     "Gallery5_6 As gallery.'BrowseLayout_Flexible_SocialFeed_ver4.0'":
-                        Height: |
-                            =CountRows(Gallery5_6.AllItems)*(Gallery5_6.TemplateHeight)
+                        Height: =CountRows(Gallery5_6.AllItems)*(Gallery5_6.TemplateHeight)
                         Items: |-
                             =//Filter(GC_checkpointItem_ActionItem,checkpointItem_Id.checkpointItemId.checkpointItemId=varCheckpointitemID)
                             //&& checkpointItem_Id.assessmentStatus="open")
