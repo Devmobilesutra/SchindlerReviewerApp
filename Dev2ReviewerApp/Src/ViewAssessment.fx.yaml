@@ -282,7 +282,7 @@ ViewAssessment As screen:
                     Fill: |
                         =RGBA(239,239,239,1)
                     FillPortions: =0
-                    Height: =(CountRows(Gallery1_3.AllItems)*(Gallery1_3.TemplateHeight))+Gallery5_6.Height+Gallery14_3.Height
+                    Height: =(CountRows(Gallery1_3.AllItems)*(Gallery1_3.TemplateHeight+Gallery1_3.TemplatePadding))+Gallery5_6.Height+Gallery14_3.Height
                     Items: |-
                         =//Filter(checkpointItem_ActionItem, 'checkpointItem_ActionItem (Views)'.previousFindings)
                         //Filter(GC_checkpointItem_ActionItem,checkpointItem_Id.checkpointItemId.checkpointItemId=varCheckpointitemID && bankUnitId.Id=varBankUnitId &&assignmentId.startDate<>glryProject.Selected.startDate)
@@ -314,7 +314,7 @@ ViewAssessment As screen:
                     TemplatePadding: =4
                     TemplateSize: |-
                         =//900
-                        CountRows(Gallery5_6.AllItems)*Gallery5_6.TemplateHeight +CountRows(Gallery14_3.AllItems)*(Gallery14_3.TemplateHeight+Gallery14_3.TemplatePadding) +500
+                        CountRows(Gallery5_6.AllItems)*Gallery5_6.TemplateHeight +CountRows(Gallery14_3.AllItems)*(Gallery14_3.TemplateHeight+Gallery14_3.TemplatePadding) +Icon3_12.Height+Icon3_13.Height+ctnbank_16.Height+ctnbank_18.Height+ctnbank_19.Height+ctnbank_17.Height+ctnAssessmentType_6.Height+ctnbank_21.Height
                     Width: =Parent.Width
                     X: =100
                     ZIndex: =2
@@ -336,8 +336,8 @@ ViewAssessment As screen:
                             
                         Layout: =Layout.Vertical
                         ShowScrollbar: =false
-                        TemplatePadding: =6
-                        TemplateSize: =700
+                        TemplatePadding: =4
+                        TemplateSize: =600
                         Width: =Parent.Width/1.08
                         X: =10
                         Y: =Gallery5_6.Height+Gallery5_6.Y
@@ -346,14 +346,17 @@ ViewAssessment As screen:
                         Image16_2 As image:
                             BorderColor: =RGBA(0, 0, 0, 1)
                             BorderThickness: =2
-                            Height: =450
+                            Height: |-
+                                =//450
+                                Parent.TemplateHeight/1.2
                             Image: |-
                                 =//camera
                                 ThisItem.Image
                             OnSelect: =Select(Parent)
                             PaddingBottom: =5
                             PaddingTop: =5
-                            Width: =Parent.TemplateWidth/2
+                            Width: |
+                                =Parent.TemplateWidth/2
                             X: =Parent.Width/3.5
                             Y: =16
                             ZIndex: =1
@@ -375,7 +378,7 @@ ViewAssessment As screen:
                                 Parent.Width/3.5
                             Y: |-
                                 =Image16_2.Y +
-                                 Image16_2.Height+16
+                                 Image16_2.Height+10
                             ZIndex: =2
 
                     Icon3_12 As icon.HorizontalLine:
@@ -902,7 +905,22 @@ ViewAssessment As screen:
                         BorderThickness: =2
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: |-
-                            = 800 + CountRows(Gallery5_6.AllItems)*Gallery5_6.TemplateHeight +CountRows(Gallery14_3.AllItems)*Gallery14_3.TemplateHeight
+                            =//210+
+                            (CountRows(Gallery5_6.AllItems)*Gallery5_6.TemplateHeight)+(CountRows(Gallery14_3.AllItems)*Gallery14_3.TemplateHeight)+Icon3_12.Height+Icon3_13.Height+ctnbank_16.Height+ctnbank_18.Height+ctnbank_19.Height+ctnbank_17.Height+ctnAssessmentType_6.Height+ctnbank_21.Height
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
+                             
                              //If( (CountRows(Gallery14_3.AllItems)*Gallery14_3.TemplateHeight)/2=1, (CountRows(Gallery14_3.AllItems)*Gallery14_3.TemplateHeight),(CountRows(Gallery14_3.AllItems)*Gallery14_3.TemplateHeight)/2)
                             //If(CountRows(Gallery14_3.AllItems)=1,380,CountRows(Gallery14_3.AllItems)*(Gallery14_3.TemplateHeight)/2)
                             //700

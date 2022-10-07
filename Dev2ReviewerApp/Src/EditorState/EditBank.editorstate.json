@@ -1591,7 +1591,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnOkSuccessEditBank",
-      "ParentIndex": 12,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2668,7 +2668,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "cboxClientEditBank",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6335,7 +6335,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "iconInnerRectangleEditbank",
-      "ParentIndex": 4,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6487,7 +6487,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "iconInnerRectangleEditBank",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6777,7 +6777,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "iconOuterRectangleEditBank",
-      "ParentIndex": 2,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7173,7 +7173,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "imgSuccessEditBank",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8147,7 +8147,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblClientEditbank",
-      "ParentIndex": 1,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9223,7 +9223,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblGonumberEditBank",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10733,7 +10733,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblSuccessEditBank",
-      "ParentIndex": 8,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11492,7 +11492,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblunitexistEditBank",
-      "ParentIndex": 0,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12233,7 +12233,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblUpdatedSuccessEditBank",
-      "ParentIndex": 9,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12856,7 +12856,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TimerUnitEdit",
-      "ParentIndex": 3,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13205,7 +13205,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "TxtGonumberEditBank",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
