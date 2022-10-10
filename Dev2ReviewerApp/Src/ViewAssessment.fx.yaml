@@ -5,7 +5,7 @@ ViewAssessment As screen:
         Refresh(checkpointAssessment);
         Refresh(checkpointItemAssessment);
 
-    ctnMainBank_2 As groupContainer.manualLayoutContainer:
+    ctnMainBankViewAssessment As groupContainer.manualLayoutContainer:
         BorderColor: =RGBA(50, 86, 160, 1)
         Height: |
             =Parent.Height
@@ -23,7 +23,7 @@ ViewAssessment As screen:
             PaddingRight: =20
             PaddingTop: =20
             Width: =Parent.Width
-            Y: ='ctnBack&onlinestatusPS_2'.Height+'ctnBack&onlinestatusPS_2'.Y
+            Y: =ctnBackViewAssessment.Height+ctnBackViewAssessment.Y
             ZIndex: =3
 
             ctnClintName_2 As groupContainer.horizontalAutoLayoutContainer:
@@ -62,9 +62,9 @@ ViewAssessment As screen:
                             =lblProjectName.Text
                             
                             //lblBankName.Text go no
-                        Width: =Container3_19.Width/1.02
+                        Width: =ctnHeaderViewAssessment.Width/1.02
                         X: |
-                            =Container3_19.X+Container3_19.Width
+                            =ctnHeaderViewAssessment.X+ctnHeaderViewAssessment.Width
                         ZIndex: =1
 
                 ctnbank_3 As groupContainer.horizontalAutoLayoutContainer:
@@ -234,7 +234,7 @@ ViewAssessment As screen:
                         X: =lblAssessmentTypeAS_1.X+lblAssessmentTypeAS_1.Width
                         ZIndex: =2
 
-                ctnGonumberBS_2 As groupContainer.verticalAutoLayoutContainer:
+                ctnGonumberVA As groupContainer.verticalAutoLayoutContainer:
                     FillPortions: =0
                     Height: =70//Parent.Height/1.5
                     LayoutDirection: =LayoutDirection.Vertical
@@ -244,20 +244,19 @@ ViewAssessment As screen:
                     Width: =Parent.Width
                     ZIndex: =7
 
-                    lblGonumber1BS_2 As label:
-                        AlignInContainer: =AlignInContainer.Start
+                    lblGonumberVA As label:
                         Color: =referenceCSS.RActiveColor
                         Font: =referenceCSS.RFont
                         FontWeight: =FontWeight.Semibold
-                        Height: =ctnGonumberBS_2.Height
+                        Height: =ctnGonumberVA.Height
                         Size: =referenceCSS.RFontSize
                         Text: |-
                             =glryAssignmentBS.Selected.productModel & " Series Section list"
                             
                             //lblBankName.Text go no
-                        Width: =Container3_19.Width/1.02
+                        Width: =ctnHeaderViewAssessment.Width/1.02
                         X: |
-                            =Container3_19.X+Container3_19.Width
+                            =ctnHeaderViewAssessment.X+ctnHeaderViewAssessment.Width
                         ZIndex: =1
 
             ctnBankGo_2 As groupContainer.verticalAutoLayoutContainer:
@@ -265,7 +264,7 @@ ViewAssessment As screen:
                 FillPortions: =0
                 Height: |-
                     =//Parent.Height
-                    Gallery1_3.Height
+                    glryCheckpointIiemVA.Height
                     //CountRows(Gallery1_3.AllItems)*(Gallery1_3.TemplateHeight)
                     //(CountRows(Gallery1_3.AllItems)*(Gallery1_3.TemplateHeight))+Gallery5_6.Height+Gallery14_3.Height
                 LayoutDirection: =LayoutDirection.Vertical
@@ -276,13 +275,13 @@ ViewAssessment As screen:
                 Y: =ctnClintName_2.Height
                 ZIndex: =3
 
-                "Gallery1_3 As gallery.'BrowseLayout_Flexible_SocialFeed_ver4.0'":
+                "glryCheckpointIiemVA As gallery.'BrowseLayout_Flexible_SocialFeed_ver4.0'":
                     AlignInContainer: =AlignInContainer.SetByContainer
                     BorderColor: =RGBA(109, 49, 162, 1)
                     Fill: |
                         =RGBA(239,239,239,1)
                     FillPortions: =0
-                    Height: =(CountRows(Gallery1_3.AllItems)*(Gallery1_3.TemplateHeight+Gallery1_3.TemplatePadding))+Gallery5_6.Height+Gallery14_3.Height
+                    Height: =(CountRows(glryCheckpointIiemVA.AllItems)*(glryCheckpointIiemVA.TemplateHeight+glryCheckpointIiemVA.TemplatePadding))+glryActionItemsVA.Height+glryCheckpointitemimagesVA.Height
                     Items: |-
                         =//Filter(checkpointItem_ActionItem, 'checkpointItem_ActionItem (Views)'.previousFindings)
                         //Filter(GC_checkpointItem_ActionItem,checkpointItem_Id.checkpointItemId.checkpointItemId=varCheckpointitemID && bankUnitId.Id=varBankUnitId &&assignmentId.startDate<>glryProject.Selected.startDate)
@@ -314,13 +313,13 @@ ViewAssessment As screen:
                     TemplatePadding: =4
                     TemplateSize: |-
                         =//900
-                        CountRows(Gallery5_6.AllItems)*Gallery5_6.TemplateHeight +CountRows(Gallery14_3.AllItems)*(Gallery14_3.TemplateHeight+Gallery14_3.TemplatePadding) +Icon3_12.Height+Icon3_13.Height+ctnbank_16.Height+ctnbank_18.Height+ctnbank_19.Height+ctnbank_17.Height+ctnAssessmentType_6.Height+ctnbank_21.Height
+                        CountRows(glryActionItemsVA.AllItems)*glryActionItemsVA.TemplateHeight +CountRows(glryCheckpointitemimagesVA.AllItems)*(glryCheckpointitemimagesVA.TemplateHeight+glryCheckpointitemimagesVA.TemplatePadding) +iconLineVA.Height+iconlineannotationVA.Height+ctnSectionVA.Height+ctnItemVA.Height+ctnbank_19.Height+ctnbank_17.Height+ctnAssessmentType_6.Height+ctnAnnotationVA.Height
                     Width: =Parent.Width
                     X: =100
                     ZIndex: =2
 
-                    "Gallery14_3 As gallery.'BrowseLayout_Vertical_TwoTextOneImageTwoColumnVariant_ver4.0'":
-                        Height: =CountRows(Gallery14_3.AllItems)*(Gallery14_3.TemplateHeight+Gallery14_3.TemplatePadding)
+                    "glryCheckpointitemimagesVA As gallery.'BrowseLayout_Vertical_TwoTextOneImageTwoColumnVariant_ver4.0'":
+                        Height: =CountRows(glryCheckpointitemimagesVA.AllItems)*(glryCheckpointitemimagesVA.TemplateHeight+glryCheckpointitemimagesVA.TemplatePadding)
                         Items: |+
                             =//checkpointItem_Images
                             //Filter(GC_checkpointItem_ActionItem,checkpointItem_Id.checkpointItemId.checkpointItemId=ItemID && checkpointItem_Id.assessmentStatus="open")
@@ -330,7 +329,7 @@ ViewAssessment As screen:
                             Filter(checkpointItem_Images,
                                     assignmentId.Id=glryAssignmentBS.Selected.assignmentId.Id  && 
                                     bankUnitId.Id=glryAssignmentBS.Selected.bankUnitId.Id      && 
-                                     checkpointItem_Id.checkpointItemName=LblAssStatuscountBS_14.Text
+                                     checkpointItem_Id.checkpointItemName=lblItemnameVA.Text
                                   //  checkpointItem_Id.'checkpointItemAssessment (quantum_checkpointitemassessment)' =LookUp(checkpointItemAssessment,checkpointItemName =LblAssStatuscountBS_14.Text,'checkpointItemAssessment (quantum_checkpointitemassessment)')
                                      )
                             
@@ -340,10 +339,10 @@ ViewAssessment As screen:
                         TemplateSize: =600
                         Width: =Parent.Width/1.08
                         X: =10
-                        Y: =Gallery5_6.Height+Gallery5_6.Y
+                        Y: =glryActionItemsVA.Height+glryActionItemsVA.Y
                         ZIndex: =1
 
-                        Image16_2 As image:
+                        imgcheckpointitemimageVA As image:
                             BorderColor: =RGBA(0, 0, 0, 1)
                             BorderThickness: =2
                             Height: |-
@@ -361,7 +360,7 @@ ViewAssessment As screen:
                             Y: =16
                             ZIndex: =1
 
-                        Title17_4 As label:
+                        lblimageannotationVA As label:
                             AutoHeight: =true
                             Height: =Self.Size * 1.8
                             OnSelect: =Select(Parent)
@@ -377,11 +376,11 @@ ViewAssessment As screen:
                                 =//Image16_2.X/2
                                 Parent.Width/3.5
                             Y: |-
-                                =Image16_2.Y +
-                                 Image16_2.Height+10
+                                =imgcheckpointitemimageVA.Y +
+                                 imgcheckpointitemimageVA.Height+10
                             ZIndex: =2
 
-                    Icon3_12 As icon.HorizontalLine:
+                    iconLineVA As icon.HorizontalLine:
                         Color: =RGBA(204, 204, 204, 1)
                         Fill: =RGBA(204, 204, 204, 1)
                         Height: =3
@@ -392,12 +391,12 @@ ViewAssessment As screen:
                         Width: =Parent.Width/1.08 //Label22_3.Width
                         X: =20
                         Y: |-
-                            =ctnbank_18.Height+ctnbank_18.Y
+                            =ctnItemVA.Height+ctnItemVA.Y
                             //ctnAssessmentType_6.Height+ctnAssessmentType_6.Y
                         ZIndex: =8
 
-                    "Gallery5_6 As gallery.'BrowseLayout_Flexible_SocialFeed_ver4.0'":
-                        Height: =CountRows(Gallery5_6.AllItems)*(Gallery5_6.TemplateHeight)
+                    "glryActionItemsVA As gallery.'BrowseLayout_Flexible_SocialFeed_ver4.0'":
+                        Height: =CountRows(glryActionItemsVA.AllItems)*(glryActionItemsVA.TemplateHeight)
                         Items: |-
                             =//Filter(GC_checkpointItem_ActionItem,checkpointItem_Id.checkpointItemId.checkpointItemId=varCheckpointitemID)
                             //&& checkpointItem_Id.assessmentStatus="open")
@@ -407,7 +406,7 @@ ViewAssessment As screen:
                             Filter(checkpointItem_ActionItem,
                                  assignmentId.Id=glryAssignmentBS.Selected.assignmentId.Id && 
                                  bankUnitId.Id =glryAssignmentBS.Selected.bankUnitId.Id    && 
-                                 checkpointItem_Id.checkpointItemName=LblAssStatuscountBS_14.Text
+                                 checkpointItem_Id.checkpointItemName=lblItemnameVA.Text
                                 // checkpointItem_Id.'checkpointItemAssessment (quantum_checkpointitemassessment)' =LookUp(checkpointItemAssessment,checkpointItemName =LblAssStatuscountBS_14.Text,'checkpointItemAssessment (quantum_checkpointitemassessment)') 
                                  )
                             
@@ -439,10 +438,10 @@ ViewAssessment As screen:
                         TemplatePadding: =4
                         TemplateSize: =200
                         Width: =Parent.Width
-                        Y: =Icon3_13.Y + Icon3_13.Height
+                        Y: =iconlineannotationVA.Y + iconlineannotationVA.Height
                         ZIndex: =9
 
-                        Title3_4 As label:
+                        lblActionVA As label:
                             FontWeight: =FontWeight.Bold
                             Height: =Self.Size * 1.8
                             OnSelect: =Select(Parent)
@@ -459,7 +458,7 @@ ViewAssessment As screen:
                             Y: =(Self.Height / 2)
                             ZIndex: =2
 
-                        Label14_11 As label:
+                        lblActionnameVA As label:
                             AutoHeight: =true
                             Height: =30
                             OnSelect: =Select(Parent)
@@ -467,18 +466,19 @@ ViewAssessment As screen:
                             PaddingRight: =40
                             Text: =ThisItem.ActionItem_Name
                             Width: =1350
-                            Y: =Title3_4.Height+Title3_4.Y
+                            Y: =lblActionVA.Height+lblActionVA.Y
                             ZIndex: =3
 
-                        Container4_16 As groupContainer.verticalAutoLayoutContainer:
+                        ctnActionVA As groupContainer.verticalAutoLayoutContainer:
                             Height: =100
                             LayoutDirection: =LayoutDirection.Vertical
                             LayoutMode: =LayoutMode.Auto
                             Width: =Parent.Width/1.08
-                            Y: =Label14_11.Height+Label14_11.Y+10
+                            Y: =lblActionnameVA.Height+lblActionnameVA.Y+10
                             ZIndex: =4
 
-                            Container5_8 As groupContainer.horizontalAutoLayoutContainer:
+                            ctnlabelsactionVA As groupContainer.horizontalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.SetByContainer
                                 FillPortions: =0
                                 Height: =40
                                 LayoutMinHeight: =100
@@ -488,11 +488,10 @@ ViewAssessment As screen:
                                 PaddingRight: =40
                                 Width: =Parent.Width-80
                                 X: =20
-                                Y: =Container4_16.Y
+                                Y: =ctnActionVA.Y
                                 ZIndex: =1
 
-                                Label16_8 As label:
-                                    AlignInContainer: =AlignInContainer.Start
+                                lblPriorityVA As label:
                                     Font: =referenceCSS.RFont
                                     FontWeight: =FontWeight.Semibold
                                     LayoutMinWidth: =100
@@ -500,40 +499,41 @@ ViewAssessment As screen:
                                     Text: ="Priority"
                                     Width: |
                                         =If(ViewAssessment.Width>900,Parent.Width/5,120)//Parent.Width/4
-                                    X: =Container5_8.X
+                                    X: =ctnlabelsactionVA.X
                                     ZIndex: =1
 
-                                Label17_8 As label:
+                                lblOwnerVA As label:
                                     Font: =referenceCSS.RFont
                                     FontWeight: =FontWeight.Semibold
                                     LayoutMinWidth: =100
                                     Size: =referenceCSS.RLabelFontSize
                                     Text: ="Owner"
                                     Width: =If(ViewAssessment.Width>900,Parent.Width/5,120)
-                                    X: =Label16_8.X+Label16_8.Height
+                                    X: =lblPriorityVA.X+lblPriorityVA.Height
                                     ZIndex: =2
 
-                                Label18_8 As label:
+                                lblTimeEstimateVA As label:
                                     Font: =referenceCSS.RFont
                                     FontWeight: =FontWeight.Semibold
                                     LayoutMinWidth: =100
                                     Size: =referenceCSS.RLabelFontSize
                                     Text: ="Time estimate"
                                     Width: =If(ViewAssessment.Width>900,Parent.Width/5,200)
-                                    X: =Label17_8.X+Label17_8.Height
+                                    X: =lblOwnerVA.X+lblOwnerVA.Height
                                     ZIndex: =3
 
-                                Label19_8 As label:
+                                lblMaterialEstimateVA As label:
                                     Font: =referenceCSS.RFont
                                     FontWeight: =FontWeight.Semibold
                                     LayoutMinWidth: =100
                                     Size: =referenceCSS.RLabelFontSize
                                     Text: ="Material Estimate "
                                     Width: =If(ViewAssessment.Width>900,Parent.Width/5,250)
-                                    X: =Label18_8.X +Label18_8.Height
+                                    X: =lblTimeEstimateVA.X +lblTimeEstimateVA.Height
                                     ZIndex: =4
 
-                            Container5_9 As groupContainer.horizontalAutoLayoutContainer:
+                            ctnValueactionVA As groupContainer.horizontalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.SetByContainer
                                 FillPortions: =0
                                 Height: =50
                                 LayoutMinHeight: =100
@@ -543,10 +543,10 @@ ViewAssessment As screen:
                                 PaddingRight: =40
                                 Width: =Parent.Width - 80
                                 X: =20
-                                Y: =Container5_8.Y+Container5_8.Height
+                                Y: =ctnlabelsactionVA.Y+ctnlabelsactionVA.Height
                                 ZIndex: =2
 
-                                Label16_9 As label:
+                                lblPriorityvalueVA As label:
                                     Font: =referenceCSS.RFont
                                     Size: =referenceCSS.RLabelFontSize
                                     Text: |-
@@ -555,7 +555,7 @@ ViewAssessment As screen:
                                     Width: =If(ViewAssessment.Width>900,Parent.Width/5,120)
                                     ZIndex: =1
 
-                                Label17_9 As label:
+                                lblOwnervalueVA As label:
                                     Font: =referenceCSS.RFont
                                     Size: =referenceCSS.RLabelFontSize
                                     Text: |-
@@ -564,7 +564,7 @@ ViewAssessment As screen:
                                     Width: =If(ViewAssessment.Width>900,Parent.Width/5,120)
                                     ZIndex: =2
 
-                                Label18_9 As label:
+                                lblTimeestimatevalueVA As label:
                                     Font: =referenceCSS.RFont
                                     Size: =referenceCSS.RLabelFontSize
                                     Text: |-
@@ -573,7 +573,7 @@ ViewAssessment As screen:
                                     Width: =If(ViewAssessment.Width>900,Parent.Width/5,200)
                                     ZIndex: =3
 
-                                Label19_9 As label:
+                                lblMaterialestimatevalueVA As label:
                                     Font: =referenceCSS.RFont
                                     Size: =referenceCSS.RLabelFontSize
                                     Text: |-
@@ -582,7 +582,7 @@ ViewAssessment As screen:
                                     Width: =If(ViewAssessment.Width>900,Parent.Width/5,250)
                                     ZIndex: =4
 
-                        Icon3_11 As icon.HorizontalLine:
+                        iconlineActionVA As icon.HorizontalLine:
                             Color: =RGBA(204, 204, 204, 1)
                             Fill: =RGBA(204, 204, 204, 1)
                             Height: =3
@@ -590,10 +590,10 @@ ViewAssessment As screen:
                             OnSelect: =Select(Parent)
                             Width: =Parent.Width/1.08
                             X: =20
-                            Y: =Container4_16.Y+Container4_16.Height
+                            Y: =ctnActionVA.Y+ctnActionVA.Height
                             ZIndex: =5
 
-                    Button2_5 As button:
+                    btnActionVA As button:
                         Fill: =RGBA(54, 176, 75, 1)
                         Font: =referenceCSS.RFont
                         HoverColor: =Self.Color
@@ -611,7 +611,7 @@ ViewAssessment As screen:
                         Y: =728
                         ZIndex: =11
 
-                    Icon3_13 As icon.HorizontalLine:
+                    iconlineannotationVA As icon.HorizontalLine:
                         Color: =RGBA(204, 204, 204, 1)
                         Fill: =RGBA(204, 204, 204, 1)
                         Height: =3
@@ -622,10 +622,10 @@ ViewAssessment As screen:
                         X: =20
                         Y: |-
                             =//Button2_5.Height+Button2_5.Y+10
-                            ctnbank_21.Y+lblAssStatusBS_21.Height+Label22_4.Height+10
+                            ctnAnnotationVA.Y+lblAnnotationVA.Height+lblItemAnnotationVA.Height+10
                         ZIndex: =12
 
-                    ctnbank_16 As groupContainer.horizontalAutoLayoutContainer:
+                    ctnSectionVA As groupContainer.horizontalAutoLayoutContainer:
                         Height: =40//Parent.Height/2.5
                         LayoutAlignItems: =LayoutAlignItems.Center
                         LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
@@ -636,7 +636,7 @@ ViewAssessment As screen:
                         Y: =Parent.Y
                         ZIndex: =13
 
-                        lblAssStatusBS_16 As label:
+                        lblSectionVA As label:
                             Font: =globalcss.fontRobotoR
                             FontWeight: =FontWeight.Bold
                             Height: =Parent.Height
@@ -646,7 +646,7 @@ ViewAssessment As screen:
                             Text: ="Section "
                             ZIndex: =3
 
-                        LblAssStatuscountBS_12 As label:
+                        lblSectionNameVA As label:
                             Color: =referenceCSS.RColorBlack
                             FillPortions: =1
                             Font: =globalcss.fontRobotoR
@@ -656,10 +656,10 @@ ViewAssessment As screen:
                                 //LookUp(sectionAssessment,'sectionAssessment (quantum_sectionassessment)'=ThisItem.section_Id.'sectionAssessment (quantum_sectionassessment)',sectionName)
                                 ThisItem.section_Id.sectionName
                             Width: =Parent.Width/2.5
-                            X: =lblAssStatusBS_16.X+lblAssStatusBS_16.Width
+                            X: =lblSectionVA.X+lblSectionVA.Width
                             ZIndex: =4
 
-                    ctnbank_18 As groupContainer.horizontalAutoLayoutContainer:
+                    ctnItemVA As groupContainer.horizontalAutoLayoutContainer:
                         Height: =40//Parent.Height/2.5
                         LayoutAlignItems: =LayoutAlignItems.Center
                         LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
@@ -670,7 +670,7 @@ ViewAssessment As screen:
                         Y: =ctnbank_17.Height+ctnbank_17.Y
                         ZIndex: =14
 
-                        lblAssStatusBS_18 As label:
+                        lblItemVA As label:
                             Font: =globalcss.fontRobotoR
                             FontWeight: =FontWeight.Bold
                             Height: =Parent.Height
@@ -679,7 +679,7 @@ ViewAssessment As screen:
                             Text: ="Item "
                             ZIndex: =3
 
-                        LblAssStatuscountBS_14 As label:
+                        lblItemnameVA As label:
                             Color: =referenceCSS.RColorBlack
                             FillPortions: =1
                             Font: =globalcss.fontRobotoR
@@ -698,7 +698,7 @@ ViewAssessment As screen:
                         Width: =1308
                         Y: |-
                             =//ctnbank_18.Y+ctnbank_18.Height
-                            Icon3_12.Y+Icon3_12.Height
+                            iconLineVA.Y+iconLineVA.Height
                         ZIndex: =15
 
                         lblAssStatusBS_19 As label:
@@ -719,7 +719,7 @@ ViewAssessment As screen:
                         PaddingLeft: =20
                         PaddingRight: =40
                         Width: =Parent.Width - 150
-                        Y: =ctnbank_16.Y+ctnbank_16.Height
+                        Y: =ctnSectionVA.Y+ctnSectionVA.Height
                         ZIndex: =16
 
                         lblAssStatusBS_17 As label:
@@ -863,7 +863,7 @@ ViewAssessment As screen:
                                 Width: =Parent.Width
                                 ZIndex: =2
 
-                    ctnbank_21 As groupContainer.horizontalAutoLayoutContainer:
+                    ctnAnnotationVA As groupContainer.horizontalAutoLayoutContainer:
                         Height: =150
                         LayoutDirection: =LayoutDirection.Vertical
                         LayoutMode: =LayoutMode.Auto
@@ -875,7 +875,7 @@ ViewAssessment As screen:
                             ctnbank_19.Height+ctnbank_19.Y
                         ZIndex: =18
 
-                        lblAssStatusBS_21 As label:
+                        lblAnnotationVA As label:
                             Font: =globalcss.fontRobotoR
                             FontWeight: =FontWeight.Bold
                             PaddingLeft: =0
@@ -884,7 +884,7 @@ ViewAssessment As screen:
                             Width: =220
                             ZIndex: =3
 
-                        Label22_4 As label:
+                        lblItemAnnotationVA As label:
                             AutoHeight: =true
                             Font: =referenceCSS.RFont
                             Height: =30
@@ -896,16 +896,16 @@ ViewAssessment As screen:
                                 ThisItem.checkpointItem_annotation
                             Width: =Parent.Width/1.08
                             X: =40
-                            Y: =lblAssStatusBS_21.Height+lblAssStatusBS_21.Y
+                            Y: =lblAnnotationVA.Height+lblAnnotationVA.Y
                             ZIndex: =5
 
-                    Rectangle2 As rectangle:
+                    iconglrybroderVA As rectangle:
                         BorderColor: =RGBA(255, 0, 0, 1)
                         BorderThickness: =2
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: |-
                             =//210+
-                            (CountRows(Gallery5_6.AllItems)*Gallery5_6.TemplateHeight)+(CountRows(Gallery14_3.AllItems)*Gallery14_3.TemplateHeight)+Icon3_12.Height+Button2_5.Height+Icon3_13.Height+ctnbank_16.Height+ctnbank_18.Height+ctnbank_19.Height+ctnbank_17.Height+ctnAssessmentType_6.Height+ctnbank_21.Height
+                            (CountRows(glryActionItemsVA.AllItems)*glryActionItemsVA.TemplateHeight)+(CountRows(glryCheckpointitemimagesVA.AllItems)*glryCheckpointitemimagesVA.TemplateHeight)+iconLineVA.Height+btnActionVA.Height+iconlineannotationVA.Height+ctnSectionVA.Height+ctnItemVA.Height+ctnbank_19.Height+ctnbank_17.Height+ctnAssessmentType_6.Height+ctnAnnotationVA.Height
                              
                              
                              
@@ -926,7 +926,7 @@ ViewAssessment As screen:
                         Width: =Parent.Width-20
                         ZIndex: =19
 
-                    Button15 As button:
+                    btnCheckpointitemCommentVA As button:
                         BorderThickness: =0
                         Fill: =referenceCSS.RActiveColor
                         FocusedBorderThickness: =
@@ -945,11 +945,11 @@ ViewAssessment As screen:
                         Size: =referenceCSS.RInputFontSize
                         Text: ="Comment"
                         Width: =120
-                        X: =ctnbank_18.X+ctnbank_18.Width
-                        Y: =ctnbank_18.Y+5
+                        X: =ctnItemVA.X+ctnItemVA.Width
+                        Y: =ctnItemVA.Y+5
                         ZIndex: =20
 
-                    Button15_1 As button:
+                    btnCheckointCommentVA As button:
                         BorderThickness: =0
                         Fill: =referenceCSS.RActiveColor
                         FocusedBorderThickness: =
@@ -971,7 +971,7 @@ ViewAssessment As screen:
                         Y: =ctnbank_17.Y+5
                         ZIndex: =21
 
-                    Button15_2 As button:
+                    btnSectionCommentVA As button:
                         BorderThickness: =0
                         Fill: =referenceCSS.RActiveColor
                         FocusedBorderThickness: =
@@ -989,8 +989,8 @@ ViewAssessment As screen:
                         Size: =referenceCSS.RInputFontSize
                         Text: ="Comment"
                         Width: =120
-                        X: =ctnbank_16.X+ctnbank_16.Width
-                        Y: =ctnbank_16.Y+5
+                        X: =ctnSectionVA.X+ctnSectionVA.Width
+                        Y: =ctnSectionVA.Y+5
                         ZIndex: =22
 
             Container13 As groupContainer.horizontalAutoLayoutContainer:
@@ -1001,15 +1001,15 @@ ViewAssessment As screen:
                 Y: =ctnBankGo_2.Height+ctnBankGo_2.Y 
                 ZIndex: =4
 
-        "'ctnBack&onlinestatusPS_2' As groupContainer.verticalAutoLayoutContainer":
-            Height: =Container3_19.Height+Container3_19.Y
+        ctnBackViewAssessment As groupContainer.verticalAutoLayoutContainer:
+            Height: =ctnHeaderViewAssessment.Height+ctnHeaderViewAssessment.Y
             LayoutMode: =LayoutMode.Auto
             PaddingBottom: =5
             Width: =Parent.Width
-            Y: =Container3_19.Height+Container3_19.Y
+            Y: =ctnHeaderViewAssessment.Height+ctnHeaderViewAssessment.Y
             ZIndex: =5
 
-            ctnBack_4 As groupContainer.verticalAutoLayoutContainer:
+            ctnBackVA As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =80
@@ -1023,10 +1023,10 @@ ViewAssessment As screen:
                 PaddingLeft: =40
                 Visible: =true//RoughWork3.Size>2
                 Width: =Parent.Width/2
-                Y: =Container3_19.Y+Container3_19.Height
+                Y: =ctnHeaderViewAssessment.Y+ctnHeaderViewAssessment.Height
                 ZIndex: =1
 
-                Button1_17 As button:
+                BtnBackVA As button:
                     BorderColor: =referenceCSS.RActiveColor
                     Color: =referenceCSS.RColorBlack
                     Fill: =RGBA(255, 255, 255, 1)
@@ -1043,39 +1043,16 @@ ViewAssessment As screen:
                     RadiusTopLeft: =0
                     RadiusTopRight: =0
                     Text: = "back"
-                    Width: ='ctnBack&onlinestatusPS_2'.Width/6
+                    Width: =ctnBackViewAssessment.Width/6
                     ZIndex: =2
 
-            ctnOnlineStatus_4 As groupContainer.verticalAutoLayoutContainer:
-                AlignInContainer: =AlignInContainer.SetByContainer
-                FillPortions: =0
-                Height: =80
-                LayoutAlignItems: =LayoutAlignItems.End
-                LayoutDirection: =LayoutDirection.Vertical
-                LayoutGap: =10
-                LayoutJustifyContent: =LayoutJustifyContent.Center
-                LayoutMinHeight: =100
-                LayoutMinWidth: =250
-                LayoutMode: =LayoutMode.Auto
-                LayoutWrap: =true
-                PaddingLeft: =40
-                PaddingRight: =40
-                Visible: =false
-                Width: =Parent.Width/2
-                Y: =Container3_19.Y+Container3_19.Height
-                ZIndex: =2
-
-                "'CmpOnline/offlineStatus_4' As Component1_11":
-                    LayoutMinHeight: =640
-                    LayoutMinWidth: =640
-
-        Container3_19 As groupContainer.manualLayoutContainer:
+        ctnHeaderViewAssessment As groupContainer.manualLayoutContainer:
             Fill: =Header.HeaderFill
             Height: =80
             Width: =Parent.Width
             ZIndex: =6
 
-            Image1_25 As image:
+            imgLogoVA As image:
                 Fill: =RGBA(255, 255, 255, 1)
                 Height: =Parent.Height
                 Image: =Schindler_logo_PNG1
@@ -1083,10 +1060,10 @@ ViewAssessment As screen:
                 PaddingLeft: =2
                 PaddingRight: =1
                 PaddingTop: =5
-                Width: =Container3_19.Width/10
+                Width: =ctnHeaderViewAssessment.Width/10
                 ZIndex: =1
 
-            Image2_31 As image:
+            imgUserprofileVA As image:
                 Fill: =RGBA(253, 222, 207, 1)
                 Height: =50
                 Image: =userdata.userImage
@@ -1095,22 +1072,11 @@ ViewAssessment As screen:
                 RadiusTopLeft: =91
                 RadiusTopRight: =91
                 Width: =50
-                X: =Label3_20.X+Label3_20.Width
+                X: =lblHeaderVA.X+lblHeaderVA.Width
                 Y: =16
                 ZIndex: =2
 
-            Icon1_20 As icon.Bell:
-                Color: =RGBA(255, 255, 0, 1)
-                Height: =Parent.Height/2
-                Icon: =Icon.Bell
-                OnSelect: =Print()
-                Visible: =false
-                Width: =Parent.Width/28
-                X: =Label1_26.X+Label1_26.Width+10
-                Y: =Parent.Height/4
-                ZIndex: =5
-
-            Label1_26 As label:
+            lblUsernameVA As label:
                 Align: =Align.Center
                 Color: =Header.HeaderColor
                 Font: =Header.HeaderFont
@@ -1121,11 +1087,11 @@ ViewAssessment As screen:
                     =//"SCHD0023"
                     //LookUp(ReviewerAD,mail=userdata.userEmail,displayName)
                     userdata.userdisplayName
-                Width: =Container3_19.Width/8
-                X: =Image2_31.X+ Image2_31.Height
+                Width: =ctnHeaderViewAssessment.Width/8
+                X: =imgUserprofileVA.X+ imgUserprofileVA.Height
                 ZIndex: =6
 
-            Label3_20 As label:
+            lblHeaderVA As label:
                 Align: =Align.Center
                 Color: =Header.HeaderColor
                 Font: =Header.HeaderFont
@@ -1133,8 +1099,8 @@ ViewAssessment As screen:
                 Height: =Parent.Height
                 Size: =Header.HeaderFontSize
                 Text: ="Banks"
-                Width: =Container3_19.Width/1.6
-                X: =Image1_25.Width+Image1_25.X
+                Width: =ctnHeaderViewAssessment.Width/1.6
+                X: =imgLogoVA.Width+imgLogoVA.X
                 ZIndex: =8
 
     Group1 As group:
@@ -1229,16 +1195,16 @@ ViewAssessment As screen:
                 = If(
                     //For Section Comment
                     varSectionComment = true,
-                   Set(lo, UpdateIf(sectionAssessment,'sectionAssessment (quantum_sectionassessment)'=Gallery1_3.Selected.section_Id.'sectionAssessment (quantum_sectionassessment)' && assignmentId.Id=glryProject.Selected.Id && bankUnitId.Id=Gallery1_3.Selected.bankUnitId.Id,{sectionComment:TextInput2.Text}));
-                WellnessAssessmentComment.Run(glryProject.Selected.assessorEmail,Gallery1_3.Selected.bankUnitId.unitNumber,glryProject.Selected.reviewerName,Gallery1_3.Selected.section_Id.sectionName);,
+                   Set(lo, UpdateIf(sectionAssessment,'sectionAssessment (quantum_sectionassessment)'=glryCheckpointIiemVA.Selected.section_Id.'sectionAssessment (quantum_sectionassessment)' && assignmentId.Id=glryProject.Selected.Id && bankUnitId.Id=glryCheckpointIiemVA.Selected.bankUnitId.Id,{sectionComment:TextInput2.Text}));
+                WellnessAssessmentComment.Run(glryProject.Selected.assessorEmail,glryCheckpointIiemVA.Selected.bankUnitId.unitNumber,glryProject.Selected.reviewerName,glryCheckpointIiemVA.Selected.section_Id.sectionName);,
                     //For Checkpoint Comment
                     varCheckpointComment = true,
-                    Set(lo,UpdateIf(checkpointAssessment,checkpointAssessment = Gallery1_3.Selected.checkpointAssessment_Id.checkpointAssessment && assignmentId.Id=glryProject.Selected.Id && bankUnitId.Id=Gallery1_3.Selected.bankUnitId.Id  , {checkpointComment: TextInput2.Text}));
-                WellnessAssessmentComment.Run(glryProject.Selected.assessorEmail,Gallery1_3.Selected.bankUnitId.unitNumber,glryProject.Selected.reviewerName,Gallery1_3.Selected.section_Id.sectionName);,
+                    Set(lo,UpdateIf(checkpointAssessment,checkpointAssessment = glryCheckpointIiemVA.Selected.checkpointAssessment_Id.checkpointAssessment && assignmentId.Id=glryProject.Selected.Id && bankUnitId.Id=glryCheckpointIiemVA.Selected.bankUnitId.Id  , {checkpointComment: TextInput2.Text}));
+                WellnessAssessmentComment.Run(glryProject.Selected.assessorEmail,glryCheckpointIiemVA.Selected.bankUnitId.unitNumber,glryProject.Selected.reviewerName,glryCheckpointIiemVA.Selected.section_Id.sectionName);,
                     
                     varItemComment = true,
-                   Set(lo, UpdateIf(checkpointItemAssessment,'checkpointItemAssessment (quantum_checkpointitemassessment)'= Gallery1_3.Selected.'checkpointItemAssessment (quantum_checkpointitemassessment)' && assignmentId.Id=glryProject.Selected.Id && bankUnitId.Id=Gallery1_3.Selected.bankUnitId.Id,{checkpointItemComment:TextInput2.Text}));
-                WellnessAssessmentComment.Run(glryProject.Selected.assessorEmail,Gallery1_3.Selected.bankUnitId.unitNumber,glryProject.Selected.reviewerName,Gallery1_3.Selected.section_Id.sectionName);
+                   Set(lo, UpdateIf(checkpointItemAssessment,'checkpointItemAssessment (quantum_checkpointitemassessment)'= glryCheckpointIiemVA.Selected.'checkpointItemAssessment (quantum_checkpointitemassessment)' && assignmentId.Id=glryProject.Selected.Id && bankUnitId.Id=glryCheckpointIiemVA.Selected.bankUnitId.Id,{checkpointItemComment:TextInput2.Text}));
+                WellnessAssessmentComment.Run(glryProject.Selected.assessorEmail,glryCheckpointIiemVA.Selected.bankUnitId.unitNumber,glryProject.Selected.reviewerName,glryCheckpointIiemVA.Selected.section_Id.sectionName);
                 
                 
                 );
@@ -1271,13 +1237,13 @@ ViewAssessment As screen:
                     varSectionComment = true,
                 
                    // LookUp(sectionAssessment,sectionId.sectionId=varCommentId.sectionId.sectionId,sectionName)
-                   Gallery1_3.Selected.section_Id.sectionComment
+                   glryCheckpointIiemVA.Selected.section_Id.sectionComment
                     ,
                     varCheckpointComment = true,
-                    Gallery1_3.Selected.checkpointAssessment_Id.checkpointComment
+                    glryCheckpointIiemVA.Selected.checkpointAssessment_Id.checkpointComment
                     ,
                     varItemComment = true,
-                    Gallery1_3.Selected.checkpointItemComment
+                    glryCheckpointIiemVA.Selected.checkpointItemComment
                 )
             FocusedBorderColor: =RGBA(179, 179, 179, 1)
             Height: =Rectangle6.Height
