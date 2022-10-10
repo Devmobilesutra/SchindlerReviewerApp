@@ -94,12 +94,12 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnBankScreen.glryAssignmentBS.Items"
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnBankScreen.glryAssignmentBS.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnBankScreen.glryAssignmentBS.Items",
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnBankScreen.glryAssignmentBS.Items",
                   "relativeAddress": 0
                 },
                 "region": {
@@ -113,7 +113,7 @@
               "properties": {
                 "member": "Items",
                 "module": "BankScreen",
-                "type": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnBankScreen.glryAssignmentBS"
+                "type": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnBankScreen.glryAssignmentBS"
               }
             }
           ],
@@ -5924,19 +5924,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgViewActiveBS.AccessibleLabel"
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgViewActiveBS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgViewActiveBS.AccessibleLabel",
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgViewActiveBS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "BankScreen",
-                "type": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgViewActiveBS"
+                "type": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgViewActiveBS"
               }
             }
           ],
@@ -5954,19 +5954,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgViewActiveBS.TabIndex"
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgViewActiveBS.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgViewActiveBS.TabIndex",
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgViewActiveBS.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "BankScreen",
-                "type": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgViewActiveBS"
+                "type": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgViewActiveBS"
               }
             }
           ],
@@ -5984,19 +5984,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgCompletedBS.AccessibleLabel"
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgCompletedBS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgCompletedBS.AccessibleLabel",
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgCompletedBS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "BankScreen",
-                "type": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgCompletedBS"
+                "type": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgCompletedBS"
               }
             }
           ],
@@ -6014,19 +6014,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgCompletedBS.TabIndex"
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgCompletedBS.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgCompletedBS.TabIndex",
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgCompletedBS.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "BankScreen",
-                "type": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgCompletedBS"
+                "type": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgCompletedBS"
               }
             }
           ],
@@ -6044,19 +6044,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgSettingActiveBS.AccessibleLabel"
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgSettingActiveBS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgSettingActiveBS.AccessibleLabel",
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgSettingActiveBS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "BankScreen",
-                "type": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgSettingActiveBS"
+                "type": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgSettingActiveBS"
               }
             }
           ],
@@ -6074,19 +6074,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgSettingActiveBS.TabIndex"
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgSettingActiveBS.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgSettingActiveBS.TabIndex",
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgSettingActiveBS.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "BankScreen",
-                "type": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgSettingActiveBS"
+                "type": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgSettingActiveBS"
               }
             }
           ],
@@ -6104,19 +6104,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnBankScreen.glryAssignmentBS.AccessibleLabel"
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnBankScreen.glryAssignmentBS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnBankScreen.glryAssignmentBS.AccessibleLabel",
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnBankScreen.glryAssignmentBS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "BankScreen",
-                "type": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnBankScreen.glryAssignmentBS"
+                "type": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnBankScreen.glryAssignmentBS"
               }
             }
           ],
@@ -6134,19 +6134,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnBankScreen.glryAssignmentBS.TabIndex"
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnBankScreen.glryAssignmentBS.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnBankScreen.glryAssignmentBS.TabIndex",
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnBankScreen.glryAssignmentBS.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "BankScreen",
-                "type": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnBankScreen.glryAssignmentBS"
+                "type": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnBankScreen.glryAssignmentBS"
               }
             }
           ],
@@ -11142,19 +11142,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnGonumberBS.lblGonumber1BS.Text"
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnGonumberBS.lblGonumber1BS.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnGonumberBS.lblGonumber1BS.Text",
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnGonumberBS.lblGonumber1BS.Text",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Text",
                 "module": "BankScreen",
-                "type": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnGonumberBS.lblGonumber1BS"
+                "type": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnGonumberBS.lblGonumber1BS"
               }
             }
           ],
@@ -11172,19 +11172,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnAssessmentBS.LblAssessmentnameBS.Text"
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnAssessmentBS.LblAssessmentnameBS.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnAssessmentBS.LblAssessmentnameBS.Text",
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnAssessmentBS.LblAssessmentnameBS.Text",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Text",
                 "module": "BankScreen",
-                "type": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnAssessmentBS.LblAssessmentnameBS"
+                "type": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnAssessmentBS.LblAssessmentnameBS"
               }
             }
           ],
@@ -11202,19 +11202,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgViewActiveBS.Image"
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgViewActiveBS.Image"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgViewActiveBS.Image",
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgViewActiveBS.Image",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Image",
                 "module": "BankScreen",
-                "type": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgViewActiveBS"
+                "type": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgViewActiveBS"
               }
             }
           ],
@@ -11232,19 +11232,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgViewActiveBS.DisplayMode"
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgViewActiveBS.DisplayMode"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgViewActiveBS.DisplayMode",
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgViewActiveBS.DisplayMode",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "DisplayMode",
                 "module": "BankScreen",
-                "type": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgViewActiveBS"
+                "type": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgViewActiveBS"
               }
             }
           ],
@@ -11262,19 +11262,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgCompletedBS.Image"
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgCompletedBS.Image"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgCompletedBS.Image",
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgCompletedBS.Image",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Image",
                 "module": "BankScreen",
-                "type": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgCompletedBS"
+                "type": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgCompletedBS"
               }
             }
           ],
@@ -11292,19 +11292,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgCompletedBS.DisplayMode"
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgCompletedBS.DisplayMode"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgCompletedBS.DisplayMode",
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgCompletedBS.DisplayMode",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "DisplayMode",
                 "module": "BankScreen",
-                "type": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgCompletedBS"
+                "type": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgCompletedBS"
               }
             }
           ],
@@ -11322,19 +11322,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgSettingActiveBS.Image"
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgSettingActiveBS.Image"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgSettingActiveBS.Image",
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgSettingActiveBS.Image",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Image",
                 "module": "BankScreen",
-                "type": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgSettingActiveBS"
+                "type": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgSettingActiveBS"
               }
             }
           ],
@@ -11352,19 +11352,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgSettingActiveBS.DisplayMode"
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgSettingActiveBS.DisplayMode"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgSettingActiveBS.DisplayMode",
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgSettingActiveBS.DisplayMode",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "DisplayMode",
                 "module": "BankScreen",
-                "type": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgSettingActiveBS"
+                "type": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgSettingActiveBS"
               }
             }
           ],
@@ -11382,19 +11382,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.btnDistributeReportBS.DisplayMode"
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.btnDistributeReportBS.DisplayMode"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.btnDistributeReportBS.DisplayMode",
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.btnDistributeReportBS.DisplayMode",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "DisplayMode",
                 "module": "BankScreen",
-                "type": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.btnDistributeReportBS"
+                "type": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.btnDistributeReportBS"
               }
             }
           ],
@@ -11412,19 +11412,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.lblAssStatusBS.Text"
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.lblAssStatusBS.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.lblAssStatusBS.Text",
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.lblAssStatusBS.Text",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Text",
                 "module": "BankScreen",
-                "type": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.lblAssStatusBS"
+                "type": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.lblAssStatusBS"
               }
             }
           ],
@@ -11442,19 +11442,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.lblCommentSentBS.Text"
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.lblCommentSentBS.Text"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.lblCommentSentBS.Text",
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.lblCommentSentBS.Text",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Text",
                 "module": "BankScreen",
-                "type": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.lblCommentSentBS"
+                "type": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.lblCommentSentBS"
               }
             }
           ],
@@ -11472,19 +11472,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.btnViewreportBS.DisplayMode"
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.btnViewreportBS.DisplayMode"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.btnViewreportBS.DisplayMode",
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.btnViewreportBS.DisplayMode",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "DisplayMode",
                 "module": "BankScreen",
-                "type": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.btnViewreportBS"
+                "type": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.btnViewreportBS"
               }
             }
           ],
@@ -11502,19 +11502,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.btnActionTrackerBS.DisplayMode"
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.btnActionTrackerBS.DisplayMode"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.btnActionTrackerBS.DisplayMode",
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.btnActionTrackerBS.DisplayMode",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "DisplayMode",
                 "module": "BankScreen",
-                "type": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.btnActionTrackerBS"
+                "type": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.btnActionTrackerBS"
               }
             }
           ],
@@ -11532,19 +11532,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnBankScreen.glryAssignmentBS.Items"
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnBankScreen.glryAssignmentBS.Items"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnBankScreen.glryAssignmentBS.Items",
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnBankScreen.glryAssignmentBS.Items",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Items",
                 "module": "BankScreen",
-                "type": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnBankScreen.glryAssignmentBS"
+                "type": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnBankScreen.glryAssignmentBS"
               }
             }
           ],
@@ -11562,19 +11562,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnBankScreen.glryAssignmentBS.btnStartAssessmentBS.DisplayMode"
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnBankScreen.glryAssignmentBS.btnStartAssessmentBS.DisplayMode"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnBankScreen.glryAssignmentBS.btnStartAssessmentBS.DisplayMode",
+                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnBankScreen.glryAssignmentBS.btnStartAssessmentBS.DisplayMode",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "DisplayMode",
                 "module": "BankScreen",
-                "type": "BankScreen.ctnMainBank_1.ctnMiddleBS.ctnBankScreen.glryAssignmentBS.btnStartAssessmentBS"
+                "type": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnBankScreen.glryAssignmentBS.btnStartAssessmentBS"
               }
             }
           ],

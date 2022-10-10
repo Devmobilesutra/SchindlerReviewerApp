@@ -1,7 +1,7 @@
 BankScreen As screen:
     OnVisible: =Set(P,false)
 
-    ctnMainBank_1 As groupContainer.manualLayoutContainer:
+    ctnMainBankBS As groupContainer.manualLayoutContainer:
         Height: =Parent.Height
         Width: =Parent.Width
         ZIndex: =1
