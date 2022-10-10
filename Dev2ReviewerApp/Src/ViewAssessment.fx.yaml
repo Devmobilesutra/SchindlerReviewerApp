@@ -313,7 +313,7 @@ ViewAssessment As screen:
                     TemplatePadding: =4
                     TemplateSize: |-
                         =//900
-                        CountRows(glryActionItemsVA.AllItems)*glryActionItemsVA.TemplateHeight +CountRows(glryCheckpointitemimagesVA.AllItems)*(glryCheckpointitemimagesVA.TemplateHeight+glryCheckpointitemimagesVA.TemplatePadding) +iconLineVA.Height+iconlineannotationVA.Height+ctnSectionVA.Height+ctnItemVA.Height+ctnbank_19.Height+ctnbank_17.Height+ctnAssessmentType_6.Height+ctnAnnotationVA.Height
+                        CountRows(glryActionItemsVA.AllItems)*glryActionItemsVA.TemplateHeight +CountRows(glryCheckpointitemimagesVA.AllItems)*(glryCheckpointitemimagesVA.TemplateHeight+glryCheckpointitemimagesVA.TemplatePadding) +iconLineVA.Height+iconlineannotationVA.Height+ctnSectionVA.Height+ctnItemVA.Height+ctnfindingVA.Height+ctnCheckpointVA.Height+ctnAssessmentDetailsVA.Height+ctnAnnotationVA.Height
                     Width: =Parent.Width
                     X: =100
                     ZIndex: =2
@@ -667,7 +667,7 @@ ViewAssessment As screen:
                         PaddingLeft: =20
                         PaddingRight: =40
                         Width: =Parent.Width-150
-                        Y: =ctnbank_17.Height+ctnbank_17.Y
+                        Y: =ctnCheckpointVA.Height+ctnCheckpointVA.Y
                         ZIndex: =14
 
                         lblItemVA As label:
@@ -690,7 +690,7 @@ ViewAssessment As screen:
                             Width: =Parent.Width-400
                             ZIndex: =4
 
-                    ctnbank_19 As groupContainer.horizontalAutoLayoutContainer:
+                    ctnfindingVA As groupContainer.horizontalAutoLayoutContainer:
                         Height: =40//Parent.Height/2.5
                         LayoutMode: =LayoutMode.Auto
                         PaddingLeft: =20
@@ -701,7 +701,7 @@ ViewAssessment As screen:
                             iconLineVA.Y+iconLineVA.Height
                         ZIndex: =15
 
-                        lblAssStatusBS_19 As label:
+                        lblfindingVA As label:
                             Font: =globalcss.fontRobotoR
                             Height: =Parent.Height
                             LayoutMinWidth: =170
@@ -711,7 +711,7 @@ ViewAssessment As screen:
                             Width: =500
                             ZIndex: =3
 
-                    ctnbank_17 As groupContainer.horizontalAutoLayoutContainer:
+                    ctnCheckpointVA As groupContainer.horizontalAutoLayoutContainer:
                         Height: =40//Parent.Height/2.5
                         LayoutAlignItems: =LayoutAlignItems.Center
                         LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
@@ -722,7 +722,7 @@ ViewAssessment As screen:
                         Y: =ctnSectionVA.Y+ctnSectionVA.Height
                         ZIndex: =16
 
-                        lblAssStatusBS_17 As label:
+                        lblCheckpointVA As label:
                             Font: =globalcss.fontRobotoR
                             FontWeight: =FontWeight.Bold
                             Height: =Parent.Height
@@ -732,7 +732,7 @@ ViewAssessment As screen:
                             Text: ="Checkpoint "
                             ZIndex: =3
 
-                        LblAssStatuscountBS_13 As label:
+                        lblCheckpointnameVA As label:
                             Color: =referenceCSS.RColorBlack
                             FillPortions: =1
                             Font: =globalcss.fontRobotoR
@@ -745,7 +745,7 @@ ViewAssessment As screen:
                             Width: =Parent.Width-400
                             ZIndex: =4
 
-                    ctnAssessmentType_6 As groupContainer.verticalAutoLayoutContainer:
+                    ctnAssessmentDetailsVA As groupContainer.verticalAutoLayoutContainer:
                         Height: |-
                             =//Parent.Height/4
                             100
@@ -756,8 +756,8 @@ ViewAssessment As screen:
                         Y: =//ctnbank_7.Height+ctnbank_7.Y
                         ZIndex: =17
 
-                        ctnAssessmentBy_14 As groupContainer.verticalAutoLayoutContainer:
-                            AlignInContainer: =AlignInContainer.Start
+                        ctnAssessmentTypeVA As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
                             FillPortions: =0
                             Height: =Parent.Height
                             LayoutDirection: =LayoutDirection.Vertical
@@ -765,10 +765,10 @@ ViewAssessment As screen:
                             LayoutMinWidth: =250
                             LayoutMode: =LayoutMode.Auto
                             Width: =Parent.Width/3
-                            X: =lblAssessmentByPFS_10.Width+lblAssessmentByPFS_10.X
+                            X: =lblAssessmentTypeVA.Width+lblAssessmentTypeVA.X
                             ZIndex: =5
 
-                            lblAssessmentByPFS_10 As label:
+                            lblAssessmentTypeVA As label:
                                 FontWeight: =FontWeight.Bold
                                 PaddingBottom: =8
                                 PaddingLeft: =8
@@ -780,7 +780,7 @@ ViewAssessment As screen:
                                 Width: =Parent.Width
                                 ZIndex: =1
 
-                            lblAssessorNamePFS_10 As label:
+                            lblAssessmenttypeValueVA As label:
                                 PaddingBottom: =0
                                 PaddingLeft: =8
                                 PaddingRight: =8
@@ -792,8 +792,8 @@ ViewAssessment As screen:
                                 Width: =Parent.Width
                                 ZIndex: =2
 
-                        ctnAssessmentBy_15 As groupContainer.verticalAutoLayoutContainer:
-                            AlignInContainer: =AlignInContainer.Start
+                        ctnAssessmentbyVA As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
                             FillPortions: =0
                             Height: =Parent.Height
                             LayoutDirection: =LayoutDirection.Vertical
@@ -804,7 +804,7 @@ ViewAssessment As screen:
                             X: =//lblAssessmentByPFS_4.Width+lblAssessmentByPFS_4.X
                             ZIndex: =6
 
-                            lblAssessmntTypePFS_7 As label:
+                            lblAssessmntbyVA As label:
                                 FontWeight: =FontWeight.Bold
                                 PaddingBottom: =8
                                 PaddingLeft: =8
@@ -816,7 +816,7 @@ ViewAssessment As screen:
                                 Width: =Parent.Width
                                 ZIndex: =1
 
-                            lblAssesmentTypeLPFS_7 As label:
+                            lblAssessornameVA As label:
                                 PaddingBottom: =0
                                 PaddingLeft: =8
                                 PaddingRight: =8
@@ -828,8 +828,8 @@ ViewAssessment As screen:
                                 Width: =Parent.Width
                                 ZIndex: =2
 
-                        ctnAssessmentBy_16 As groupContainer.verticalAutoLayoutContainer:
-                            AlignInContainer: =AlignInContainer.Start
+                        ctnAssessmentDateVA As groupContainer.verticalAutoLayoutContainer:
+                            AlignInContainer: =AlignInContainer.SetByContainer
                             FillPortions: =0
                             Height: =Parent.Height
                             LayoutDirection: =LayoutDirection.Vertical
@@ -837,10 +837,10 @@ ViewAssessment As screen:
                             LayoutMinWidth: =250
                             LayoutMode: =LayoutMode.Auto
                             Width: =Parent.Width/3
-                            X: =lblAssessmentByPFS_11.Width+lblAssessmentByPFS_11.X
+                            X: =lblAssessmentDateVA.Width+lblAssessmentDateVA.X
                             ZIndex: =7
 
-                            lblAssessmentByPFS_11 As label:
+                            lblAssessmentDateVA As label:
                                 FontWeight: =FontWeight.Bold
                                 PaddingBottom: =8
                                 PaddingLeft: =8
@@ -851,7 +851,7 @@ ViewAssessment As screen:
                                 Width: =Parent.Width
                                 ZIndex: =1
 
-                            lblAssessorNamePFS_11 As label:
+                            lblAssessordateVA As label:
                                 PaddingBottom: =0
                                 PaddingLeft: =8
                                 PaddingRight: =8
@@ -872,7 +872,7 @@ ViewAssessment As screen:
                         Width: =1308
                         Y: |-
                             =//Icon3_12.Y+Icon3_12.Height+10 
-                            ctnbank_19.Height+ctnbank_19.Y
+                            ctnfindingVA.Height+ctnfindingVA.Y
                         ZIndex: =18
 
                         lblAnnotationVA As label:
@@ -905,7 +905,7 @@ ViewAssessment As screen:
                         Fill: =RGBA(0, 0, 0, 0)
                         Height: |-
                             =//210+
-                            (CountRows(glryActionItemsVA.AllItems)*glryActionItemsVA.TemplateHeight)+(CountRows(glryCheckpointitemimagesVA.AllItems)*glryCheckpointitemimagesVA.TemplateHeight)+iconLineVA.Height+btnActionVA.Height+iconlineannotationVA.Height+ctnSectionVA.Height+ctnItemVA.Height+ctnbank_19.Height+ctnbank_17.Height+ctnAssessmentType_6.Height+ctnAnnotationVA.Height
+                            (CountRows(glryActionItemsVA.AllItems)*glryActionItemsVA.TemplateHeight)+(CountRows(glryCheckpointitemimagesVA.AllItems)*glryCheckpointitemimagesVA.TemplateHeight)+iconLineVA.Height+btnActionVA.Height+iconlineannotationVA.Height+ctnSectionVA.Height+ctnItemVA.Height+ctnfindingVA.Height+ctnCheckpointVA.Height+ctnAssessmentDetailsVA.Height+ctnAnnotationVA.Height
                              
                              
                              
@@ -967,8 +967,8 @@ ViewAssessment As screen:
                         Size: =referenceCSS.RInputFontSize
                         Text: ="Comment"
                         Width: =120
-                        X: =ctnbank_17.X+ctnbank_17.Width
-                        Y: =ctnbank_17.Y+5
+                        X: =ctnCheckpointVA.X+ctnCheckpointVA.Width
+                        Y: =ctnCheckpointVA.Y+5
                         ZIndex: =21
 
                     btnSectionCommentVA As button:
