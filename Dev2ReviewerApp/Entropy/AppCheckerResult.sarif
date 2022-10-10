@@ -6164,19 +6164,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.Container38_3.Icon2_5.AccessibleLabel"
+                  "fullyQualifiedName": "BankScreen.ctnDistributeReportBS.iconCancelBS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.Container38_3.Icon2_5.AccessibleLabel",
+                  "fullyQualifiedName": "BankScreen.ctnDistributeReportBS.iconCancelBS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "BankScreen",
-                "type": "BankScreen.Container38_3.Icon2_5"
+                "type": "BankScreen.ctnDistributeReportBS.iconCancelBS"
               }
             }
           ],
@@ -6194,19 +6194,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.Container38_3.Icon2_5.TabIndex"
+                  "fullyQualifiedName": "BankScreen.ctnDistributeReportBS.iconCancelBS.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.Container38_3.Icon2_5.TabIndex",
+                  "fullyQualifiedName": "BankScreen.ctnDistributeReportBS.iconCancelBS.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "BankScreen",
-                "type": "BankScreen.Container38_3.Icon2_5"
+                "type": "BankScreen.ctnDistributeReportBS.iconCancelBS"
               }
             }
           ],
@@ -6224,19 +6224,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.ComboBox6_1.AccessibleLabel"
+                  "fullyQualifiedName": "BankScreen.cboxReviewverBS.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.ComboBox6_1.AccessibleLabel",
+                  "fullyQualifiedName": "BankScreen.cboxReviewverBS.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "BankScreen",
-                "type": "BankScreen.ComboBox6_1"
+                "type": "BankScreen.cboxReviewverBS"
               }
             }
           ],
@@ -11592,19 +11592,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.btnSuccess_6.Y"
+                  "fullyQualifiedName": "BankScreen.btOkActiionItemTrackerBS.Y"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.btnSuccess_6.Y",
+                  "fullyQualifiedName": "BankScreen.btOkActiionItemTrackerBS.Y",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Y",
                 "module": "BankScreen",
-                "type": "BankScreen.btnSuccess_6"
+                "type": "BankScreen.btOkActiionItemTrackerBS"
               }
             }
           ],

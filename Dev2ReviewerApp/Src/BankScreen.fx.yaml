@@ -445,21 +445,21 @@ BankScreen As screen:
                 X: =imgLogoBankScreen.Width+imgLogoBankScreen.X
                 ZIndex: =8
 
-    Group3_1 As group:
+    grpDistributereportBS As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =9
 
-        Rectangle1_11 As rectangle:
+        iconOuterRectangleBS As rectangle:
             Fill: =RGBA(0, 0, 0, 0.29)
             Height: =Parent.Height
             Visible: =varComment1
             Width: =Parent.Width
             ZIndex: =2
 
-        Rectangle5_3 As rectangle:
+        iconInnerRectangleBS As rectangle:
             Fill: =RGBA(255, 255, 255, 1)
             Height: =300
             Visible: =varComment1
@@ -468,16 +468,16 @@ BankScreen As screen:
             Y: =(Parent.Height - Self.Height)/2
             ZIndex: =3
 
-        Container38_3 As groupContainer.horizontalAutoLayoutContainer:
+        ctnDistributeReportBS As groupContainer.horizontalAutoLayoutContainer:
             Height: =50
             LayoutMode: =LayoutMode.Auto
             Visible: =varComment1
-            Width: =Rectangle5_3.Width
-            X: =Rectangle5_3.X
-            Y: =Rectangle5_3.Y+10
+            Width: =iconInnerRectangleBS.Width
+            X: =iconInnerRectangleBS.X
+            Y: =iconInnerRectangleBS.Y+10
             ZIndex: =4
 
-            Label41_3 As label:
+            lblDistributeReportBS As label:
                 FontWeight: =FontWeight.Semibold
                 PaddingLeft: =20
                 Text: |-
@@ -489,7 +489,7 @@ BankScreen As screen:
                 Width: =Parent.Width-70
                 ZIndex: =1
 
-            Icon2_5 As icon.Cancel:
+            iconCancelBS As icon.Cancel:
                 Color: =RGBA(153, 153, 153, 1)
                 Height: =35
                 Icon: =Icon.Cancel
@@ -497,20 +497,20 @@ BankScreen As screen:
                 Width: =30
                 ZIndex: =2
 
-        Icon4_3 As icon.Add:
+        iconlineBS As icon.Add:
             Color: =RGBA(179, 179, 179, 1)
             Fill: =RGBA(179, 179, 179, 1)
             Height: =2
             Icon: =Icon.HorizontalLine
             Visible: =varComment1
-            Width: =Rectangle5_3.Width
-            X: =Rectangle5_3.X
+            Width: =iconInnerRectangleBS.Width
+            X: =iconInnerRectangleBS.X
             Y: |-
-                =ComboBox6_1.Height+ComboBox6_1.Y+30
+                =cboxReviewverBS.Height+cboxReviewverBS.Y+30
                 //Rectangle6_2.Y +Rectangle6_2.Height+10
             ZIndex: =5
 
-        Button11_5 As button:
+        btnDistributeBS As button:
             BorderThickness: =0
             Fill: =referenceCSS.RActiveColor
             FocusedBorderThickness: =
@@ -518,7 +518,7 @@ BankScreen As screen:
             OnSelect: |
                 =ClearCollect(combocollect,
                 {
-                    email:ComboBox6_1.SelectedItems
+                    email:cboxReviewverBS.SelectedItems
                 }
                 );
                 Set(bktrip, LookUp(BankTripReport,assignmentId.Id=glryProject.Selected.Id,'BankTripReport (quantum_banktripreport)'));
@@ -531,20 +531,20 @@ BankScreen As screen:
             Text: ="Distribute"
             Visible: =varComment1
             X: =(Parent.Width-Self.Width)/2
-            Y: =Icon4_3.Y+20
+            Y: =iconlineBS.Y+20
             ZIndex: =6
 
-        Label43_1 As label:
+        lblToBS As label:
             FontWeight: =FontWeight.Semibold
             Height: =30
             Text: |-
                 ="To :"
             Visible: =varComment1
             X: =(Parent.Width -Self.Width)/2.5-50
-            Y: =Container38_3.Y+Container38_3.Height +40
+            Y: =ctnDistributeReportBS.Y+ctnDistributeReportBS.Height +40
             ZIndex: =7
 
-        ComboBox6_1 As combobox:
+        cboxReviewverBS As combobox:
             BorderColor: =RGBA(0, 0, 0, 1)
             ChevronBackground: =RGBA(0, 0, 0, 0)
             ChevronFill: =RGBA(0, 0, 0, 1)
@@ -556,29 +556,29 @@ BankScreen As screen:
             Items: =ReviewerAD.mail
             PressedFill: =RGBA(0, 0, 0, 1)
             SearchFields: =["mail"]
-            SearchItems: =Search(ReviewerAD.mail,ComboBox6_1.SearchText,"mail")
+            SearchItems: =Search(ReviewerAD.mail,cboxReviewverBS.SearchText,"mail")
             SelectionFill: =RGBA(0, 0, 0, 1)
             Visible: =varComment1
             Width: =500
             X: =(Parent.Width -Self.Width)/2-40
-            Y: =Label43_1.Height+Label43_1.Y+10
+            Y: =lblToBS.Height+lblToBS.Y+10
             ZIndex: =8
 
-    Group5_8 As group:
+    grpActionItemTrackerBS As group:
         Height: =5
         Width: =5
         X: =40
         Y: =40
         ZIndex: =15
 
-        Rectangle1_12 As rectangle:
+        iconOuterrectangleBS As rectangle:
             Fill: =RGBA(0, 0, 0, 0.29)
             Height: =Parent.Height
             Visible: =P =true
             Width: =Parent.Width
             ZIndex: =9
 
-        Rectangle2_11 As rectangle:
+        iconInnerrectangleBS As rectangle:
             Fill: =RGBA(255, 255, 255, 1)
             Height: =230
             Visible: =P =true
@@ -587,16 +587,16 @@ BankScreen As screen:
             Y: =Parent.Height/3
             ZIndex: =10
 
-        Image2_34 As image:
+        imgInfoBS As image:
             Height: =52
             Image: =info
             Visible: =P =true
             Width: =52
             X: =(Parent.Width-Self.Width)/2
-            Y: =Rectangle2_11.Y+20
+            Y: =iconInnerrectangleBS.Y+20
             ZIndex: =11
 
-        Label2_13 As label:
+        lblActionItemtrackerBS As label:
             Align: =Align.Center
             Font: =referenceCSS.RFont
             FontWeight: =FontWeight.Bold
@@ -606,10 +606,10 @@ BankScreen As screen:
             Visible: =P =true
             Width: =324
             X: =(Parent.Width-Self.Width)/2
-            Y: =Image2_34.Y+ Image2_34.Height+5
+            Y: =imgInfoBS.Y+ imgInfoBS.Height+5
             ZIndex: =13
 
-        btnSuccess_6 As button:
+        btOkActiionItemTrackerBS As button:
             Fill: =RGBA(54, 176, 75, 1)
             Font: =referenceCSS.RFont
             HoverFill: =RGBA(75, 125, 6, 1)
