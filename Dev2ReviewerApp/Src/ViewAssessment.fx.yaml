@@ -145,7 +145,7 @@ ViewAssessment As screen:
                         Height: =Parent.Height
                         Size: =referenceCSS.RViewFontSize
                         Text: |-
-                            =glryBankGo_1.Selected.bankUnitId.unitNumber
+                            =glryAssignmentBS.Selected.bankUnitId.unitNumber
                             //1.1//LookUp(schindlerBanks,goNumber=lblBankName.Text,productId.product_Name)
                         Width: =100
                         ZIndex: =4
@@ -194,7 +194,7 @@ ViewAssessment As screen:
                         Height: =Parent.Height
                         Size: =referenceCSS.RViewFontSize
                         Text: |
-                            =glryBankGo_1.Selected.productModel
+                            =glryAssignmentBS.Selected.productModel
                             //glryProject.Selected.bankId.productId.product_Model
                             //LookUp(schindlerBanks,goNumber=lblBankName.Text,productId.product_Type)
                         Width: =300
@@ -252,7 +252,7 @@ ViewAssessment As screen:
                         Height: =ctnGonumberBS_2.Height
                         Size: =referenceCSS.RFontSize
                         Text: |-
-                            =glryBankGo_1.Selected.productModel & " Series Section list"
+                            =glryAssignmentBS.Selected.productModel & " Series Section list"
                             
                             //lblBankName.Text go no
                         Width: =Container3_19.Width/1.02
@@ -294,7 +294,7 @@ ViewAssessment As screen:
                                // Sort(
                                     Filter(
                                         checkpointItemAssessment,
-                                        assignmentId.Id = glryBankGo_1.Selected.assignmentId.Id && bankUnitId.unitNumber = glryBankGo_1.Selected.bankUnitId.unitNumber && checkpointItem_annotation <> Blank()
+                                        assignmentId.Id = glryAssignmentBS.Selected.assignmentId.Id && bankUnitId.unitNumber = glryAssignmentBS.Selected.bankUnitId.unitNumber && checkpointItem_annotation <> Blank()
                                     ),
                                    // checkpointitemSequence,
                                    // Ascending
@@ -328,8 +328,8 @@ ViewAssessment As screen:
                             //[1,2,3,4,5,6]
                             
                             Filter(checkpointItem_Images,
-                                    assignmentId.Id=glryBankGo_1.Selected.assignmentId.Id  && 
-                                    bankUnitId.Id=glryBankGo_1.Selected.bankUnitId.Id      && 
+                                    assignmentId.Id=glryAssignmentBS.Selected.assignmentId.Id  && 
+                                    bankUnitId.Id=glryAssignmentBS.Selected.bankUnitId.Id      && 
                                      checkpointItem_Id.checkpointItemName=LblAssStatuscountBS_14.Text
                                   //  checkpointItem_Id.'checkpointItemAssessment (quantum_checkpointitemassessment)' =LookUp(checkpointItemAssessment,checkpointItemName =LblAssStatuscountBS_14.Text,'checkpointItemAssessment (quantum_checkpointitemassessment)')
                                      )
@@ -405,8 +405,8 @@ ViewAssessment As screen:
                             ///Filter(GC_checkpointItem_ActionItem,checkpointItem_Id.checkpointItemId.checkpointItemId=varCheckpointitemID && bankUnitId.Id=varBankUnitId &&assignmentId.startDate<>glryProject.Selected.startDate)
                             //[1,1]
                             Filter(checkpointItem_ActionItem,
-                                 assignmentId.Id=glryBankGo_1.Selected.assignmentId.Id && 
-                                 bankUnitId.Id =glryBankGo_1.Selected.bankUnitId.Id    && 
+                                 assignmentId.Id=glryAssignmentBS.Selected.assignmentId.Id && 
+                                 bankUnitId.Id =glryAssignmentBS.Selected.bankUnitId.Id    && 
                                  checkpointItem_Id.checkpointItemName=LblAssStatuscountBS_14.Text
                                 // checkpointItem_Id.'checkpointItemAssessment (quantum_checkpointitemassessment)' =LookUp(checkpointItemAssessment,checkpointItemName =LblAssStatuscountBS_14.Text,'checkpointItemAssessment (quantum_checkpointitemassessment)') 
                                  )
