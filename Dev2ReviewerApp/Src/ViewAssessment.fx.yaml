@@ -150,7 +150,7 @@ ViewAssessment As screen:
                         Width: =100
                         ZIndex: =4
 
-                Container34_9 As groupContainer.horizontalAutoLayoutContainer:
+                ctnProductTypeVA As groupContainer.horizontalAutoLayoutContainer:
                     FillPortions: =0
                     Height: =30
                     LayoutMinHeight: =100
@@ -160,7 +160,7 @@ ViewAssessment As screen:
                     Width: =Parent.Width
                     ZIndex: =4
 
-                    Label28_1 As label:
+                    lblAssessmentdate_VA As label:
                         Font: =globalcss.fontRobotoR
                         FontWeight: =FontWeight.Semibold
                         Height: =Parent.Height
@@ -170,7 +170,7 @@ ViewAssessment As screen:
                         Width: =300
                         ZIndex: =1
 
-                    Label29_1 As label:
+                    lblADateVA As label:
                         Font: =globalcss.fontRobotoR
                         Height: =Parent.Height
                         Size: =referenceCSS.RViewFontSize
@@ -180,7 +180,7 @@ ViewAssessment As screen:
                         Width: =200
                         ZIndex: =2
 
-                    Label30_1 As label:
+                    lblProductTypeVA As label:
                         Font: =globalcss.fontRobotoR
                         FontWeight: =FontWeight.Semibold
                         Height: =Parent.Height
@@ -189,7 +189,7 @@ ViewAssessment As screen:
                         Width: =170//Parent.Width/7
                         ZIndex: =3
 
-                    Label33_1 As label:
+                    lblproductnameVA As label:
                         Font: =globalcss.fontRobotoR
                         Height: =Parent.Height
                         Size: =referenceCSS.RViewFontSize
@@ -200,7 +200,7 @@ ViewAssessment As screen:
                         Width: =300
                         ZIndex: =4
 
-                ctnAssessmntTypeAS_1 As groupContainer.verticalAutoLayoutContainer:
+                ctnAssessmntTypeVA As groupContainer.verticalAutoLayoutContainer:
                     FillPortions: =0
                     Height: =30
                     LayoutDirection: =LayoutDirection.Vertical
@@ -212,26 +212,26 @@ ViewAssessment As screen:
                     Width: =Parent.Width
                     ZIndex: =6
 
-                    lblAssessmentTypeAS_1 As label:
+                    lblAssessmentttypeVA As label:
                         Font: =globalcss.fontRobotoR
                         FontWeight: =FontWeight.Semibold
-                        Height: =ctnAssessmntTypeAS_1.Height
+                        Height: =ctnAssessmntTypeVA.Height
                         PaddingLeft: =0
                         Size: =referenceCSS.RViewFontSize
                         Text: ="Assessment Type "
                         Width: =300
                         ZIndex: =1
 
-                    lblAtypeAS_1 As label:
+                    lblAssessmenttypevalueVA As label:
                         Font: =globalcss.fontRobotoR
-                        Height: =ctnAssessmntTypeAS_1.Height
+                        Height: =ctnAssessmntTypeVA.Height
                         PaddingLeft: =2
                         Size: =referenceCSS.RViewFontSize
                         Text: |-
                             =glryProject.Selected.assessmentType
                             //"6/12 Month Wellness"
                         Width: =Parent.Width - 250
-                        X: =lblAssessmentTypeAS_1.X+lblAssessmentTypeAS_1.Width
+                        X: =lblAssessmentttypeVA.X+lblAssessmentttypeVA.Width
                         ZIndex: =2
 
                 ctnGonumberVA As groupContainer.verticalAutoLayoutContainer:
@@ -259,7 +259,7 @@ ViewAssessment As screen:
                             =ctnHeaderViewAssessment.X+ctnHeaderViewAssessment.Width
                         ZIndex: =1
 
-            ctnBankGo_2 As groupContainer.verticalAutoLayoutContainer:
+            ctnCheckpointitemVA As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: |-
@@ -998,7 +998,7 @@ ViewAssessment As screen:
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
-                Y: =ctnBankGo_2.Height+ctnBankGo_2.Y 
+                Y: =ctnCheckpointitemVA.Height+ctnCheckpointitemVA.Y 
                 ZIndex: =4
 
         ctnBackViewAssessment As groupContainer.verticalAutoLayoutContainer:
