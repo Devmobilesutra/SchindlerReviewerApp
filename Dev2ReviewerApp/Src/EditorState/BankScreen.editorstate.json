@@ -233,7 +233,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnActionTrackerBS",
-      "ParentIndex": 3,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -932,7 +932,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnDistributeBS",
-      "ParentIndex": 12,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1218,14 +1218,6 @@
           "InvariantPropertyName": "Visible",
           "IsLockable": false,
           "NameMapSourceSchema": "?"
-        },
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "false",
-          "InvariantPropertyName": "OnSelect",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
         }
       ],
       "DynamicProperties": [
@@ -1276,7 +1268,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnDistributeReportBS",
-      "ParentIndex": 7,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1457,11 +1449,6 @@
         {
           "Category": "Design",
           "PropertyName": "Height",
-          "RuleProviderType": "Unknown"
-        },
-        {
-          "Category": "Behavior",
-          "PropertyName": "OnSelect",
           "RuleProviderType": "Unknown"
         }
       ],
@@ -2269,7 +2256,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btOkActiionItemTrackerBS",
-      "ParentIndex": 10,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2639,7 +2626,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "cboxReviewverBS",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6171,7 +6158,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "iconlineBS",
-      "ParentIndex": 11,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8408,7 +8395,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblActionItemtrackerBS",
-      "ParentIndex": 7,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11380,7 +11367,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblToBS",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
