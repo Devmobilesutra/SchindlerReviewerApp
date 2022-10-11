@@ -513,6 +513,9 @@ BankScreen As screen:
 
         btnDistributeBS As button:
             BorderThickness: =0
+            DisplayMode: |-
+                =//DisplayMode.Edit
+                If(IsEmpty(cboxReviewverBS.SelectedItems),DisplayMode.Disabled,DisplayMode.Edit)
             Fill: =referenceCSS.RActiveColor
             FocusedBorderThickness: =
             HoverFill: =//ColorFade(RGBA(56, 96, 178, 1), -20%)

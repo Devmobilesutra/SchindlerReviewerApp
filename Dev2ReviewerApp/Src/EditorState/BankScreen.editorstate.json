@@ -233,7 +233,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnActionTrackerBS",
-      "ParentIndex": 7,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -846,7 +846,14 @@
         "DisabledColor",
         "PressedColor",
         "HoverColor",
-        "DisplayMode",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "DisplayMode.Edit",
+          "InvariantPropertyName": "DisplayMode",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         {
           "AFDDataSourceName": "",
           "AutoRuleBindingEnabled": false,
@@ -932,7 +939,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnDistributeBS",
-      "ParentIndex": 11,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1269,7 +1276,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnDistributeReportBS",
-      "ParentIndex": 3,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2262,7 +2269,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btOkActiionItemTrackerBS",
-      "ParentIndex": 12,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2632,7 +2639,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "cboxReviewverBS",
-      "ParentIndex": 8,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8401,7 +8408,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblActionItemtrackerBS",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
