@@ -319,7 +319,7 @@ TripReport As screen:
                     Size: =referenceCSS.RInputFontSize
                     Text: |-
                         =//lblADate.Text
-                        LookUp(BankTripReport,assignmentId.Id=glryProject.Selected.Id && bankId.Id=glryProject.Selected.bankId.Id,Text(assignmentId.assignedDate,"dd-mm-yyyy"))
+                        LookUp(BankTripReport,assignmentId.Id=glryProject.Selected.Id && bankId.Id=glryProject.Selected.bankId.Id,Text(assignmentId.assignedDate,"mm-dd-yyyy"))
                     Width: =Parent.Width/6
                     X: =Label28_2.Width+Label28_2.X
                     ZIndex: =2
