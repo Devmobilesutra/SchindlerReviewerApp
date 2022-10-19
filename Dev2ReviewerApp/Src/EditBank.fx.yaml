@@ -355,7 +355,9 @@ EditBank As screen:
                         HoverFill: =RGBA(0, 0, 0, 0)
                         InputTextPlaceholder: ="Product Type"
                         IsSearchable: =false
-                        Items: =Sort(product,product_Name,Ascending)
+                        Items: |-
+                            =//Sort(product,product_Name,Ascending)
+                            Sort(Filter(product,product_Name="7000" || product_Name="5500" || product_Name="S9300"),product_Name,Ascending)
                         PaddingBottom: =0
                         PaddingTop: =0
                         PressedColor: =RGBA(0, 0, 0, 1)
