@@ -29,13 +29,6 @@
       }
     },
     {
-      "Kind": "default.cds_quantum_bank_forms",
-      "Namespace": "bankToBeRemoveds (Forms)",
-      "Values": {
-        "Information": "0c94d496-3e40-487f-ae08-8b509afda9d2"
-      }
-    },
-    {
       "Kind": "default.cds_quantum_banktripreport_forms",
       "Namespace": "BankTripReport (Forms)",
       "Values": {
@@ -90,13 +83,6 @@
       }
     },
     {
-      "Kind": "default.cds_quantum_projectaggregation_forms",
-      "Namespace": "projectAggregation (Forms)",
-      "Values": {
-        "Information": "751d3d14-eb7d-40f0-a308-eee1955991a4"
-      }
-    },
-    {
       "Kind": "default.cds_shlaf_schindlerbank_forms",
       "Namespace": "schindlerBanks (Forms)",
       "Values": {
@@ -143,6 +129,20 @@
       "Namespace": "unitAssessment (Forms)",
       "Values": {
         "Information": "2b6eec0a-526e-4e6e-a982-e113a0804dee"
+      }
+    },
+    {
+      "Kind": "default.cds_quantum_bank_forms",
+      "Namespace": "bankToBeRemoveds (Forms)",
+      "Values": {
+        "Information": "0c94d496-3e40-487f-ae08-8b509afda9d2"
+      }
+    },
+    {
+      "Kind": "default.cds_quantum_projectaggregation_forms",
+      "Namespace": "projectAggregation (Forms)",
+      "Values": {
+        "Information": "751d3d14-eb7d-40f0-a308-eee1955991a4"
       }
     },
     {

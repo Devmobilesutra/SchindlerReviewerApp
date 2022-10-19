@@ -779,7 +779,18 @@ AddBanks As screen:
                         HoverFill: =RGBA(0, 0, 0, 0)
                         InputTextPlaceholder: ="Product Type"
                         IsSearchable: =false
-                        Items: =Sort(product,product_Name,Ascending)
+                        Items: |-
+                            =//for all product
+                            //Sort(product,product_Name,Ascending)
+                            //for selective product
+                            Sort(
+                                Filter(
+                                    product,
+                                    product_Name = "7000" || product_Name = "5500" || product_Name = "9300"
+                                ),
+                                product_Name,
+                                Ascending
+                            )
                         PaddingBottom: =0
                         PaddingTop: =0
                         PressedColor: =RGBA(0, 0, 0, 1)
