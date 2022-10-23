@@ -585,8 +585,8 @@ TripReport As screen:
             Container5 As groupContainer.verticalAutoLayoutContainer:
                 FillPortions: =0
                 Height: |-
-                    =//Parent.Height
-                    Gallery14.Height
+                    =Parent.Height
+                    //Gallery14.Height
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
@@ -600,8 +600,8 @@ TripReport As screen:
                     AlignInContainer: =AlignInContainer.Start
                     FillPortions: =0
                     Height: |-
-                        =//Parent.Height
-                        CountRows(Gallery14.AllItems)*Gallery14.TemplateHeight+Gallery15.Height
+                        =Parent.Height
+                        //CountRows(Gallery14.AllItems)*Gallery14.TemplateHeight+Gallery15.Height
                     Items: |-
                         =Sort(
                             Sort(
