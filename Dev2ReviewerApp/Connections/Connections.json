@@ -382,24 +382,21 @@
     ],
     "id": "a930f9d4-b4dd-4887-9b5b-5fefba228031"
   },
-  "e3080cab-bea7-48c4-83a0-396944d2c6fd": {
+  "c45365a4-ec6b-4ad8-9d25-f14c759e56da": {
     "connectionParameters": {
       "sku": "Enterprise"
     },
     "connectionRef": {
-      "apiTier": "Standard",
-      "displayName": "Azure AD",
-      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1551/1.0.1551.2693/azuread/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_azuread",
-      "parameterHints": {},
-      "parameterHintsV2": {}
+      "displayName": "Office 365 Groups",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1588/1.0.1588.2938/office365groups/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365groups"
     },
     "datasets": {},
     "dataSources": [
-      "AzureAD"
+      "Office365Groups"
     ],
     "dependencies": {},
     "dependents": [],
-    "id": "e3080cab-bea7-48c4-83a0-396944d2c6fd"
+    "id": "c45365a4-ec6b-4ad8-9d25-f14c759e56da"
   }
 }

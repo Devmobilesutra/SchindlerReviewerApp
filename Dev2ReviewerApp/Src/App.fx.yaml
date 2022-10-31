@@ -98,13 +98,15 @@ App As appinfo:
         //Calling AAD connector to get all assessor data
         ClearCollect(
             AssessorAD,
-            AzureAD.GetGroupMembers("9ae78503-6ff0-4f1a-b15f-9e0b76c01b44").value
+            //AzureAD.GetGroupMembers("9ae78503-6ff0-4f1a-b15f-9e0b76c01b44").value
+            Office365Groups.ListGroupMembers("9ae78503-6ff0-4f1a-b15f-9e0b76c01b44").value
         );
         
         //Calling AAD connector to get all Reviewer data
         ClearCollect(
             ReviewerAD,
-            AzureAD.GetGroupMembers("27ac846b-1cc3-48ad-ad4b-cf07b9667a64").value
+            //AzureAD.GetGroupMembers("27ac846b-1cc3-48ad-ad4b-cf07b9667a64").value
+            Office365Groups.ListGroupMembers("27ac846b-1cc3-48ad-ad4b-cf07b9667a64").value
         );
         
         
