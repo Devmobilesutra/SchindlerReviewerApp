@@ -786,7 +786,7 @@ AddBanks As screen:
                             Sort(
                                 Filter(
                                     product,
-                                    product_Name = "7000" || product_Name = "5500" || product_Name = "S9300"
+                                    product_Name = "7000" || product_Name = "5500" || product_Name = "9300"
                                 ),
                                 product_Name,
                                 Ascending
