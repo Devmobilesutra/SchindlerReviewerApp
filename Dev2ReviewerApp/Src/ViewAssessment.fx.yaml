@@ -263,8 +263,8 @@ ViewAssessment As screen:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: |-
-                    =//Parent.Height
-                    glryCheckpointIiemVA.Height
+                    =Parent.Height
+                    //glryCheckpointIiemVA.Height
                     //CountRows(Gallery1_3.AllItems)*(Gallery1_3.TemplateHeight)
                     //(CountRows(Gallery1_3.AllItems)*(Gallery1_3.TemplateHeight))+Gallery5_6.Height+Gallery14_3.Height
                 LayoutDirection: =LayoutDirection.Vertical
@@ -281,7 +281,9 @@ ViewAssessment As screen:
                     Fill: |
                         =RGBA(239,239,239,1)
                     FillPortions: =0
-                    Height: =(CountRows(glryCheckpointIiemVA.AllItems)*(glryCheckpointIiemVA.TemplateHeight+glryCheckpointIiemVA.TemplatePadding))+glryActionItemsVA.Height+glryCheckpointitemimagesVA.Height
+                    Height: |-
+                        =//(CountRows(glryCheckpointIiemVA.AllItems)*(glryCheckpointIiemVA.TemplateHeight+glryCheckpointIiemVA.TemplatePadding))+glryActionItemsVA.Height+glryCheckpointitemimagesVA.Height
+                        Parent.Height
                     Items: |-
                         =//Filter(checkpointItem_ActionItem, 'checkpointItem_ActionItem (Views)'.previousFindings)
                         //Filter(GC_checkpointItem_ActionItem,checkpointItem_Id.checkpointItemId.checkpointItemId=varCheckpointitemID && bankUnitId.Id=varBankUnitId &&assignmentId.startDate<>glryProject.Selected.startDate)
@@ -309,7 +311,6 @@ ViewAssessment As screen:
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =100
                     LayoutMinWidth: =320
-                    ShowScrollbar: =false
                     TemplatePadding: =4
                     TemplateSize: |-
                         =//900
