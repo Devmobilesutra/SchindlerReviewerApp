@@ -2,13 +2,13 @@
   <doc title="ApproveReport" />
   <grammars>
     <jsonTypes targetNamespace="https://unitedstates-002.azure-apim.net/apim/logicflows" xmlns="http://schemas.microsoft.com/MicrosoftProjectSiena/WADL/2014/11">
-      <string name="ManualTriggerInput_SendpushnotificationV2_RecipientsItem-1_def" />
-      <string name="ManualTriggerInput_SendpushnotificationV2_Message_def" />
-      <string name="ManualTriggerInput_SendpushnotificationV2_Message_1_def" />
+      <string name="ManualTriggerInput_Sendpushnotification_RecipientsItem-1_def" />
+      <string name="ManualTriggerInput_Sendpushnotification_Message_def" />
+      <string name="ManualTriggerInput_Sendpushnotification_Message_1_def" />
       <object name="ManualTriggerInput">
-        <property name="SendpushnotificationV2_RecipientsItem-1" type="string" />
-        <property name="SendpushnotificationV2_Message" type="string" />
-        <property name="SendpushnotificationV2_Message_1" type="string" />
+        <property name="Sendpushnotification_RecipientsItem-1" type="string" />
+        <property name="Sendpushnotification_Message" type="string" />
+        <property name="Sendpushnotification_Message_1" type="string" />
       </object>
     </jsonTypes>
   </grammars>
@@ -22,9 +22,9 @@
             <doc title="The api version" />
           </param>
           <representation mediaType="application/json">
-            <param style="plain" name="SendpushnotificationV2_RecipientsItem-1" path="/SendpushnotificationV2_RecipientsItem-1" type="xs:string" required="true" />
-            <param style="plain" name="SendpushnotificationV2_Message" path="/SendpushnotificationV2_Message" type="xs:string" required="true" />
-            <param style="plain" name="SendpushnotificationV2_Message_1" path="/SendpushnotificationV2_Message_1" type="xs:string" required="true" />
+            <param style="plain" name="Sendpushnotification_RecipientsItem-1" path="/Sendpushnotification_RecipientsItem-1" type="xs:string" required="true" />
+            <param style="plain" name="Sendpushnotification_Message" path="/Sendpushnotification_Message" type="xs:string" required="true" />
+            <param style="plain" name="Sendpushnotification_Message_1" path="/Sendpushnotification_Message_1" type="xs:string" required="true" />
           </representation>
         </request>
       </method>
