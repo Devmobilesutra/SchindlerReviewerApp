@@ -557,11 +557,12 @@ BankScreen As screen:
             DisplayFields: =["mail"]
             Height: =30
             HoverFill: =///RGBA(186, 202, 226, 1)
-            Items: =ReviewerAD.mail
+            IsSearchable: =false
+            Items: =ReportingGroup.mail
             PressedFill: =RGBA(0, 0, 0, 1)
             Reset: =true
             SearchFields: =["mail"]
-            SearchItems: =Search(ReviewerAD.mail,cboxReviewverBS.SearchText,"mail")
+            SearchItems: =[]
             SelectionFill: =RGBA(0, 0, 0, 1)
             Visible: =varComment1
             Width: =500
