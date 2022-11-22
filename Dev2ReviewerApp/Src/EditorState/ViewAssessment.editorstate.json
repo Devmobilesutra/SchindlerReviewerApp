@@ -10595,7 +10595,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "CalculateOriginalDimensions",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "false",
+          "InvariantPropertyName": "CalculateOriginalDimensions",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "ImageRotation",
         "FlipHorizontal",
         "FlipVertical",

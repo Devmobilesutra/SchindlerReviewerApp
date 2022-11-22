@@ -346,17 +346,21 @@ ViewAssessment As screen:
                         imgcheckpointitemimageVA As image:
                             BorderColor: =RGBA(0, 0, 0, 1)
                             BorderThickness: =2
+                            CalculateOriginalDimensions: =true
                             Height: |-
                                 =//450
-                                Parent.TemplateHeight/1.2
+                                //Parent.TemplateHeight/1.2
+                                imgcheckpointitemimageVA.OriginalHeight
                             Image: |-
                                 =//camera
-                                ThisItem.Image
+                                ThisItem.Image.Full
                             OnSelect: =Select(Parent)
                             PaddingBottom: =5
                             PaddingTop: =5
-                            Width: |
-                                =Parent.TemplateWidth/2
+                            Width: |-
+                                =//Parent.TemplateWidth/2
+                                //144
+                                imgcheckpointitemimageVA.OriginalWidth
                             X: =Parent.Width/3.5
                             Y: =16
                             ZIndex: =1
