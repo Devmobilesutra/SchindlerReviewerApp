@@ -349,8 +349,9 @@ ViewAssessment As screen:
                             CalculateOriginalDimensions: =true
                             Height: |-
                                 =//450
-                                Parent.TemplateHeight/1.2
+                                //Parent.TemplateHeight/1.2
                                 //imgcheckpointitemimageVA.OriginalHeight
+                                Parent.TemplateHeight/2
                             Image: |-
                                 =//camera
                                 ThisItem.Image.Full
