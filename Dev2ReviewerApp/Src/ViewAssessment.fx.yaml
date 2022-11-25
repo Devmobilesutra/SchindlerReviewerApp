@@ -320,7 +320,9 @@ ViewAssessment As screen:
                     ZIndex: =2
 
                     "glryCheckpointitemimagesVA As gallery.'BrowseLayout_Vertical_TwoTextOneImageTwoColumnVariant_ver4.0'":
-                        Height: =CountRows(glryCheckpointitemimagesVA.AllItems)*(glryCheckpointitemimagesVA.TemplateHeight+glryCheckpointitemimagesVA.TemplatePadding)
+                        Height: |-
+                            =CountRows(glryCheckpointitemimagesVA.AllItems)*(glryCheckpointitemimagesVA.TemplateHeight+glryCheckpointitemimagesVA.TemplatePadding)
+                            //Parent.Height
                         Items: |+
                             =//checkpointItem_Images
                             //Filter(GC_checkpointItem_ActionItem,checkpointItem_Id.checkpointItemId.checkpointItemId=ItemID && checkpointItem_Id.assessmentStatus="open")
@@ -404,7 +406,9 @@ ViewAssessment As screen:
                         ZIndex: =8
 
                     "glryActionItemsVA As gallery.'BrowseLayout_Flexible_SocialFeed_ver4.0'":
-                        Height: =CountRows(glryActionItemsVA.AllItems)*(glryActionItemsVA.TemplateHeight)
+                        Height: |-
+                            =CountRows(glryActionItemsVA.AllItems)*(glryActionItemsVA.TemplateHeight)
+                            //Parent.Height
                         Items: |-
                             =//Filter(GC_checkpointItem_ActionItem,checkpointItem_Id.checkpointItemId.checkpointItemId=varCheckpointitemID)
                             //&& checkpointItem_Id.assessmentStatus="open")
@@ -555,6 +559,7 @@ ViewAssessment As screen:
                                 ZIndex: =2
 
                                 lblPriorityvalueVA As label:
+                                    AutoHeight: =true
                                     Font: =referenceCSS.RFont
                                     Size: =referenceCSS.RLabelFontSize
                                     Text: |-
@@ -564,6 +569,7 @@ ViewAssessment As screen:
                                     ZIndex: =1
 
                                 lblOwnervalueVA As label:
+                                    AutoHeight: =true
                                     Font: =referenceCSS.RFont
                                     Size: =referenceCSS.RLabelFontSize
                                     Text: |-
@@ -573,6 +579,7 @@ ViewAssessment As screen:
                                     ZIndex: =2
 
                                 lblTimeestimatevalueVA As label:
+                                    AutoHeight: =true
                                     Font: =referenceCSS.RFont
                                     Size: =referenceCSS.RLabelFontSize
                                     Text: |-
@@ -582,6 +589,7 @@ ViewAssessment As screen:
                                     ZIndex: =3
 
                                 lblMaterialestimatevalueVA As label:
+                                    AutoHeight: =true
                                     Font: =referenceCSS.RFont
                                     Size: =referenceCSS.RLabelFontSize
                                     Text: |-
