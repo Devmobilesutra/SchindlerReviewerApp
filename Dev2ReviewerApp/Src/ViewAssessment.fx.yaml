@@ -449,7 +449,7 @@ ViewAssessment As screen:
                         LoadingSpinner: =LoadingSpinner.Data
                         TemplatePadding: =4
                         TemplateSize: =200
-                        Width: =Parent.Width
+                        Width: =Parent.Width/1.04
                         Y: =iconlineannotationVA.Y + iconlineannotationVA.Height
                         ZIndex: =9
 
