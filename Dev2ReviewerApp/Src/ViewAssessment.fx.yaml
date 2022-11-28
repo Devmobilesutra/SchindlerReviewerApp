@@ -407,8 +407,8 @@ ViewAssessment As screen:
 
                     "glryActionItemsVA As gallery.'BrowseLayout_Flexible_SocialFeed_ver4.0'":
                         Height: |-
-                            =//CountRows(glryActionItemsVA.AllItems)*(glryActionItemsVA.TemplateHeight)
-                            Parent.Height
+                            =CountRows(glryActionItemsVA.AllItems)*(glryActionItemsVA.TemplateHeight)
+                            //Parent.Height
                         Items: |-
                             =//Filter(GC_checkpointItem_ActionItem,checkpointItem_Id.checkpointItemId.checkpointItemId=varCheckpointitemID)
                             //&& checkpointItem_Id.assessmentStatus="open")
@@ -447,9 +447,10 @@ ViewAssessment As screen:
                             )*/
                         Layout: =Layout.Vertical
                         LoadingSpinner: =LoadingSpinner.Data
+                        ShowScrollbar: =false
                         TemplatePadding: =4
                         TemplateSize: =200
-                        Width: =Parent.Width/1.04
+                        Width: =Parent.Width
                         Y: =iconlineannotationVA.Y + iconlineannotationVA.Height
                         ZIndex: =9
 
