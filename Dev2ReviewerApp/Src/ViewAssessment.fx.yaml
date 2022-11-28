@@ -905,6 +905,7 @@ ViewAssessment As screen:
                             AutoHeight: =true
                             Font: =referenceCSS.RFont
                             Height: =30
+                            LineHeight: =1.5
                             OnSelect: =//Select(Parent)
                             Size: =referenceCSS.RLabelFontSize
                             Text: |-
