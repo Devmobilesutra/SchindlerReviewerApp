@@ -7988,12 +7988,26 @@
         "Transition",
         "ShowNavigation",
         "NavigationStep",
-        "ShowScrollbar",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "ShowScrollbar",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "SelectionTracksMove",
         "Reset",
         "AutoHeight",
         "DelayItemLoading",
-        "LoadingSpinner",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "LoadingSpinner.None",
+          "InvariantPropertyName": "LoadingSpinner",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "LoadingSpinnerColor",
         "AccessibleLabel",
         "ContentLanguage",
