@@ -344,10 +344,7 @@ ViewAssessment As screen:
                         TemplateSize: =600
                         Width: =Parent.Width/1.08
                         X: =10
-                        Y: |-
-                            =//If(CountRows(glryActionItemsVA.AllItems)=0,glryActionItemsVA.Height,
-                            glryActionItemsVA.Height+glryActionItemsVA.Y
-                            //)
+                        Y: =glryActionItemsVA.Height + glryActionItemsVA.Y 
                         ZIndex: =1
 
                         imgcheckpointitemimageVA As image:
@@ -929,7 +926,7 @@ ViewAssessment As screen:
                         Height: |-
                             =//210+
                             //(CountRows(glryActionItemsVA.AllItems)*glryActionItemsVA.TemplateHeight)+(CountRows(glryCheckpointitemimagesVA.AllItems)*glryCheckpointitemimagesVA.TemplateHeight)+iconLineVA.Height+btnActionVA.Height+iconlineannotationVA.Height+ctnSectionVA.Height+ctnItemVA.Height+ctnfindingVA.Height+ctnCheckpointVA.Height+ctnAssessmentDetailsVA.Height+ctnAnnotationVA.Height
-                             If(CountRows(glryActionItemsVA.AllItems)>0,CountRows(glryActionItemsVA.AllItems)*glryActionItemsVA.TemplateHeight )+If(CountRows(glryCheckpointitemimagesVA.AllItems)>0,CountRows(glryCheckpointitemimagesVA.AllItems)*(glryCheckpointitemimagesVA.TemplateHeight+glryCheckpointitemimagesVA.TemplatePadding)) +iconLineVA.Height+iconlineannotationVA.Height+ctnSectionVA.Height+ctnItemVA.Height+ctnfindingVA.Height+ctnCheckpointVA.Height+ctnAssessmentDetailsVA.Height+ctnAnnotationVA.Height
+                            If(CountRows(glryActionItemsVA.AllItems)>0,CountRows(glryActionItemsVA.AllItems)*glryActionItemsVA.TemplateHeight )+If(CountRows(glryCheckpointitemimagesVA.AllItems)>0,CountRows(glryCheckpointitemimagesVA.AllItems)*(glryCheckpointitemimagesVA.TemplateHeight+glryCheckpointitemimagesVA.TemplatePadding)) +iconLineVA.Height+iconlineannotationVA.Height+ctnSectionVA.Height+ctnItemVA.Height+ctnfindingVA.Height+ctnCheckpointVA.Height+ctnAssessmentDetailsVA.Height+ctnAnnotationVA.Height
                              
                              
                              
