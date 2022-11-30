@@ -343,7 +343,7 @@ ViewAssessment As screen:
                         Layout: =Layout.Vertical
                         ShowScrollbar: =false
                         TemplatePadding: =4
-                        TemplateSize: =600
+                        TemplateSize: =If(CountRows(glryCheckpointitemimagesVA.AllItems)>0,600)
                         Width: =Parent.Width/1.08
                         X: =10
                         Y: =glryActionItemsVA.Height + glryActionItemsVA.Y
@@ -453,7 +453,7 @@ ViewAssessment As screen:
                         LoadingSpinner: =LoadingSpinner.Data
                         ShowScrollbar: =false
                         TemplatePadding: =4
-                        TemplateSize: =200
+                        TemplateSize: =If(CountRows(glryActionItemsVA.AllItems)>0,200)
                         Width: =Parent.Width
                         Y: =iconlineannotationVA.Y + iconlineannotationVA.Height
                         ZIndex: =9
