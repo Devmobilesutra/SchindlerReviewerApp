@@ -352,7 +352,7 @@ ViewAssessment As screen:
                             =//glryActionItemsVA.Height + glryActionItemsVA.Y
                             //iconlineannotationVA_1.Height+iconlineannotationVA_1.Y
                             
-                            If(glryActionItemsVA.Height=0,glryActionItemsVA.Y,glryActionItemsVA.Y+glryActionItemsVA.Height)
+                            glryActionItemsVA.Y+glryActionItemsVA.Height
                         ZIndex: =1
 
                         imgcheckpointitemimageVA As image:
@@ -418,7 +418,7 @@ ViewAssessment As screen:
                     "glryActionItemsVA As gallery.'BrowseLayout_Flexible_SocialFeed_ver4.0'":
                         BorderColor: =RGBA(0, 134, 208, 1)
                         BorderThickness: =8
-                        Height: |-
+                        Height: |
                             =CountRows(glryActionItemsVA.AllItems)*(glryActionItemsVA.TemplateHeight)
                             //Parent.Height
                         Items: |-
