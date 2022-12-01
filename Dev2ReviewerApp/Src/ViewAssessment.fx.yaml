@@ -412,8 +412,8 @@ ViewAssessment As screen:
                         ZIndex: =8
 
                     "glryActionItemsVA As gallery.'BrowseLayout_Flexible_SocialFeed_ver4.0'":
-                        BorderColor: =RGBA(255, 255, 0, 1)
-                        BorderThickness: =2
+                        BorderColor: =RGBA(0, 134, 208, 1)
+                        BorderThickness: =8
                         Height: |-
                             =CountRows(glryActionItemsVA.AllItems)*(glryActionItemsVA.TemplateHeight)
                             //Parent.Height
