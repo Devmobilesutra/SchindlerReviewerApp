@@ -1032,7 +1032,7 @@ ViewAssessment As screen:
                         PaddingBottom: =20
                         Width: =Parent.Width/1.08
                         X: =60
-                        Y: =glryActionItemsVA.Height + glryActionItemsVA.Y
+                        Y: =CountRows(glryActionItemsVA.AllItems)*(glryActionItemsVA.TemplateHeight)+ glryActionItemsVA.Y
                         ZIndex: =23
 
             Container13 As groupContainer.horizontalAutoLayoutContainer:
