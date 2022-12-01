@@ -7981,14 +7981,7 @@
         "Default",
         "WrapCount",
         "Selectable",
-        {
-          "AFDDataSourceName": "",
-          "AutoRuleBindingEnabled": false,
-          "AutoRuleBindingString": "200",
-          "InvariantPropertyName": "TemplateSize",
-          "IsLockable": false,
-          "NameMapSourceSchema": "?"
-        },
+        "TemplateSize",
         "TemplateMaximumWidth",
         "TemplatePadding",
         "Layout",
