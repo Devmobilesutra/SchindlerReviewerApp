@@ -322,6 +322,8 @@ ViewAssessment As screen:
                     ZIndex: =2
 
                     "glryCheckpointitemimagesVA As gallery.'BrowseLayout_Vertical_TwoTextOneImageTwoColumnVariant_ver4.0'":
+                        BorderColor: =RGBA(168, 0, 0, 1)
+                        BorderThickness: =5
                         Height: |-
                             =CountRows(glryCheckpointitemimagesVA.AllItems)*(glryCheckpointitemimagesVA.TemplateHeight)
                             +glryCheckpointitemimagesVA.TemplatePadding
