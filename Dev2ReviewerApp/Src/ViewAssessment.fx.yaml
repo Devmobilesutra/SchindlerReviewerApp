@@ -353,7 +353,8 @@ ViewAssessment As screen:
                             =//glryActionItemsVA.Height + glryActionItemsVA.Y
                             //iconlineannotationVA_1.Height+iconlineannotationVA_1.Y
                             
-                            glryActionItemsVA.Y+glryActionItemsVA.Height
+                            If(CountRows(glryActionItemsVA.AllItems)>0,glryActionItemsVA.Y+glryActionItemsVA.Height,iconlineannotationVA.Y + iconlineannotationVA.Height)
+                            //glryActionItemsVA.Y+glryActionItemsVA.Height
                         ZIndex: =1
 
                         imgcheckpointitemimageVA As image:
@@ -1025,21 +1026,6 @@ ViewAssessment As screen:
                         X: =ctnSectionVA.X+ctnSectionVA.Width
                         Y: =ctnSectionVA.Y+5
                         ZIndex: =22
-
-                    iconlineannotationVA_1 As icon.HorizontalLine:
-                        BorderThickness: =4
-                        Color: =RGBA(204, 204, 204, 1)
-                        Fill: =RGBA(204, 204, 204, 1)
-                        Height: =3
-                        Icon: =Icon.HorizontalLine
-                        OnSelect: =Select(Parent)
-                        PaddingBottom: =20
-                        Width: =Parent.Width/1.08
-                        X: =60
-                        Y: |-
-                            =//If(glryActionItemsVA.Height=0,glryActionItemsVA.Y,glryActionItemsVA.Y+glryActionItemsVA.Height)
-                            glryActionItemsVA.Y+glryActionItemsVA.Height
-                        ZIndex: =23
 
             Container13 As groupContainer.horizontalAutoLayoutContainer:
                 FillPortions: =0
