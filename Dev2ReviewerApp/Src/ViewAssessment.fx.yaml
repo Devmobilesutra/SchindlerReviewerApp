@@ -339,9 +339,11 @@ ViewAssessment As screen:
                             Filter(checkpointItem_Images,
                                     assignmentId.Id=glryAssignmentBS.Selected.assignmentId.Id  && 
                                     bankUnitId.Id=glryAssignmentBS.Selected.bankUnitId.Id      && 
-                                     checkpointItem_Id.checkpointItemName=lblItemnameVA.Text
+                                     //checkpointItem_Id.checkpointItemName=lblItemnameVA.Text
+                                     checkpointItem_Id.'checkpointItemAssessment (quantum_checkpointitemassessment)'=ThisItem.'checkpointItemAssessment (quantum_checkpointitemassessment)' )
+                            
                                   //  checkpointItem_Id.'checkpointItemAssessment (quantum_checkpointitemassessment)' =LookUp(checkpointItemAssessment,checkpointItemName =LblAssStatuscountBS_14.Text,'checkpointItemAssessment (quantum_checkpointitemassessment)')
-                                     )
+                                    
                             
                         Layout: =Layout.Vertical
                         ShowScrollbar: =false
@@ -431,9 +433,11 @@ ViewAssessment As screen:
                             Filter(checkpointItem_ActionItem,
                                  assignmentId.Id=glryAssignmentBS.Selected.assignmentId.Id && 
                                  bankUnitId.Id =glryAssignmentBS.Selected.bankUnitId.Id    && 
-                                 checkpointItem_Id.checkpointItemName=lblItemnameVA.Text
+                                  checkpointItem_Id.'checkpointItemAssessment (quantum_checkpointitemassessment)'=ThisItem.'checkpointItemAssessment (quantum_checkpointitemassessment)')
+                            
+                                // checkpointItem_Id.'checkpointItemAssessment (quantum_checkpointitemassessment)'=LookUp(checkpointItemAssessment,checkpointItemName=lblItemnameVA.Text,'checkpointItemAssessment (quantum_checkpointitemassessment)')
                                 // checkpointItem_Id.'checkpointItemAssessment (quantum_checkpointitemassessment)' =LookUp(checkpointItemAssessment,checkpointItemName =LblAssStatuscountBS_14.Text,'checkpointItemAssessment (quantum_checkpointitemassessment)') 
-                                 )
+                                // )
                             
                             ////&& checkpointItem_Id 'checkpointItemAssessment (quantum_checkpointitemassessment)'=ThisItem.'checkpointItemAssessment (quantum_checkpointitemassessment)'
                             
