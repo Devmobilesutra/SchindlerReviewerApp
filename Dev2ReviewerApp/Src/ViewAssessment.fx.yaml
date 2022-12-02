@@ -314,10 +314,11 @@ ViewAssessment As screen:
                     TemplatePadding: =4
                     TemplateSize: |-
                         =//900
-                        //If(CountRows(glryActionItemsVA.AllItems)>0,CountRows(glryActionItemsVA.AllItems)*glryActionItemsVA.TemplateHeight,0)+If(CountRows(glryCheckpointitemimagesVA.AllItems)>0,CountRows(glryCheckpointitemimagesVA.AllItems)*(glryCheckpointitemimagesVA.TemplateHeight+glryCheckpointitemimagesVA.TemplatePadding),0) +iconLineVA.Height+iconlineannotationVA.Height+ctnSectionVA.Height+ctnItemVA.Height+ctnfindingVA.Height+ctnCheckpointVA.Height+ctnAssessmentDetailsVA.Height+ctnAnnotationVA.Height
+                        If(CountRows(glryActionItemsVA.AllItems)>0,CountRows(glryActionItemsVA.AllItems)*glryActionItemsVA.TemplateHeight)+If(CountRows(glryCheckpointitemimagesVA.AllItems)>0,CountRows(glryCheckpointitemimagesVA.AllItems)*(glryCheckpointitemimagesVA.TemplateHeight+glryCheckpointitemimagesVA.TemplatePadding))+iconLineVA.Height+iconlineannotationVA.Height+ctnSectionVA.Height+ctnItemVA.Height+ctnfindingVA.Height+ctnCheckpointVA.Height+ctnAssessmentDetailsVA.Height+ctnAnnotationVA.Height
                         
                         //(CountRows(glryActionItemsVA.AllItems)*glryActionItemsVA.TemplateHeight)+(CountRows(glryCheckpointitemimagesVA.AllItems)*(glryCheckpointitemimagesVA.TemplateHeight+glryCheckpointitemimagesVA.TemplatePadding))+iconLineVA.Height+iconlineannotationVA.Height+ctnSectionVA.Height+ctnItemVA.Height+ctnfindingVA.Height+ctnCheckpointVA.Height+ctnAssessmentDetailsVA.Height+ctnAnnotationVA.Height
-                        If(CountRows(glryActionItemsVA.AllItems)>0,CountRows(glryActionItemsVA.AllItems)*glryActionItemsVA.TemplateHeight)+If(CountRows(glryCheckpointitemimagesVA.AllItems)>0,CountRows(glryCheckpointitemimagesVA.AllItems)*(glryCheckpointitemimagesVA.TemplateHeight+glryCheckpointitemimagesVA.TemplatePadding)) +iconLineVA.Height+iconlineannotationVA.Height+ctnSectionVA.Height+ctnItemVA.Height+ctnfindingVA.Height+ctnCheckpointVA.Height+ctnAssessmentDetailsVA.Height+ctnAnnotationVA.Height
+                        
+                        //If(CountRows(glryActionItemsVA.AllItems)>0,CountRows(glryActionItemsVA.AllItems)*glryActionItemsVA.TemplateHeight,5)+If(CountRows(glryCheckpointitemimagesVA.AllItems)>0,CountRows(glryCheckpointitemimagesVA.AllItems)*(glryCheckpointitemimagesVA.TemplateHeight+glryCheckpointitemimagesVA.TemplatePadding),5) +iconLineVA.Height+iconlineannotationVA.Height+ctnSectionVA.Height+ctnItemVA.Height+ctnfindingVA.Height+ctnCheckpointVA.Height+ctnAssessmentDetailsVA.Height+ctnAnnotationVA.Height
                     Width: =Parent.Width
                     X: =100
                     ZIndex: =2
@@ -348,7 +349,7 @@ ViewAssessment As screen:
                         TemplateSize: =600
                         Width: =Parent.Width/1.08
                         X: =10
-                        Y: |
+                        Y: |-
                             =//glryActionItemsVA.Height + glryActionItemsVA.Y
                             //iconlineannotationVA_1.Height+iconlineannotationVA_1.Y
                             
@@ -418,7 +419,7 @@ ViewAssessment As screen:
                     "glryActionItemsVA As gallery.'BrowseLayout_Flexible_SocialFeed_ver4.0'":
                         BorderColor: =RGBA(0, 134, 208, 1)
                         Height: |
-                            =CountRows(glryActionItemsVA.AllItems)*(glryActionItemsVA.TemplateHeight)
+                            =(CountRows(glryActionItemsVA.AllItems)*(glryActionItemsVA.TemplateHeight))
                             //Parent.Height
                         Items: |-
                             =//Filter(GC_checkpointItem_ActionItem,checkpointItem_Id.checkpointItemId.checkpointItemId=varCheckpointitemID)
@@ -936,7 +937,9 @@ ViewAssessment As screen:
                             =//210+
                             //(CountRows(glryActionItemsVA.AllItems)*glryActionItemsVA.TemplateHeight)+(CountRows(glryCheckpointitemimagesVA.AllItems)*glryCheckpointitemimagesVA.TemplateHeight)+iconLineVA.Height+btnActionVA.Height+iconlineannotationVA.Height+ctnSectionVA.Height+ctnItemVA.Height+ctnfindingVA.Height+ctnCheckpointVA.Height+ctnAssessmentDetailsVA.Height+ctnAnnotationVA.Height
                             
-                            If(CountRows(glryActionItemsVA.AllItems)>0,CountRows(glryActionItemsVA.AllItems)*glryActionItemsVA.TemplateHeight,0)+If(CountRows(glryCheckpointitemimagesVA.AllItems)>0,CountRows(glryCheckpointitemimagesVA.AllItems)*(glryCheckpointitemimagesVA.TemplateHeight+glryCheckpointitemimagesVA.TemplatePadding),0) +iconLineVA.Height+iconlineannotationVA.Height+ctnSectionVA.Height+ctnItemVA.Height+ctnfindingVA.Height+ctnCheckpointVA.Height+ctnAssessmentDetailsVA.Height+ctnAnnotationVA.Height
+                            //If(CountRows(glryActionItemsVA.AllItems)>0,CountRows(glryActionItemsVA.AllItems)*glryActionItemsVA.TemplateHeight,5)+If(CountRows(glryCheckpointitemimagesVA.AllItems)>0,CountRows(glryCheckpointitemimagesVA.AllItems)*(glryCheckpointitemimagesVA.TemplateHeight+glryCheckpointitemimagesVA.TemplatePadding),5) +iconLineVA.Height+iconlineannotationVA.Height+ctnSectionVA.Height+ctnItemVA.Height+ctnfindingVA.Height+ctnCheckpointVA.Height+ctnAssessmentDetailsVA.Height+ctnAnnotationVA.Height
+                            
+                            If(CountRows(glryActionItemsVA.AllItems)>0,CountRows(glryActionItemsVA.AllItems)*glryActionItemsVA.TemplateHeight)+If(CountRows(glryCheckpointitemimagesVA.AllItems)>0,CountRows(glryCheckpointitemimagesVA.AllItems)*(glryCheckpointitemimagesVA.TemplateHeight+glryCheckpointitemimagesVA.TemplatePadding))+iconLineVA.Height+iconlineannotationVA.Height+ctnSectionVA.Height+ctnItemVA.Height+ctnfindingVA.Height+ctnCheckpointVA.Height+ctnAssessmentDetailsVA.Height+ctnAnnotationVA.Height
                              
                              
                              
@@ -1033,7 +1036,9 @@ ViewAssessment As screen:
                         PaddingBottom: =20
                         Width: =Parent.Width/1.08
                         X: =60
-                        Y: =If(glryActionItemsVA.Height=0,glryActionItemsVA.Y,glryActionItemsVA.Y+glryActionItemsVA.Height)
+                        Y: |-
+                            =//If(glryActionItemsVA.Height=0,glryActionItemsVA.Y,glryActionItemsVA.Y+glryActionItemsVA.Height)
+                            glryActionItemsVA.Y+glryActionItemsVA.Height
                         ZIndex: =23
 
             Container13 As groupContainer.horizontalAutoLayoutContainer:
