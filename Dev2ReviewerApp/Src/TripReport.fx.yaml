@@ -598,6 +598,7 @@ TripReport As screen:
 
                 Gallery14 As gallery.variableTemplateHeightGallery:
                     AlignInContainer: =AlignInContainer.Start
+                    BorderThickness: =6
                     FillPortions: =0
                     Height: |-
                         =Parent.Height
@@ -605,7 +606,7 @@ TripReport As screen:
                     Items: |-
                         =Sort(
                             Sort(
-                                Filter(
+                                //Filter(
                                     GroupBy(
                                         AddColumns(
                                             Filter(
@@ -627,8 +628,8 @@ TripReport As screen:
                                         "sectionSequence",
                                         "data"
                                     ),
-                                    assign = glryProject.Selected.Id
-                                ),
+                                  //  assign = glryProject.Selected.Id
+                              //  ),
                                 sectionSequence,
                                 Ascending
                             ),
@@ -658,7 +659,7 @@ TripReport As screen:
 
                     Gallery15 As gallery.variableTemplateHeightGallery:
                         BorderColor: =RGBA(204, 204, 204, 1)
-                        BorderThickness: =3
+                        BorderThickness: =10
                         Fill: =RGBA(237, 237, 237, 1)
                         Height: =CountRows(Gallery15.AllItems)*Gallery15.TemplateHeight
                         Items: =Sort(ThisItem.data,checkpoint_id.CheckpointSequence)
