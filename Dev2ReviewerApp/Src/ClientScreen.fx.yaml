@@ -634,7 +634,23 @@ ClientScreen As screen:
                                 Height: =35
                                 Size: =referenceCSS.RInputFontSize
                                 Text: |-
-                                    =If(IsBlank(txtContactNumberEC.Text),"",Text(Value(txtContactNumberEC.Text), "[$-en-US](###) ###-####"))
+                                    =/*If(
+                                        IsBlank(txtContactNumberEC.Text),
+                                        "",
+                                         
+                                    
+                                            "[$-en-US](###) ###-####"
+                                        )
+                                    //)//*/
+                                    If(
+                                        IsBlank(txtContactNumberEC.Text),
+                                        "",
+                                        //ThisItem.ClientContactNumber,
+                                        Text(
+                                            Value(txtContactNumberEC.Text),
+                                            "[$-en-US](###) ###-####"
+                                        )
+                                    )
                                 Width: =Parent.Width/8
                                 X: =lblcontactnumberEC.X+lblcontactnumberEC.Width
                                 Y: =txtContactNameEC.Y
@@ -1389,9 +1405,10 @@ ClientScreen As screen:
                                                     address1:txtAddress1.Text,
                                                     address2: txtAddress2.Text,
                                                     city:CCity.Text,
+                                                    zip: CZip.Text,
                                                     state:CState.Text,
                                                     contactName:txtContactName.Text,
-                                                    contactNumber:txtContactNumber.Text
+                                                    contactNumber:txtContactNumberEC.Text
                                                     
                                                 })
                                             
