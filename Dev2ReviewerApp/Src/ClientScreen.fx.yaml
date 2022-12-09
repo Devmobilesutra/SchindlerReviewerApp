@@ -634,18 +634,10 @@ ClientScreen As screen:
                                 Height: =35
                                 Size: =referenceCSS.RInputFontSize
                                 Text: |-
-                                    =/*If(
+                                    =If(
                                         IsBlank(txtContactNumberEC.Text),
-                                        "",
-                                         
-                                    
-                                            "[$-en-US](###) ###-####"
-                                        )
-                                    //)//*/
-                                    If(
-                                        IsBlank(txtContactNumberEC.Text),
-                                        "",
-                                        //ThisItem.ClientContactNumber,
+                                        //"",
+                                        ThisItem.contactNumber,
                                         Text(
                                             Value(txtContactNumberEC.Text),
                                             "[$-en-US](###) ###-####"
@@ -675,7 +667,13 @@ ClientScreen As screen:
                                 HoverFill: =RGBA(0, 0, 0, 0)
                                 MaxLength: =10
                                 OnChange: |-
-                                    =Set(formattedNumber, Text(Value(txtClientName.Text), "[$-en-US](###) ###-####"))
+                                    =Set(
+                                        formattedNumber,
+                                        Text(
+                                            Value(txtClientName.Text),
+                                            "[$-en-US](###) ###-####"
+                                        )
+                                    )
                                 PaddingLeft: =5
                                 RadiusBottomLeft: =1
                                 RadiusBottomRight: =1
@@ -1263,7 +1261,14 @@ ClientScreen As screen:
                                 PaddingLeft: =12
                                 Size: =referenceCSS.RInputFontSize
                                 Text: |-
-                                    =If(IsBlank(txtContactNumber.Text),"",Text(Value(txtContactNumber.Text), "[$-en-US](###) ###-####"))
+                                    =If(
+                                        IsBlank(txtContactNumber.Text),
+                                        "",
+                                        Text(
+                                            Value(txtContactNumber.Text),
+                                            "[$-en-US](###) ###-####"
+                                        )
+                                    )
                                 Width: =Parent.Width/1.94
                                 X: =1
                                 Y: =txtContactNumber.Y
@@ -1285,7 +1290,13 @@ ClientScreen As screen:
                                 HoverFill: =RGBA(0, 0, 0, 0)
                                 MaxLength: =10
                                 OnChange: |-
-                                    =Set(formattedNumber, Text(Value(txtClientName.Text), "[$-en-US](###) ###-####"))
+                                    =Set(
+                                        formattedNumber,
+                                        Text(
+                                            Value(txtClientName.Text),
+                                            "[$-en-US](###) ###-####"
+                                        )
+                                    )
                                 RadiusBottomLeft: =1
                                 RadiusBottomRight: =1
                                 RadiusTopLeft: =1
@@ -1408,7 +1419,7 @@ ClientScreen As screen:
                                                     zip: CZip.Text,
                                                     state:CState.Text,
                                                     contactName:txtContactName.Text,
-                                                    contactNumber:txtContactNumberEC.Text
+                                                    contactNumber:lblCNumber.Text
                                                     
                                                 })
                                             
