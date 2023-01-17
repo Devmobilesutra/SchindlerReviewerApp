@@ -525,7 +525,7 @@ BankScreen As screen:
                     email:cboxReviewverBS.SelectedItems
                 }
                 );
-                Set(bktrip, LookUp(BankTripReport,assignmentId.Id=glryProject.Selected.Id,'BankTripReport (quantum_banktripreport)'));
+                Set(bktrip, LookUp(BankTripReport,assignmentId.Id=glryProject.Selected.Id,'BankTripReport (quantum_banktripreportid)'));
                   Set(q,DistributeReport.Run(bktrip,JSON(combocollect,Compact)));
                 If(q=true,Notify("BankTripReport has Distributed Successfully"));
                 Set(varComment1 , false);
