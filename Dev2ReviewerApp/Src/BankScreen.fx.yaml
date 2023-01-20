@@ -280,7 +280,16 @@ BankScreen As screen:
                         ZIndex: =2
 
                     btnStartAssessmentBS As button:
-                        DisplayMode: =If((LookUp(checkpointAssessment,assignmentId.Id=glryProject.Selected.Id && bankUnitId.Id=ThisItem.bankUnitId.Id,checkpointAssessment_id)<> Blank()),DisplayMode.Edit,DisplayMode.Disabled)
+                        DisplayMode: |-
+                            =If(
+                                (LookUp(
+                                    checkpointAssessment,
+                                    assignmentId.Id = glryProject.Selected.Id && bankUnitId.Id = ThisItem.bankUnitId.Id,
+                                    checkpointAssessment_id
+                                ) <> Blank()),
+                                DisplayMode.Edit,
+                                DisplayMode.Disabled
+                            )
                         Fill: =referenceCSS.RActiveColor
                         Height: =50
                         HoverColor: |-
@@ -608,7 +617,7 @@ BankScreen As screen:
             FontWeight: =FontWeight.Bold
             Height: =100
             Size: =15
-            Text: ="Action Item tracker is send to your email id."
+            Text: ="Action Item tracker has been sent to your email id."
             Visible: =P =true
             Width: =324
             X: =(Parent.Width-Self.Width)/2
