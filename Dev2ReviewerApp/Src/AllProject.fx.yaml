@@ -132,7 +132,7 @@ AllProject As screen:
                 LayoutMinWidth: =320
                 ShowScrollbar: =false
                 TemplatePadding: =10
-                TemplateSize: =425
+                TemplateSize: =450
                 Width: =Parent.Width
                 Y: =ctnBackAllProject.Height+ctnBackAllProject.Y
                 ZIndex: =2
