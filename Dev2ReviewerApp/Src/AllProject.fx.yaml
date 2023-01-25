@@ -234,7 +234,7 @@ AllProject As screen:
                 LayoutMinWidth: =320
                 ShowScrollbar: =false
                 TemplatePadding: =10
-                TemplateSize: =450
+                TemplateSize: =500
                 Width: =Parent.Width
                 Y: =ctnBackAllProject.Height+ctnBackAllProject.Y
                 ZIndex: =2
@@ -461,7 +461,7 @@ AllProject As screen:
                     DisabledBorderColor: =RGBA(230, 230, 230, 1)
                     Fill: =RGBA(0, 0, 0, 0)
                     FocusedBorderThickness: =10
-                    Height: =430
+                    Height: =460
                     HoverBorderColor: =RGBA(230, 230, 230, 1)
                     HoverColor: =RGBA(0, 0, 0, 1)
                     HoverFill: =
@@ -610,7 +610,7 @@ AllProject As screen:
                     Text: ="Reviewer Name"
                     Width: =210
                     X: =Parent.Width/13
-                    Y: =385
+                    Y: =lblAName.Y+lblAName.Height
                     ZIndex: =36
 
                 lblReviewerName As label:
@@ -621,7 +621,7 @@ AllProject As screen:
                     Text: =ThisItem.reviewerName
                     Width: =300
                     X: =lblAddress.Width+lblAddress.X
-                    Y: =385
+                    Y: =lblAssessorName.Y+lblAssessorName.Height
                     ZIndex: =37
 
                 imgAssessor As image:
