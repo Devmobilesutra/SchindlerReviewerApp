@@ -130,8 +130,7 @@ projectAssignment As screen:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
                 Height: =90
-                LayoutDirection: =LayoutDirection.Vertical
-                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
@@ -139,6 +138,7 @@ projectAssignment As screen:
                 ZIndex: =1
 
                 btnBackPA As button:
+                    AlignInContainer: =AlignInContainer.Center
                     BorderColor: =referenceCSS.RActiveColor
                     Color: =referenceCSS.RColorBlack
                     Fill: =referenceCSS.RColorWhite
@@ -160,6 +160,75 @@ projectAssignment As screen:
                     Text: = "back"
                     Width: =Parent.Width/6
                     ZIndex: =1
+
+                Container1_1 As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =0
+                    Height: =Parent.Height
+                    LayoutAlignItems: =LayoutAlignItems.Center
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =5
+                    Visible: =If(A=true,true,false)
+                    Width: =Parent.Width/3.2
+                    ZIndex: =2
+
+                    TextInput2_4 As text:
+                        AlignInContainer: =AlignInContainer.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Clear: =true
+                        Default: =
+                        HintText: ="Search on G.O. Number"
+                        HoverBorderColor: =Self.Color
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        OnChange: =
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Reset: =true
+                        Width: =Parent.Width/1.5
+                        ZIndex: =1
+
+                    Icon1_1 As icon.Search:
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =2
+                        Color: =RGBA(0, 0, 0, 1)
+                        Fill: =RGBA(179, 179, 179, 1)
+                        Height: =40
+                        Icon: =Icon.Search
+                        OnSelect: |-
+                            =UpdateContext({VarSearchBank:TextInput2_4.Text});
+                            //Reset(TextInput2);
+                            /*//if VarCompleted variable is true then filter assignments table by reviewerid and completed status and sort by startdate and if VarInprogress variable is true then filter assignments table by reviewerid and inprogress status and sort by startdate
+                            If(
+                                VarCompleted = true,
+                                Sort(
+                                    Filter(
+                                        Assignments,
+                                        //ReviewerId = VarLoggedReviewer && 
+                                        AssessmentStatus = "Completed"
+                                    ),
+                                    StartDate,
+                                 Descending
+                                ),
+                                If(
+                                    VarInprogress = true,
+                                    Search(Sort(
+                                        Filter(
+                                            Assignments,
+                                            //ReviewerId = VarLoggedReviewer && 
+                                            AssessmentStatus = "Inprogress"
+                                        ),
+                                        StartDate,
+                                        Descending
+                                    ),TextInput2.Text,"shlrf_assessmenttype")
+                                )
+                            )*/
+                        Width: =40
+                        ZIndex: =2
 
             ctnButtonsPA As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
@@ -1053,7 +1122,9 @@ projectAssignment As screen:
                             Height: |
                                 =CountRows(GalleryExistingAssignment.AllItems)*(GalleryExistingAssignment.TemplateHeight)
                                 //Parent.Height
-                            Items: =Sort(assignments,startDate,Descending)
+                            Items: |-
+                                =Search(
+                                Sort(assignments,startDate,Descending),VarSearchBank,"shlaf_gonumber")
                             Layout: =Layout.Vertical
                             LayoutMinHeight: =287
                             LayoutMinWidth: =320
