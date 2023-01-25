@@ -49,9 +49,15 @@ DashboardScreen As screen:
                     Size: |-
                         =//(Parent.Height+Parent.Width)/40
                         Dashboard.DCountSize
-                    Text: |
+                    Text: |-
                         =//LookUp(projectAggregation,Reviewer_id=loginReviewer,completed_Projects)
-                        CountRows(Filter(assignments,reviewerId=loginReviewer && isCompleted="Completed"))
+                        CountRows(
+                            Filter(
+                                assignments,
+                                //reviewerId = loginReviewer && 
+                                isCompleted = "Completed"
+                            )
+                        )
                     Width: =Parent.Width
                     Y: =lblCompletedDS.Y+lblCompletedDS.Height+2
                     ZIndex: =3
@@ -139,8 +145,13 @@ DashboardScreen As screen:
                         Dashboard.DCountSize
                     Text: |
                         =//LookUp(projectAggregations,assessorId.email =User().Email,inProgressProjects)
-                        CountRows(Filter(assignments,reviewerId=loginReviewer && isCompleted="Inprogress"))
-                        
+                        CountRows(
+                            Filter(
+                                assignments,
+                               // reviewerId = loginReviewer && 
+                                isCompleted = "Inprogress"
+                            )
+                        )
                         //LookUp(projectAggregation,Reviewer_id = loginReviewer ,inProgress_Projects)
                         //CountRows(Filter(assignments,reviewerId=loginReviewer))
                     Width: =Parent.Width

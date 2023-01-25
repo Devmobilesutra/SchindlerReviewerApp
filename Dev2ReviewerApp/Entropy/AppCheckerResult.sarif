@@ -11183,6 +11183,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "App.loginReviewer"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "App.loginReviewer",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "loginReviewer",
+                "module": "App",
+                "type": "App"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-UnusedVariables",
+          "ruleIndex": 5
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.CId"
                 }
               ],
