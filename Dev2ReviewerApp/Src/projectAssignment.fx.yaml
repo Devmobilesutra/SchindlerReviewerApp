@@ -1,6 +1,8 @@
 projectAssignment As screen:
     OnVisible: |+
-        =        Reset(cboxClientNA);
+        =       UpdateContext({VarSearchBank:""});
+               Reset(TextInput2_4);
+                Reset(cboxClientNA);
                 Reset(cboxGONumberNA);
                 Clear(selectedUnit);
                 Reset(cboxAssessmentTypeNA);
@@ -1123,8 +1125,10 @@ projectAssignment As screen:
                                 =CountRows(GalleryExistingAssignment.AllItems)*(GalleryExistingAssignment.TemplateHeight)
                                 //Parent.Height
                             Items: |-
-                                =Search(
-                                Sort(assignments,startDate,Descending),VarSearchBank,"shlaf_gonumber")
+                                =If(VarSearchBank<>Blank(),
+                                Search(
+                                Sort(assignments,startDate,Descending),VarSearchBank,"shlaf_gonumber"),
+                                Sort(assignments,startDate,Descending))
                             Layout: =Layout.Vertical
                             LayoutMinHeight: =287
                             LayoutMinWidth: =320
