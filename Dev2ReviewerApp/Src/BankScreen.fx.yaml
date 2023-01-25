@@ -217,7 +217,7 @@ BankScreen As screen:
                         OnSelect: =Set(varComment1 , true);
                         PressedColor: =Self.Color
                         Text: ="Distribute Report"
-                        Visible: =If(comp=true,true,false)
+                        Visible: =//If(comp=true,true,false)
                         Width: =190
                         X: =Parent.Width/1.1
                         ZIndex: =8

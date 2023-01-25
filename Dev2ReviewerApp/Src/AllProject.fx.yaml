@@ -84,10 +84,9 @@ AllProject As screen:
 
             ctnBackAllProject As groupContainer.verticalAutoLayoutContainer:
                 FillPortions: =0
-                Height: =90
-                LayoutDirection: =LayoutDirection.Vertical
+                Height: =80
                 LayoutGap: =10
-                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutJustifyContent: =LayoutJustifyContent.SpaceBetween
                 LayoutMinHeight: =100
                 LayoutMinWidth: =250
                 LayoutMode: =LayoutMode.Auto
@@ -99,6 +98,7 @@ AllProject As screen:
                 ZIndex: =1
 
                 btnBackAllProject As button:
+                    AlignInContainer: =AlignInContainer.Center
                     BorderColor: =referenceCSS.RActiveColor
                     Color: =referenceCSS.RColorBlack
                     Fill: =RGBA(255, 255, 255, 1)
@@ -118,15 +118,112 @@ AllProject As screen:
                     Width: =ctnBackAllProject.Width/6
                     ZIndex: =2
 
+                Container1 As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =0
+                    Height: =Parent.Height
+                    LayoutJustifyContent: =LayoutJustifyContent.Center
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    PaddingLeft: =5
+                    Width: =Parent.Width/2.5
+                    ZIndex: =3
+
+                    TextInput2_3 As text:
+                        AlignInContainer: =AlignInContainer.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Clear: =true
+                        Default: =
+                        HintText: ="Search on G.O. Number"
+                        HoverBorderColor: =Self.Color
+                        HoverFill: =RGBA(0, 0, 0, 0)
+                        OnChange: =
+                        RadiusBottomLeft: =0
+                        RadiusBottomRight: =0
+                        RadiusTopLeft: =0
+                        RadiusTopRight: =0
+                        Reset: =true
+                        Width: =Parent.Width/1.5
+                        ZIndex: =1
+
+                    Icon1 As icon.Search:
+                        AlignInContainer: =AlignInContainer.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderThickness: =2
+                        Color: =RGBA(0, 0, 0, 1)
+                        Fill: =RGBA(179, 179, 179, 1)
+                        Height: =40
+                        Icon: =Icon.Search
+                        OnSelect: |-
+                            =UpdateContext({VarSearchBank:TextInput2_3.Text});
+                            //Reset(TextInput2);
+                            /*//if VarCompleted variable is true then filter assignments table by reviewerid and completed status and sort by startdate and if VarInprogress variable is true then filter assignments table by reviewerid and inprogress status and sort by startdate
+                            If(
+                                VarCompleted = true,
+                                Sort(
+                                    Filter(
+                                        Assignments,
+                                        //ReviewerId = VarLoggedReviewer && 
+                                        AssessmentStatus = "Completed"
+                                    ),
+                                    StartDate,
+                                 Descending
+                                ),
+                                If(
+                                    VarInprogress = true,
+                                    Search(Sort(
+                                        Filter(
+                                            Assignments,
+                                            //ReviewerId = VarLoggedReviewer && 
+                                            AssessmentStatus = "Inprogress"
+                                        ),
+                                        StartDate,
+                                        Descending
+                                    ),TextInput2.Text,"shlrf_assessmenttype")
+                                )
+                            )*/
+                        Width: =40
+                        ZIndex: =2
+
             "glryProject As gallery.'BrowseLayout_Vertical_ThreeTextVariant_ver4.0'":
                 Height: |-
                     =//ctnMiddlePS.Height
                     CountRows(glryProject.AllItems)*glryProject.TemplateHeight
                 Items: |-
-                    =If(comp=true,Sort(Filter(assignments,reviewerId=loginReviewer && isCompleted="Completed"),startDate,Ascending),If(inpro=true,
-                    Sort(Filter(assignments,reviewerId=loginReviewer && isCompleted="Inprogress"),startDate,Ascending)))
-                    
-                    //Distinct(Filter(GC_projectAssignment,assessor_id=LoggedAssessor),clientId)
+                    =If(
+                        comp = true,
+                        Sort(
+                            Filter(
+                                assignments,
+                                reviewerId = loginReviewer && isCompleted = "Completed"
+                            ),
+                            startDate,
+                            Ascending
+                        ),
+                        If(
+                            inpro = true,
+                            If(VarSearchBank <> Blank(),
+                            Search(
+                            Sort(
+                                Filter(
+                                    assignments,
+                                    reviewerId = loginReviewer && isCompleted = "Inprogress"
+                                ),
+                                startDate,
+                                Ascending
+                            ),VarSearchBank,"shlaf_gonumber"),
+                            Sort(
+                                Filter(
+                                    assignments,
+                                    reviewerId = loginReviewer && isCompleted = "Inprogress"
+                                ),
+                                startDate,
+                                Ascending
+                            )
+                            )  
+                        )
+                    )
                 Layout: =Layout.Vertical
                 LayoutMinHeight: =287
                 LayoutMinWidth: =320

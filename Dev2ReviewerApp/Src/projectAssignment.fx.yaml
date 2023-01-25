@@ -884,7 +884,8 @@ projectAssignment As screen:
                                                             displayName = cboxAssessorNA.Selected.displayName,
                                                             displayName
                                                         ),
-                                                        reviewerName: cboxReviewerNA.Selected.displayName
+                                                        reviewerName: cboxReviewerNA.Selected.displayName,
+                                                        GONumber: cboxGONumberNA.Selected.goNumber
                                                           //LookUp(ReviewerAD,
                                                          //   displayName = ComboBox5.Selected.displayName,
                                                          //   displayName
