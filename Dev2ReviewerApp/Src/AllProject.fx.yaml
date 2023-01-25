@@ -263,7 +263,7 @@ AllProject As screen:
                     Visible: =If(comp=true,true,false)
                     Width: =210
                     X: =Parent.Width/13
-                    Y: =lblDueDate.Y+lblDueDate.Height
+                    Y: =lblRName.Y+lblRName.Height
                     ZIndex: =16
 
                 lblAddress As label:
@@ -314,7 +314,7 @@ AllProject As screen:
                     Visible: =If(comp=true,true,false)
                     Width: =300
                     X: =lblAddress.Width+lblAddress.X
-                    Y: =lblDueDate.Y+lblDueDate.Height
+                    Y: =lblRName.Y+lblRName.Height
                     ZIndex: =22
 
                 btnprojecttype As button:
@@ -359,7 +359,7 @@ AllProject As screen:
                     DisabledBorderColor: =RGBA(230, 230, 230, 1)
                     Fill: =RGBA(0, 0, 0, 0)
                     FocusedBorderThickness: =10
-                    Height: =391
+                    Height: =430
                     HoverBorderColor: =RGBA(230, 230, 230, 1)
                     HoverColor: =RGBA(0, 0, 0, 1)
                     HoverFill: =
@@ -436,7 +436,7 @@ AllProject As screen:
                     Visible: =If(comp=true,true,false)
                     Width: =20
                     X: =glryProject.Width/20
-                    Y: =lblDueDate.Y+lblDueDate.Height+10
+                    Y: =lblRName.Y+lblRName.Height+10
                     ZIndex: =30
 
                 imgAddress As image:
@@ -474,6 +474,72 @@ AllProject As screen:
                     Y: =lblContactNumber.Y+lblContactNumber.Height
                     ZIndex: =33
 
+                lblAName As label:
+                    Font: =referenceCSS.RFont
+                    FontWeight: =FontWeight.Semibold
+                    OnSelect: =Select(Parent)
+                    PaddingLeft: =10
+                    PaddingRight: =10
+                    Size: =referenceCSS.RLabelFontSize
+                    Text: ="Assessor Name"
+                    Width: =210
+                    X: =Parent.Width/13
+                    Y: =lblDueDate.Y+lblDueDate.Height
+                    ZIndex: =34
+
+                lblAssessorName As label:
+                    Font: =referenceCSS.RFont
+                    Height: =lblAName.Height
+                    OnSelect: =Select(Parent)
+                    Size: =referenceCSS.RLabelFontSize
+                    Text: =ThisItem.assessorName
+                    Width: =300
+                    X: =lblAddress.Width+lblAddress.X
+                    Y: =lblDueDate.Y+lblDueDate.Height
+                    ZIndex: =35
+
+                lblRName As label:
+                    Font: =referenceCSS.RFont
+                    FontWeight: =FontWeight.Semibold
+                    OnSelect: =Select(Parent)
+                    PaddingLeft: =10
+                    PaddingRight: =10
+                    Size: =referenceCSS.RLabelFontSize
+                    Text: ="Reviewer Name"
+                    Width: =210
+                    X: =Parent.Width/13
+                    Y: =385
+                    ZIndex: =36
+
+                lblReviewerName As label:
+                    Font: =referenceCSS.RFont
+                    Height: =lblRName.Height
+                    OnSelect: =Select(Parent)
+                    Size: =referenceCSS.RLabelFontSize
+                    Text: =ThisItem.reviewerName
+                    Width: =300
+                    X: =lblAddress.Width+lblAddress.X
+                    Y: =385
+                    ZIndex: =37
+
+                imgAssessor As image:
+                    Height: =23
+                    Image: =Sample_User_Icon
+                    OnSelect: =Select(Parent)
+                    Width: =23
+                    X: =glryProject.Width/20
+                    Y: =lblDueDate.Y+lblDueDate.Height+10
+                    ZIndex: =38
+
+                imgReviewer As image:
+                    Height: =23
+                    Image: =Sample_User_Icon
+                    OnSelect: =Select(Parent)
+                    Width: =23
+                    X: =glryProject.Width/20
+                    Y: =lblAName.Y+lblADate.Height+10
+                    ZIndex: =39
+
                 imgBank As image:
                     Height: =20
                     Image: ='office-building-white-building-icon-png'
@@ -481,5 +547,5 @@ AllProject As screen:
                     Width: =20
                     X: =glryProject.Width/20
                     Y: =lblContactNumber.Y+lblContactNumber.Height+5
-                    ZIndex: =34
+                    ZIndex: =40
 
