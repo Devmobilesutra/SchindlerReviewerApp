@@ -198,7 +198,8 @@ AllProject As screen:
                         Sort(
                             Filter(
                                 assignments,
-                                reviewerId = loginReviewer && isCompleted = "Completed"
+                                //reviewerId = loginReviewer && 
+                                isCompleted = "Completed"
                             ),
                             startDate,
                             Descending
@@ -210,7 +211,8 @@ AllProject As screen:
                             Sort(
                                 Filter(
                                     assignments,
-                                    reviewerId = loginReviewer && isCompleted = "Inprogress"
+                                    //reviewerId = loginReviewer && 
+                                    isCompleted = "Inprogress"
                                 ),
                                 startDate,
                                 Descending
@@ -218,7 +220,8 @@ AllProject As screen:
                             Sort(
                                 Filter(
                                     assignments,
-                                    reviewerId = loginReviewer && isCompleted = "Inprogress"
+                                    //reviewerId = loginReviewer && 
+                                    isCompleted = "Inprogress"
                                 ),
                                 startDate,
                                 Descending
