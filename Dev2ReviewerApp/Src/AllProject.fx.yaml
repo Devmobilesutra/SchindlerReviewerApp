@@ -1,5 +1,7 @@
 AllProject As screen:
-    OnVisible: =
+    OnVisible: |-
+        =UpdateContext({VarSearchBank:""});
+        Reset(TextInput2_3);
 
     ctnMainPS As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -199,7 +201,7 @@ AllProject As screen:
                                 reviewerId = loginReviewer && isCompleted = "Completed"
                             ),
                             startDate,
-                            Ascending
+                            Descending
                         ),
                         If(
                             inpro = true,
@@ -211,7 +213,7 @@ AllProject As screen:
                                     reviewerId = loginReviewer && isCompleted = "Inprogress"
                                 ),
                                 startDate,
-                                Ascending
+                                Descending
                             ),VarSearchBank,"shlaf_gonumber"),
                             Sort(
                                 Filter(
@@ -219,7 +221,7 @@ AllProject As screen:
                                     reviewerId = loginReviewer && isCompleted = "Inprogress"
                                 ),
                                 startDate,
-                                Ascending
+                                Descending
                             )
                             )  
                         )
