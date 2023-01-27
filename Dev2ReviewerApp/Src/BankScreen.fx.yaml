@@ -192,7 +192,7 @@ BankScreen As screen:
                         ZIndex: =6
 
                     btnActionTrackerBS As button:
-                        DisplayMode: =If((LookUp(checkpointItem_ActionItem,assignmentId.Id=glryProject.Selected.Id,checkpointItemActionItemsId)<> Blank()),DisplayMode.Edit,DisplayMode.Disabled)
+                        DisplayMode: =If((LookUp(checkpointItem_ActionItem,assignmentId.Id=glryProject.Selected.Id,checkpointItemActionItemsId)<> Blank()) && VarReviewerResult=false,DisplayMode.Edit,DisplayMode.Disabled)
                         Fill: =referenceCSS.RActiveColor
                         HoverFill: |-
                             =//ColorFade(RGBA(56, 96, 178, 1), -20%)
