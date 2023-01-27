@@ -467,7 +467,9 @@ AllProject As screen:
                     HoverFill: =
                     OnSelect: |
                         =Set(Assignid,ThisItem.Id);
+                        If(ThisItem.reviewerName<>userdata.userdisplayName,Set(VarReviewerResult,true),Set(VarReviewerResult,false));
                         Navigate(BankScreen);
+                        
                         /*If(
                             CountRows(
                                 Filter(
