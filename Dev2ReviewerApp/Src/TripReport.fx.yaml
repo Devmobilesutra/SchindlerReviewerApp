@@ -779,7 +779,8 @@ TripReport As screen:
                                 //If(IsBlank(Self.SelectedDate), Text(Blank()))
                             DisabledBorderColor: =RGBA(153, 153, 153, 1)
                             DisabledColor: =RGBA(179, 179, 179, 1)
-                            DisplayMode: =If(comp=true,DisplayMode.View,DisplayMode.Edit)
+                            DisplayMode: =If(comp=true || VarReviewerResult=true,DisplayMode.View,DisplayMode.Edit)
+                            Fill: =If(comp=true || VarReviewerResult=true, RGBA(237, 237, 237, 1),RGBA(255,255,255,1))
                             Height: =30
                             InputTextPlaceholder: |-
                                 =If(IsBlank(Self.SelectedDate), Text(Date(2000,01,01), Self.Format, Self.Language))
@@ -956,7 +957,8 @@ TripReport As screen:
                         txtTimeEstimateValueAR As text:
                             BorderColor: =RGBA(0, 0, 0, 1)
                             Default: =ThisItem.TimeEstimate
-                            DisplayMode: =If(comp=true,DisplayMode.View,DisplayMode.Edit)
+                            DisplayMode: =If(comp=true || VarReviewerResult=true,DisplayMode.View,DisplayMode.Edit)
+                            Fill: =If(comp=true || VarReviewerResult=true, RGBA(237, 237, 237, 1),RGBA(255,255,255,1))
                             Font: =referenceCSS.RFont
                             Height: =30
                             HoverBorderColor: =RGBA(0, 0, 0, 1)
@@ -1029,7 +1031,7 @@ TripReport As screen:
                 TextInput3 As text:
                     BorderColor: =RGBA(179, 179, 179, 1)
                     Default: = LookUp(BankTripReport,assignmentId.Id=glryProject.Selected.Id,General_Recommendation)
-                    DisplayMode: =If(comp=true,DisplayMode.View,DisplayMode.Edit)
+                    DisplayMode: =If(comp=true || VarReviewerResult=true,DisplayMode.View,DisplayMode.Edit)
                     Font: =referenceCSS.RFont
                     Height: =200
                     HintText: =If(comp=true," ","Enter here")
@@ -1065,6 +1067,7 @@ TripReport As screen:
 
                     Button9_6 As button:
                         Color: =RGBA(255,255,255,1)
+                        DisplayMode: =If(VarReviewerResult=true,DisplayMode.Disabled,DisplayMode.Edit)
                         Fill: =referenceCSS.RActiveColor
                         Height: =50
                         HoverFill: |-
@@ -1090,6 +1093,7 @@ TripReport As screen:
 
                     Button9_3 As button:
                         Color: =RGBA(255,255,255,1)
+                        DisplayMode: =If(VarReviewerResult=true,DisplayMode.Disabled,DisplayMode.Edit)
                         Fill: =referenceCSS.RActiveColor
                         Height: =50
                         HoverFill: |-
@@ -1134,6 +1138,7 @@ TripReport As screen:
                     Button9_2 As button:
                         AlignInContainer: =AlignInContainer.Center
                         Color: =RGBA(255,255,255,1)
+                        DisplayMode: =If(VarReviewerResult=true,DisplayMode.Disabled,DisplayMode.Edit)
                         Fill: =referenceCSS.RActiveColor
                         Height: =50
                         HoverFill: |-

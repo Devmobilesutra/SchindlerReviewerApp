@@ -1043,7 +1043,14 @@
         "DisabledColor",
         "PressedColor",
         "HoverColor",
-        "DisplayMode",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "DisplayMode.Edit",
+          "InvariantPropertyName": "DisplayMode",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Fill",
         "DisabledFill",
         "PressedFill",
@@ -1410,7 +1417,14 @@
         "DisabledColor",
         "PressedColor",
         "HoverColor",
-        "DisplayMode",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "DisplayMode.Edit",
+          "InvariantPropertyName": "DisplayMode",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Fill",
         "DisabledFill",
         "PressedFill",
@@ -1791,7 +1805,14 @@
         "DisabledColor",
         "PressedColor",
         "HoverColor",
-        "DisplayMode",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "DisplayMode.Edit",
+          "InvariantPropertyName": "DisplayMode",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Fill",
         "DisabledFill",
         "PressedFill",
@@ -9301,7 +9322,14 @@
         "BorderThickness",
         "FocusedBorderColor",
         "FocusedBorderThickness",
-        "Fill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "RGBA(255, 255, 255, 1)",
+          "InvariantPropertyName": "Fill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "Font",
         {
           "AFDDataSourceName": "",
@@ -30270,7 +30298,14 @@
           "IsLockable": false,
           "NameMapSourceSchema": "?"
         },
-        "Fill",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "RGBA(255, 255, 255, 1)",
+          "InvariantPropertyName": "Fill",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisabledFill",
         "PressedFill",
         {
