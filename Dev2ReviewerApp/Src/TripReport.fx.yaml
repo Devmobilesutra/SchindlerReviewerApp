@@ -936,7 +936,9 @@ TripReport As screen:
                         txtMaterialValueAR As text:
                             BorderColor: =RGBA(0, 0, 0, 1)
                             Default: =ThisItem.MaterialEstimate
+                            DisabledFill: =RGBA(255, 255, 255, 1)
                             DisplayMode: =If(comp=true || VarReviewerResult=true,DisplayMode.View,DisplayMode.Edit)
+                            Fill: =If(comp=true || VarReviewerResult=true, RGBA(237, 237, 237, 1),RGBA(255,255,255,1))
                             Font: =referenceCSS.RFont
                             Height: =30
                             HoverBorderColor: =RGBA(0, 0, 0, 1)
