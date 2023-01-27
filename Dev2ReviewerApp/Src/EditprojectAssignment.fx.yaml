@@ -680,7 +680,7 @@ EditprojectAssignment As screen:
                                                     startDate: DatePickerStartDateEditA.SelectedDate,
                                                     dueDate: DatePickerDueDateEditA.SelectedDate,
                                                     assignedDate: DatePickerAssignDateEditA.SelectedDate,
-                                                    isCompleted: "Upcomming",
+                                                    //isCompleted: "Inprogress",
                                                     assessorEmail: LookUp(
                                                         AssessorAD,
                                                         displayName = cboxAssessornameEditA.Selected.displayName,
