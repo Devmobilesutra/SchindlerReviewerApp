@@ -1032,6 +1032,7 @@ TripReport As screen:
                     BorderColor: =RGBA(179, 179, 179, 1)
                     Default: = LookUp(BankTripReport,assignmentId.Id=glryProject.Selected.Id,General_Recommendation)
                     DisplayMode: =If(comp=true || VarReviewerResult=true,DisplayMode.View,DisplayMode.Edit)
+                    Fill: =If(comp=true || VarReviewerResult=true, RGBA(237, 237, 237, 1),RGBA(255,255,255,1))
                     Font: =referenceCSS.RFont
                     Height: =200
                     HintText: =If(comp=true," ","Enter here")
@@ -1093,7 +1094,6 @@ TripReport As screen:
 
                     Button9_3 As button:
                         Color: =RGBA(255,255,255,1)
-                        DisplayMode: =If(VarReviewerResult=true,DisplayMode.Disabled,DisplayMode.Edit)
                         Fill: =referenceCSS.RActiveColor
                         Height: =50
                         HoverFill: |-
@@ -1262,6 +1262,8 @@ TripReport As screen:
 
         Button11_3 As button:
             BorderThickness: =0
+            DisabledFill: =RGBA(237, 237, 237, 1)
+            DisplayMode: =If(VarReviewerResult=true,DisplayMode.Disabled,DisplayMode.Edit)
             Fill: =referenceCSS.RActiveColor
             FocusedBorderThickness: =
             HoverFill: =//ColorFade(RGBA(56, 96, 178, 1), -20%)
@@ -1320,6 +1322,8 @@ TripReport As screen:
                     //varItemComment = true,
                     //Gallery1_3.Selected.checkpointItemComment
                 )
+            DisplayMode: =If(VarReviewerResult=true,DisplayMode.View,DisplayMode.Edit)
+            Fill: =If(VarReviewerResult=true, RGBA(237, 237, 237, 1),RGBA(255,255,255,1))
             FocusedBorderColor: =RGBA(179, 179, 179, 1)
             Height: =Rectangle6_1.Height
             HintText: ="Add Comments"
