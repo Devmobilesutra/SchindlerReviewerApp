@@ -1441,11 +1441,11 @@ projectAssignment As screen:
                                     DisabledFill: =RGBA(0, 0, 0, 0)
                                     DisplayMode: |-
                                         =//If assessment is start then we can'edit and delete the record
-                                        If(
+                                        /*If(
                                             ThisItem.isCompleted = "Upcomming",
                                             DisplayMode.Edit,
                                             DisplayMode.Disabled
-                                        )
+                                        )*/
                                     Fill: =RGBA(0, 0, 0, 0)
                                     Height: =50
                                     HoverBorderColor: =//ColorFade(Self.BorderColor, 20%)
@@ -1467,7 +1467,8 @@ projectAssignment As screen:
                                                 nreviewerid: ThisItem.reviewerId,
                                                 nstartdate:ThisItem.startDate,
                                                 nduedate:ThisItem.dueDate,
-                                                nassigndate:ThisItem.assignedDate
+                                                nassigndate:ThisItem.assignedDate,
+                                                niscompleted:ThisItem.isCompleted
                                             }
                                         );
                                     PaddingLeft: =30
@@ -1486,12 +1487,13 @@ projectAssignment As screen:
                                     BorderColor: =RGBA(0, 0, 0, 1)
                                     Height: =30
                                     Image: |-
-                                        =//If assignment is assign to assessor then we can't delete bank
-                                        If(
+                                        ='writing-black'
+                                        //If assignment is assign to assessor then we can't delete bank
+                                        /*If(
                                             ThisItem.isCompleted = "Upcomming",
                                             'writing-black',
                                              writingGray
-                                        )
+                                        )*/
                                     Width: =20
                                     X: =btnEditEA.X+3
                                     Y: =btnEditEA.Y+(btnEditEA.Height/5)

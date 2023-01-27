@@ -848,7 +848,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "btnOkEditA",
-      "ParentIndex": 3,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1481,7 +1481,14 @@
         },
         "Visible",
         "TabIndex",
-        "DisplayMode",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "DisplayMode.Edit",
+          "InvariantPropertyName": "DisplayMode",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "OnSelect",
         "OnChange",
         "minimumWidth",
@@ -1986,7 +1993,14 @@
         },
         "Visible",
         "TabIndex",
-        "DisplayMode",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "DisplayMode.Edit",
+          "InvariantPropertyName": "DisplayMode",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "OnSelect",
         "OnChange",
         "minimumWidth",
@@ -2562,7 +2576,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "cboxClientEditA",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3081,7 +3095,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "cboxGonumberEditA",
-      "ParentIndex": 3,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6225,7 +6239,14 @@
         "X",
         "Y",
         "Visible",
-        "DisplayMode",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "DisplayMode.Edit",
+          "InvariantPropertyName": "DisplayMode",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "OnSelect",
         "OnChange",
         "TabIndex",
@@ -6669,7 +6690,14 @@
         "X",
         "Y",
         "Visible",
-        "DisplayMode",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "DisplayMode.Edit",
+          "InvariantPropertyName": "DisplayMode",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "OnSelect",
         "OnChange",
         "TabIndex",
@@ -7113,7 +7141,14 @@
         "X",
         "Y",
         "Visible",
-        "DisplayMode",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "DisplayMode.Edit",
+          "InvariantPropertyName": "DisplayMode",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "OnSelect",
         "OnChange",
         "TabIndex",
@@ -7727,7 +7762,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "glryUnitEditA",
-      "ParentIndex": 5,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8589,7 +8624,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "imgSuccessEditA",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10562,7 +10597,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblClientEditA",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11713,7 +11748,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblexistBankEditA",
-      "ParentIndex": 6,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -12092,7 +12127,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblGoNumberEditA",
-      "ParentIndex": 2,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13201,7 +13236,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblSuccessEditA",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13534,7 +13569,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblunitEditA",
-      "ParentIndex": 4,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13860,7 +13895,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "lblUpdateSuccessEditA",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

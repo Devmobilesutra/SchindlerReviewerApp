@@ -386,6 +386,13 @@ EditprojectAssignment As screen:
                         ChevronHoverFill: =RGBA(0, 0, 0, 1)
                         DefaultSelectedItems: =Filter(LC_assessmentType,type = nassessmenttype )
                         DisplayFields: =["type"]
+                        DisplayMode: |-
+                            =//If assessment is start then we can'edit this field
+                            If(
+                                niscompleted = "Upcomming",
+                                DisplayMode.Edit,
+                                DisplayMode.Disabled
+                            )
                         FocusedBorderThickness: =1
                         Font: =referenceCSS.RFont
                         Height: =50
@@ -425,6 +432,13 @@ EditprojectAssignment As screen:
                         DefaultSelectedItems: |
                             =First(Filter(AssessorAD,id = nassessorid ))
                         DisplayFields: =["displayName"]
+                        DisplayMode: |-
+                            =//If assessment is start then we can'edit this field
+                            If(
+                                niscompleted = "Upcomming",
+                                DisplayMode.Edit,
+                                DisplayMode.Disabled
+                            )
                         FocusedBorderThickness: =1
                         Font: =referenceCSS.RFont
                         Height: =50
@@ -493,6 +507,13 @@ EditprojectAssignment As screen:
                     DatePickerStartDateEditA As datepicker:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         DefaultDate: =nstartdate
+                        DisplayMode: |-
+                            =//If assessment is start then we can'edit this field
+                            If(
+                                niscompleted = "Upcomming",
+                                DisplayMode.Edit,
+                                DisplayMode.Disabled
+                            )
                         Font: =referenceCSS.RFont
                         Height: =50
                         OnChange: =false //Set(IsEdit,true);
@@ -514,6 +535,13 @@ EditprojectAssignment As screen:
                     DatePickerDueDateEditA As datepicker:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         DefaultDate: =nduedate
+                        DisplayMode: |-
+                            =//If assessment is start then we can'edit this field
+                            If(
+                                niscompleted = "Upcomming",
+                                DisplayMode.Edit,
+                                DisplayMode.Disabled
+                            )
                         Font: =referenceCSS.RFont
                         Height: =50
                         OnChange: =false //Set(IsEdit,true);
@@ -535,6 +563,13 @@ EditprojectAssignment As screen:
                     DatePickerAssignDateEditA As datepicker:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         DefaultDate: =nassigndate
+                        DisplayMode: |-
+                            =//If assessment is start then we can'edit this field
+                            If(
+                                niscompleted = "Upcomming",
+                                DisplayMode.Edit,
+                                DisplayMode.Disabled
+                            )
                         Font: =referenceCSS.RFont
                         Height: =50
                         OnChange: =false //Set(IsEdit,true);
