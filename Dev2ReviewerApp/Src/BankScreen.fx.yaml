@@ -227,12 +227,12 @@ BankScreen As screen:
                         Fill: =referenceCSS.RActiveColor
                         HoverFill: =Self.Fill
                         OnSelect: |
-                            =/*//generate tripreport pdf by automate flow 
+                            =//generate tripreport pdf by automate flow 
                             //AssessorTripReportss.Run(glryProject.Selected.Assignments);
                             Set(VarGeneratePDF,
-                            AssessorTripReport.Run(glryProject.Selected.Assignment,glryProject.Selected.ReviewerEmail));
+                            AssessorTripReport.Run(glryProject.Selected.assignments,glryProject.Selected.reviewerEmail));
                             If(VarGeneratePDF=true,
-                            Notify("TripReport has been sent to your Email Id",NotificationType.Success));***/
+                            Notify("TripReport has been sent to your Email Id",NotificationType.Success));
                         PressedColor: =Self.Color
                         PressedFill: =Self.Fill
                         Text: ="Generate PDF"
