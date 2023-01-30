@@ -99,7 +99,7 @@ BankScreen As screen:
                     FillPortions: =0
                     Height: =65
                     LayoutAlignItems: =LayoutAlignItems.Center
-                    LayoutGap: =50
+                    LayoutGap: =20
                     LayoutMinHeight: =100
                     LayoutMinWidth: =250
                     LayoutMode: =LayoutMode.Auto
@@ -118,7 +118,7 @@ BankScreen As screen:
                         Text: |-
                             =lblBankName.Text 
                             //" Assessment By :  " //&   CountRows(Filter(GC_unitAssessment,assignmentId.bankId.goNumber=lblGonumber1BS.Text && Assessment_status="inProgress"))& "/" &(CountRows(glryBankGo_1.AllItems))
-                        Width: =Parent.Width/3
+                        Width: =Parent.Width/5
                         ZIndex: =1
 
                     lblCommentSentBS As label:
@@ -128,7 +128,9 @@ BankScreen As screen:
                         Size: =referenceCSS.RViewFontSize
                         Text: |
                             =If(comp=true,"",If(LookUp(BankTripReport,assignmentId.Id=glryProject.Selected.Id && bankId.Id=glryProject.Selected.bankId.Id,ReviewerComments)<> Blank(),"Comment Sent"))
-                        Width: =Parent.Width/4
+                        Width: |-
+                            =170
+                            //Parent.Width/4
                         ZIndex: =2
 
                     imgViewActiveBS As image:
@@ -188,6 +190,7 @@ BankScreen As screen:
                         PressedColor: =Self.Color
                         PressedFill: =Self.Fill
                         Text: ="View Report"
+                        Width: =140
                         X: =Parent.Width-100
                         ZIndex: =6
 
@@ -205,8 +208,37 @@ BankScreen As screen:
                         PressedFill: =Self.Fill
                         Text: ="Action Tracker"
                         Visible: =If(comp=true,false,true)
+                        Width: =150
                         X: =Parent.Width-100
                         ZIndex: =7
+
+                    btnViewreportBS_1 As button:
+                        DisplayMode: |-
+                            =//if BankTripReport table has entry of selected assignment then displaymode is edit otherwise displaymode is disabled
+                            If(
+                                (LookUp(
+                                    BankTripReport,
+                                    assignmentId.Id = glryProject.Selected.Id,
+                                    'BankTripReport (quantum_banktripreport)'
+                                ) <> Blank()),
+                                DisplayMode.Edit,
+                                DisplayMode.Disabled
+                            )
+                        Fill: =referenceCSS.RActiveColor
+                        HoverFill: =Self.Fill
+                        OnSelect: |
+                            =/*//generate tripreport pdf by automate flow 
+                            //AssessorTripReportss.Run(glryProject.Selected.Assignments);
+                            Set(VarGeneratePDF,
+                            AssessorTripReport.Run(glryProject.Selected.Assignment,glryProject.Selected.ReviewerEmail));
+                            If(VarGeneratePDF=true,
+                            Notify("TripReport has been sent to your Email Id",NotificationType.Success));***/
+                        PressedColor: =Self.Color
+                        PressedFill: =Self.Fill
+                        Text: ="Generate PDF"
+                        Width: =150
+                        X: =Parent.Width-100
+                        ZIndex: =8
 
                     btnDistributeReportBS As button:
                         DisplayMode: =If((LookUp(assignments,Id=glryProject.Selected.Id && isCompleted="Completed",Id)),DisplayMode.Edit,DisplayMode.Disabled)
@@ -217,10 +249,10 @@ BankScreen As screen:
                         OnSelect: =Set(varComment1 , true);
                         PressedColor: =Self.Color
                         Text: ="Distribute Report"
-                        Visible: =//If(comp=true,true,false)
+                        Visible: =If(comp=true,true,false)
                         Width: =190
                         X: =Parent.Width/1.1
-                        ZIndex: =8
+                        ZIndex: =9
 
             ctnBankScreen As groupContainer.verticalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
