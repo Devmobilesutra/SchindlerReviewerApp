@@ -220,7 +220,7 @@ BankScreen As screen:
                                     BankTripReport,
                                     assignmentId.Id = glryProject.Selected.Id,
                                     'BankTripReport (quantum_banktripreport)'
-                                ) <> Blank()),
+                                ) <> Blank()) && VarReviewerResult=false,
                                 DisplayMode.Edit,
                                 DisplayMode.Disabled
                             )
