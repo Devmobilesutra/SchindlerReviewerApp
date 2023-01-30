@@ -1104,7 +1104,7 @@ TripReport As screen:
                             //Set(varItemComment,false);
                             Set(varSectionComment,true);
                             //Set(varCheckpointComment,false);
-                        Text: ="Add Comments"
+                        Text: ="Comment"
                         Visible: =If(comp=true,false,true)
                         Width: =Parent.Width/3
                         X: =Button9_6.Width+Button9_6.X+50
