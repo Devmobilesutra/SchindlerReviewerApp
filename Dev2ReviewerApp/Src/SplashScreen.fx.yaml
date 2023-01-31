@@ -22,7 +22,7 @@ SplashScreen As screen:
     lblVersionLS As label:
         FontWeight: =FontWeight.Bold
         Height: =47
-        Text: ="UAT 1.2"
+        Text: ="UAT 1.1"
         Width: =120
         X: =(Parent.Width-Self.Width)/2
         Y: =Parent.Height/1.5
