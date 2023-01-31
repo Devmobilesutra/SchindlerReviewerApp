@@ -258,8 +258,8 @@ TripReport As screen:
                     Height: =Parent.Height
                     Size: =referenceCSS.RInputFontSize
                     Text: |-
-                        =//LookUp(assignments,bankId.goNumber=lblBankName.Text,assessorName)
-                        LookUp(BankTripReport,assignmentId.Id=glryProject.Selected.Id && bankId.Id=glryProject.Selected.bankId.Id,assessor_name)
+                        =/*LookUp(BankTripReport,assignmentId.Id=glryProject.Selected.Id && bankId.Id=glryProject.Selected.bankId.Id,assessor_name)*/
+                        glryProject.Selected.assessorName
                     X: =Label15_1.Width+Label15_1.X
                     ZIndex: =2
 
@@ -290,8 +290,8 @@ TripReport As screen:
                     Height: =Parent.Height
                     Size: =referenceCSS.RInputFontSize
                     Text: |-
-                        =//LookUp(assignments,bankId.goNumber=lblBankName.Text,reviewerName)
-                        LookUp(BankTripReport,assignmentId.Id=glryProject.Selected.Id && bankId.Id=glryProject.Selected.bankId.Id,reviewer_name)
+                        =/*LookUp(BankTripReport,assignmentId.Id=glryProject.Selected.Id && bankId.Id=glryProject.Selected.bankId.Id,reviewer_name)*/
+                        glryProject.Selected.reviewerName
                     X: =Label18_1.Width+Label18_1.X
                     ZIndex: =2
 
@@ -351,8 +351,8 @@ TripReport As screen:
                     Height: =Parent.Height
                     Size: =referenceCSS.RInputFontSize
                     Text: |-
-                        =//lblADate.Text
-                        LookUp(BankTripReport,assignmentId.Id=glryProject.Selected.Id && bankId.Id=glryProject.Selected.bankId.Id,Text(assignmentId.assignedDate,"mm-dd-yyyy"))
+                        =/*LookUp(BankTripReport,assignmentId.Id=glryProject.Selected.Id && bankId.Id=glryProject.Selected.bankId.Id,Text(assignmentId.assignedDate,"mm-dd-yyyy"))*/
+                        Text(glryProject.Selected.assignedDate,"mm-dd-yyyy")
                     Width: =Parent.Width/6
                     X: =Label28_2.Width+Label28_2.X
                     ZIndex: =2
@@ -425,8 +425,8 @@ TripReport As screen:
                     Height: =Parent.Height
                     Size: =referenceCSS.RInputFontSize
                     Text: |-
-                        =//LookUp(assignments,bankId.goNumber=lblBankName.Text,assessmentType)
-                        LookUp(BankTripReport,assignmentId.Id=glryProject.Selected.Id && bankId.Id=glryProject.Selected.bankId.Id,assignmentId.assessmentType)
+                        =/*LookUp(BankTripReport,assignmentId.Id=glryProject.Selected.Id && bankId.Id=glryProject.Selected.bankId.Id,assignmentId.assessmentType)*/
+                        glryProject.Selected.assessmentType
                     X: =Label31_1.Width+Label31_1.X
                     ZIndex: =2
 
