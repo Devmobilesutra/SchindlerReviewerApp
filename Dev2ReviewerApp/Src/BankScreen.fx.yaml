@@ -207,7 +207,9 @@ BankScreen As screen:
                         PressedColor: =Self.Color
                         PressedFill: =Self.Fill
                         Text: ="Action Tracker"
-                        Visible: =If(comp=true,false,true)
+                        Visible: |-
+                            =true
+                            //If(comp=true,false,true)
                         Width: =150
                         X: =Parent.Width-100
                         ZIndex: =7
