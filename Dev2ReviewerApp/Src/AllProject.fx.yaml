@@ -192,9 +192,11 @@ AllProject As screen:
                 Height: |-
                     =//ctnMiddlePS.Height
                     CountRows(glryProject.AllItems)*glryProject.TemplateHeight
-                Items: |-
+                Items: |
                     =If(
                         comp = true,
+                        If(VarSearchBank <> Blank(),
+                            Search(
                         Sort(
                             Filter(
                                 assignments,
@@ -203,7 +205,17 @@ AllProject As screen:
                             ),
                             startDate,
                             Descending
-                        ),
+                        ),VarSearchBank,"shlaf_gonumber"),
+                    Sort(
+                            Filter(
+                                assignments,
+                                //reviewerId = loginReviewer && 
+                                isCompleted = "Completed"
+                            ),
+                            startDate,
+                            Descending)
+                            ),
+                        
                         If(
                             inpro = true,
                             If(VarSearchBank <> Blank(),
