@@ -665,7 +665,7 @@ TripReport As screen:
                                 sectionSequence,
                                 Ascending
                             ) ,
-                             unit,Descending
+                             unit,Ascending
                         )
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =287
