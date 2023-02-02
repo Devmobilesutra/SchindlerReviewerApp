@@ -29846,7 +29846,14 @@
         "Reset",
         "LineHeight",
         "HintText",
-        "MaxLength",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "MaxLength",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DelayOutput",
         "AccessibleLabel",
         "Tooltip",
@@ -30298,7 +30305,14 @@
         "Reset",
         "LineHeight",
         "HintText",
-        "MaxLength",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "MaxLength",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DelayOutput",
         "AccessibleLabel",
         "Tooltip",

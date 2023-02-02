@@ -945,8 +945,10 @@ TripReport As screen:
                             HoverBorderColor: =RGBA(0, 0, 0, 1)
                             HoverColor: =//RGBA(0, 0, 0, 1)
                             HoverFill: =RGBA(255, 255, 255, 1)
+                            MaxLength: =5
                             OnChange: |-
-                                =UpdateIf(checkpointItem_ActionItem,checkpointItemActionItemsId=ThisItem.checkpointItemActionItemsId,{MaterialEstimate:txtMaterialValueAR.Text});
+                                =If(Len(txtMaterialValueAR.Text)=5,Notify("Material Estimate should be less than 5 digits.",NotificationType.Warning));
+                                UpdateIf(checkpointItem_ActionItem,checkpointItemActionItemsId=ThisItem.checkpointItemActionItemsId,{MaterialEstimate:txtMaterialValueAR.Text});
                             OnSelect: =Select(Parent)
                             Size: =referenceCSS.RInputFontSize
                             Width: =Parent.Width/8
@@ -963,8 +965,10 @@ TripReport As screen:
                             Height: =30
                             HoverBorderColor: =RGBA(0, 0, 0, 1)
                             HoverFill: =RGBA(255, 255, 255, 1)
+                            MaxLength: =5
                             OnChange: |-
-                                =UpdateIf(checkpointItem_ActionItem,checkpointItemActionItemsId=ThisItem.checkpointItemActionItemsId,{TimeEstimate:txtTimeEstimateValueAR.Text});
+                                =If(Len(txtTimeEstimateValueAR.Text)=5,Notify("Time Estimate should be less than 5 digits.",NotificationType.Warning));
+                                UpdateIf(checkpointItem_ActionItem,checkpointItemActionItemsId=ThisItem.checkpointItemActionItemsId,{TimeEstimate:txtTimeEstimateValueAR.Text});
                             OnSelect: =Select(Parent)
                             Size: =referenceCSS.RInputFontSize
                             Width: =Parent.Width/8
