@@ -941,6 +941,7 @@ TripReport As screen:
                             DisplayMode: =If(comp=true || VarReviewerResult=true,DisplayMode.View,DisplayMode.Edit)
                             Fill: =If(comp=true || VarReviewerResult=true, RGBA(237, 237, 237, 1),RGBA(255,255,255,1))
                             Font: =referenceCSS.RFont
+                            Format: =TextFormat.Number
                             Height: =30
                             HoverBorderColor: =RGBA(0, 0, 0, 1)
                             HoverColor: =//RGBA(0, 0, 0, 1)
@@ -962,6 +963,7 @@ TripReport As screen:
                             DisplayMode: =If(comp=true || VarReviewerResult=true,DisplayMode.View,DisplayMode.Edit)
                             Fill: =If(comp=true || VarReviewerResult=true, RGBA(237, 237, 237, 1),RGBA(255,255,255,1))
                             Font: =referenceCSS.RFont
+                            Format: =TextFormat.Number
                             Height: =30
                             HoverBorderColor: =RGBA(0, 0, 0, 1)
                             HoverFill: =RGBA(255, 255, 255, 1)
