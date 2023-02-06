@@ -290,13 +290,14 @@ TryScreen As screen:
                         //[1,2]
                         //Filter(checkpointItemAssessment,bankUnitId.Id=glryBankGo_1.Selected.bankUnitId.unitNumber)
                         /*If(IsEmpty(Filter(checkpointItem_ActionItem,assignmentId.Id=glryBankGo_1.Selected.assignmentId.Id && bankUnitId.Id =glryBankGo_1.Selected.bankUnitId.Id && checkpointItem_Id.'checkpointItemAssessment (quantum_checkpointitemassessment)' =LookUp(checkpointItemAssessment,checkpointItemName =LblAssStatuscountBS_14.Text,'checkpointItemAssessment (quantum_checkpointitemassessment)'))),*/
-                        Sort(
+                        Sort(Sort(
                             Sort(
                                // Sort(
                                     Filter(
                                         checkpointItemAssessment,
                                         assignmentId.Id = glryAssignmentBS.Selected.assignmentId.Id 
-                                        /*&& bankUnitId.unitNumber = glryAssignmentBS.Selected.bankUnitId.unitNumber && checkpointItem_annotation <> Blank()*/
+                                        /*&& bankUnitId.unitNumber = glryAssignmentBS.Selected.bankUnitId.unitNumber */
+                                         && checkpointItem_annotation <> Blank()
                                     ),
                                    // checkpointitemSequence,
                                    // Ascending
@@ -306,6 +307,9 @@ TryScreen As screen:
                             ),
                             section_Id.sectionSequence,
                             Ascending
+                        ),
+                        bankUnitId.unitNumber,
+                        Ascending
                         )
                         //&&
                          //CountRows(Filter(checkpointItem_ActionItem, checkpointItem_Id.quantum_checkpointitemassessment //=ThisRecord.'checkpointItemAssessment (quantum_checkpointitemassessment)')>0)
@@ -434,7 +438,7 @@ TryScreen As screen:
                                  /*&& 
                                  bankUnitId.Id =glryAssignmentBS.Selected.bankUnitId.Id */
                                     && 
-                                  checkpointItem_Id.'checkpointItemAssessment (quantum_checkpointitemassessment)'=ThisItem.'checkpointItemAssessment (quantum_checkpointitemassessment)')
+                                  checkpointItem_Id.'checkpointItemAssessment (quantum_checkpointitemassessment)'=ThisItem.'checkpointItemAssessment (quantum_checkpointitemassessment)' && priority="High")
                             
                                 // checkpointItem_Id.'checkpointItemAssessment (quantum_checkpointitemassessment)'=LookUp(checkpointItemAssessment,checkpointItemName=lblItemnameVA.Text,'checkpointItemAssessment (quantum_checkpointitemassessment)')
                                 // checkpointItem_Id.'checkpointItemAssessment (quantum_checkpointitemassessment)' =LookUp(checkpointItemAssessment,checkpointItemName =LblAssStatuscountBS_14.Text,'checkpointItemAssessment (quantum_checkpointitemassessment)') 
@@ -668,7 +672,7 @@ TryScreen As screen:
                         PaddingLeft: =20
                         PaddingRight: =43
                         Width: =Parent.Width -150
-                        Y: =Parent.Y
+                        Y: =40//Parent.Y
                         ZIndex: =13
 
                         lblSectionVA_2 As label:
@@ -983,6 +987,7 @@ TryScreen As screen:
                         PressedFill: =Self.Fill
                         Size: =referenceCSS.RInputFontSize
                         Text: ="Comment"
+                        Visible: =false
                         Width: =120
                         X: =ctnItemVA_2.X+ctnItemVA_2.Width
                         Y: =ctnItemVA_2.Y+5
@@ -1005,6 +1010,7 @@ TryScreen As screen:
                         PressedFill: =Self.Fill
                         Size: =referenceCSS.RInputFontSize
                         Text: ="Comment"
+                        Visible: =false
                         Width: =120
                         X: =ctnCheckpointVA_2.X+ctnCheckpointVA_2.Width
                         Y: =ctnCheckpointVA_2.Y+5
@@ -1027,6 +1033,7 @@ TryScreen As screen:
                         PressedFill: =Self.Fill
                         Size: =referenceCSS.RInputFontSize
                         Text: ="Comment"
+                        Visible: =false
                         Width: =120
                         X: =ctnSectionVA_2.X+ctnSectionVA_2.Width
                         Y: =ctnSectionVA_2.Y+5
@@ -1040,7 +1047,6 @@ TryScreen As screen:
                         PaddingLeft: =20
                         PaddingRight: =43
                         Width: =Parent.Width -150
-                        X: =60
                         Y: =Parent.Y
                         ZIndex: =23
 
@@ -1051,7 +1057,7 @@ TryScreen As screen:
                             LayoutMinWidth: =170
                             PaddingLeft: =0
                             Size: =referenceCSS.RLabelFontSize
-                            Text: ="Section "
+                            Text: ="Unit "
                             ZIndex: =3
 
                         lblSectionNameVA_3 As label:
@@ -1062,7 +1068,7 @@ TryScreen As screen:
                             Text: |-
                                 =//"BBBB"
                                 //LookUp(sectionAssessment,'sectionAssessment (quantum_sectionassessment)'=ThisItem.section_Id.'sectionAssessment (quantum_sectionassessment)',sectionName)
-                                ThisItem.section_Id.sectionName
+                                ThisItem.bankUnitId.unitNumber
                             Width: =Parent.Width/2.5
                             X: =lblSectionVA_3.X+lblSectionVA_3.Width
                             ZIndex: =4
