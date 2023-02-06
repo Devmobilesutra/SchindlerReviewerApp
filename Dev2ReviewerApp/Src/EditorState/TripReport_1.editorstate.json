@@ -7730,7 +7730,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Container34_43",
-      "ParentIndex": 16,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11765,7 +11765,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "ctnCheckpointitemVA_3",
-      "ParentIndex": 17,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -16067,7 +16067,14 @@
         "DisabledFill",
         "PressedFill",
         "HoverFill",
-        "Visible",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Visible",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisplayMode",
         "X",
         {
@@ -16356,7 +16363,14 @@
         "DisabledFill",
         "PressedFill",
         "HoverFill",
-        "Visible",
+        {
+          "AFDDataSourceName": "",
+          "AutoRuleBindingEnabled": false,
+          "AutoRuleBindingString": "",
+          "InvariantPropertyName": "Visible",
+          "IsLockable": false,
+          "NameMapSourceSchema": "?"
+        },
         "DisplayMode",
         {
           "AFDDataSourceName": "",

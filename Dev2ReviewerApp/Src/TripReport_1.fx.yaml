@@ -1290,7 +1290,7 @@ TripReport_1 As screen:
                                 =///ThisItem.checkpointItem_Id.checkpointItem_annotation
                                 //"Have a new layout sub drawn to match as built machine room aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
                                 ThisItem.checkpointItem_annotation
-                            Width: =Parent.Width/1.08
+                            Width: =Parent.Width/1.2
                             X: =40
                             Y: =lblAnnotationVA_3.Height+lblAnnotationVA_3.Y
                             ZIndex: =5
