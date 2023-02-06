@@ -106,7 +106,7 @@ Screen1 As screen:
                 Size: =referenceCSS.RLabelFontSize
                 Text: ="Material Estimate "
                 Width: =If(TryScreen.Width>900,Parent.Width/6,250)
-                X: =lblTimeEstimateVA_4.X +lblTimeEstimateVA_4.Width
+                X: =lblTimeEstimateVA_4.X +lblTimeEstimateVA_4.Width+10
                 Y: =lblActionnameVA_4.Height+lblActionnameVA_4.Y
                 ZIndex: =8
 
@@ -121,7 +121,7 @@ Screen1 As screen:
                 Size: =referenceCSS.RLabelFontSize
                 Text: ="Due Date "
                 Width: =If(TryScreen.Width>900,Parent.Width/6,250)
-                X: =lblMaterialEstimateVA_4.Width+lblMaterialEstimateVA_4.X
+                X: =lblMaterialEstimateVA_4.Width+lblMaterialEstimateVA_4.X+20
                 Y: =lblActionnameVA_4.Height+lblActionnameVA_4.Y
                 ZIndex: =9
 
@@ -222,7 +222,7 @@ Screen1 As screen:
                 Size: =referenceCSS.RInputFontSize
                 StartYear: =1947
                 Width: =If(TryScreen.Width>900,Parent.Width/6,250)
-                X: =txtMaterialValueAR_2.Width+txtMaterialValueAR_2.X
+                X: =txtMaterialValueAR_2.Width+txtMaterialValueAR_2.X+10
                 Y: =lblPriorityVA_4.Y+lblPriorityVA_4.Height
                 ZIndex: =14
 
