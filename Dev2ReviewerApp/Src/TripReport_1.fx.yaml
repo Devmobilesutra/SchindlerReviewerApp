@@ -872,7 +872,7 @@ TripReport_1 As screen:
                                 LayoutMode: =LayoutMode.Auto
                                 PaddingLeft: =40
                                 PaddingRight: =40
-                                Width: =Parent.Width-80
+                                Width: =Parent.Width -50
                                 X: =20
                                 Y: =ctnActionVA_3.Y
                                 ZIndex: =1
@@ -921,29 +921,31 @@ TripReport_1 As screen:
                                 lblDurationAR_1 As label:
                                     Font: =referenceCSS.RFont
                                     FontWeight: =FontWeight.Semibold
-                                    OnSelect: =Select(Parent)
+                                    OnSelect: =
                                     PaddingBottom: =0
                                     PaddingLeft: =0
                                     PaddingRight: =0
                                     PaddingTop: =0
                                     Size: =referenceCSS.RLabelFontSize
                                     Text: ="Due Date "
-                                    Width: =Parent.Width/9
+                                    Width: =If(TryScreen.Width>900,Parent.Width/6,250)
                                     X: =txtTimeEstimateValueAR.Width+txtTimeEstimateValueAR.X+30
                                     Y: =lblOwnerIdAR.Y + lblOwnerIdAR.Height
                                     ZIndex: =5
 
                             ctnValueactionVA_3 As groupContainer.horizontalAutoLayoutContainer:
                                 AlignInContainer: =AlignInContainer.SetByContainer
+                                BorderThickness: =5
                                 FillPortions: =0
                                 Height: =50
+                                LayoutAlignItems: =LayoutAlignItems.Center
                                 LayoutGap: =20
                                 LayoutMinHeight: =100
                                 LayoutMinWidth: =250
                                 LayoutMode: =LayoutMode.Auto
                                 PaddingLeft: =40
                                 PaddingRight: =40
-                                Width: =Parent.Width - 80
+                                Width: =Parent.Width - 50
                                 X: =20
                                 Y: =ctnlabelsactionVA_3.Y+ctnlabelsactionVA_3.Height
                                 ZIndex: =2
@@ -1004,7 +1006,7 @@ TripReport_1 As screen:
                                     OnChange: |-
                                         =If(Len(txtTimeEstimateValueAR_1.Text)=5,Notify("Time Estimate should be less than 5 digits.",NotificationType.Warning));
                                         UpdateIf(checkpointItem_ActionItem,checkpointItemActionItemsId=ThisItem.checkpointItemActionItemsId,{TimeEstimate:txtTimeEstimateValueAR_1.Text});
-                                    OnSelect: =Select(Parent)
+                                    OnSelect: =
                                     PaddingLeft: =5
                                     Size: =referenceCSS.RInputFontSize
                                     Width: =If(TryScreen.Width>900,Parent.Width/6,200)
@@ -1013,7 +1015,6 @@ TripReport_1 As screen:
                                     ZIndex: =5
 
                                 txtMaterialValueAR_1 As text:
-                                    AlignInContainer: =AlignInContainer.Start
                                     BorderColor: =RGBA(0, 0, 0, 1)
                                     Default: =ThisItem.MaterialEstimate
                                     DisabledFill: =RGBA(255, 255, 255, 1)
@@ -1029,7 +1030,7 @@ TripReport_1 As screen:
                                     OnChange: |-
                                         =If(Len(txtMaterialValueAR_1.Text)=5,Notify("Material Estimate should be less than 5 digits.",NotificationType.Warning));
                                         UpdateIf(checkpointItem_ActionItem,checkpointItemActionItemsId=ThisItem.checkpointItemActionItemsId,{MaterialEstimate:txtMaterialValueAR_1.Text});
-                                    OnSelect: =Select(Parent)
+                                    OnSelect: =
                                     PaddingLeft: =5
                                     Size: =referenceCSS.RInputFontSize
                                     Width: =If(TryScreen.Width>900,Parent.Width/6,250)
@@ -1053,10 +1054,10 @@ TripReport_1 As screen:
                                         //If(IsBlank(Self.SelectedDate),Text(Blank()))
                                     OnChange: |-
                                         =UpdateIf(checkpointItem_ActionItem,checkpointItemActionItemsId=ThisItem.checkpointItemActionItemsId,{DueDate:DatePicker3_3.SelectedDate});
-                                    OnSelect: =Select(Parent)
+                                    OnSelect: =
                                     Size: =referenceCSS.RInputFontSize
                                     StartYear: =1947
-                                    Width: =Parent.Width/8
+                                    Width: =If(TryScreen.Width>900,Parent.Width/6,250)
                                     X: =lblMaterialEstimateVA_3.Width+lblMaterialEstimateVA_3.X
                                     ZIndex: =7
 
