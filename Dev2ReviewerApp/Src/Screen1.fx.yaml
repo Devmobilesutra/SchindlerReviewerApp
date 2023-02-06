@@ -1,10 +1,120 @@
 Screen1 As screen:
 
-    Image1 As image:
-        Height: =690
-        Image: =VarFullImage
-        Width: =1277
-        X: =40
-        Y: =40
+    "glryActionItemsVA_4 As gallery.'BrowseLayout_Flexible_SocialFeed_ver4.0'":
+        BorderColor: =RGBA(0, 134, 208, 1)
+        Height: |
+            =(CountRows(glryActionItemsVA_4.AllItems)*(glryActionItemsVA_4.TemplateHeight))
+            //Parent.Height
+        Items: |+
+            =
+            Filter(checkpointItem_ActionItem,
+                 assignmentId.Id=glryAssignmentBS.Selected.assignmentId.Id 
+                 /*&& 
+                 bankUnitId.Id =glryAssignmentBS.Selected.bankUnitId.Id 
+                    && 
+                  checkpointItem_Id.'checkpointItemAssessment (quantum_checkpointitemassessment)'=ThisItem.'checkpointItemAssessment (quantum_checkpointitemassessment)' */&& priority="High")
+            
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
+        TemplatePadding: =4
+        TemplateSize: =200
+        Width: =1308
+        Y: =//iconlineannotationVA_1.Y + iconlineannotationVA_1.Height
         ZIndex: =1
+
+        lblActionVA_4 As label:
+            FontWeight: =FontWeight.Bold
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =40
+            PaddingRight: =40
+            PaddingTop: =0
+            Size: =referenceCSS.RLabelFontSize
+            Text: |-
+                =//ThisItem.Value
+                "Actions"
+            VerticalAlign: =VerticalAlign.Top
+            Width: =Parent.TemplateWidth - 112
+            Y: =(Self.Height / 2)
+            ZIndex: =1
+
+        lblActionnameVA_4 As label:
+            AutoHeight: =true
+            Height: =30
+            OnSelect: =Select(Parent)
+            PaddingLeft: =40
+            PaddingRight: =40
+            Text: =ThisItem.ActionItem_Name
+            Width: =1300
+            Y: =lblActionVA_4.Height+lblActionVA_4.Y
+            ZIndex: =2
+
+        iconlineActionVA_4 As icon.HorizontalLine:
+            Color: =RGBA(204, 204, 204, 1)
+            Fill: =RGBA(204, 204, 204, 1)
+            Height: =3
+            Icon: =Icon.HorizontalLine
+            OnSelect: =Select(Parent)
+            Width: =Parent.Width/1.08
+            X: =20
+            Y: =//ctnActionVA_4.Y+ctnActionVA_4.Height
+            ZIndex: =4
+
+        lblPriorityVA_4 As label:
+            Font: =referenceCSS.RFont
+            FontWeight: =FontWeight.Semibold
+            Size: =referenceCSS.RLabelFontSize
+            Text: ="Priority"
+            Width: |
+                =If(TryScreen.Width>900,Parent.Width/6,120)//Parent.Width/4
+            X: =40//ctnlabelsactionVA_3.X
+            Y: =lblActionnameVA_4.Height+lblActionnameVA_4.Y
+            ZIndex: =5
+
+        lblOwnerVA_4 As label:
+            Font: =referenceCSS.RFont
+            FontWeight: =FontWeight.Semibold
+            Size: =referenceCSS.RLabelFontSize
+            Text: ="Owner"
+            Width: =If(TryScreen.Width>900,Parent.Width/6,120)
+            X: =lblPriorityVA_4.X+lblPriorityVA_4.Width
+            Y: =lblActionnameVA_4.Height+lblActionnameVA_4.Y
+            ZIndex: =6
+
+        lblTimeEstimateVA_4 As label:
+            Font: =referenceCSS.RFont
+            FontWeight: =FontWeight.Semibold
+            Size: =referenceCSS.RLabelFontSize
+            Text: ="Time estimate"
+            Width: =If(TryScreen.Width>900,Parent.Width/6,200)
+            X: =lblOwnerVA_4.X+lblOwnerVA_4.Width
+            Y: =lblActionnameVA_4.Height+lblActionnameVA_4.Y
+            ZIndex: =7
+
+        lblMaterialEstimateVA_4 As label:
+            Font: =referenceCSS.RFont
+            FontWeight: =FontWeight.Semibold
+            Size: =referenceCSS.RLabelFontSize
+            Text: ="Material Estimate "
+            Width: =If(TryScreen.Width>900,Parent.Width/6,250)
+            X: =lblTimeEstimateVA_4.X +lblTimeEstimateVA_4.Width
+            Y: =lblActionnameVA_4.Height+lblActionnameVA_4.Y
+            ZIndex: =8
+
+        lblDurationAR_2 As label:
+            Font: =referenceCSS.RFont
+            FontWeight: =FontWeight.Semibold
+            OnSelect: =
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Size: =referenceCSS.RLabelFontSize
+            Text: ="Due Date "
+            Width: =If(TryScreen.Width>900,Parent.Width/6,250)
+            X: =lblMaterialEstimateVA_4.Width+lblMaterialEstimateVA_4.X
+            Y: =lblActionnameVA_4.Height+lblActionnameVA_4.Y
+            ZIndex: =9
 
