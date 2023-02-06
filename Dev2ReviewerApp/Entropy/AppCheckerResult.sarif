@@ -365,6 +365,43 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.DatePicker3_3.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.DatePicker3_3.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 6,
+                  "charOffset": 7,
+                  "snippet": {
+                    "text": "Parent"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.DatePicker3_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrFunctionExpectsSelectableControl",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnAssessmentDetailsBS.ctnbankScreen.imgViewActiveBS.AccessibleLabel"
                 }
               ],
@@ -17087,6 +17124,36 @@
                 "member": "AccessibleLabel",
                 "module": "TripReport_1",
                 "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.txtTimeEstimateValueAR_1"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.DatePicker3_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.DatePicker3_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.DatePicker3_3"
               }
             }
           ],

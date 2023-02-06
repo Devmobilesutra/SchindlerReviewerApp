@@ -866,6 +866,7 @@ TripReport_1 As screen:
                                 AlignInContainer: =AlignInContainer.SetByContainer
                                 FillPortions: =0
                                 Height: =40
+                                LayoutGap: =20
                                 LayoutMinHeight: =100
                                 LayoutMinWidth: =250
                                 LayoutMode: =LayoutMode.Auto
@@ -883,7 +884,7 @@ TripReport_1 As screen:
                                     Size: =referenceCSS.RLabelFontSize
                                     Text: ="Priority"
                                     Width: |
-                                        =If(TryScreen.Width>900,Parent.Width/5,120)//Parent.Width/4
+                                        =If(TryScreen.Width>900,Parent.Width/6,120)//Parent.Width/4
                                     X: =ctnlabelsactionVA_3.X
                                     ZIndex: =1
 
@@ -893,7 +894,7 @@ TripReport_1 As screen:
                                     LayoutMinWidth: =100
                                     Size: =referenceCSS.RLabelFontSize
                                     Text: ="Owner"
-                                    Width: =If(TryScreen.Width>900,Parent.Width/5,120)
+                                    Width: =If(TryScreen.Width>900,Parent.Width/6,120)
                                     X: =lblPriorityVA_3.X+lblPriorityVA_3.Height
                                     ZIndex: =2
 
@@ -903,7 +904,7 @@ TripReport_1 As screen:
                                     LayoutMinWidth: =100
                                     Size: =referenceCSS.RLabelFontSize
                                     Text: ="Time estimate"
-                                    Width: =If(TryScreen.Width>900,Parent.Width/5,200)
+                                    Width: =If(TryScreen.Width>900,Parent.Width/6,200)
                                     X: =lblOwnerVA_3.X+lblOwnerVA_3.Height
                                     ZIndex: =3
 
@@ -913,7 +914,7 @@ TripReport_1 As screen:
                                     LayoutMinWidth: =100
                                     Size: =referenceCSS.RLabelFontSize
                                     Text: ="Material Estimate "
-                                    Width: =If(TryScreen.Width>900,Parent.Width/5,250)
+                                    Width: =If(TryScreen.Width>900,Parent.Width/6,250)
                                     X: =lblTimeEstimateVA_3.X +lblTimeEstimateVA_3.Height
                                     ZIndex: =4
 
@@ -936,6 +937,7 @@ TripReport_1 As screen:
                                 AlignInContainer: =AlignInContainer.SetByContainer
                                 FillPortions: =0
                                 Height: =50
+                                LayoutGap: =20
                                 LayoutMinHeight: =100
                                 LayoutMinWidth: =250
                                 LayoutMode: =LayoutMode.Auto
@@ -953,7 +955,7 @@ TripReport_1 As screen:
                                     Text: |-
                                         =//"high"
                                         ThisItem.priority
-                                    Width: =If(TryScreen.Width>900,Parent.Width/5,120)
+                                    Width: =If(TryScreen.Width>900,Parent.Width/6,120)
                                     ZIndex: =1
 
                                 lblOwnervalueVA_3 As label:
@@ -963,7 +965,7 @@ TripReport_1 As screen:
                                     Text: |-
                                         =//"LPD north"
                                         ThisItem.OwnerId
-                                    Width: =If(TryScreen.Width>900,Parent.Width/5,120)
+                                    Width: =If(TryScreen.Width>900,Parent.Width/6,120)
                                     ZIndex: =2
 
                                 lblTimeestimatevalueVA_3 As label:
@@ -1005,7 +1007,7 @@ TripReport_1 As screen:
                                     OnSelect: =Select(Parent)
                                     PaddingLeft: =5
                                     Size: =referenceCSS.RInputFontSize
-                                    Width: =If(TryScreen.Width>900,Parent.Width/5,200)
+                                    Width: =If(TryScreen.Width>900,Parent.Width/6,200)
                                     X: =lblTimeestimateAR.X + lblTimeestimateAR.Width
                                     Y: =//lblOwnerIdAR.Y + lblOwnerIdAR.Height
                                     ZIndex: =5
@@ -1013,7 +1015,7 @@ TripReport_1 As screen:
                                 txtMaterialValueAR_1 As text:
                                     AlignInContainer: =AlignInContainer.Start
                                     BorderColor: =RGBA(0, 0, 0, 1)
-                                    Default: =9999999//ThisItem.MaterialEstimate
+                                    Default: =ThisItem.MaterialEstimate
                                     DisabledFill: =RGBA(255, 255, 255, 1)
                                     DisplayMode: =If(comp=true || VarReviewerResult=true,DisplayMode.View,DisplayMode.Edit)
                                     Fill: =If(comp=true || VarReviewerResult=true, RGBA(237, 237, 237, 1),RGBA(255,255,255,1))
@@ -1030,10 +1032,33 @@ TripReport_1 As screen:
                                     OnSelect: =Select(Parent)
                                     PaddingLeft: =5
                                     Size: =referenceCSS.RInputFontSize
-                                    Width: =If(TryScreen.Width>900,Parent.Width/5,250)
-                                    X: =lblTimeEstimateVA_3.Width+lblTimeEstimateVA_3.X +30
+                                    Width: =If(TryScreen.Width>900,Parent.Width/6,250)
+                                    X: =lblTimeEstimateVA_3.Width+lblTimeEstimateVA_3.X 
                                     Y: =lblOwnerIdValueAR.Y +lblOwnerIdValueAR.Height
                                     ZIndex: =6
+
+                                DatePicker3_3 As datepicker:
+                                    BorderColor: =RGBA(9, 33, 98, 1)
+                                    DefaultDate: |-
+                                        =ThisItem.DueDate
+                                        ///If(ThisItem.DueDate=Blank(),Now(),ThisItem.DueDate)
+                                        //If(IsBlank(Self.SelectedDate), Text(Blank()))
+                                    DisabledBorderColor: =RGBA(153, 153, 153, 1)
+                                    DisabledColor: =RGBA(179, 179, 179, 1)
+                                    DisplayMode: =If(comp=true || VarReviewerResult=true,DisplayMode.View,DisplayMode.Edit)
+                                    Fill: =If(comp=true || VarReviewerResult=true, RGBA(237, 237, 237, 1),RGBA(255,255,255,1))
+                                    Height: =30
+                                    InputTextPlaceholder: |-
+                                        =If(IsBlank(Self.SelectedDate), Text(Date(2000,01,01), Self.Format, Self.Language))
+                                        //If(IsBlank(Self.SelectedDate),Text(Blank()))
+                                    OnChange: |-
+                                        =UpdateIf(checkpointItem_ActionItem,checkpointItemActionItemsId=ThisItem.checkpointItemActionItemsId,{DueDate:DatePicker3_3.SelectedDate});
+                                    OnSelect: =Select(Parent)
+                                    Size: =referenceCSS.RInputFontSize
+                                    StartYear: =1947
+                                    Width: =Parent.Width/8
+                                    X: =lblMaterialEstimateVA_3.Width+lblMaterialEstimateVA_3.X
+                                    ZIndex: =7
 
                         iconlineActionVA_3 As icon.HorizontalLine:
                             Color: =RGBA(204, 204, 204, 1)
