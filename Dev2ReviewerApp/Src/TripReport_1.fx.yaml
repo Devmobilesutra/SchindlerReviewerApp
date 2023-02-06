@@ -640,13 +640,9 @@ TripReport_1 As screen:
                     Height: |-
                         =//(CountRows(glryCheckpointIiemVA.AllItems)*(glryCheckpointIiemVA.TemplateHeight+glryCheckpointIiemVA.TemplatePadding))+glryActionItemsVA.Height+glryCheckpointitemimagesVA.Height
                         Parent.Height
-                    Items: |-
-                        =//Filter(checkpointItem_ActionItem, 'checkpointItem_ActionItem (Views)'.previousFindings)
-                        //Filter(GC_checkpointItem_ActionItem,checkpointItem_Id.checkpointItemId.checkpointItemId=varCheckpointitemID && bankUnitId.Id=varBankUnitId &&assignmentId.startDate<>glryProject.Selected.startDate)
-                        //[1,2]
-                        //Filter(checkpointItemAssessment,bankUnitId.Id=glryBankGo_1.Selected.bankUnitId.unitNumber)
-                        /*If(IsEmpty(Filter(checkpointItem_ActionItem,assignmentId.Id=glryBankGo_1.Selected.assignmentId.Id && bankUnitId.Id =glryBankGo_1.Selected.bankUnitId.Id && checkpointItem_Id.'checkpointItemAssessment (quantum_checkpointitemassessment)' =LookUp(checkpointItemAssessment,checkpointItemName =LblAssStatuscountBS_14.Text,'checkpointItemAssessment (quantum_checkpointitemassessment)'))),*/
-                        Sort(Sort(
+                    Items: |
+                        =Sort(
+                            Sort(
                             Sort(
                                // Sort(
                                     Filter(
@@ -667,8 +663,6 @@ TripReport_1 As screen:
                         bankUnitId.unitNumber,
                         Ascending
                         )
-                        //&&
-                         //CountRows(Filter(checkpointItem_ActionItem, checkpointItem_Id.quantum_checkpointitemassessment //=ThisRecord.'checkpointItemAssessment (quantum_checkpointitemassessment)')>0)
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =100
                     LayoutMinWidth: =320
