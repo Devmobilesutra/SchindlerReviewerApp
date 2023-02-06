@@ -184,7 +184,7 @@
                 },
                 "region": {
                   "charLength": 19,
-                  "charOffset": 1196,
+                  "charOffset": 1218,
                   "snippet": {
                     "text": ".CheckpointSequence"
                   }
@@ -12927,6 +12927,126 @@
           },
           "ruleId": "acc-AccessibleLabelNeeded",
           "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TryScreen.ctnMainBankViewAssessment_2.ctnMiddleBS_4.ctnCheckpointitemVA_2.glryCheckpointIiemVA_2.ctnSectionVA_3.lblSectionNameVA_3.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TryScreen.ctnMainBankViewAssessment_2.ctnMiddleBS_4.ctnCheckpointitemVA_2.glryCheckpointIiemVA_2.ctnSectionVA_3.lblSectionNameVA_3.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "TryScreen",
+                "type": "TryScreen.ctnMainBankViewAssessment_2.ctnMiddleBS_4.ctnCheckpointitemVA_2.glryCheckpointIiemVA_2.ctnSectionVA_3.lblSectionNameVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TryScreen.ctnMainBankViewAssessment_2.ctnMiddleBS_4.ctnCheckpointitemVA_2.glryCheckpointIiemVA_2.ctnSectionVA_3.lblSectionNameVA_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TryScreen.ctnMainBankViewAssessment_2.ctnMiddleBS_4.ctnCheckpointitemVA_2.glryCheckpointIiemVA_2.ctnSectionVA_3.lblSectionNameVA_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TryScreen",
+                "type": "TryScreen.ctnMainBankViewAssessment_2.ctnMiddleBS_4.ctnCheckpointitemVA_2.glryCheckpointIiemVA_2.ctnSectionVA_3.lblSectionNameVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TryScreen.ctnMainBankViewAssessment_2.ctnMiddleBS_4.ctnCheckpointitemVA_2.glryCheckpointIiemVA_2.ctnSectionVA_3.lblSectionVA_3.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TryScreen.ctnMainBankViewAssessment_2.ctnMiddleBS_4.ctnCheckpointitemVA_2.glryCheckpointIiemVA_2.ctnSectionVA_3.lblSectionVA_3.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "TryScreen",
+                "type": "TryScreen.ctnMainBankViewAssessment_2.ctnMiddleBS_4.ctnCheckpointitemVA_2.glryCheckpointIiemVA_2.ctnSectionVA_3.lblSectionVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TryScreen.ctnMainBankViewAssessment_2.ctnMiddleBS_4.ctnCheckpointitemVA_2.glryCheckpointIiemVA_2.ctnSectionVA_3.lblSectionVA_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TryScreen.ctnMainBankViewAssessment_2.ctnMiddleBS_4.ctnCheckpointitemVA_2.glryCheckpointIiemVA_2.ctnSectionVA_3.lblSectionVA_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TryScreen",
+                "type": "TryScreen.ctnMainBankViewAssessment_2.ctnMiddleBS_4.ctnCheckpointitemVA_2.glryCheckpointIiemVA_2.ctnSectionVA_3.lblSectionVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
         },
         {
           "locations": [
