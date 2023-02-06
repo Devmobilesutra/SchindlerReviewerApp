@@ -917,6 +917,21 @@ TripReport_1 As screen:
                                     X: =lblTimeEstimateVA_3.X +lblTimeEstimateVA_3.Height
                                     ZIndex: =4
 
+                                lblDurationAR_1 As label:
+                                    Font: =referenceCSS.RFont
+                                    FontWeight: =FontWeight.Semibold
+                                    OnSelect: =Select(Parent)
+                                    PaddingBottom: =0
+                                    PaddingLeft: =0
+                                    PaddingRight: =0
+                                    PaddingTop: =0
+                                    Size: =referenceCSS.RLabelFontSize
+                                    Text: ="Due Date "
+                                    Width: =Parent.Width/9
+                                    X: =txtTimeEstimateValueAR.Width+txtTimeEstimateValueAR.X+30
+                                    Y: =lblOwnerIdAR.Y + lblOwnerIdAR.Height
+                                    ZIndex: =5
+
                             ctnValueactionVA_3 As groupContainer.horizontalAutoLayoutContainer:
                                 AlignInContainer: =AlignInContainer.SetByContainer
                                 FillPortions: =0
@@ -958,7 +973,8 @@ TripReport_1 As screen:
                                     Text: |-
                                         =//"3 days"
                                         ThisItem.TimeEstimate
-                                    Width: =If(TryScreen.Width>900,Parent.Width/5,200)
+                                    Visible: =false
+                                    Width: =//If(TryScreen.Width>900,Parent.Width/5,200)
                                     ZIndex: =3
 
                                 lblMaterialestimatevalueVA_3 As label:
@@ -968,8 +984,56 @@ TripReport_1 As screen:
                                     Text: |-
                                         =//"Material 1"
                                         ThisItem.MaterialEstimate
-                                    Width: =If(TryScreen.Width>900,Parent.Width/5,250)
+                                    Visible: =false
+                                    Width: =//If(TryScreen.Width>900,Parent.Width/5,250)
                                     ZIndex: =4
+
+                                txtTimeEstimateValueAR_1 As text:
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Default: =ThisItem.TimeEstimate
+                                    DisplayMode: =If(comp=true || VarReviewerResult=true,DisplayMode.View,DisplayMode.Edit)
+                                    Fill: =If(comp=true || VarReviewerResult=true, RGBA(237, 237, 237, 1),RGBA(255,255,255,1))
+                                    Font: =referenceCSS.RFont
+                                    Format: =TextFormat.Number
+                                    Height: =30
+                                    HoverBorderColor: =RGBA(0, 0, 0, 1)
+                                    HoverFill: =RGBA(255, 255, 255, 1)
+                                    MaxLength: =5
+                                    OnChange: |-
+                                        =If(Len(txtTimeEstimateValueAR_1.Text)=5,Notify("Time Estimate should be less than 5 digits.",NotificationType.Warning));
+                                        UpdateIf(checkpointItem_ActionItem,checkpointItemActionItemsId=ThisItem.checkpointItemActionItemsId,{TimeEstimate:txtTimeEstimateValueAR_1.Text});
+                                    OnSelect: =Select(Parent)
+                                    PaddingLeft: =5
+                                    Size: =referenceCSS.RInputFontSize
+                                    Width: =If(TryScreen.Width>900,Parent.Width/5,200)
+                                    X: =lblTimeestimateAR.X + lblTimeestimateAR.Width
+                                    Y: =//lblOwnerIdAR.Y + lblOwnerIdAR.Height
+                                    ZIndex: =5
+
+                                txtMaterialValueAR_1 As text:
+                                    AlignInContainer: =AlignInContainer.Start
+                                    BorderColor: =RGBA(0, 0, 0, 1)
+                                    Default: =9999999//ThisItem.MaterialEstimate
+                                    DisabledFill: =RGBA(255, 255, 255, 1)
+                                    DisplayMode: =If(comp=true || VarReviewerResult=true,DisplayMode.View,DisplayMode.Edit)
+                                    Fill: =If(comp=true || VarReviewerResult=true, RGBA(237, 237, 237, 1),RGBA(255,255,255,1))
+                                    Font: =referenceCSS.RFont
+                                    Format: =TextFormat.Number
+                                    Height: =30
+                                    HoverBorderColor: =RGBA(0, 0, 0, 1)
+                                    HoverColor: =//RGBA(0, 0, 0, 1)
+                                    HoverFill: =RGBA(255, 255, 255, 1)
+                                    MaxLength: =5
+                                    OnChange: |-
+                                        =If(Len(txtMaterialValueAR_1.Text)=5,Notify("Material Estimate should be less than 5 digits.",NotificationType.Warning));
+                                        UpdateIf(checkpointItem_ActionItem,checkpointItemActionItemsId=ThisItem.checkpointItemActionItemsId,{MaterialEstimate:txtMaterialValueAR_1.Text});
+                                    OnSelect: =Select(Parent)
+                                    PaddingLeft: =5
+                                    Size: =referenceCSS.RInputFontSize
+                                    Width: =If(TryScreen.Width>900,Parent.Width/5,250)
+                                    X: =lblTimeEstimateVA_3.Width+lblTimeEstimateVA_3.X +30
+                                    Y: =lblOwnerIdValueAR.Y +lblOwnerIdValueAR.Height
+                                    ZIndex: =6
 
                         iconlineActionVA_3 As icon.HorizontalLine:
                             Color: =RGBA(204, 204, 204, 1)
