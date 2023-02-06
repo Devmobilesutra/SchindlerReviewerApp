@@ -214,6 +214,46 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.Items",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 19,
+                  "charOffset": 1242,
+                  "snippet": {
+                    "text": ".CheckpointSequence"
+                  }
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Sort"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "EditprojectAssignment.ctnMainEditProjectAssignment.ctnHeaderEditAssignment.imgLogoEA.AccessibleLabel"
                 }
               ],
@@ -14913,19 +14953,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.AccessibleLabel"
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.AccessibleLabel",
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "TripReport_1",
-                "type": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1"
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3"
               }
             }
           ],
@@ -14943,19 +14983,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.TabIndex"
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.TabIndex",
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "TripReport_1",
-                "type": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1"
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3"
               }
             }
           ],
@@ -14973,19 +15013,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Label22_1.FocusedBorderThickness"
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentDateVA_3.lblAssessmentDateVA_3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Label22_1.FocusedBorderThickness",
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentDateVA_3.lblAssessmentDateVA_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentDateVA_3.lblAssessmentDateVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentbyVA_3.lblAssessornameVA_3.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentbyVA_3.lblAssessornameVA_3.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "FocusedBorderThickness",
                 "module": "TripReport_1",
-                "type": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Label22_1"
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentbyVA_3.lblAssessornameVA_3"
               }
             }
           ],
@@ -15003,19 +15073,49 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Label22_1.TabIndex"
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentTypeVA_3.lblAssessmentTypeVA_3.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Label22_1.TabIndex",
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentTypeVA_3.lblAssessmentTypeVA_3.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentTypeVA_3.lblAssessmentTypeVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentTypeVA_3.lblAssessmentTypeVA_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentTypeVA_3.lblAssessmentTypeVA_3.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "TripReport_1",
-                "type": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Label22_1"
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentTypeVA_3.lblAssessmentTypeVA_3"
               }
             }
           ],
@@ -15033,49 +15133,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Gallery15_1.AccessibleLabel"
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentbyVA_3.lblAssessornameVA_3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Gallery15_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "TripReport_1",
-                "type": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Gallery15_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Gallery15_1.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Gallery15_1.TabIndex",
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentbyVA_3.lblAssessornameVA_3.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "TripReport_1",
-                "type": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Gallery15_1"
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentbyVA_3.lblAssessornameVA_3"
               }
             }
           ],
@@ -15093,19 +15163,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Gallery15_1.txtMaterialValueAR_1.AccessibleLabel"
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentbyVA_3.lblAssessmntbyVA_3.FocusedBorderThickness"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Gallery15_1.txtMaterialValueAR_1.AccessibleLabel",
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentbyVA_3.lblAssessmntbyVA_3.FocusedBorderThickness",
                   "relativeAddress": 0
                 }
               },
               "properties": {
-                "member": "AccessibleLabel",
+                "member": "FocusedBorderThickness",
                 "module": "TripReport_1",
-                "type": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Gallery15_1.txtMaterialValueAR_1"
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentbyVA_3.lblAssessmntbyVA_3"
               }
             }
           ],
@@ -15115,117 +15185,87 @@
           "properties": {
             "level": "Medium"
           },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
         },
         {
           "locations": [
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Gallery15_1.txtTimeEstimateValueAR_1.AccessibleLabel"
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentbyVA_3.lblAssessmntbyVA_3.TabIndex"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Gallery15_1.txtTimeEstimateValueAR_1.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "TripReport_1",
-                "type": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Gallery15_1.txtTimeEstimateValueAR_1"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Gallery15_1.DatePicker3_3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Gallery15_1.DatePicker3_3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "TripReport_1",
-                "type": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Gallery15_1.DatePicker3_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Gallery15_1.Rectanglebroder_3.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Gallery15_1.Rectanglebroder_3.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "TripReport_1",
-                "type": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Gallery15_1.Rectanglebroder_3"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Gallery15_1.Rectanglebroder_3.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Gallery15_1.Rectanglebroder_3.TabIndex",
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentbyVA_3.lblAssessmntbyVA_3.TabIndex",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "TabIndex",
                 "module": "TripReport_1",
-                "type": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Gallery15_1.Rectanglebroder_3"
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentbyVA_3.lblAssessmntbyVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentTypeVA_3.lblAssessmenttypeValueVA_3.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentTypeVA_3.lblAssessmenttypeValueVA_3.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentTypeVA_3.lblAssessmenttypeValueVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentTypeVA_3.lblAssessmenttypeValueVA_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentTypeVA_3.lblAssessmenttypeValueVA_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentTypeVA_3.lblAssessmenttypeValueVA_3"
               }
             }
           ],
@@ -15466,6 +15506,1416 @@
                 "member": "AccessibleLabel",
                 "module": "TripReport_1",
                 "type": "TripReport_1.TextInput2_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentDateVA_3.lblAssessmentDateVA_3.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentDateVA_3.lblAssessmentDateVA_3.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentDateVA_3.lblAssessmentDateVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentDateVA_3.lblAssessordateVA_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentDateVA_3.lblAssessordateVA_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentDateVA_3.lblAssessordateVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentDateVA_3.lblAssessordateVA_3.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentDateVA_3.lblAssessordateVA_3.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentDateVA_3.lblAssessordateVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnSectionVA_5.lblSectionVA_5.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnSectionVA_5.lblSectionVA_5.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnSectionVA_5.lblSectionVA_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnSectionVA_5.lblSectionVA_5.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnSectionVA_5.lblSectionVA_5.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnSectionVA_5.lblSectionVA_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnSectionVA_5.lblSectionNameVA_5.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnSectionVA_5.lblSectionNameVA_5.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnSectionVA_5.lblSectionNameVA_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnSectionVA_5.lblSectionNameVA_5.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnSectionVA_5.lblSectionNameVA_5.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnSectionVA_5.lblSectionNameVA_5"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnSectionVA_4.lblSectionVA_4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnSectionVA_4.lblSectionVA_4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnSectionVA_4.lblSectionVA_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnSectionVA_4.lblSectionVA_4.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnSectionVA_4.lblSectionVA_4.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnSectionVA_4.lblSectionVA_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnSectionVA_4.lblSectionNameVA_4.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnSectionVA_4.lblSectionNameVA_4.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnSectionVA_4.lblSectionNameVA_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnSectionVA_4.lblSectionNameVA_4.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnSectionVA_4.lblSectionNameVA_4.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnSectionVA_4.lblSectionNameVA_4"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnCheckpointVA_3.lblCheckpointVA_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnCheckpointVA_3.lblCheckpointVA_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnCheckpointVA_3.lblCheckpointVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnCheckpointVA_3.lblCheckpointVA_3.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnCheckpointVA_3.lblCheckpointVA_3.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnCheckpointVA_3.lblCheckpointVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnCheckpointVA_3.lblCheckpointnameVA_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnCheckpointVA_3.lblCheckpointnameVA_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnCheckpointVA_3.lblCheckpointnameVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnCheckpointVA_3.lblCheckpointnameVA_3.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnCheckpointVA_3.lblCheckpointnameVA_3.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnCheckpointVA_3.lblCheckpointnameVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnItemVA_3.lblItemVA_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnItemVA_3.lblItemVA_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnItemVA_3.lblItemVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnItemVA_3.lblItemVA_3.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnItemVA_3.lblItemVA_3.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnItemVA_3.lblItemVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnItemVA_3.lblItemnameVA_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnItemVA_3.lblItemnameVA_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnItemVA_3.lblItemnameVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnItemVA_3.lblItemnameVA_3.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnItemVA_3.lblItemnameVA_3.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnItemVA_3.lblItemnameVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnfindingVA_3.lblfindingVA_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnfindingVA_3.lblfindingVA_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnfindingVA_3.lblfindingVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnfindingVA_3.lblfindingVA_3.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnfindingVA_3.lblfindingVA_3.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnfindingVA_3.lblfindingVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAnnotationVA_3.lblAnnotationVA_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAnnotationVA_3.lblAnnotationVA_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAnnotationVA_3.lblAnnotationVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAnnotationVA_3.lblAnnotationVA_3.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAnnotationVA_3.lblAnnotationVA_3.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAnnotationVA_3.lblAnnotationVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAnnotationVA_3.lblItemAnnotationVA_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAnnotationVA_3.lblItemAnnotationVA_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAnnotationVA_3.lblItemAnnotationVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAnnotationVA_3.lblItemAnnotationVA_3.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAnnotationVA_3.lblItemAnnotationVA_3.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAnnotationVA_3.lblItemAnnotationVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblPriorityVA_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblPriorityVA_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblPriorityVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblPriorityVA_3.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblPriorityVA_3.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblPriorityVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblOwnerVA_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblOwnerVA_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblOwnerVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblOwnerVA_3.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblOwnerVA_3.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblOwnerVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblTimeEstimateVA_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblTimeEstimateVA_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblTimeEstimateVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblTimeEstimateVA_3.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblTimeEstimateVA_3.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblTimeEstimateVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblMaterialEstimateVA_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblMaterialEstimateVA_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblMaterialEstimateVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblMaterialEstimateVA_3.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblMaterialEstimateVA_3.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblMaterialEstimateVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblPriorityvalueVA_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblPriorityvalueVA_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblPriorityvalueVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblPriorityvalueVA_3.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblPriorityvalueVA_3.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblPriorityvalueVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblOwnervalueVA_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblOwnervalueVA_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblOwnervalueVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblOwnervalueVA_3.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblOwnervalueVA_3.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblOwnervalueVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblTimeestimatevalueVA_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblTimeestimatevalueVA_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblTimeestimatevalueVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblTimeestimatevalueVA_3.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblTimeestimatevalueVA_3.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblTimeestimatevalueVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblMaterialestimatevalueVA_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblMaterialestimatevalueVA_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblMaterialestimatevalueVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblMaterialestimatevalueVA_3.FocusedBorderThickness"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblMaterialestimatevalueVA_3.FocusedBorderThickness",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "FocusedBorderThickness",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblMaterialestimatevalueVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-FocusBorderShouldBeVisible",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryCheckpointitemimagesVA_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryCheckpointitemimagesVA_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryCheckpointitemimagesVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryCheckpointitemimagesVA_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryCheckpointitemimagesVA_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryCheckpointitemimagesVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryCheckpointitemimagesVA_3.imgcheckpointitemimageVA_3.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryCheckpointitemimagesVA_3.imgcheckpointitemimageVA_3.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryCheckpointitemimagesVA_3.imgcheckpointitemimageVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryCheckpointitemimagesVA_3.imgcheckpointitemimageVA_3.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryCheckpointitemimagesVA_3.imgcheckpointitemimageVA_3.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryCheckpointitemimagesVA_3.imgcheckpointitemimageVA_3"
               }
             }
           ],
@@ -19558,19 +21008,139 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Items"
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.Y"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1.Items",
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.Items",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "Items",
                 "module": "TripReport_1",
-                "type": "TripReport_1.Container9_7.Container22_2.Container5_1.Gallery14_1"
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentDateVA_3.lblAssessordateVA_3.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentDateVA_3.lblAssessordateVA_3.Text",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentDateVA_3.lblAssessordateVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentbyVA_3.lblAssessornameVA_3.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentbyVA_3.lblAssessornameVA_3.Text",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentbyVA_3.lblAssessornameVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentTypeVA_3.lblAssessmenttypeValueVA_3.Text"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentTypeVA_3.lblAssessmenttypeValueVA_3.Text",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Text",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.ctnAssessmentDetailsVA_3.ctnAssessmentTypeVA_3.lblAssessmenttypeValueVA_3"
               }
             }
           ],
@@ -19661,6 +21231,306 @@
                 "member": "Default",
                 "module": "TripReport_1",
                 "type": "TripReport_1.TextInput2_6"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.Items",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblPriorityVA_3.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblPriorityVA_3.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblPriorityVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblOwnerVA_3.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblOwnerVA_3.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblOwnerVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblTimeEstimateVA_3.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblTimeEstimateVA_3.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblTimeEstimateVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblMaterialEstimateVA_3.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblMaterialEstimateVA_3.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnlabelsactionVA_3.lblMaterialEstimateVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblPriorityvalueVA_3.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblPriorityvalueVA_3.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblPriorityvalueVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblOwnervalueVA_3.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblOwnervalueVA_3.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblOwnervalueVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblTimeestimatevalueVA_3.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblTimeestimatevalueVA_3.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblTimeestimatevalueVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblMaterialestimatevalueVA_3.Width"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblMaterialestimatevalueVA_3.Width",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Width",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryActionItemsVA_3.ctnActionVA_3.ctnValueactionVA_3.lblMaterialestimatevalueVA_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryCheckpointitemimagesVA_3.Items"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryCheckpointitemimagesVA_3.Items",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Items",
+                "module": "TripReport_1",
+                "type": "TripReport_1.Container9_7.Container22_2.ctnCheckpointitemVA_3.glryCheckpointIiemVA_3.glryCheckpointitemimagesVA_3"
               }
             }
           ],
