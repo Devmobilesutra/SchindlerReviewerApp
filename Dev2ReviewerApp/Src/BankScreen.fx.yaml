@@ -334,8 +334,8 @@ BankScreen As screen:
                             Self.Fill
                         OnSelect: |+
                             =
-                            Navigate(TryScreen);
-                            //Navigate(ViewAssessment);
+                            //Navigate(TryScreen);
+                            Navigate(ViewAssessment);
                             
                             //Set(CId,LookUp(product,product_Model=ThisItem.productModel,'product (quantum_product)'));
                             //Set(PId,LookUp(product,product_Model=ThisItem.productModel,product_Name));
