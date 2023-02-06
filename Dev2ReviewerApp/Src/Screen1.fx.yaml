@@ -198,7 +198,7 @@ Screen1 As screen:
                 PaddingLeft: =5
                 Size: =referenceCSS.RInputFontSize
                 Width: =If(TryScreen.Width>900,Parent.Width/6,250)
-                X: =txtTimeEstimateValueAR_2.Width+txtTimeEstimateValueAR_2.X 
+                X: =txtTimeEstimateValueAR_2.Width+txtTimeEstimateValueAR_2.X +10
                 Y: =lblPriorityVA_4.Y+lblPriorityVA_4.Height
                 ZIndex: =13
 
