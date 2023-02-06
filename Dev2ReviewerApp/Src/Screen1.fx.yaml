@@ -62,59 +62,167 @@ Screen1 As screen:
             Y: =//ctnActionVA_4.Y+ctnActionVA_4.Height
             ZIndex: =4
 
-        lblPriorityVA_4 As label:
-            Font: =referenceCSS.RFont
-            FontWeight: =FontWeight.Semibold
-            Size: =referenceCSS.RLabelFontSize
-            Text: ="Priority"
-            Width: |
-                =If(TryScreen.Width>900,Parent.Width/6,120)//Parent.Width/4
-            X: =40//ctnlabelsactionVA_3.X
-            Y: =lblActionnameVA_4.Height+lblActionnameVA_4.Y
-            ZIndex: =5
+        Group2 As group:
+            Height: =5
+            Width: =5
+            X: =60
+            Y: =60
+            ZIndex: =10
 
-        lblOwnerVA_4 As label:
-            Font: =referenceCSS.RFont
-            FontWeight: =FontWeight.Semibold
-            Size: =referenceCSS.RLabelFontSize
-            Text: ="Owner"
-            Width: =If(TryScreen.Width>900,Parent.Width/6,120)
-            X: =lblPriorityVA_4.X+lblPriorityVA_4.Width
-            Y: =lblActionnameVA_4.Height+lblActionnameVA_4.Y
-            ZIndex: =6
+            lblPriorityVA_4 As label:
+                Font: =referenceCSS.RFont
+                FontWeight: =FontWeight.Semibold
+                Size: =referenceCSS.RLabelFontSize
+                Text: ="Priority"
+                Width: |
+                    =If(TryScreen.Width>900,Parent.Width/6,120)//Parent.Width/4
+                X: =40//ctnlabelsactionVA_3.X
+                Y: =lblActionnameVA_4.Height+lblActionnameVA_4.Y
+                ZIndex: =5
 
-        lblTimeEstimateVA_4 As label:
-            Font: =referenceCSS.RFont
-            FontWeight: =FontWeight.Semibold
-            Size: =referenceCSS.RLabelFontSize
-            Text: ="Time estimate"
-            Width: =If(TryScreen.Width>900,Parent.Width/6,200)
-            X: =lblOwnerVA_4.X+lblOwnerVA_4.Width
-            Y: =lblActionnameVA_4.Height+lblActionnameVA_4.Y
-            ZIndex: =7
+            lblOwnerVA_4 As label:
+                Font: =referenceCSS.RFont
+                FontWeight: =FontWeight.Semibold
+                Size: =referenceCSS.RLabelFontSize
+                Text: ="Owner"
+                Width: =If(TryScreen.Width>900,Parent.Width/6,120)
+                X: =lblPriorityVA_4.X+lblPriorityVA_4.Width
+                Y: =lblActionnameVA_4.Height+lblActionnameVA_4.Y
+                ZIndex: =6
 
-        lblMaterialEstimateVA_4 As label:
-            Font: =referenceCSS.RFont
-            FontWeight: =FontWeight.Semibold
-            Size: =referenceCSS.RLabelFontSize
-            Text: ="Material Estimate "
-            Width: =If(TryScreen.Width>900,Parent.Width/6,250)
-            X: =lblTimeEstimateVA_4.X +lblTimeEstimateVA_4.Width
-            Y: =lblActionnameVA_4.Height+lblActionnameVA_4.Y
-            ZIndex: =8
+            lblTimeEstimateVA_4 As label:
+                Font: =referenceCSS.RFont
+                FontWeight: =FontWeight.Semibold
+                Size: =referenceCSS.RLabelFontSize
+                Text: ="Time estimate"
+                Width: =If(TryScreen.Width>900,Parent.Width/6,200)
+                X: =lblOwnerVA_4.X+lblOwnerVA_4.Width
+                Y: =lblActionnameVA_4.Height+lblActionnameVA_4.Y
+                ZIndex: =7
 
-        lblDurationAR_2 As label:
-            Font: =referenceCSS.RFont
-            FontWeight: =FontWeight.Semibold
-            OnSelect: =
-            PaddingBottom: =0
-            PaddingLeft: =0
-            PaddingRight: =0
-            PaddingTop: =0
-            Size: =referenceCSS.RLabelFontSize
-            Text: ="Due Date "
-            Width: =If(TryScreen.Width>900,Parent.Width/6,250)
-            X: =lblMaterialEstimateVA_4.Width+lblMaterialEstimateVA_4.X
-            Y: =lblActionnameVA_4.Height+lblActionnameVA_4.Y
-            ZIndex: =9
+            lblMaterialEstimateVA_4 As label:
+                Font: =referenceCSS.RFont
+                FontWeight: =FontWeight.Semibold
+                Size: =referenceCSS.RLabelFontSize
+                Text: ="Material Estimate "
+                Width: =If(TryScreen.Width>900,Parent.Width/6,250)
+                X: =lblTimeEstimateVA_4.X +lblTimeEstimateVA_4.Width
+                Y: =lblActionnameVA_4.Height+lblActionnameVA_4.Y
+                ZIndex: =8
+
+            lblDurationAR_2 As label:
+                Font: =referenceCSS.RFont
+                FontWeight: =FontWeight.Semibold
+                OnSelect: =
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Size: =referenceCSS.RLabelFontSize
+                Text: ="Due Date "
+                Width: =If(TryScreen.Width>900,Parent.Width/6,250)
+                X: =lblMaterialEstimateVA_4.Width+lblMaterialEstimateVA_4.X
+                Y: =lblActionnameVA_4.Height+lblActionnameVA_4.Y
+                ZIndex: =9
+
+        Group3 As group:
+            Height: =5
+            Width: =5
+            X: =60
+            Y: =60
+            ZIndex: =15
+
+            lblPriorityvalueVA_4 As label:
+                AutoHeight: =true
+                Font: =referenceCSS.RFont
+                Size: =referenceCSS.RLabelFontSize
+                Text: |-
+                    =//"high"
+                    ThisItem.priority
+                Width: =If(TryScreen.Width>900,Parent.Width/6,120)
+                X: =40
+                Y: =lblPriorityVA_4.Y+lblPriorityVA_4.Height
+                ZIndex: =10
+
+            lblOwnervalueVA_4 As label:
+                AutoHeight: =true
+                Font: =referenceCSS.RFont
+                Size: =referenceCSS.RLabelFontSize
+                Text: |-
+                    =//"LPD north"
+                    ThisItem.OwnerId
+                Width: =If(TryScreen.Width>900,Parent.Width/6,120)
+                X: =lblPriorityvalueVA_4.X+lblPriorityvalueVA_4.Width
+                Y: =lblPriorityVA_4.Y+lblPriorityVA_4.Height
+                ZIndex: =11
+
+            txtTimeEstimateValueAR_2 As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Default: =ThisItem.TimeEstimate
+                DisplayMode: =If(comp=true || VarReviewerResult=true,DisplayMode.View,DisplayMode.Edit)
+                Fill: =If(comp=true || VarReviewerResult=true, RGBA(237, 237, 237, 1),RGBA(255,255,255,1))
+                Font: =referenceCSS.RFont
+                Format: =TextFormat.Number
+                Height: =30
+                HoverBorderColor: =RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                MaxLength: =5
+                OnChange: |-
+                    =If(Len(txtTimeEstimateValueAR_2.Text)=5,Notify("Time Estimate should be less than 5 digits.",NotificationType.Warning));
+                    UpdateIf(checkpointItem_ActionItem,checkpointItemActionItemsId=ThisItem.checkpointItemActionItemsId,{TimeEstimate:txtTimeEstimateValueAR_2.Text});
+                OnSelect: =
+                PaddingLeft: =5
+                Size: =referenceCSS.RInputFontSize
+                Width: =If(TryScreen.Width>900,Parent.Width/6,200)
+                X: =lblOwnervalueVA_4.X + lblOwnervalueVA_4.Width
+                Y: =lblPriorityVA_4.Y+lblPriorityVA_4.Height
+                ZIndex: =12
+
+            txtMaterialValueAR_2 As text:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                Default: =ThisItem.MaterialEstimate
+                DisabledFill: =RGBA(255, 255, 255, 1)
+                DisplayMode: =If(comp=true || VarReviewerResult=true,DisplayMode.View,DisplayMode.Edit)
+                Fill: =If(comp=true || VarReviewerResult=true, RGBA(237, 237, 237, 1),RGBA(255,255,255,1))
+                Font: =referenceCSS.RFont
+                Format: =TextFormat.Number
+                Height: =30
+                HoverBorderColor: =RGBA(0, 0, 0, 1)
+                HoverColor: =//RGBA(0, 0, 0, 1)
+                HoverFill: =RGBA(255, 255, 255, 1)
+                MaxLength: =5
+                OnChange: |-
+                    =If(Len(txtMaterialValueAR_2.Text)=5,Notify("Material Estimate should be less than 5 digits.",NotificationType.Warning));
+                    UpdateIf(checkpointItem_ActionItem,checkpointItemActionItemsId=ThisItem.checkpointItemActionItemsId,{MaterialEstimate:txtMaterialValueAR_2.Text});
+                OnSelect: =
+                PaddingLeft: =5
+                Size: =referenceCSS.RInputFontSize
+                Width: =If(TryScreen.Width>900,Parent.Width/6,250)
+                X: =txtTimeEstimateValueAR_2.Width+txtTimeEstimateValueAR_2.X 
+                Y: =lblPriorityVA_4.Y+lblPriorityVA_4.Height
+                ZIndex: =13
+
+            DatePicker3_4 As datepicker:
+                BorderColor: =RGBA(0, 0, 0, 1)
+                DefaultDate: |-
+                    =ThisItem.DueDate
+                    ///If(ThisItem.DueDate=Blank(),Now(),ThisItem.DueDate)
+                    //If(IsBlank(Self.SelectedDate), Text(Blank()))
+                DisabledBorderColor: =RGBA(153, 153, 153, 1)
+                DisabledColor: =RGBA(179, 179, 179, 1)
+                DisplayMode: =If(comp=true || VarReviewerResult=true,DisplayMode.View,DisplayMode.Edit)
+                Fill: =If(comp=true || VarReviewerResult=true, RGBA(237, 237, 237, 1),RGBA(255,255,255,1))
+                Height: =30
+                InputTextPlaceholder: |-
+                    =If(IsBlank(Self.SelectedDate), Text(Date(2000,01,01), Self.Format, Self.Language))
+                    //If(IsBlank(Self.SelectedDate),Text(Blank()))
+                OnChange: |-
+                    =UpdateIf(checkpointItem_ActionItem,checkpointItemActionItemsId=ThisItem.checkpointItemActionItemsId,{DueDate:DatePicker3_4.SelectedDate});
+                OnSelect: =
+                Size: =referenceCSS.RInputFontSize
+                StartYear: =1947
+                Width: =If(TryScreen.Width>900,Parent.Width/6,250)
+                X: =txtMaterialValueAR_2.Width+txtMaterialValueAR_2.X
+                Y: =lblPriorityVA_4.Y+lblPriorityVA_4.Height
+                ZIndex: =14
 
