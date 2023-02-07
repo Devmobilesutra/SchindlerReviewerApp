@@ -135,13 +135,14 @@ AllProject As screen:
                     TextInput2_3 As text:
                         AlignInContainer: =AlignInContainer.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
-                        Clear: =true
                         Default: =
                         FocusedBorderThickness: =2
                         HintText: ="Search on G.O. Number"
                         HoverBorderColor: =Self.Color
                         HoverFill: =RGBA(0, 0, 0, 0)
                         OnChange: |-
+                            =UpdateContext({VarSearchBank:TextInput2_3.Text});
+                        OnSelect: |-
                             =UpdateContext({VarSearchBank:TextInput2_3.Text});
                         PressedBorderColor: =//Self.HoverBorderColor
                         PressedColor: =//Self.Color
@@ -150,6 +151,7 @@ AllProject As screen:
                         RadiusTopLeft: =0
                         RadiusTopRight: =0
                         Reset: =true
+                        Size: =16
                         Width: =Parent.Width/1.5
                         ZIndex: =1
 
@@ -158,7 +160,7 @@ AllProject As screen:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         BorderThickness: =2
                         Color: =RGBA(0, 0, 0, 1)
-                        Fill: =RGBA(179, 179, 179, 1)
+                        Fill: =RGBA(230, 230, 230, 1)
                         Height: =40
                         Icon: =Icon.Search
                         OnSelect: |-
@@ -234,7 +236,7 @@ AllProject As screen:
                                 ),
                                 startDate,
                                 Descending
-                            ),VarSearchBank,"shlaf_gonumber"),
+                            ),TextInput2_3.Text,"shlaf_gonumber"),
                             Sort(
                                 Filter(
                                     assignments,
