@@ -863,8 +863,11 @@ TripReport_1 As screen:
                             ZIndex: =4
 
                             ctnlabelsactionVA_3 As groupContainer.horizontalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.SetByContainer
                                 Height: =40
                                 LayoutGap: =20
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
                                 LayoutMode: =LayoutMode.Auto
                                 PaddingLeft: =40
                                 PaddingRight: =40
@@ -926,9 +929,12 @@ TripReport_1 As screen:
                                     ZIndex: =5
 
                             ctnValueactionVA_3 As groupContainer.horizontalAutoLayoutContainer:
+                                AlignInContainer: =AlignInContainer.SetByContainer
                                 Height: =50
                                 LayoutAlignItems: =LayoutAlignItems.Center
                                 LayoutGap: =20
+                                LayoutMinHeight: =100
+                                LayoutMinWidth: =250
                                 LayoutMode: =LayoutMode.Auto
                                 PaddingLeft: =40
                                 PaddingRight: =40

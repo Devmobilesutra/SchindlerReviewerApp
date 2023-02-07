@@ -137,10 +137,14 @@ AllProject As screen:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         Clear: =true
                         Default: =
+                        FocusedBorderThickness: =2
                         HintText: ="Search on G.O. Number"
                         HoverBorderColor: =Self.Color
                         HoverFill: =RGBA(0, 0, 0, 0)
-                        OnChange: =
+                        OnChange: |-
+                            =UpdateContext({VarSearchBank:TextInput2_3.Text});
+                        PressedBorderColor: =//Self.HoverBorderColor
+                        PressedColor: =//Self.Color
                         RadiusBottomLeft: =0
                         RadiusBottomRight: =0
                         RadiusTopLeft: =0
@@ -185,6 +189,8 @@ AllProject As screen:
                                     ),TextInput2.Text,"shlrf_assessmenttype")
                                 )
                             )*/
+                        PaddingBottom: =10
+                        PaddingTop: =10
                         Width: =40
                         ZIndex: =2
 
@@ -479,7 +485,7 @@ AllProject As screen:
                     HoverFill: =
                     OnSelect: |
                         =Set(Assignid,ThisItem.Id);
-                        If(ThisItem.reviewerName<>userdata.userdisplayName,Set(VarReviewerResult,true),Set(VarReviewerResult,false));
+                        If(ThisItem.reviewerEmail<>userdata.userEmail,Set(VarReviewerResult,true),Set(VarReviewerResult,false));
                         Navigate(BankScreen);
                         
                         /*If(
