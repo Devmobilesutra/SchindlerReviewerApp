@@ -72,7 +72,7 @@ TripReport As screen:
                 FontWeight: =Header.FontWeight
                 Height: =Parent.Height
                 Size: =Header.HeaderFontSize
-                Text: ="Report"
+                Text: ="Trip Report"
                 Width: =Container3_21.Width/1.6
                 X: =Image1_27.Width+Image1_27.X
                 ZIndex: =8
