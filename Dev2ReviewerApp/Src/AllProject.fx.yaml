@@ -153,8 +153,8 @@ AllProject As screen:
                         RadiusTopLeft: =0
                         RadiusTopRight: =0
                         Reset: =true
-                        Size: =14
-                        Width: =Parent.Width/2
+                        Size: =12
+                        Width: =Parent.Width/1.8
                         ZIndex: =1
 
                     Icon1 As icon.Search:

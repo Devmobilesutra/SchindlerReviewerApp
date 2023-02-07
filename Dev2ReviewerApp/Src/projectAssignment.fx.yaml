@@ -194,8 +194,8 @@ projectAssignment As screen:
                         RadiusTopLeft: =0
                         RadiusTopRight: =0
                         Reset: =true
-                        Size: =14
-                        Width: =Parent.Width/1.5
+                        Size: =11
+                        Width: =Parent.Width/1.8
                         ZIndex: =1
 
                     Icon1_1 As icon.Search:
