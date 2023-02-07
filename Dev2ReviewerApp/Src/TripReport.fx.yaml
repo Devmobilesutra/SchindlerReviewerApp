@@ -1,4 +1,5 @@
 TripReport As screen:
+    OnVisible: =Set(Vargeneralrecommendation,false);
 
     Container9_6 As groupContainer.verticalAutoLayoutContainer:
         Height: =Parent.Height
@@ -1080,10 +1081,22 @@ TripReport As screen:
                         HoverFill: |-
                             =//ColorFade(RGBA(56, 96, 178, 1), -20%)
                             Self.Fill
-                        OnSelect: |+
-                            = If(!IsEmpty(UpdateIf(BankTripReport,'BankTripReport (quantum_banktripreport)'=LookUp(BankTripReport,assignmentId.Id=glryProject.Selected.Id,'BankTripReport (quantum_banktripreport)'),{General_Recommendation:TextInput3.Text}));,
-                             Notify("General Recomendation Updated Successfully",NotificationType.Success))
-                            
+                        OnSelect: |-
+                            =If(
+                                !IsEmpty(
+                                    UpdateIf(
+                                        BankTripReport,
+                                        'BankTripReport (quantum_banktripreport)' = LookUp(
+                                            BankTripReport,
+                                            assignmentId.Id = glryProject.Selected.Id,
+                                            'BankTripReport (quantum_banktripreport)'
+                                        ),
+                                        {General_Recommendation: TextInput3.Text}
+                                    )
+                                );
+                                ,
+                                Set(Vargeneralrecommendation,true)
+                            )
                         Text: ="Update"
                         Visible: =If(comp=true,false,true)
                         Width: =Parent.Width/3
@@ -1345,4 +1358,63 @@ TripReport As screen:
             X: =Rectangle6_1.X
             Y: =Rectangle6_1.Y
             ZIndex: =8
+
+    grpActionItemTrackerBS_2 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =14
+
+        iconOuterrectangleBS_2 As rectangle:
+            Fill: =RGBA(0, 0, 0, 0.29)
+            Height: =Parent.Height
+            Visible: =Vargeneralrecommendation =true
+            Width: =Parent.Width
+            ZIndex: =9
+
+        iconInnerrectangleBS_2 As rectangle:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =230
+            Visible: =Vargeneralrecommendation =true
+            Width: =350
+            X: =(Parent.Width-Self.Width)/2
+            Y: =Parent.Height/3
+            ZIndex: =10
+
+        imgInfoBS_2 As image:
+            Height: =52
+            Image: =info
+            Visible: =Vargeneralrecommendation =true
+            Width: =52
+            X: =(Parent.Width-Self.Width)/2
+            Y: =iconInnerrectangleBS_2.Y+20
+            ZIndex: =11
+
+        lblActionItemtrackerBS_2 As label:
+            Align: =Align.Center
+            Font: =referenceCSS.RFont
+            FontWeight: =FontWeight.Bold
+            Height: =100
+            Size: =15
+            Text: ="General Recomendation Updated Successfully."
+            Visible: =Vargeneralrecommendation =true
+            Width: =324
+            X: =(Parent.Width-Self.Width)/2
+            Y: =imgInfoBS_2.Y+ imgInfoBS_2.Height+5
+            ZIndex: =12
+
+        btOkActiionItemTrackerBS_2 As button:
+            Fill: =RGBA(54, 176, 75, 1)
+            Font: =referenceCSS.RFont
+            HoverFill: =RGBA(75, 125, 6, 1)
+            OnSelect: =Set(Vargeneralrecommendation,false);
+            PressedBorderColor: =RGBA(1, 43, 1, 0)
+            PressedFill: =Self.Fill
+            Text: ="Ok"
+            Visible: =Vargeneralrecommendation =true
+            Width: =120
+            X: =(Parent.Width-Self.Width)/2
+            Y: =lblupdatesuccessEC.Y+ Self.Height+10
+            ZIndex: =13
 
