@@ -182,10 +182,12 @@ projectAssignment As screen:
                         BorderColor: =RGBA(0, 0, 0, 1)
                         Clear: =true
                         Default: =
+                        FocusedBorderThickness: =2
                         HintText: ="Search on G.O. Number"
                         HoverBorderColor: =Self.Color
                         HoverFill: =RGBA(0, 0, 0, 0)
-                        OnChange: =
+                        OnChange: |
+                            =UpdateContext({VarSearchBank:TextInput2_4.Text});
                         RadiusBottomLeft: =0
                         RadiusBottomRight: =0
                         RadiusTopLeft: =0
@@ -229,6 +231,8 @@ projectAssignment As screen:
                                     ),TextInput2.Text,"shlrf_assessmenttype")
                                 )
                             )*/
+                        PaddingBottom: =8
+                        PaddingTop: =8
                         Width: =40
                         ZIndex: =2
 

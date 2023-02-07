@@ -189,8 +189,8 @@ AllProject As screen:
                                     ),TextInput2.Text,"shlrf_assessmenttype")
                                 )
                             )*/
-                        PaddingBottom: =10
-                        PaddingTop: =10
+                        PaddingBottom: =8
+                        PaddingTop: =8
                         Width: =40
                         ZIndex: =2
 
