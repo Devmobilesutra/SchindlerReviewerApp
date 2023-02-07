@@ -134,11 +134,13 @@ AllProject As screen:
 
                     TextInput2_3 As text:
                         AlignInContainer: =AlignInContainer.Center
-                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderColor: =referenceCSS.RActiveColor
                         Default: =
                         FocusedBorderThickness: =2
+                        FontWeight: =FontWeight.Semibold
                         HintText: ="Search on G.O. Number"
-                        HoverBorderColor: =Self.Color
+                        HoverBorderColor: =//Self.Color
+                        HoverColor: =//RGBA(0, 0, 0, 1)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         OnChange: |-
                             =UpdateContext({VarSearchBank:TextInput2_3.Text});
@@ -151,16 +153,17 @@ AllProject As screen:
                         RadiusTopLeft: =0
                         RadiusTopRight: =0
                         Reset: =true
-                        Size: =16
-                        Width: =Parent.Width/1.5
+                        Size: =14
+                        Width: =Parent.Width/2
                         ZIndex: =1
 
                     Icon1 As icon.Search:
                         AlignInContainer: =AlignInContainer.Center
-                        BorderColor: =RGBA(0, 0, 0, 1)
+                        BorderColor: =referenceCSS.RActiveColor
                         BorderThickness: =2
-                        Color: =RGBA(0, 0, 0, 1)
-                        Fill: =RGBA(230, 230, 230, 1)
+                        Color: =referenceCSS.RActiveColor
+                        DisabledBorderColor: =RGBA(255, 255, 255, 1)
+                        Fill: =RGBA(255, 255, 255, 1)
                         Height: =40
                         Icon: =Icon.Search
                         OnSelect: |-
@@ -203,7 +206,7 @@ AllProject As screen:
                 Items: |
                     =If(
                         comp = true,
-                        If(VarSearchBank <> Blank(),
+                        If(TextInput2_3.Text <> Blank(),
                             Search(
                         Sort(
                             Filter(
@@ -213,7 +216,7 @@ AllProject As screen:
                             ),
                             startDate,
                             Descending
-                        ),VarSearchBank,"shlaf_gonumber"),
+                        ),TextInput2_3.Text,"shlaf_gonumber"),
                     Sort(
                             Filter(
                                 assignments,
@@ -226,7 +229,7 @@ AllProject As screen:
                         
                         If(
                             inpro = true,
-                            If(VarSearchBank <> Blank(),
+                            If(TextInput2_3.Text <> Blank(),
                             Search(
                             Sort(
                                 Filter(
