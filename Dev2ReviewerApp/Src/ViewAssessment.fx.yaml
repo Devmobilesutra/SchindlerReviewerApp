@@ -982,6 +982,7 @@ ViewAssessment As screen:
                         PressedFill: =Self.Fill
                         Size: =referenceCSS.RInputFontSize
                         Text: ="Comment"
+                        Visible: =If(comp=true,false,true)
                         Width: =120
                         X: =ctnItemVA.X+ctnItemVA.Width
                         Y: =ctnItemVA.Y+5
@@ -1004,6 +1005,7 @@ ViewAssessment As screen:
                         PressedFill: =Self.Fill
                         Size: =referenceCSS.RInputFontSize
                         Text: ="Comment"
+                        Visible: =If(comp=true,false,true)
                         Width: =120
                         X: =ctnCheckpointVA.X+ctnCheckpointVA.Width
                         Y: =ctnCheckpointVA.Y+5
@@ -1026,6 +1028,7 @@ ViewAssessment As screen:
                         PressedFill: =Self.Fill
                         Size: =referenceCSS.RInputFontSize
                         Text: ="Comment"
+                        Visible: =If(comp=true,false,true)
                         Width: =120
                         X: =ctnSectionVA.X+ctnSectionVA.Width
                         Y: =ctnSectionVA.Y+5
