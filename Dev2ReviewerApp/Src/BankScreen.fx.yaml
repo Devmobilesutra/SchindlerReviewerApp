@@ -653,7 +653,7 @@ BankScreen As screen:
             FontWeight: =FontWeight.Bold
             Height: =100
             Size: =15
-            Text: ="Action Item tracker has been sent to your email id."
+            Text: ="Action Item tracker will be sent to your email id."
             Visible: =P =true
             Width: =324
             X: =(Parent.Width-Self.Width)/2
@@ -712,7 +712,7 @@ BankScreen As screen:
             FontWeight: =FontWeight.Bold
             Height: =100
             Size: =15
-            Text: ="Trip Report has been sent to your Email Id"
+            Text: ="Trip Report will be sent to your Email Id"
             Visible: =VarGeneratePDF =true
             Width: =324
             X: =(Parent.Width-Self.Width)/2
