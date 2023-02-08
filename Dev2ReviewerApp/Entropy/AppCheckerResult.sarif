@@ -20590,36 +20590,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "projectAssignment.VarSearchBank"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "projectAssignment.VarSearchBank",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "VarSearchBank",
-                "module": "projectAssignment",
-                "type": "projectAssignment"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "projectAssignment.btnOkSuccessPA.Y"
                 }
               ],
@@ -21633,36 +21603,6 @@
           },
           "ruleId": "app-InefficientDelayLoading",
           "ruleIndex": 8
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "AllProject.VarSearchBank"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "AllProject.VarSearchBank",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "VarSearchBank",
-                "module": "AllProject",
-                "type": "AllProject"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-UnusedVariables",
-          "ruleIndex": 5
         },
         {
           "locations": [

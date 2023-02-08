@@ -1,6 +1,6 @@
 AllProject As screen:
     OnVisible: |-
-        =UpdateContext({VarSearchBank:""});
+        =//UpdateContext({VarSearchBank:""});
         Reset(TextInput2_3);
 
     ctnMainPS As groupContainer.verticalAutoLayoutContainer:
@@ -143,9 +143,9 @@ AllProject As screen:
                         HoverColor: =//RGBA(0, 0, 0, 1)
                         HoverFill: =RGBA(0, 0, 0, 0)
                         OnChange: |-
-                            =UpdateContext({VarSearchBank:TextInput2_3.Text});
+                            =//UpdateContext({VarSearchBank:TextInput2_3.Text});
                         OnSelect: |-
-                            =UpdateContext({VarSearchBank:TextInput2_3.Text});
+                            =//UpdateContext({VarSearchBank:TextInput2_3.Text});
                         PressedBorderColor: =//Self.HoverBorderColor
                         PressedColor: =//Self.Color
                         RadiusBottomLeft: =0
@@ -166,34 +166,8 @@ AllProject As screen:
                         Fill: =RGBA(255, 255, 255, 1)
                         Height: =40
                         Icon: =Icon.Search
-                        OnSelect: |-
-                            =UpdateContext({VarSearchBank:TextInput2_3.Text});
-                            //Reset(TextInput2);
-                            /*//if VarCompleted variable is true then filter assignments table by reviewerid and completed status and sort by startdate and if VarInprogress variable is true then filter assignments table by reviewerid and inprogress status and sort by startdate
-                            If(
-                                VarCompleted = true,
-                                Sort(
-                                    Filter(
-                                        Assignments,
-                                        //ReviewerId = VarLoggedReviewer && 
-                                        AssessmentStatus = "Completed"
-                                    ),
-                                    StartDate,
-                                 Descending
-                                ),
-                                If(
-                                    VarInprogress = true,
-                                    Search(Sort(
-                                        Filter(
-                                            Assignments,
-                                            //ReviewerId = VarLoggedReviewer && 
-                                            AssessmentStatus = "Inprogress"
-                                        ),
-                                        StartDate,
-                                        Descending
-                                    ),TextInput2.Text,"shlrf_assessmenttype")
-                                )
-                            )*/
+                        OnSelect: |
+                            =//UpdateContext({VarSearchBank:TextInput2_3.Text});
                         PaddingBottom: =8
                         PaddingTop: =8
                         Width: =40
