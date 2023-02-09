@@ -135,8 +135,7 @@ ViewAssessment As screen:
                         FontWeight: =FontWeight.Semibold
                         Height: =Parent.Height
                         Size: =referenceCSS.RViewFontSize
-                        Text: |-
-                            ="Unit #  "
+                        Text: ="Unit   "
                         Width: =100
                         ZIndex: =3
 
