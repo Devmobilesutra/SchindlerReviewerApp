@@ -402,13 +402,8 @@ BankScreen As screen:
                         Height: =45
                         HoverFill: =Self.Fill
                         OnSelect: |
-                            =//generate tripreport pdf by automate flow 
-                            /*//AssessorTripReportss.Run(glryProject.Selected.Assignments);
-                            Set(VarGeneratePDF,
-                            'Assessor_Trip-Report'.Run(glryProject.Selected.assignments,glryProject.Selected.reviewerEmail));
-                            /*If(VarGeneratePDF=true,
-                            Notify("TripReport has been sent to your Email Id",NotificationType.Success));*/
-                            Set(VarPDFLable, "For Unit " & ThisItem.bankUnitId.unitNumber & " Trip Report will be sent to your Email Id");
+                            =//generate assessment pdf by automate flow 
+                            Set(VarPDFLable,"Unit " & ThisItem.bankUnitId.unitNumber & " Assessment PDF will be sent to your Email Id");
                             Set(VarGeneratePDF,true);
                         PressedColor: =Self.Color
                         PressedFill: =Self.Fill
