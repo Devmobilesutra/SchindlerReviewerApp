@@ -229,7 +229,6 @@ AllProject As screen:
                 Layout: =Layout.Vertical
                 LayoutMinHeight: =287
                 LayoutMinWidth: =320
-                ShowScrollbar: =false
                 TemplatePadding: =10
                 TemplateSize: =460
                 Width: =Parent.Width
