@@ -389,24 +389,20 @@ BankScreen As screen:
                         Y: =30
                         ZIndex: =5
 
-                    btnViewreportBS_2 As button:
+                    btnExportreportBS As button:
                         DisplayMode: |-
-                            =//if BankTripReport table has entry of selected assignment then displaymode is edit otherwise displaymode is disabled
+                            =//If Logedin Reviewer is Secondary Reviwer then shows button in disabled mode
                             If(
-                                (LookUp(
-                                    BankTripReport,
-                                    assignmentId.Id = glryProject.Selected.Id,
-                                    'BankTripReport (quantum_banktripreport)'
-                                ) <> Blank()) && VarReviewerResult=false,
-                                DisplayMode.Edit,
-                                DisplayMode.Disabled
+                                VarReviewerResult=true,
+                                DisplayMode.Disabled,
+                                DisplayMode.Edit
                             )
                         Fill: =referenceCSS.RActiveColor
                         Height: =45
                         HoverFill: =Self.Fill
                         OnSelect: |
                             =//generate tripreport pdf by automate flow 
-                            //AssessorTripReportss.Run(glryProject.Selected.Assignments);
+                            /*//AssessorTripReportss.Run(glryProject.Selected.Assignments);
                             Set(VarGeneratePDF,
                             'Assessor_Trip-Report'.Run(glryProject.Selected.assignments,glryProject.Selected.reviewerEmail));
                             /*If(VarGeneratePDF=true,
