@@ -401,10 +401,11 @@ BankScreen As screen:
                         Fill: =referenceCSS.RActiveColor
                         Height: =45
                         HoverFill: =Self.Fill
-                        OnSelect: |
+                        OnSelect: |+
                             =//generate assessment pdf by automate flow 
                             Set(VarPDFLable,"Unit " & ThisItem.bankUnitId.unitNumber & " Assessment PDF will be sent to your Email Id");
-                            Set(VarGeneratePDF,true);
+                            Set(VarGeneratePDF,UnitPDF.Run(glryProject.Selected.assessorEmail,ThisItem.bankUnitId.bankUnits,glryProject.Selected.assignments));
+                            
                         PressedColor: =Self.Color
                         PressedFill: =Self.Fill
                         Text: ="Export PDF"
