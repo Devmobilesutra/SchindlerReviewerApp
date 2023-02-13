@@ -232,9 +232,10 @@ BankScreen As screen:
                         HoverFill: =Self.Fill
                         OnSelect: |
                             =//generate tripreport pdf by automate flow 
-                            //AssessorTripReportss.Run(glryProject.Selected.Assignments);
+                            Set(VarPDFLable,"Trip Report will be sent to your Email Id");
                             Set(VarGeneratePDF,
                             'Assessor_Trip-Report'.Run(glryProject.Selected.assignments,glryProject.Selected.reviewerEmail));
+                            
                             /*If(VarGeneratePDF=true,
                             Notify("TripReport has been sent to your Email Id",NotificationType.Success));*/
                         PressedColor: =Self.Color
@@ -407,6 +408,8 @@ BankScreen As screen:
                             'Assessor_Trip-Report'.Run(glryProject.Selected.assignments,glryProject.Selected.reviewerEmail));
                             /*If(VarGeneratePDF=true,
                             Notify("TripReport has been sent to your Email Id",NotificationType.Success));*/
+                            Set(VarPDFLable,"Unitwise Trip Report will be sent to your Email Id");
+                            Set(VarGeneratePDF,true);
                         PressedColor: =Self.Color
                         PressedFill: =Self.Fill
                         Text: ="Export PDF"
@@ -738,7 +741,7 @@ BankScreen As screen:
             FontWeight: =FontWeight.Bold
             Height: =100
             Size: =15
-            Text: ="Trip Report will be sent to your Email Id"
+            Text: =VarPDFLable
             Visible: =VarGeneratePDF =true
             Width: =324
             X: =(Parent.Width-Self.Width)/2
