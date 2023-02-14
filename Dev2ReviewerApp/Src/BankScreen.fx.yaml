@@ -80,8 +80,8 @@ BankScreen As screen:
                         LayoutMinWidth: =170
                         Size: =referenceCSS.RLabelFontSize
                         Text: |-
-                            =" Assessment By :  " //&   CountRows(Filter(GC_unitAssessment,assignmentId.bankId.goNumber=lblGonumber1BS.Text && Assessment_status="inProgress"))& "/" &(CountRows(glryBankGo_1.AllItems))
-                        Width: =170
+                            =" Assessor Name    :" //&   CountRows(Filter(GC_unitAssessment,assignmentId.bankId.goNumber=lblGonumber1BS.Text && Assessment_status="inProgress"))& "/" &(CountRows(glryBankGo_1.AllItems))
+                        Width: =200
                         ZIndex: =3
 
                     LblAssessmentnameBS As label:
@@ -111,8 +111,8 @@ BankScreen As screen:
                         LayoutMinWidth: =170
                         Size: =referenceCSS.RLabelFontSize
                         Text: |-
-                            =" Review By          :" //&   CountRows(Filter(GC_unitAssessment,assignmentId.bankId.goNumber=lblGonumber1BS.Text && Assessment_status="inProgress"))& "/" &(CountRows(glryBankGo_1.AllItems))
-                        Width: =170
+                            =" Reviewer Name   : " //&   CountRows(Filter(GC_unitAssessment,assignmentId.bankId.goNumber=lblGonumber1BS.Text && Assessment_status="inProgress"))& "/" &(CountRows(glryBankGo_1.AllItems))
+                        Width: =200
                         ZIndex: =3
 
                     LblAssessmentnameBS_1 As label:
