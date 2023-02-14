@@ -23,7 +23,7 @@ BankScreen As screen:
             ctnAssessmentDetailsBS As groupContainer.horizontalAutoLayoutContainer:
                 AlignInContainer: =AlignInContainer.SetByContainer
                 FillPortions: =0
-                Height: =195
+                Height: =ctnGonumberBS.Height+ctnAssessmentBS.Height+ctnAssessmentBS_1.Height+ctnbankScreen.Height+20
                 LayoutDirection: =LayoutDirection.Vertical
                 LayoutGap: =5
                 LayoutMinHeight: =100
@@ -94,6 +94,37 @@ BankScreen As screen:
                         Width: =Parent.Width/2
                         ZIndex: =4
 
+                ctnAssessmentBS_1 As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =0
+                    Height: =40//Parent.Height/2.5
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width
+                    ZIndex: =3
+
+                    lblAssessmentbyBS_1 As label:
+                        Font: =referenceCSS.RFont
+                        FontWeight: =FontWeight.Bold
+                        Height: =Parent.Height
+                        LayoutMinWidth: =170
+                        Size: =referenceCSS.RLabelFontSize
+                        Text: |-
+                            =" Review By          :" //&   CountRows(Filter(GC_unitAssessment,assignmentId.bankId.goNumber=lblGonumber1BS.Text && Assessment_status="inProgress"))& "/" &(CountRows(glryBankGo_1.AllItems))
+                        Width: =170
+                        ZIndex: =3
+
+                    LblAssessmentnameBS_1 As label:
+                        Color: =referenceCSS.RColorBlack
+                        Font: =referenceCSS.RFont
+                        Size: =referenceCSS.RLabelFontSize
+                        Text: |-
+                            =glryProject.Selected.reviewerName
+                            //CountRows(Filter(GC_unitAssessment,clientBank_Id.Go_Number=lblGonumber1BS.Text && Assessment_status="inProgress"))& "/" &(CountRows(glryBankGo_1.AllItems))
+                        Width: =Parent.Width/2
+                        ZIndex: =4
+
                 ctnbankScreen As groupContainer.horizontalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.SetByContainer
                     BorderColor: =referenceCSS.RActiveColor
@@ -109,7 +140,7 @@ BankScreen As screen:
                     PaddingRight: =10
                     Width: =Parent.Width
                     X: =
-                    ZIndex: =3
+                    ZIndex: =4
 
                     lblAssStatusBS As label:
                         Font: =referenceCSS.RFont
@@ -394,9 +425,13 @@ BankScreen As screen:
                         DisplayMode: |-
                             =//If Logedin Reviewer is Secondary Reviwer then shows button in disabled mode
                             If(
-                                VarReviewerResult=true,
-                                DisplayMode.Disabled,
-                                DisplayMode.Edit
+                                (LookUp(
+                                    checkpointAssessment,
+                                    assignmentId.Id = glryProject.Selected.Id && bankUnitId.Id = ThisItem.bankUnitId.Id,
+                                    checkpointAssessment_id)<> Blank()) && VarReviewerResult=false,
+                                     DisplayMode.Edit,
+                                     DisplayMode.Disabled
+                               
                             )
                         Fill: =referenceCSS.RActiveColor
                         Height: =45
