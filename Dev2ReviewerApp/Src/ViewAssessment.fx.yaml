@@ -99,6 +99,38 @@ ViewAssessment As screen:
                         Width: =Parent.Width-300
                         ZIndex: =4
 
+                ctnbank_6 As groupContainer.horizontalAutoLayoutContainer:
+                    AlignInContainer: =AlignInContainer.SetByContainer
+                    FillPortions: =0
+                    Height: =30
+                    LayoutMinHeight: =100
+                    LayoutMinWidth: =250
+                    LayoutMode: =LayoutMode.Auto
+                    Width: =Parent.Width
+                    ZIndex: =3
+
+                    lblAssStatusBS_6 As label:
+                        Font: =globalcss.fontRobotoR
+                        FontWeight: =FontWeight.Semibold
+                        Height: =Parent.Height
+                        LayoutMinWidth: =170
+                        PaddingLeft: =0
+                        Size: =referenceCSS.RViewFontSize
+                        Text: ="Reviewer Name "
+                        Width: =300
+                        ZIndex: =3
+
+                    LblAssStatuscountBS_5 As label:
+                        Color: =referenceCSS.RColorBlack
+                        Font: =globalcss.fontRobotoR
+                        Height: =Parent.Height
+                        Size: =referenceCSS.RViewFontSize
+                        Text: |-
+                            =glryProject.Selected.reviewerName
+                            //CountRows(Filter(GC_unitAssessment,clientBank_Id.Go_Number=lblGonumber1BS.Text && Assessment_status="inProgress"))& "/" &(CountRows(glryBankGo_1.AllItems))
+                        Width: =Parent.Width-300
+                        ZIndex: =4
+
                 ctnAssessorAS_1 As groupContainer.verticalAutoLayoutContainer:
                     AlignInContainer: =AlignInContainer.Start
                     FillPortions: =0
@@ -108,7 +140,7 @@ ViewAssessment As screen:
                     LayoutMode: =LayoutMode.Auto
                     Width: =Parent.Width
                     X: =40
-                    ZIndex: =3
+                    ZIndex: =4
 
                     lblAssesorNameAS_1 As label:
                         Font: =globalcss.fontRobotoR
@@ -157,7 +189,7 @@ ViewAssessment As screen:
                     LayoutMode: =LayoutMode.Auto
                     LayoutWrap: =true
                     Width: =Parent.Width
-                    ZIndex: =4
+                    ZIndex: =5
 
                     lblAssessmentdate_VA As label:
                         Font: =globalcss.fontRobotoR
