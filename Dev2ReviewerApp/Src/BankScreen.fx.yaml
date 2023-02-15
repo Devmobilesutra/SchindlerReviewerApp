@@ -612,7 +612,7 @@ BankScreen As screen:
                 }
                 );
                 Set(bktrip, LookUp(BankTripReport,assignmentId.Id=glryProject.Selected.Id,'BankTripReport (quantum_banktripreportid)'));
-                 Set(varComment1 ,false);
+                 //Set(varComment1 ,false);
                   Set(VarDistributePDF,DistributeReport.Run(bktrip,JSON(combocollect,Compact)));
                 //If(q=true,Notify("BankTripReport has Distributed Successfully"));
                 Reset(cboxReviewverBS);
@@ -824,7 +824,9 @@ BankScreen As screen:
             Fill: =RGBA(54, 176, 75, 1)
             Font: =referenceCSS.RFont
             HoverFill: =RGBA(75, 125, 6, 1)
-            OnSelect: =Set(VarDistributePDF,false);
+            OnSelect: |-
+                =Set(varComment1 ,false);
+                Set(VarDistributePDF,false);
             PressedBorderColor: =RGBA(1, 43, 1, 0)
             PressedFill: =Self.Fill
             Text: ="Ok"
