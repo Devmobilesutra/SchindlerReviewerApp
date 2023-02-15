@@ -642,7 +642,8 @@ BankScreen As screen:
                 Set(bktrip, LookUp(BankTripReport,assignmentId.Id=glryProject.Selected.Id,'BankTripReport (quantum_banktripreportid)'));
                   Set(VarDistributePDF,DistributeReport.Run(bktrip,JSON(combocollect,Compact)));
                 //If(q=true,Notify("BankTripReport has Distributed Successfully"));
-                Set(varComment1 , false);
+                Set(varComment1 ,false);
+                Reset(cboxReviewverBS);
                 Navigate(BankScreen);
             PressedColor: =Self.Color
             PressedFill: =Self.Fill
