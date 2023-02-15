@@ -1107,8 +1107,8 @@ projectAssignment As screen:
                             Items: |-
                                 =If(TextInput2_4.Text<>Blank(),
                                 Search(
-                                Sort(assignments,startDate,Descending),TextInput2_4.Text,"shlaf_gonumber"),
-                                Sort(assignments,startDate,Descending))
+                                Sort(Filter(assignments,isCompleted<>"Completed"),startDate,Descending),TextInput2_4.Text,"shlaf_gonumber"),
+                                Sort(Filter(assignments,isCompleted<>"Completed"),startDate,Descending))
                             Layout: =Layout.Vertical
                             LayoutMinHeight: =287
                             LayoutMinWidth: =320
