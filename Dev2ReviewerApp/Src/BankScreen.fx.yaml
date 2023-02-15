@@ -223,7 +223,7 @@ BankScreen As screen:
                         OnSelect: =Navigate(TripReport)
                         PressedColor: =Self.Color
                         PressedFill: =Self.Fill
-                        Text: ="View Report"
+                        Text: ="Trip Report"
                         Width: =140
                         X: =Parent.Width-100
                         ZIndex: =6
@@ -264,7 +264,7 @@ BankScreen As screen:
                         HoverFill: =Self.Fill
                         OnSelect: |
                             =//generate tripreport pdf by automate flow 
-                            Set(VarPDFLable,"Trip Report will be sent to your Email Id");
+                            Set(VarPDFLable,"Trip Report in PDF formate will be sent to your Email Id");
                             Set(VarGeneratePDF,
                             'Assessor_Trip-Report'.Run(glryProject.Selected.assignments,glryProject.Selected.reviewerEmail));
                             
