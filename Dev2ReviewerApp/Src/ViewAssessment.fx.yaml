@@ -1118,6 +1118,46 @@ ViewAssessment As screen:
                     Width: =ctnBackViewAssessment.Width/6
                     ZIndex: =2
 
+            Container2 As groupContainer.horizontalAutoLayoutContainer:
+                AlignInContainer: =AlignInContainer.Start
+                FillPortions: =0
+                Height: =80
+                LayoutJustifyContent: =LayoutJustifyContent.Center
+                LayoutMinHeight: =100
+                LayoutMinWidth: =250
+                LayoutMode: =LayoutMode.Auto
+                Width: =Parent.Width/2
+                ZIndex: =3
+
+                btnExportreportBS As button:
+                    AlignInContainer: =AlignInContainer.Center
+                    DisplayMode: |-
+                        =//If Logedin Reviewer is Secondary Reviwer then shows button in disabled mode
+                        If(
+                            (LookUp(
+                                checkpointAssessment,
+                                assignmentId.Id = glryProject.Selected.Id && bankUnitId.Id = glryAssignmentBS.Selected.bankUnitId.Id,
+                                checkpointAssessment_id)<> Blank()) && VarReviewerResult=false,
+                                 DisplayMode.Edit,
+                                 DisplayMode.Disabled
+                           
+                        )
+                    Fill: =referenceCSS.RActiveColor
+                    Height: =45
+                    HoverFill: =Self.Fill
+                    OnSelect: |+
+                        =//generate assessment pdf by automate flow 
+                        Set(VarExportPDFLable,"Unit " & glryAssignmentBS.Selected.bankUnitId.unitNumber & " Assessment PDF will be sent to your Email Id");
+                        Set(VarExportPDF,UnitPDF.Run(glryProject.Selected.assessorEmail,glryAssignmentBS.Selected.bankUnitId.bankUnits,glryProject.Selected.assignments));
+                        
+                    PressedColor: =Self.Color
+                    PressedFill: =Self.Fill
+                    Text: ="Export PDF"
+                    Width: =150
+                    X: =
+                    Y: =30
+                    ZIndex: =1
+
         ctnHeaderViewAssessment As groupContainer.manualLayoutContainer:
             Fill: =Header.HeaderFill
             Height: =80
@@ -1336,4 +1376,63 @@ ViewAssessment As screen:
             X: =Rectangle6.X
             Y: =Rectangle6.Y
             ZIndex: =8
+
+    grpActionItemTrackerBS_4 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =14
+
+        iconOuterrectangleBS_4 As rectangle:
+            Fill: =RGBA(0, 0, 0, 0.29)
+            Height: =Parent.Height
+            Visible: =VarExportPDF =true
+            Width: =Parent.Width
+            ZIndex: =9
+
+        iconInnerrectangleBS_4 As rectangle:
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =230
+            Visible: =VarExportPDF =true
+            Width: =350
+            X: =(Parent.Width-Self.Width)/2
+            Y: =Parent.Height/3
+            ZIndex: =10
+
+        imgInfoBS_4 As image:
+            Height: =52
+            Image: =info
+            Visible: =VarExportPDF =true
+            Width: =52
+            X: =(Parent.Width-Self.Width)/2
+            Y: =iconInnerrectangleBS_4.Y+20
+            ZIndex: =11
+
+        lblActionItemtrackerBS_4 As label:
+            Align: =Align.Center
+            Font: =referenceCSS.RFont
+            FontWeight: =FontWeight.Bold
+            Height: =100
+            Size: =15
+            Text: =VarExportPDFLable
+            Visible: =VarExportPDF =true
+            Width: =324
+            X: =(Parent.Width-Self.Width)/2
+            Y: =imgInfoBS_4.Y+ imgInfoBS_4.Height+5
+            ZIndex: =12
+
+        btOkActiionItemTrackerBS_4 As button:
+            Fill: =RGBA(54, 176, 75, 1)
+            Font: =referenceCSS.RFont
+            HoverFill: =RGBA(75, 125, 6, 1)
+            OnSelect: =Set(VarGeneratePDF,false);
+            PressedBorderColor: =RGBA(1, 43, 1, 0)
+            PressedFill: =Self.Fill
+            Text: ="Ok"
+            Visible: =VarExportPDF =true
+            Width: =120
+            X: =(Parent.Width-Self.Width)/2
+            Y: =lblupdatesuccessEC.Y+ Self.Height+10
+            ZIndex: =13
 

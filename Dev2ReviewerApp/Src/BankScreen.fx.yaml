@@ -430,34 +430,6 @@ BankScreen As screen:
                         Y: =30
                         ZIndex: =5
 
-                    btnExportreportBS As button:
-                        DisplayMode: |-
-                            =//If Logedin Reviewer is Secondary Reviwer then shows button in disabled mode
-                            If(
-                                (LookUp(
-                                    checkpointAssessment,
-                                    assignmentId.Id = glryProject.Selected.Id && bankUnitId.Id = ThisItem.bankUnitId.Id,
-                                    checkpointAssessment_id)<> Blank()) && VarReviewerResult=false,
-                                     DisplayMode.Edit,
-                                     DisplayMode.Disabled
-                               
-                            )
-                        Fill: =referenceCSS.RActiveColor
-                        Height: =45
-                        HoverFill: =Self.Fill
-                        OnSelect: |+
-                            =//generate assessment pdf by automate flow 
-                            Set(VarPDFLable,"Unit " & ThisItem.bankUnitId.unitNumber & " Assessment PDF will be sent to your Email Id");
-                            Set(VarGeneratePDF,UnitPDF.Run(glryProject.Selected.assessorEmail,ThisItem.bankUnitId.bankUnits,glryProject.Selected.assignments));
-                            
-                        PressedColor: =Self.Color
-                        PressedFill: =Self.Fill
-                        Text: ="Export PDF"
-                        Width: =150
-                        X: =(Parent.Width-Self.Width)-btnStartAssessmentBS.Width-60
-                        Y: =30
-                        ZIndex: =6
-
         ctnBackBankScreen As groupContainer.verticalAutoLayoutContainer:
             Height: =ctnHeaderBankScreen.Height+ctnHeaderBankScreen.Y
             LayoutMode: =LayoutMode.Auto

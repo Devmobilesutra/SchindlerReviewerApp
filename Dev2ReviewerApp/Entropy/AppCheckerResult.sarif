@@ -19572,19 +19572,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnBankScreen.glryAssignmentBS.btnExportreportBS.DisplayMode"
+                  "fullyQualifiedName": "ViewAssessment.ctnMainBankViewAssessment.ctnBackViewAssessment.Container2.btnExportreportBS.DisplayMode"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnBankScreen.glryAssignmentBS.btnExportreportBS.DisplayMode",
+                  "fullyQualifiedName": "ViewAssessment.ctnMainBankViewAssessment.ctnBackViewAssessment.Container2.btnExportreportBS.DisplayMode",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "DisplayMode",
-                "module": "BankScreen",
-                "type": "BankScreen.ctnMainBankBS.ctnMiddleBS.ctnBankScreen.glryAssignmentBS.btnExportreportBS"
+                "module": "ViewAssessment",
+                "type": "ViewAssessment.ctnMainBankViewAssessment.ctnBackViewAssessment.Container2.btnExportreportBS"
               }
             }
           ],
@@ -22881,6 +22881,36 @@
                 "member": "Y",
                 "module": "BankScreen",
                 "type": "BankScreen.btOkActiionItemTrackerBS_3"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-InefficientDelayLoading",
+          "ruleIndex": 8
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ViewAssessment.btOkActiionItemTrackerBS_4.Y"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ViewAssessment.btOkActiionItemTrackerBS_4.Y",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "Y",
+                "module": "ViewAssessment",
+                "type": "ViewAssessment.btOkActiionItemTrackerBS_4"
               }
             }
           ],
