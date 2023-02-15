@@ -1,6 +1,7 @@
 ViewAssessment As screen:
     OnVisible: |-
         =Set(varComment,false);
+        Set(VarExportPDF,false);
         Refresh(sectionAssessment);
         Refresh(checkpointAssessment);
         Refresh(checkpointItemAssessment);
@@ -1426,7 +1427,7 @@ ViewAssessment As screen:
             Fill: =RGBA(54, 176, 75, 1)
             Font: =referenceCSS.RFont
             HoverFill: =RGBA(75, 125, 6, 1)
-            OnSelect: =Set(VarGeneratePDF,false);
+            OnSelect: =Set(VarExportPDF,false);
             PressedBorderColor: =RGBA(1, 43, 1, 0)
             PressedFill: =Self.Fill
             Text: ="Ok"
