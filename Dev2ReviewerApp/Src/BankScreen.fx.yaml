@@ -264,7 +264,7 @@ BankScreen As screen:
                         HoverFill: =Self.Fill
                         OnSelect: |
                             =//generate tripreport pdf by automate flow 
-                            Set(VarPDFLable,"Trip Report in PDF formate will be sent to your Email Id");
+                            Set(VarPDFLable,"Trip Report in PDF format will be sent to your Email Id");
                             Set(VarGeneratePDF,
                             'Assessor_Trip-Report'.Run(glryProject.Selected.assignments,glryProject.Selected.reviewerEmail));
                             
