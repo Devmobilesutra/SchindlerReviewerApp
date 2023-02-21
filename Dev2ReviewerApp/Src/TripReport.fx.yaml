@@ -639,31 +639,25 @@ TripReport As screen:
                     Items: |-
                         =Sort(
                             Sort(
-                                //Filter(
                                     GroupBy(
                                         AddColumns(
                                             Filter(
                                                 checkpointItem_ActionItem,
                                                 priority = "High" && assignmentId.Id=glryProject.Selected.Id
                                             ),
-                                           // "assign",
-                                           // assignmentId.Id,
                                             "unit",
                                             bankUnitId.unitNumber,
                                             "section",
                                             section_id.sectionName,
-                                            "sectionSequence",
-                                            section_id.sectionSequence
+                                            "sort",
+                                            ActionSortSequence
                                         ),
-                                      //  "assign",
                                         "unit",
                                         "section",
-                                        "sectionSequence",
+                                        "sort",
                                         "data"
                                     ),
-                                  //  assign = glryProject.Selected.Id
-                                //),
-                                sectionSequence,
+                                sort,
                                 Ascending
                             ) ,
                              unit,Ascending
@@ -698,7 +692,7 @@ TripReport As screen:
                         Height: |-
                             =//(CountRows(Gallery15.AllItems)*Gallery15.TemplateHeight)*9
                             Parent.Height
-                        Items: =Sort(ThisItem.data,checkpoint_id.CheckpointSequence)
+                        Items: =Sort(ThisItem.data,Sort,Ascending)
                         Layout: =Layout.Vertical
                         TemplatePadding: =1
                         TemplateSize: =300
