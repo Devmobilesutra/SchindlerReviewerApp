@@ -141,7 +141,7 @@ TripReport As screen:
                             //    Ascending
                             //) 
                              unit,
-                            Ascending
+                            SortOrder.Ascending
                         ));
                     PaddingLeft: =0
                     PressedBorderColor: =Self.BorderColor
@@ -658,9 +658,9 @@ TripReport As screen:
                                         "data"
                                     ),
                                 sort,
-                                Ascending
+                                SortOrder.Ascending
                             ) ,
-                             unit,Ascending
+                             unit,SortOrder.Ascending
                         )
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =287
@@ -692,7 +692,7 @@ TripReport As screen:
                         Height: |-
                             =//(CountRows(Gallery15.AllItems)*Gallery15.TemplateHeight)*9
                             Parent.Height
-                        Items: =Sort(ThisItem.data,Sort,Ascending)
+                        Items: =Sort(ThisItem.data,Icon.Sort,SortOrder.Ascending)
                         Layout: =Layout.Vertical
                         TemplatePadding: =1
                         TemplateSize: =300
@@ -1352,6 +1352,16 @@ TripReport As screen:
             X: =Rectangle6_1.X
             Y: =Rectangle6_1.Y
             ZIndex: =8
+
+    Button1 As button:
+        FontWeight: =FontWeight.Bold
+        OnSelect: |-
+            =Set(VarPDF,PDF(Gallery14));
+            Navigate(Screen2);
+        Text: ="Button"
+        X: =1063
+        Y: =141
+        ZIndex: =14
 
     grpActionItemTrackerBS_2 As group:
         Height: =5

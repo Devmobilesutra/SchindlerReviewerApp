@@ -1,7 +1,7 @@
 {
   "FormatVersion": "0.24",
   "Header": {
-    "DocVersion": "1.327",
+    "DocVersion": "1.330",
     "MinVersionToLoad": "1.327",
     "MSAppStructureVersion": "2.0"
   },
@@ -19,16 +19,19 @@
       "blockmovingcontrol": true,
       "cdsdataformatting": false,
       "classiccontrols": false,
-      "consistentreturnschemafortabularfunctions": false,
+      "consistentreturnschemafortabularfunctions": true,
       "copyandmerge": true,
       "datatablev2control": true,
+      "dataverseactionsenabled": false,
       "delaycontrolrendering": false,
       "delayloadscreens": true,
       "disablecdsfileandlargeimage": false,
       "disablecommandbar": false,
       "dynamicschema": false,
+      "enableactionenhancedcomponentproperties": false,
       "enableappembeddingux": false,
       "enablebarcodereaderfeature": false,
+      "enablechatbotfeature": false,
       "enablecomponentnamemaps": true,
       "enablecomponentscopeoldbehavior": false,
       "enableeditcacherefreshfrequency": false,
@@ -41,7 +44,9 @@
       "enablerowscopeonetonexpand": false,
       "enablerpawarecomponentdependency": true,
       "enablerulespanel": false,
+      "enableruntimepolicies": false,
       "enablesaveloadcleardataonweb": false,
+      "enhancedcomponentfunctionproperty": false,
       "enhanceddelegation": true,
       "enhancedgalleryinitialization": true,
       "errorhandling": false,
@@ -63,7 +68,7 @@
       "optimizedforteamsmeeting": false,
       "packagemodernruntime": false,
       "parallelcodegen": false,
-      "pdffunction": false,
+      "pdffunction": true,
       "projectionmapping": true,
       "reactformulabar": false,
       "reliableconcurrent": true,
@@ -71,7 +76,7 @@
       "rtlinstudiopreview": false,
       "rtlsupport": false,
       "supportcolumnnamesasidentifiers": false,
-      "tabledoesntwraprecords": false,
+      "tabledoesntwraprecords": true,
       "untypedobject": false,
       "usedisplaynamemetadata": true,
       "useenforcesavedatalimits": true,
@@ -127,6 +132,7 @@
     "ViewAssessment_1",
     "TripReport",
     "TripReport_1",
-    "Screen1"
+    "Screen1",
+    "Screen2"
   ]
 }

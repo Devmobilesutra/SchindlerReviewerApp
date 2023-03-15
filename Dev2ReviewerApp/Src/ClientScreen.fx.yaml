@@ -309,7 +309,7 @@ ClientScreen As screen:
                             Height: |-
                                 =//Parent.Height
                                 CountRows(glryExistingClients.AllItems)*glryExistingClients.TemplateHeight
-                            Items: =Sort(schindlerClients,name,Ascending)
+                            Items: =Sort(schindlerClients,name,SortOrder.Ascending)
                             Layout: =Layout.Vertical
                             LayoutMinHeight: =287
                             LayoutMinWidth: =320
@@ -471,9 +471,9 @@ ClientScreen As screen:
                                 HoverFill: =RGBA(0, 0, 0, 0)
                                 OnChange: |-
                                     ="(" &
-                                    Left(Concat(Filter(Split(txtCityEC.Text,""),Result in "0123456789"),Result),3)& " ) " &
-                                    Mid(Concat(Filter(Split(txtCityEC.Text,""),Result in "0123456789"),Result),4,3) & " - " &
-                                    Mid(Concat(Filter(Split(txtClientName.Text,""),Result in "0123456789"),Result),7,4)
+                                    Left(Concat(Filter(ForAll(Split(txtCityEC.Text,""), {Result: ThisRecord.Value}),Result in "0123456789"),Result),3)& " ) " &
+                                    Mid(Concat(Filter(ForAll(Split(txtCityEC.Text,""), {Result: ThisRecord.Value}),Result in "0123456789"),Result),4,3) & " - " &
+                                    Mid(Concat(Filter(ForAll(Split(txtClientName.Text,""), {Result: ThisRecord.Value}),Result in "0123456789"),Result),7,4)
                                 PaddingLeft: =5
                                 PaddingTop: =10
                                 RadiusBottomLeft: =1
@@ -515,9 +515,9 @@ ClientScreen As screen:
                                 MaxLength: =5
                                 OnChange: |-
                                     ="(" &
-                                    Left(Concat(Filter(Split(txtZipEC.Text,""),Result in "0123456789"),Result),3)& " ) " &
-                                    Mid(Concat(Filter(Split(txtZipEC.Text,""),Result in "0123456789"),Result),4,3) & " - " &
-                                    Mid(Concat(Filter(Split(txtClientName.Text,""),Result in "0123456789"),Result),7,4)
+                                    Left(Concat(Filter(ForAll(Split(txtZipEC.Text,""), {Result: ThisRecord.Value}),Result in "0123456789"),Result),3)& " ) " &
+                                    Mid(Concat(Filter(ForAll(Split(txtZipEC.Text,""), {Result: ThisRecord.Value}),Result in "0123456789"),Result),4,3) & " - " &
+                                    Mid(Concat(Filter(ForAll(Split(txtClientName.Text,""), {Result: ThisRecord.Value}),Result in "0123456789"),Result),7,4)
                                 PaddingLeft: =5
                                 RadiusBottomLeft: =1
                                 RadiusBottomRight: =1
@@ -560,9 +560,9 @@ ClientScreen As screen:
                                 HoverFill: =RGBA(0, 0, 0, 0)
                                 OnChange: |-
                                     ="(" &
-                                    Left(Concat(Filter(Split(txtStateEC.Text,""),Result in "0123456789"),Result),3)& " ) " &
-                                    Mid(Concat(Filter(Split(txtStateEC.Text,""),Result in "0123456789"),Result),4,3) & " - " &
-                                    Mid(Concat(Filter(Split(txtClientName.Text,""),Result in "0123456789"),Result),7,4)
+                                    Left(Concat(Filter(ForAll(Split(txtStateEC.Text,""), {Result: ThisRecord.Value}),Result in "0123456789"),Result),3)& " ) " &
+                                    Mid(Concat(Filter(ForAll(Split(txtStateEC.Text,""), {Result: ThisRecord.Value}),Result in "0123456789"),Result),4,3) & " - " &
+                                    Mid(Concat(Filter(ForAll(Split(txtClientName.Text,""), {Result: ThisRecord.Value}),Result in "0123456789"),Result),7,4)
                                 PaddingLeft: =5
                                 RadiusBottomLeft: =1
                                 RadiusBottomRight: =1
@@ -602,9 +602,9 @@ ClientScreen As screen:
                                 Mode: =TextMode.MultiLine
                                 OnChange: |-
                                     ="(" &
-                                    Left(Concat(Filter(Split(txtContactNameEC.Text,""),Result in "0123456789"),Result),3)& " ) " &
-                                    Mid(Concat(Filter(Split(txtContactNameEC.Text,""),Result in "0123456789"),Result),4,3) & " - " &
-                                    Mid(Concat(Filter(Split(txtClientName.Text,""),Result in "0123456789"),Result),7,4)
+                                    Left(Concat(Filter(ForAll(Split(txtContactNameEC.Text,""), {Result: ThisRecord.Value}),Result in "0123456789"),Result),3)& " ) " &
+                                    Mid(Concat(Filter(ForAll(Split(txtContactNameEC.Text,""), {Result: ThisRecord.Value}),Result in "0123456789"),Result),4,3) & " - " &
+                                    Mid(Concat(Filter(ForAll(Split(txtClientName.Text,""), {Result: ThisRecord.Value}),Result in "0123456789"),Result),7,4)
                                 PaddingLeft: =5
                                 PaddingTop: =8
                                 RadiusBottomLeft: =1
@@ -933,7 +933,7 @@ ClientScreen As screen:
                                                 )
                                             ) < 1,
                                             DisplayMode.Edit,
-                                            Disabled
+                                            DisplayMode.Disabled
                                         )
                                     Fill: =RGBA(0, 0, 0, 0)
                                     Height: =50
@@ -1122,9 +1122,9 @@ ClientScreen As screen:
                             HoverFill: =RGBA(0, 0, 0, 0)
                             OnChange: |-
                                 ="(" &
-                                Left(Concat(Filter(Split(CCity.Text,""),Result in "0123456789"),Result),3)& " ) " &
-                                Mid(Concat(Filter(Split(CCity.Text,""),Result in "0123456789"),Result),4,3) & " - " &
-                                Mid(Concat(Filter(Split(txtClientName.Text,""),Result in "0123456789"),Result),7,4)
+                                Left(Concat(Filter(ForAll(Split(CCity.Text,""), {Result: ThisRecord.Value}),Result in "0123456789"),Result),3)& " ) " &
+                                Mid(Concat(Filter(ForAll(Split(CCity.Text,""), {Result: ThisRecord.Value}),Result in "0123456789"),Result),4,3) & " - " &
+                                Mid(Concat(Filter(ForAll(Split(txtClientName.Text,""), {Result: ThisRecord.Value}),Result in "0123456789"),Result),7,4)
                             RadiusBottomLeft: =1
                             RadiusBottomRight: =1
                             RadiusTopLeft: =1
@@ -1155,9 +1155,9 @@ ClientScreen As screen:
                             HoverFill: =RGBA(0, 0, 0, 0)
                             OnChange: |-
                                 ="(" &
-                                Left(Concat(Filter(Split(CState.Text,""),Result in "0123456789"),Result),3)& " ) " &
-                                Mid(Concat(Filter(Split(CState.Text,""),Result in "0123456789"),Result),4,3) & " - " &
-                                Mid(Concat(Filter(Split(txtClientName.Text,""),Result in "0123456789"),Result),7,4)
+                                Left(Concat(Filter(ForAll(Split(CState.Text,""), {Result: ThisRecord.Value}),Result in "0123456789"),Result),3)& " ) " &
+                                Mid(Concat(Filter(ForAll(Split(CState.Text,""), {Result: ThisRecord.Value}),Result in "0123456789"),Result),4,3) & " - " &
+                                Mid(Concat(Filter(ForAll(Split(txtClientName.Text,""), {Result: ThisRecord.Value}),Result in "0123456789"),Result),7,4)
                             RadiusBottomLeft: =1
                             RadiusBottomRight: =1
                             RadiusTopLeft: =1
@@ -1190,9 +1190,9 @@ ClientScreen As screen:
                             MaxLength: =5
                             OnChange: |-
                                 ="(" &
-                                Left(Concat(Filter(Split(CZip.Text,""),Result in "0123456789"),Result),3)& " ) " &
-                                Mid(Concat(Filter(Split(CZip.Text,""),Result in "0123456789"),Result),4,3) & " - " &
-                                Mid(Concat(Filter(Split(txtClientName.Text,""),Result in "0123456789"),Result),7,4)
+                                Left(Concat(Filter(ForAll(Split(CZip.Text,""), {Result: ThisRecord.Value}),Result in "0123456789"),Result),3)& " ) " &
+                                Mid(Concat(Filter(ForAll(Split(CZip.Text,""), {Result: ThisRecord.Value}),Result in "0123456789"),Result),4,3) & " - " &
+                                Mid(Concat(Filter(ForAll(Split(txtClientName.Text,""), {Result: ThisRecord.Value}),Result in "0123456789"),Result),7,4)
                             RadiusBottomLeft: =1
                             RadiusBottomRight: =1
                             RadiusTopLeft: =1
@@ -1223,9 +1223,9 @@ ClientScreen As screen:
                             HoverFill: =RGBA(0, 0, 0, 0)
                             OnChange: |-
                                 ="(" &
-                                Left(Concat(Filter(Split(txtContactName.Text,""),Result in "0123456789"),Result),3)& " ) " &
-                                Mid(Concat(Filter(Split(txtContactName.Text,""),Result in "0123456789"),Result),4,3) & " - " &
-                                Mid(Concat(Filter(Split(txtClientName.Text,""),Result in "0123456789"),Result),7,4)
+                                Left(Concat(Filter(ForAll(Split(txtContactName.Text,""), {Result: ThisRecord.Value}),Result in "0123456789"),Result),3)& " ) " &
+                                Mid(Concat(Filter(ForAll(Split(txtContactName.Text,""), {Result: ThisRecord.Value}),Result in "0123456789"),Result),4,3) & " - " &
+                                Mid(Concat(Filter(ForAll(Split(txtClientName.Text,""), {Result: ThisRecord.Value}),Result in "0123456789"),Result),7,4)
                             RadiusBottomLeft: =1
                             RadiusBottomRight: =1
                             RadiusTopLeft: =1

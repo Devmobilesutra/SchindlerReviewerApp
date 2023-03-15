@@ -303,13 +303,13 @@ TryScreen As screen:
                                    // Ascending
                                 //),
                                checkpointAssessment_Id.CheckpointSequence,
-                                Ascending
+                                SortOrder.Ascending
                             ),
                             section_Id.sectionSequence,
-                            Ascending
+                            SortOrder.Ascending
                         ),
                         bankUnitId.unitNumber,
-                        Ascending
+                        SortOrder.Ascending
                         )
                         //&&
                          //CountRows(Filter(checkpointItem_ActionItem, checkpointItem_Id.quantum_checkpointitemassessment //=ThisRecord.'checkpointItemAssessment (quantum_checkpointitemassessment)')>0)

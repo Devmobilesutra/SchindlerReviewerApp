@@ -311,7 +311,7 @@ AddBanks As screen:
                             =//Parent.Height
                             CountRows(glryExistingBanks.AllItems)*(glryExistingBanks.TemplateHeight + glryExistingBanks.TemplatePadding +100)
                         Items: |-
-                            =Sort(schindlerBanks,goNumber,Ascending)
+                            =Sort(schindlerBanks,goNumber,SortOrder.Ascending)
                             
                             /*GroupBy(
                                 AddColumns(bank,
@@ -354,7 +354,7 @@ AddBanks As screen:
                         glryExstingUnit As gallery.variableTemplateHeightGallery:
                             Height: =CountRows(glryExstingUnit.AllItems)*(glryExstingUnit.TemplateHeight+glryExstingUnit.TemplatePadding)*0.99
                             Items: |-
-                                =Sort(Filter(bankUnits,bankId.goNumber = ThisItem.goNumber),unitNumber,Ascending)
+                                =Sort(Filter(bankUnits,bankId.goNumber = ThisItem.goNumber),unitNumber,SortOrder.Ascending)
                                 
                                 //ThisItem.data
                                 
@@ -438,7 +438,7 @@ AddBanks As screen:
                                             )
                                         ) < 1,
                                         DisplayMode.Edit,
-                                        Disabled
+                                        DisplayMode.Disabled
                                     )
                                 Fill: =RGBA(0, 0, 0, 0)
                                 Font: =referenceCSS.RFont
@@ -657,7 +657,7 @@ AddBanks As screen:
                         HoverFill: =RGBA(255, 255, 255, 1)
                         InputTextPlaceholder: ="Select Client"
                         IsSearchable: =false
-                        Items: =Sort(schindlerClients,name,Ascending)
+                        Items: =Sort(schindlerClients,name,SortOrder.Ascending)
                         PaddingBottom: =0
                         PaddingTop: =0
                         PressedColor: =RGBA(0, 0, 0, 1)
@@ -789,7 +789,7 @@ AddBanks As screen:
                                     product_Name = "7000" || product_Name = "5500" || product_Name = "9000"
                                 ),
                                 product_Name,
-                                Ascending
+                                SortOrder.Ascending
                             )
                         PaddingBottom: =0
                         PaddingTop: =0

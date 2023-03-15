@@ -613,7 +613,7 @@ BankScreen As screen:
                 );
                 Set(bktrip, LookUp(BankTripReport,assignmentId.Id=glryProject.Selected.Id,'BankTripReport (quantum_banktripreportid)'));
                  //Set(varComment1 ,false);
-                  Set(VarDistributePDF,DistributeReport.Run(bktrip,JSON(combocollect,Compact)));
+                  Set(VarDistributePDF,DistributeReport.Run(bktrip,JSON(combocollect,JSONFormat.Compact)));
                 //If(q=true,Notify("BankTripReport has Distributed Successfully"));
                 Reset(cboxReviewverBS);
                 //Navigate(BankScreen);

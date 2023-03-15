@@ -409,7 +409,7 @@ projectAssignment As screen:
                             HoverFill: =RGBA(0,0,0,0)
                             InputTextPlaceholder: =
                             IsSearchable: =false
-                            Items: =Sort(schindlerClients,name,Ascending)
+                            Items: =Sort(schindlerClients,name,SortOrder.Ascending)
                             PaddingBottom: =0
                             PaddingTop: =0
                             PressedFill: =RGBA(0, 0, 0, 0)
@@ -679,7 +679,7 @@ projectAssignment As screen:
                             HoverFill: =RGBA(0,0,0,0)
                             InputTextPlaceholder: =
                             IsSearchable: =false
-                            Items: =Sort(AssessorAD.displayName,displayName,Ascending)
+                            Items: =Sort(AssessorAD.displayName,displayName,SortOrder.Ascending)
                             PaddingBottom: =10
                             PaddingTop: =0
                             Reset: =true
@@ -715,7 +715,7 @@ projectAssignment As screen:
                             HoverFill: =RGBA(0,0,0,0)
                             InputTextPlaceholder: =
                             IsSearchable: =false
-                            Items: =Sort(ReviewerAD.displayName,displayName,Ascending)
+                            Items: =Sort(ReviewerAD.displayName,displayName,SortOrder.Ascending)
                             PaddingBottom: =10
                             PaddingTop: =0
                             PressedFill: =RGBA(0, 0, 0, 1)
@@ -1107,8 +1107,8 @@ projectAssignment As screen:
                             Items: |-
                                 =If(TextInput2_4.Text<>Blank(),
                                 Search(
-                                Sort(Filter(assignments,isCompleted<>"Completed"),startDate,Descending),TextInput2_4.Text,"shlaf_gonumber"),
-                                Sort(Filter(assignments,isCompleted<>"Completed"),startDate,Descending))
+                                Sort(Filter(assignments,isCompleted<>"Completed"),startDate,SortOrder.Descending),TextInput2_4.Text,"shlaf_gonumber"),
+                                Sort(Filter(assignments,isCompleted<>"Completed"),startDate,SortOrder.Descending))
                             Layout: =Layout.Vertical
                             LayoutMinHeight: =287
                             LayoutMinWidth: =320

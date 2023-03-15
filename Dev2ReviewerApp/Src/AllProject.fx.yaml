@@ -189,7 +189,7 @@ AllProject As screen:
                                 isCompleted = "Completed"
                             ),
                             startDate,
-                            Descending
+                            SortOrder.Descending
                         ),TextInput2_3.Text,"shlaf_gonumber"),
                     Sort(
                             Filter(
@@ -198,7 +198,7 @@ AllProject As screen:
                                 isCompleted = "Completed"
                             ),
                             startDate,
-                            Descending)
+                            SortOrder.Descending)
                             ),
                         
                         If(
@@ -212,7 +212,7 @@ AllProject As screen:
                                     isCompleted = "Inprogress"
                                 ),
                                 startDate,
-                                Descending
+                                SortOrder.Descending
                             ),TextInput2_3.Text,"shlaf_gonumber"),
                             Sort(
                                 Filter(
@@ -221,7 +221,7 @@ AllProject As screen:
                                     isCompleted = "Inprogress"
                                 ),
                                 startDate,
-                                Descending
+                                SortOrder.Descending
                             )
                             )  
                         )

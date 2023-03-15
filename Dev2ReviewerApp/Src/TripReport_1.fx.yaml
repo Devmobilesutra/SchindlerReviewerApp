@@ -140,7 +140,7 @@ TripReport_1 As screen:
                             //    Ascending
                             //) 
                              unit,
-                            Ascending
+                            SortOrder.Ascending
                         ));
                     PaddingLeft: =0
                     PressedBorderColor: =Self.BorderColor
@@ -655,13 +655,13 @@ TripReport_1 As screen:
                                    // Ascending
                                 //),
                                checkpointAssessment_Id.CheckpointSequence,
-                                Ascending
+                                SortOrder.Ascending
                             ),
                             section_Id.sectionSequence,
-                            Ascending
+                            SortOrder.Ascending
                         ),
                         bankUnitId.unitNumber,
-                        Ascending
+                        SortOrder.Ascending
                         )
                     Layout: =Layout.Vertical
                     LayoutMinHeight: =100

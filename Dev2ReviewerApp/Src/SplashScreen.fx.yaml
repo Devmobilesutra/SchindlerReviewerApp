@@ -19,12 +19,3 @@ SplashScreen As screen:
         Y: =80
         ZIndex: =2
 
-    lblVersionLS As label:
-        FontWeight: =FontWeight.Bold
-        Height: =47
-        Text: ="Version 1.1"
-        Width: =120
-        X: =(Parent.Width-Self.Width)/2
-        Y: =Parent.Height/1.5
-        ZIndex: =3
-

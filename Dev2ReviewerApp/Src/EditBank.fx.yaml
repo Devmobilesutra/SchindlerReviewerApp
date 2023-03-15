@@ -227,7 +227,7 @@ EditBank As screen:
                         HoverFill: =RGBA(0,0,0,0)
                         InputTextPlaceholder: ="Select Client"
                         IsSearchable: =false
-                        Items: =Sort(schindlerClients,name,Ascending)
+                        Items: =Sort(schindlerClients,name,SortOrder.Ascending)
                         OnChange: =false //Set(IsEdit,true);
                         PaddingBottom: =0
                         PaddingTop: =0
@@ -363,7 +363,7 @@ EditBank As screen:
                                     product_Name = "7000" || product_Name = "5500" || product_Name = "S9300"
                                 ),
                                 product_Name,
-                                Ascending
+                                SortOrder.Ascending
                             )
                         PaddingBottom: =0
                         PaddingTop: =0
