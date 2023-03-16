@@ -1356,7 +1356,7 @@ TripReport As screen:
     Button1 As button:
         FontWeight: =FontWeight.Bold
         OnSelect: |-
-            =Set(VarPDF,PDF(Gallery14));
+            =Set(VarPDF,PDF(Gallery14,{ExpandContainers:true}));
             Navigate(Screen2);
         Text: ="Button"
         X: =1063

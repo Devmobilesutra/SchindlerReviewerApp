@@ -4,7 +4,14 @@ Screen2 As screen:
         BorderColor: =RGBA(0, 0, 0, 1)
         Document: =VarPDF
         Fill: =RGBA(0, 0, 0, 0.5)
-        X: =40
-        Y: =40
+        X: =60
+        Y: =228
         ZIndex: =1
+
+    Button2 As button:
+        OnSelect: =Back();
+        Text: ="Back"
+        X: =110
+        Y: =168
+        ZIndex: =2
 
