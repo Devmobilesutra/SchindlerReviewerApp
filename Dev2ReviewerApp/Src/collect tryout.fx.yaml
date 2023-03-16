@@ -7,8 +7,10 @@
             ClearCollect(tryitem2,checkpointItem_ActionItem);
             ClearCollect(tryitem3,checkpointItem_ActionItem);
             ClearCollect(tryitem4,checkpointItem_ActionItem);
+            ClearCollect(tryitem5,checkpointItem_ActionItem);
+            ClearCollect(tryitem6,checkpointItem_ActionItem);
             
-            ClearCollect(tryitem5,tryitem,tryitem1,tryitem2,tryitem3,tryitem4);
+            ClearCollect(tryitem7,tryitem,tryitem1,tryitem2,tryitem3,tryitem4);
         Text: ="Collect"
         X: =58
         Y: =130
@@ -24,7 +26,7 @@
 
     Label2 As label:
         Height: =42
-        Text: =CountRows(tryitem5)
+        Text: =CountRows(tryitem7)
         Width: =332
         X: =92
         Y: =327
