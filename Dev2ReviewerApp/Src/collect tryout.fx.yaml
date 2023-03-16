@@ -10,7 +10,7 @@
             ClearCollect(tryitem5,checkpointItem_ActionItem);
             ClearCollect(tryitem6,checkpointItem_ActionItem);
             
-            ClearCollect(tryitem7,tryitem,tryitem1,tryitem2,tryitem3,tryitem4);
+            ClearCollect(tryitem7,tryitem,tryitem1,tryitem2,tryitem3,tryitem4,tryitem6,tryitem6);
         Text: ="Collect"
         X: =58
         Y: =130
