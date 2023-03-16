@@ -1,11 +1,17 @@
 "'collect tryout' As screen":
 
     Button2 As button:
-        OnSelect: |
-            =ClearCollect(tryitem,checkpointItemAssessment);
+        OnSelect: |-
+            =ClearCollect(tryitem,checkpointItem_ActionItem);
+            ClearCollect(tryitem1,checkpointItem_ActionItem);
+            ClearCollect(tryitem2,checkpointItem_ActionItem);
+            ClearCollect(tryitem3,checkpointItem_ActionItem);
+            ClearCollect(tryitem4,checkpointItem_ActionItem);
+            
+            ClearCollect(tryitem5,tryitem,tryitem1,tryitem2,tryitem3,tryitem4);
         Text: ="Collect"
-        X: =40
-        Y: =40
+        X: =58
+        Y: =130
         ZIndex: =1
 
     Label1 As label:
@@ -18,7 +24,7 @@
 
     Label2 As label:
         Height: =42
-        Text: ="Text"
+        Text: =CountRows(tryitem5)
         Width: =332
         X: =92
         Y: =327
