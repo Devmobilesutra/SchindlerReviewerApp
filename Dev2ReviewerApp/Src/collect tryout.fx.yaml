@@ -1,0 +1,18 @@
+"'collect tryout' As screen":
+
+    Label1 As label:
+        Height: =45
+        Text: =CountRows(tryitem)
+        Width: =430
+        X: =92
+        Y: =212
+        ZIndex: =2
+
+    Label2 As label:
+        Height: =42
+        Text: =CountRows(aaa)
+        Width: =332
+        X: =92
+        Y: =327
+        ZIndex: =3
+
